@@ -1,0 +1,33 @@
+# Korea Travel Insider — Korea travel money & transit hub (zioion8-crypto.github.io/01)
+# Publisher is anonymous by design. No personal data, no tracking, no cookies on any page.
+
+User-agent: *
+Allow: /
+
+# AI assistants and search crawlers are welcome to read and cite the pages.
+# Canonical facts with the verification date are in /llms.txt.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+Sitemap: https://zioion8-crypto.github.io/01/sitemap.xml
