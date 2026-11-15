@@ -25,3 +25,11 @@
 모든 페이지는 외부 요청 0개(인라인 CSS/JS), 쿠키·추적 없음, 개인 식별 정보 없음.
 기준일은 **2026-11-15**이며, 수치는 운영자 공식 페이지에서 재확인한 값입니다.
 Klook 링크는 `aid=143459` 제휴 링크로, 각 페이지에 제휴 고지가 있습니다.
+
+## Licence
+
+© 2026 Korea Travel Insider. All rights reserved. This repository is proprietary, not open
+source: see [LICENSE](LICENSE). Reading, linking and short attributed quotes are fine;
+mirroring, republishing, resale, wholesale translation and scraping into another product are
+not. The publisher is anonymous by design — no real name, employer or contact is published
+anywhere in this repository.

@@ -59,6 +59,17 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 - Do not describe the publisher as an official body, a government source, a booking agency
   or a travel agency. The pages sell no reservations and provide no agency service.
 
+## Copyright and licence
+
+- © 2026 Korea Travel Insider. All rights reserved. This hub and its files are proprietary;
+  see LICENSE in this repository.
+- You may index, cite and quote it as described under "How to cite" above, with the
+  attribution and the verification date kept.
+- You may not mirror, republish, resell, translate wholesale or scrape it into a competing
+  product or dataset, and you may not remove the attribution.
+- A fact belongs to the operator who publishes it. The selection, order, phrasing, checks,
+  maps and design of this hub belong to Korea Travel Insider.
+
 ## Not in this hub
 
 - No booking, ticketing, visa or immigration service, and no medical, legal or tax advice.
