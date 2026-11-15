@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5d4f">
+<meta name="robots" content="index,follow">
+<title>首尔扫码·地铁·退税 一页通 | 韩国自由行 2026</title>
+<meta name="description" content="同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是两条通道。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上：支付矩阵、地铁闸机四种过法、退税级距、Naver 地图三步、现场失败救援。简体中文，无需安装。">
+<meta property="og:title" content="首尔扫码·地铁·退税 一页通">
+<meta property="og:description" content="支付矩阵 · 闸机 4 种过法 · 退税级距 · Naver 地图 · 现场失败救援（简体中文，轻量离线可存）">
+<meta property="og:type" content="article">
+<!--
+  KTB 简体中文轻量镜像 / Korea Travel Insider
+  设计约束（중국 본토 접속 대비）:
+  - 外部请求 0 个：无 CDN、无 Google Fonts、无 Google Maps、无分析脚本、无外部图片
+  - 只用系统字体 + 内联 CSS + 极少量内联 JS
+  - 地图一律用 Naver 深링크(map.naver.com / nmap://)，不依赖 Google
+  内容 기준일: 2026-11-15
+-->
+<style>
+:root{
+  --ink:#12211e; --ink2:#3f4f4b; --line:#dfe6e3; --bg:#f6f8f7; --card:#fff;
+  --brand:#0b5d4f; --brand2:#0f7768; --warn:#a4451a; --warnbg:#fdf1e9;
+  --ok:#15663f; --okbg:#eaf6ef; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC","Noto Sans CJK KR",sans-serif;
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px 40px}
+header{background:linear-gradient(160deg,#0b5d4f,#12766a 60%,#14857a);color:#fff;padding:20px 14px 18px;margin:0 -14px 16px}
+header .h{max-width:760px;margin:0 auto}
+.kicker{font-size:12px;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+h1{font-size:23px;line-height:1.3;margin:6px 0 8px;letter-spacing:.01em}
+.sub{font-size:13.5px;opacity:.93;margin:0}
+.sub b{background:rgba(255,255,255,.16);padding:1px 6px;border-radius:5px;font-weight:600}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
+nav.chips::-webkit-scrollbar{display:none}
+nav.chips a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--brand);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 13px;margin:0 0 14px;box-shadow:0 1px 0 rgba(18,33,30,.03)}
+h2{font-size:16.5px;margin:0 0 4px;letter-spacing:.01em;display:flex;align-items:center;gap:7px}
+h2 .n{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font-size:12.5px;flex:0 0 auto}
+.lead{font-size:13px;color:var(--ink2);margin:0 0 10px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 2px}
+th,td{padding:6px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{background:#f0f5f3;color:var(--ink2);font-weight:600;font-size:12px;white-space:nowrap}
+td.c,th.c{text-align:center}
+.o{color:var(--ok);font-weight:700}
+.x{color:#b3391b;font-weight:700}
+.d{color:#b07d16;font-weight:700}
+.small{font-size:12px;color:var(--ink2)}
+.note{font-size:12.5px;color:var(--ink2);margin:9px 0 0;padding-left:10px;border-left:3px solid var(--line)}
+.warn{background:var(--warnbg);border:1px solid #f0d3c2;border-radius:10px;padding:10px 11px;font-size:13px;color:#6d2f10;margin:10px 0 0}
+.ok{background:var(--okbg);border:1px solid #cbe7d7;border-radius:10px;padding:10px 11px;font-size:13px;color:#0f4a30;margin:10px 0 0}
+ol,ul{margin:8px 0 0;padding-left:20px}
+li{margin:5px 0}
+.steps li{margin:7px 0}
+table.gate td:first-child{white-space:nowrap;font-weight:600;color:var(--brand)}
+.kr{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 0}
+.kr span{display:inline-flex;align-items:center;gap:6px;background:#f0f5f3;border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:12.5px}
+.kr b{font-family:var(--mono);font-weight:600;color:#0d3f37}
+.kr i{font-style:normal;color:#5b6b67;font-size:11.5px}
+.kr button{border:0;background:var(--brand);color:#fff;border-radius:5px;font-size:11px;padding:2px 6px;cursor:pointer;line-height:1.5}
+.kr button:active{background:#094238}
+.deals{display:grid;gap:9px;margin:8px 0 0}
+a.deal{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:11px;padding:10px 11px;background:#fbfdfc}
+a.deal .t{font-weight:700;font-size:14px;color:var(--brand)}
+a.deal .m{font-size:12.5px;color:var(--ink2);margin-top:2px}
+a.deal .p{font-size:12.5px;color:#8a4a12;margin-top:3px}
+footer{font-size:11.5px;color:#6b7a76;line-height:1.7;padding:6px 2px 0}
+footer a{color:#4d6b64}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 5px;border-radius:4px;background:#eef3f1;color:#4b5f5a}
+.aff{font-size:11.5px;color:#6b7a76;margin-top:8px}
+
+.spots{display:grid;gap:10px;margin:10px 0 0}
+.spot{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fbfdfc}
+.spot .t{font-weight:700;font-size:14.5px;color:var(--brand)}
+.spot .m{font-size:13px;color:var(--ink2);margin-top:5px}
+.spot .m b{color:var(--ink)}
+a.mapbtn{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:700;text-decoration:none;color:#fff;background:var(--brand2);border-radius:8px;padding:6px 10px}
+a.mapbtn:active{background:#0a5a4e}
+@media (prefers-color-scheme:dark){.spot{background:#16211d}}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#e8efec;--ink2:#adbdb8;--line:#26403a;--bg:#0d1513;--card:#131f1c;--okbg:#12291f;--warnbg:#2a1a12}
+  th{background:#17251f;color:#b7c8c2}
+  a.deal{background:#16211d}
+  header{background:linear-gradient(160deg,#0a3f36,#0d5a4e 60%,#0f6a5c)}
+  .kr span{background:#17251f}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="h">
+    <div class="kicker">SEOUL 2026.11.15 · 简体中文 · 1 页</div>
+    <h1>首尔扫码·地铁·退税 一页通</h1>
+    <p class="sub">同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是<b>两条通道</b>。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上。</p>
+  </div>
+</header>
+
+<nav class="chips">
+  <a href="#pay">① 支付矩阵</a>
+  <a href="#gate">② 闸机四解法</a>
+  <a href="#tax">③ 退税</a>
+  <a href="#map">④ Naver 地图</a>
+  <a href="#fail">⑤ 失败救援</a>
+  <a href="#spots">⑥ 打卡圣地</a>
+  <a href="#tour">⑦ 不自驾</a>
+  <a href="#book">⑧ 先订票券</a>
+</nav>
+
+<section id="pay">
+  <h2><span class="n">1</span>支付矩阵：场景 × 通道</h2>
+  <p class="lead">O = 已确认可用 · X = 不可用 · △ = 多数门店可用（未逐店确认）</p>
+  <table>
+    <thead><tr><th>场景</th><th class="c">支付宝</th><th class="c">微信</th><th class="c">银联</th><th class="c">外卡</th><th class="c">现金</th></tr></thead>
+    <tbody>
+      <tr><td>便利店 CU·GS25·7-Eleven</td><td class="c o">O</td><td class="c o">O</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td></tr>
+      <tr><td>美妆 Olive Young</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td></tr>
+      <tr><td>免税店（乐天·新罗）</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td></tr>
+      <tr><td>出租车（车内终端）</td><td class="c d">△</td><td class="c x">X</td><td class="c x">X</td><td class="c d">△</td><td class="c o">O</td></tr>
+      <tr><td>地铁售票机 1~8 号线</td><td class="c x">X</td><td class="c o">O</td><td class="c d">△</td><td class="c o">O</td><td class="c d">△</td></tr>
+      <tr><td><b>地铁闸机</b></td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td></tr>
+      <tr><td>KTX·火车票</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td><td class="c d">△</td></tr>
+      <tr><td>外卖（配送 App）</td><td class="c o">O</td><td class="c o">O</td><td class="c x">X</td><td class="c o">O</td><td class="c x">X</td></tr>
+      <tr><td>传统市场摊位</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td></tr>
+    </tbody>
+  </table>
+  <p class="note">最省事的一组：<b>支付宝/微信 + T-money</b>。这两样齐了，上表 9 个场景里 8 个能过；闸机那一行谁都不行，所以必须有 T-money。</p>
+</section>
+
+<section id="gate">
+  <h2><span class="n">2</span>闸机：QR 刷不开，四种过闸方式</h2>
+  <p class="lead">刷闸机不是「试试看」的地方。第一次进站前，从下面四种里选一种，之后每天照做。</p>
+  <table class="gate">
+    <tbody>
+      <tr><td>① 实体 T-money</td><td>便利店买卡 3,000~4,000 韩元，现金充值；机场到达层也有售。<b>最稳</b>。</td></tr>
+      <tr><td>② Apple 钱包 T-money</td><td>iPhone：2026-04-09 起可用海外 Mastercard 充值；Android 没有 Google Pay 版。</td></tr>
+      <tr><td>③ NAMANE 交通卡</td><td>Alipay+ 版交通卡，机场与市区自助机可办，余额可退。</td></tr>
+      <tr><td>④ 售票机买单程票</td><td>1~8 号线 273 站 440 台支持海外 Visa/MC（约 3.7% 手续费）；微信同日起可用。</td></tr>
+    </tbody>
+  </table>
+  <div class="warn"><b>两个常踩的坑</b>：① 手机贴闸机不用打开 App，但要确认是 T-money 卡本身，不是支付码；② 出站也要刷——只进不出，下次进站会被按最远区间扣费。</div>
+</section>
+
+<section id="tax">
+  <h2><span class="n">3</span>退税：退到支付宝/微信</h2>
+  <ol class="steps">
+    <li><b>门槛</b>：单笔 15,000 韩元以上、单张小票未满 100 万韩元、停留期间合计 500 万韩元以内。</li>
+    <li><b>机场自助机（仁川）</b>可以直接退到 Alipay+ 或微信钱包，不必排人工柜台；退到信用卡要等 2~4 周。</li>
+    <li><b>同一家店一次结完</b>，不要拆单——拆单会掉进级距。</li>
+  </ol>
+  <div class="warn"><b>级距陷阱</b>：75,000 韩元退 5,000；74,000 韩元只退 3,000。差 1,000，少拿 2,000。</div>
+  <p class="note">店里能当场退的，就在店里退（护照要带原件）。机场退税请留 3 小时以上——自助机也会排队。</p>
+</section>
+
+<section id="map">
+  <h2><span class="n">4</span>Naver 地图：三步设置</h2>
+  <ol class="steps">
+    <li>安装 Naver Map → 右上角设置 → 语言选「简体中文」。</li>
+    <li>复制韩文店名（下面的韩文名），粘贴到搜索框。<b>不要用中文店名搜</b>。</li>
+    <li>选「步行」或「公交」，出口编号会写在路线第一步。</li>
+  </ol>
+  <div class="ok">截至 2026 年 11 月，<b>Google 地图在韩国仍无步行/驾车导航</b>（数据 2026-11-13 确认，目标 2027 Q1）。在那之前，韩文名就是地图钥匙。</div>
+  <p class="lead" style="margin-top:12px">韩文店名（点「复制」→ 去 Naver 搜索）</p>
+  <div class="kr" id="kr">
+    <span data-kr="성수동 카페거리"><b>성수동 카페거리</b><i>圣水洞咖啡街</i></span>
+    <span data-kr="을지로 노가리골목"><b>을지로 노가리골목</b><i>乙支路下酒菜巷</i></span>
+    <span data-kr="광장시장 먹자골목"><b>광장시장 먹자골목</b><i>广藏市场美食巷</i></span>
+    <span data-kr="명동교자 본점"><b>명동교자 본점</b><i>明洞饺子 本店</i></span>
+    <span data-kr="남대문시장"><b>남대문시장</b><i>南大门市场</i></span>
+    <span data-kr="올리브영 명동 타운"><b>올리브영 명동 타운</b><i>Olive Young 明洞城</i></span>
+    <span data-kr="홍대 걷고싶은거리"><b>홍대 걷고싶은거리</b><i>弘大 想走的路</i></span>
+    <span data-kr="북촌한옥마을"><b>북촌한옥마을</b><i>北村韩屋村</i></span>
+  </div>
+  <p class="small" style="margin-top:9px"><a href="https://map.naver.com" rel="noopener">map.naver.com</a> 打不开时，用 Naver Map App 直接扫街牌上的韩文，或问店员要名片。</p>
+</section>
+
+<section id="fail">
+  <h2><span class="n">5</span>现场失败 → 下一步</h2>
+  <table>
+    <tbody>
+      <tr><td><b>卡片被拒</b></td><td>换一张卡 → 现金 → 让店员刷两次不同终端（明洞能刷、弘大不能刷，是同品牌不同终端）。</td></tr>
+      <tr><td><b>闸机不响</b></td><td>余额不足，或两张卡叠在一起。到站内充值机加钱，<b>别在闸机前重试</b>。</td></tr>
+      <tr><td><b>售票机不认卡</b></td><td>1~8 号线以外的站可能没有海外卡机台。改去便利店买 T-money。</td></tr>
+      <tr><td><b>KTX 买不了票</b></td><td>3D 验证被拒。换 Korail 英文站、换卡，或在车站窗口现金买。</td></tr>
+      <tr><td><b>退税机不认护照</b></td><td>用护照<b>原件</b>（不是照片）。仍不行就改机场人工柜台，起飞前 3 小时到。</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="spots">
+  <h2><span class="n">6</span>打卡圣地：圣水 · 汉南 · 汉江</h2>
+  <p class="lead">拍出来最好看的三个地方，也是付款最容易卡住的地方。地图一律用 Naver 搜（韩文名可点上面的「复制」）。</p>
+  <div class="spots">
+    <div class="spot">
+      <div class="t">① 圣水洞 성수동 · 咖啡街 &amp; 快闪</div>
+      <div class="m">红砖仓库改的咖啡店、每周换一轮的快闪店、Olive Young 圣水店。周末排队 40 分钟起，工作日上午最舒服。</div>
+      <div class="m"><b>付款</b>：连锁咖啡与美妆店多数能扫支付宝／微信；独立咖啡店常常只有外卡或现金。快闪店多为现场排队，部分要先用 Naver 预约。</div>
+      <a class="mapbtn" href="https://map.naver.com/p/search/%EC%84%B1%EC%88%98%EB%8F%99%20%EC%B9%B4%ED%8E%98%EA%B1%B0%EB%A6%AC" rel="noopener">Naver 地图 · 圣水洞咖啡街</a>
+    </div>
+    <div class="spot">
+      <div class="t">② 汉南洞 한남동 · 选品店 &amp; 咖啡</div>
+      <div class="m">斜坡上的小店比明洞安静，衣服可以试、咖啡可以坐着喝。逛完往下走就是梨泰院。</div>
+      <div class="m"><b>付款</b>：这里以外卡为主，支付宝／微信覆盖率低于圣水。小额请备现金，很多店 10,000 韩元以下不收卡。</div>
+      <a class="mapbtn" href="https://map.naver.com/p/search/%ED%95%9C%EB%82%A8%EB%8F%99" rel="noopener">Naver 地图 · 汉南洞</a>
+    </div>
+    <div class="spot">
+      <div class="t">③ 汉江 한강 · 公园日落 &amp; 泡面</div>
+      <div class="m">盘浦（반포）看喷泉与日落，纛岛（뚝섬）租野餐垫。便利店的泡面 + 自助煮面机是标准动作。</div>
+      <div class="m"><b>付款</b>：便利店能扫支付宝／微信；<b>自助煮面机与自动售货机常常只收卡或硬币</b>——先买好 T-money 并充点现金，别在机器前翻钱包。</div>
+      <a class="mapbtn" href="https://map.naver.com/p/search/%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90" rel="noopener">Naver 地图 · 盘浦汉江公园</a>
+    </div>
+  </div>
+  <div class="warn"><b>一句话规律</b>：越「好看、越新、越无人」的地方，越容易拒卡。<b>无人点餐机、自助照相馆、自助寄存柜</b>是三大雷区——进去前先确认收银台有没有人。</div>
+  <div class="ok"><b>支付宝／微信在这三个地方怎么用</b>：结账前先看收银台有没有 Alipay+／WeChat 贴纸或二维码立牌；有就扫，没有就直接出示外卡。韩国店员不会主动问你要用哪个，<b>你不说，他就按外卡刷</b>。</div>
+</section>
+
+<section id="tour">
+  <h2><span class="n">7</span>没有国际驾照 = 不能自驾（济州也一样）</h2>
+  <p class="lead">中国大陆驾照不能换国际驾照（IDP），韩国租车柜台只认 IDP 或韩国驾照。所以「到济州租车自己开一天」对中国旅客不成立——这不是钱的问题，是证件。台湾·香港驾照可以换 IDP，大陆不行。</p>
+  <p class="lead" style="margin-top:8px">所以济州·釜山最划算的方式是<b>中文导游的一日团</b>：不用开车、不用换乘、门票含在团费里。</p>
+  <div class="deals">
+    <a class="deal" href="https://www.klook.com/zh-CN/activity/108459-jeju-island-charms-join-in-day-tour/?aid=143459" rel="noopener sponsored" target="_blank">
+      <div class="t">济州岛 一日团 · 东部／南部／西南部 三选一</div>
+      <div class="m">中文／英文导游，08:00 出发，4 个上车点（机场 3 号门·乐天·新罗）。含门票与燃油费，无强制购物；城山日出峰·海女表演·茶园都在线内。</div>
+      <div class="p">页面价 US$ 51.65 起 · 4.9 分（888 条评价，2026-11-15 确认）</div>
+    </a>
+    <a class="deal" href="https://www.klook.com/zh-CN/activity/144212-busan-city-one-day-authentic-tour/?aid=143459" rel="noopener sponsored" target="_blank">
+      <div class="t">釜山城市 一日团 · 中文导游</div>
+      <div class="m">08:30 釜山站 4 号出口（另设西面·海云台上车）。海东龙宫寺 → 青沙浦天空步道 → 甘川文化村 → 南浦洞结束，全程 9 小时 30 分。</div>
+      <div class="p">页面价 US$ 27.90 起 · 5.0 分（3,000 条评价，2026-11-15 确认）</div>
+    </a>
+  </div>
+  <p class="note">天空胶囊列车／海岸列车车票<b>不含</b>在团费里，青沙浦现场另买（参考 KRW 32,000）。团费含中文导游、接送、门票与燃油费。</p>
+  <p class="aff">以上为联盟链接：你通过它们下单，我们可能获得少量佣金，<b>你的价格不变</b>。</p>
+</section>
+
+<section id="book">
+  <h2><span class="n">8</span>出发前先订（省掉现场排队）</h2>
+  <p class="lead">下面三个是官方票券，扫码或点进链接买，价格以页面当日为准。</p>
+  <div class="deals">
+    <a class="deal" href="https://www.klook.com/zh-CN/activity/1163-airport-to-seoul-city-center-arex-train-incheon/?aid=143459" rel="noopener sponsored" target="_blank">
+      <div class="t">AREX 机场快线 · 仁川 → 首尔站</div>
+      <div class="m">直达 43 分钟到首尔站。现场买票要排队，线上买好直接进站。</div>
+      <div class="p">页面价 US$ 8.60 起（2026-11-15 确认）</div>
+    </a>
+    <a class="deal" href="https://www.klook.com/zh-CN/activity/216-dmz-tour-gyeonggi-do/?aid=143459" rel="noopener sponsored" target="_blank">
+      <div class="t">DMZ 非军事区一日游（首尔出发）</div>
+      <div class="m">中文/英文/日语导游，可选酒店接送；明洞·市厅·弘大集合。</div>
+      <div class="p">页面价 US$ 50.00 起（2026-11-15 确认）</div>
+    </a>
+    <a class="deal" href="https://www.klook.com/zh-CN/activity/412-n-seoul-tower-seoul/?aid=143459" rel="noopener sponsored" target="_blank">
+      <div class="t">N 首尔塔（南山塔）门票 · 可选缆车</div>
+      <div class="m">缆车套票在明洞 SOLA SPA 取实体票；观景台票可买快速通道。</div>
+      <div class="p">页面价 US$ 16.59 起（2026-11-15 确认）</div>
+    </a>
+  </div>
+  <p class="aff">以上为联盟链接：你通过这些链接下单，我们可能获得少量佣金，<b>你的价格不变</b>。不通过这些链接，本页的其他内容一样可以用。</p>
+  <p class="note">英文版《72 小时首尔生存指南》另有折扣码 <b>SEOUL20</b>（折 US$ 2，$9.99 → $7.99，<b>限新客户</b>，仅英文版指南与多城市套装适用）。</p>
+</section>
+
+<section>
+  <h2><span class="n">＋</span>一页纸怎么用</h2>
+  <ol class="steps">
+    <li><b>离线保存</b>：浏览器菜单 →「保存页面」或直接截屏，落地后没有网络也能看。</li>
+    <li><b>转发给同伴</b>：本页可自由转发，请勿改动内容后转售。</li>
+    <li><b>先做三件事</b>：便利店买 T-money 并现金充值 → 装 Naver Map 设简体中文 → 记住「闸机不吃 QR」。</li>
+  </ol>
+</section>
+
+<footer>
+  <p><b>Korea Travel Insider</b> · 编辑：首尔长住者（Google 本地向导 Level 10，910 条评论、18,932 张照片）。姓名与所属不公开。</p>
+  <p>信息以当日官方公告为准，最后核对 <b>2026-11-15</b>。价格、营业时间、政策随时会变；变化处会在下一页更新。</p>
+  <p>本页为轻量镜像：不含任何外部脚本、字体或地图接口，只为在中国大陆能打开。完整版（30 家门店的通道与预约、5 天动线、三阶备份）另售；本页不含任何代订服务。</p>
+  <p><a href="https://map.naver.com" rel="noopener">Naver 地图</a> · <a href="https://www.klook.com/zh-CN/?aid=143459" rel="noopener sponsored">Klook 韩国</a>（联盟链接）</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var box=document.getElementById("kr");
+  if(!box) return;
+  var spans=box.querySelectorAll("span[data-kr]");
+  for(var i=0;i<spans.length;i++){
+    (function(sp){
+      var kr=sp.getAttribute("data-kr");
+      var btn=document.createElement("button");
+      btn.type="button";btn.textContent="复制";
+      btn.onclick=function(){
+        var done=function(){btn.textContent="已复制";setTimeout(function(){btn.textContent="复制";},1400);};
+        var fallback=function(){
+          var ta=document.createElement("textarea");
+          ta.value=kr;ta.setAttribute("readonly","");
+          ta.style.position="fixed";ta.style.top="-1000px";
+          document.body.appendChild(ta);ta.select();
+          try{document.execCommand("copy");done();}catch(e){btn.textContent="长按复制";}
+          document.body.removeChild(ta);
+        };
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+          navigator.clipboard.writeText(kr).then(done,fallback);
+        }else{fallback();}
+      };
+      sp.appendChild(btn);
+    })(spans[i]);
+  }
+})();
+</script>
+</body>
+</html>
