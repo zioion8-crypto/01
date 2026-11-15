@@ -15,6 +15,7 @@
 | 경로 | 내용 |
 |---|---|
 | `/en/` | 2026 Korea Transit, Tax-Free & Payment Cheat Sheet (English) |
+| `/es/` | Ruta ARMY por Seúl 2026 · 4 paradas sin número coreano — 단일 스페인어 랜딩 + 무료 A4 1장 PDF(`/es/korea-es-army-1pager.pdf`, 스페인어권 유입 전환용, 2026-11-15) |
 | `/ja/` | 2026 韓国旅行 交通・免税・決済チートシート (日本語, 2026-11-01 일본 환급 전환 대비표 포함) |
 | `/tw/` | 2026 韓國自由行 交通・退稅・付款速查表 (繁體中文) |
 | `/` | 简体中文 1페이지 미러 (기존, 변경 없음) |

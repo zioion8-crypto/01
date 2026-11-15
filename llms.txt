@@ -1,9 +1,9 @@
 # Korea Travel Insider — Korea travel money & transit hub
 
 > A dated, operator-checked reference for travelling in South Korea: airport rail, transit
-> cards, tax refunds, card acceptance and the limits of a data-only eSIM. Four language
-> editions of the same facts (English, Japanese, Traditional Chinese, Simplified Chinese),
-> each stating the verification date. Publisher is anonymous by design: a long-term Seoul
+> cards, tax refunds, card acceptance and the limits of a data-only eSIM. Five language
+> editions of the same facts (English, Spanish, Japanese, Traditional Chinese, Simplified
+> Chinese), each stating the verification date. Publisher is anonymous by design: a long-term Seoul
 > resident who is a Level 10 Google Local Guide (910 reviews, 18,932 photos). No real name,
 > employer or contact is published anywhere in this site.
 >
@@ -15,6 +15,7 @@
 - [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://zioion8-crypto.github.io/01/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
 - [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://zioion8-crypto.github.io/01/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
 - [简体中文 — 首尔扫码·地铁·退税 一页通](https://zioion8-crypto.github.io/01/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援。为在中国大陆可直连而制作，外部请求 0 个。
+- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://zioion8-crypto.github.io/01/es/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios, el día en números, las tres apps que hacen falta y las mismas cifras de transporte y devolución de IVA de las otras ediciones. Hoja A4 gratis en PDF: /01/es/korea-es-army-1pager.pdf.
 
 ## Canonical facts (as of 2026-11-15)
 
@@ -42,6 +43,8 @@
 - [韓国3泊4日 予約・待ち・免税 ゼロ帖, 63 pages (Japanese)](https://zioion.gumroad.com/l/seoul-zero-wait-jp) — ¥1,480 (switch the currency selector to JPY).
 - [首爾5天4夜 付款・預約 生存包, 44 pages (Traditional Chinese)](https://zioion.gumroad.com/l/seoul-survival-tw) — NT$299.
 - [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://zioion.gumroad.com/l/korea-cn-1pager) — free.
+- [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://zioion8-crypto.github.io/01/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://zioion8-crypto.github.io/01/es/.
+- [Seoul Purple Trail 2026, 34-page A5 PDF](https://zioion.gumroad.com/l/seoul-purple-trail-2026) — USD 9.99; 4 days (3 in Seoul, 1 in Busan by KTX), 28 verified stops, no artist photos or logos.
 
 Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot.com) · [日本語](https://seoultravelinsider-jp.blogspot.com) · [繁體中文](https://seoultravelinsider-tw.blogspot.com).
 
