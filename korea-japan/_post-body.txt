@@ -1,0 +1,114 @@
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.8; color: #1e293b; max-width: 800px; margin: 0 auto; padding: 0 10px;">
+
+<div style="display: inline-flex; align-items: center; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 9999px; padding: 8px 18px; margin-bottom: 20px; font-size: 0.9em; color: #1d4ed8; font-weight: 600;">
+  <span style="margin-right: 8px;">✨</span> Curated by a Level 10 Google Local Guide (the highest level) · 910 Reviews · 18,932 Photos
+</div>
+<div style="font-size: 0.85em; color: #64748b; margin-bottom: 26px;">Facts checked 17 November 2026 · every number below was read on the operator’s own page that day</div>
+
+<p style="font-size: 1.15em; color: #334155; margin-bottom: 22px;"><strong>Two countries, eleven days, one booking mistake.</strong> Add Japan to a Korea trip and the trip stops forgiving you: a ferry that does not sail every day, two transit cards that look identical and are not, and two tax-refund systems that in November 2026 started running in opposite directions. This is the page I wish I had before the first crossing.</p>
+
+<div style="background: #f8fafc; border-left: 5px solid #243b6b; padding: 22px 26px; margin: 30px 0; border-radius: 8px;">
+  <p style="margin: 0 0 12px; font-weight: 700; font-size: 1.05em; color: #0f172a;">⚡ The 30-second version</p>
+  <ul style="margin: 0; padding-left: 20px; color: #334155;">
+    <li style="margin-bottom: 8px;"><strong>The fast ferry is gone for good.</strong> The Queen Beetle stopped in August 2024; JR Kyushu left the ferry business that December. Busan–Fukuoka is one overnight ship (New Camellia) or a one-hour flight.</li>
+    <li style="margin-bottom: 8px;"><strong>Cheapest crossing:</strong> Incheon–Narita LCC from about US$72 one way; Busan–Fukuoka from about US$73. <strong>Best night:</strong> the ferry, ₩171,000 all-in from Busan, because it replaces a hotel.</li>
+    <li style="margin-bottom: 8px;"><strong>Two cards.</strong> T-money (or the Climate Card short-term pass) in Korea; Welcome Suica in Japan. Neither works on the other side.</li>
+    <li style="margin-bottom: 8px;"><strong>Refunds flipped.</strong> Since 1 November 2026 Japan refunds the tax at the airport, not the till. Korea still deducts at the register.</li>
+    <li style="margin-bottom: 0;"><strong>Two plugs.</strong> Korea 220 V round pins, Japan 100 V flat pins.</li>
+  </ul>
+</div>
+
+<h2 style="font-size: 1.5em; color: #0f172a; margin-top: 44px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">1. Five ways across, priced on the same day</h2>
+
+<p>Most guides price these routes from different years. These five were all read on 17 November 2026, one-way, adult, hand luggage only.</p>
+
+<div style="overflow-x: auto; margin: 26px 0; border: 1px solid #e2e8f0; border-radius: 8px;">
+<table style="border-collapse: collapse; width: 100%; font-size: 0.93em;">
+<thead><tr style="background: #243b6b; color: #fff;">
+<th style="padding: 12px 14px; text-align: left;">Route</th>
+<th style="padding: 12px 14px; text-align: left;">Time</th>
+<th style="padding: 12px 14px; text-align: left;">Cheapest, Nov 2026</th>
+<th style="padding: 12px 14px; text-align: left;">When it wins</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px;">Incheon → Narita (air)</td><td style="padding: 11px 14px;">2 h 28</td><td style="padding: 11px 14px;">LCC from ~US$72; return from US$180</td><td style="padding: 11px 14px;">Lowest fare; Narita is 60–90 min from central Tokyo</td></tr>
+<tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px;">Gimpo → Haneda (air)</td><td style="padding: 11px 14px;">2 h 05</td><td style="padding: 11px 14px;">From ~US$117; full service ~US$260</td><td style="padding: 11px 14px;">The hours back — 15 km from Gangnam</td></tr>
+<tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px;">Busan → Fukuoka (air)</td><td style="padding: 11px 14px;">1 h 00</td><td style="padding: 11px 14px;">From ~US$73 (₩88,099); 12 flights a day</td><td style="padding: 11px 14px;">One-day crossing; two subway stops at the far end</td></tr>
+<tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px;">Busan → Hakata (ferry)</td><td style="padding: 11px 14px;">22:30 → 07:30</td><td style="padding: 11px 14px;">₩171,000 all-in (~US$128)</td><td style="padding: 11px 14px;">The night is your bed: nine hours, seven asleep</td></tr>
+<tr><td style="padding: 11px 14px;">Hakata → Shin-Osaka (rail)</td><td style="padding: 11px 14px;">2 h 30</td><td style="padding: 11px 14px;">Nozomi ¥15,600</td><td style="padding: 11px 14px;">City centre to city centre</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3 style="font-size: 1.2em; color: #0f172a; margin-top: 28px;">Why the ferry is the interesting one</h3>
+
+<p>The New Camellia leaves Busan at 22:30 and docks in Hakata at 06:00, with disembarkation from 07:30 after Japanese immigration. Check-in opens at 16:30 and closes at 18:30; boarding closes at 20:00. Second class costs ₩150,000 plus ₩21,000 in fees from Busan, or ¥15,000 plus ¥4,900 from Hakata. Round-trip and student discounts ended on 30 September 2026, and bookings open six months ahead to the day.</p>
+
+<p>Three things to know before you build a trip around it. It does not sail every day: in the October–December 2026 calendar there is no Busan departure on certain Saturdays and no Hakata departure on the Sundays after them. It cancels when the forecast wave height passes six metres. And a Busan departure booked on the Japanese site is converted at the operator’s own monthly rate, so price both directions in your own currency.</p>
+
+<div style="background: #fefce8; border: 1px solid #fef08a; padding: 16px 20px; margin: 24px 0; border-radius: 8px;">
+  <p style="margin: 0; color: #854d0e; font-size: 0.95em;"><strong>💡 Rule that saves a day:</strong> put the crossing in the middle of the trip, never on the first or last day. A cancelled ferry on day 11 is an inconvenience; on the last day it is a missed flight.</p>
+</div>
+
+<h2 style="font-size: 1.5em; color: #0f172a; margin-top: 44px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">2. Two cards that look the same and are not</h2>
+
+<div style="overflow-x: auto; margin: 26px 0; border: 1px solid #e2e8f0; border-radius: 8px;">
+<table style="border-collapse: collapse; width: 100%; font-size: 0.93em;">
+<thead><tr style="background: #243b6b; color: #fff;">
+<th style="padding: 12px 14px; text-align: left;"></th>
+<th style="padding: 12px 14px; text-align: left; background: #a93226;">Korea</th>
+<th style="padding: 12px 14px; text-align: left;">Japan</th>
+</tr></thead>
+<tbody>
+<tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px; font-weight: 600;">Buy</td><td style="padding: 11px 14px;">T-money, plus the Climate Card short-term pass for days in Seoul</td><td style="padding: 11px 14px;">Welcome Suica (no deposit) or Mobile Suica on an iPhone; ICOCA at Kansai</td></tr>
+<tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px; font-weight: 600;">Cost</td><td style="padding: 11px 14px;">Card ₩3,000–5,000. Climate Card 1 day ₩5,000 · 3 days ₩10,000 · 5 days ₩15,000, plus a ₩3,000 card</td><td style="padding: 11px 14px;">From ¥1,000 loaded; Mobile Suica free, 180 days</td></tr>
+<tr style="border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px; font-weight: 600;">Reload</td><td style="padding: 11px 14px;">Cash only for ordinary T-money; foreign cards are refused</td><td style="padding: 11px 14px;">Cash at ticket machines; foreign cards often fail online top-ups</td></tr>
+<tr style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;"><td style="padding: 11px 14px; font-weight: 600;">Airport train</td><td style="padding: 11px 14px;">AREX Express ₩13,000 (43 min, separate ticket) · all-stop ₩4,750 (59 min)</td><td style="padding: 11px 14px;">Skyliner ¥2,570 (41 min) · N’EX ¥3,070 (53 min) · Haruka ¥1,900 Osaka / ¥2,700 Kyoto</td></tr>
+<tr><td style="padding: 11px 14px; font-weight: 600;">The trap</td><td style="padding: 11px 14px;">The Climate Card cannot start at Incheon Airport stations, and the 30-day pass ended in September 2026</td><td style="padding: 11px 14px;">28-day tourist cards refund nothing; Android Suica arrives in 2027</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 style="font-size: 1.5em; color: #0f172a; margin-top: 44px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">3. The refund rule that changed on 1 November 2026</h2>
+
+<p>This is the change most 2025 guides still get wrong. Japan moved from “pay the tax-exclusive price at the shop” to a <strong>refund method</strong>: you now pay the tax-inclusive price and claim the consumption tax back after a customs check at the airport or seaport on the way out. The minimum is ¥5,000 per store per day, there is no ceiling any more, the category split between general goods and consumables is gone, and so is the special packaging.</p>
+
+<p>The mechanics matter more than the rule. Complete the kiosk check <em>before</em> you check your bag — once the bag is gone, the refund is gone. The check is per receipt: one missing item cancels everything on that receipt. And consumables you have already eaten or used are not eligible.</p>
+
+<p>Korea works the opposite way and still deducts at the till: ₩15,000 minimum per receipt, instant refunds under ₩1,000,000 per receipt and up to ₩5,000,000 per stay, with the original passport scanned before the payment completes. Ask after paying and you are holding a slip you have to claim at the airport instead.</p>
+
+<div style="background: #fff7ed; border-left: 5px solid #f97316; padding: 18px 22px; margin: 26px 0; border-radius: 0 8px 8px 0;">
+  <p style="margin: 0; color: #9a3412; font-size: 0.95em;"><strong>🛂 Also time-limited:</strong> Korea’s K-ETA temporary exemption runs to <strong>31 December 2026</strong>. If your passport is on the exempt list the e-Arrival Card (free, filed within three days of arrival) is all you need. Book for January 2027 and you may need the K-ETA instead.</p>
+</div>
+
+<h2 style="font-size: 1.5em; color: #0f172a; margin-top: 44px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">4. A 12-day shape that works</h2>
+
+<p>Seoul (3 nights) → Busan (1) → overnight ferry → Fukuoka (1) → Osaka (2) → Kyoto (1) → Tokyo (2) → home. Open-jaw flights in and out of different countries, the crossing in the middle, and no city visited twice. One thing is fixed: the ferry date. Build days 1–4 and 6–12 around it, not the other way round.</p>
+
+<div style="background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 10px; padding: 20px 22px; margin: 26px 0;">
+  <p style="margin: 0 0 10px; font-weight: 700; color: #1e1b4b;">Take it with you</p>
+  <p style="margin: 0 0 8px; color: #312e81; font-size: 0.95em;">The whole sheet — five routes, both cards, both refund systems, the ferry step by step — is a free A4 PDF in English, Spanish and Traditional Chinese:</p>
+  <p style="margin: 0 0 6px;"><a href="https://zioion8-crypto.github.io/01/korea-japan/" style="color: #243b6b; font-weight: 700;">Korea + Japan · the free one-sheet and the full tables →</a></p>
+  <p style="margin: 0; color: #312e81; font-size: 0.95em;">If you want the day-by-day version: <a href="https://zioion.gumroad.com/l/korea-japan-dual-trip-pack" style="color: #243b6b; font-weight: 700;">Korea + Japan 10–14 Day Dual-Trip Survival Pack · US$14.99</a> — 34 pages, three routes, the ferry walk-through, booking order and the refund walk. Digital download, no refunds (stated on the product page).</p>
+</div>
+
+<h2 style="font-size: 1.5em; color: #0f172a; margin-top: 44px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">5. Data across both countries</h2>
+
+<p>A dual-country eSIM is the cheapest way to stay online across the border: 1 GB for 7 days starts around US$3, 10 GB for 30 days around US$16. What it does not give you is a phone number, and in Korea that number is what restaurant booking apps ask for — use Catchtable Global for tables instead. For the Korea leg I use the SKT data eSIM below; it is an affiliate link and the price is the same either way.</p>
+
+<p style="margin: 20px 0;"><a href="https://www.klook.com/activity/109354/?aid=143459" style="display: inline-block; background: #243b6b; color: #fff; padding: 12px 18px; border-radius: 8px; text-decoration: none; font-weight: 700;">Korea 5G eSIM — see the current price →</a></p>
+
+<h2 style="font-size: 1.5em; color: #0f172a; margin-top: 44px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Quick answers</h2>
+
+<p><strong>Can I still take the fast ferry from Busan to Fukuoka?</strong> No. The Queen Beetle has not run since August 2024 and JR Kyushu exited the ferry business in December 2024. Any timetable you find for it is from before that.</p>
+<p><strong>Is the Japan Rail Pass worth it for Tokyo, Kyoto and Osaka?</strong> No. The 7-day ordinary pass is ¥50,000 on the official site; a Tokyo–Kyoto return on Nozomi is about ¥28,000. It only pays off on a Tokyo–Kyoto–Hiroshima–Hakata–Tokyo loop within seven days.</p>
+<p><strong>Do I need a Japanese IC card if I already have T-money?</strong> Yes. They are separate systems with no interchange.</p>
+<p><strong>Where do I get the Japanese tax refund now?</strong> At the customs kiosk at the airport, before you check your bag, within 90 days of purchase — or through Visit Japan Web at seven airports including Narita, Haneda, Kansai and Fukuoka.</p>
+
+<div style="border-top: 1px solid #e2e8f0; padding-top: 24px; margin-top: 44px; font-size: 0.9em; color: #64748b;">
+  <p style="margin: 0 0 10px;"><em>Affiliate disclosure: this post contains affiliate links (Klook, ID 143459). If you buy through them we may earn a commission at no extra cost to you. No hotel, restaurant, ferry operator or rail company paid to appear, and no venue paid for a mention.</em></p>
+  <p style="margin: 0 0 10px;"><em>Independent information, not a booking service or travel agency, and not affiliated with any transport operator, tourism board or government. Prices and rules change; the operator’s page wins over this post. Facts checked 17 November 2026. Sources: Camellia Line and Korea Ferry fare and calendar pages, JR East/West and Keisei fare pages, AREX, Korea Customs and VisitKorea refund guidance, Japan Customs refund-method notice, JR Kyushu’s December 2024 announcement.</em></p>
+  <p style="margin: 0; font-weight: 600; color: #334155;">🌟 Written from Seoul, from the platform and the ferry terminal rather than a brochure.</p>
+</div>
+
+</div>
