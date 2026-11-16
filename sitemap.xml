@@ -67,4 +67,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://zioion8-crypto.github.io/01/korea-japan/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zioion8-crypto.github.io/01/korea-japan/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://zioion8-crypto.github.io/01/korea-japan/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://zioion8-crypto.github.io/01/korea-japan/?lang=tw"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/korea-japan/"/>
+  </url>
 </urlset>

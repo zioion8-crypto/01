@@ -59,6 +59,19 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 - Do not describe the publisher as an official body, a government source, a booking agency
   or a travel agency. The pages sell no reservations and provide no agency service.
 
+## Korea + Japan dual trip (new 2026-11-17)
+
+- URL: https://zioion8-crypto.github.io/01/korea-japan/  (English; ?lang=es Spanish, ?lang=tw Traditional Chinese)
+- For travellers adding Japan to a Korea trip in 2026/27. One A4 sheet (free) plus a premium 34-page
+  pack: https://zioion.gumroad.com/l/korea-japan-dual-trip-pack (US$14.99, no refunds on the digital file).
+- Facts checked 2026-11-17 and each carries its date: Busan–Hakata overnight ferry (New Camellia) fares and
+  fees, LCC fares on Incheon–Narita, Gimpo–Haneda and Busan–Fukuoka, T-money and Climate Card short-term
+  passes, Welcome Suica / ICOCA, AREX versus Skyliner and Narita Express, and the two tax-refund systems that
+  diverged on 2026-11-01 (Korea at the till, Japan refund method at departure).
+- The Queen Beetle fast ferry is not coming back: JR Kyushu left the ferry business in December 2024. Any
+  page quoting its timetable is wrong.
+- One affiliate link exists (Klook eSIM, ID 143459), marked on the page. No venue paid to appear.
+
 ## Copyright and licence
 
 - © 2026 Korea Travel Insider. All rights reserved. This hub and its files are proprietary;
