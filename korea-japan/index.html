@@ -38,7 +38,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
   font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
 .wrap{max-width:820px;margin:0 auto;padding:0 14px 48px}
-header.hero{background:linear-gradient(150deg,#12203a,#243b6b 62%,#2f4a80);color:#fff;padding:22px 14px 20px;margin:0 -14px 18px;border-top:6px solid var(--kr)}
+header.hero{background:linear-gradient(150deg,#12203a,#243b6b 62%,#2f4a80);color:#fff;padding:22px 14px 20px;margin:0 0 18px;border-top:6px solid var(--kr)}
 header .h{max-width:820px;margin:0 auto}
 .kicker{font-size:12px;letter-spacing:.14em;opacity:.82}
 h1{font-size:25px;line-height:1.34;margin:8px 0 8px;letter-spacing:.01em}
@@ -69,11 +69,20 @@ ul.tight li{margin:4px 0;font-size:14.5px}
 .card h3{margin-top:0}
 .small{font-size:12.5px;color:var(--ink2)}
 footer{border-top:1px solid var(--line);margin-top:30px;padding-top:14px;font-size:12.5px;color:var(--ink2)}
+footer .f-nav{margin:0 0 8px;line-height:1.9}
+footer .f-nav a{color:var(--brand);text-decoration:none;white-space:nowrap}
+footer .f-nav a:hover{text-decoration:underline}
+footer .f-note{margin:0;font-size:12px;color:var(--ink2);line-height:1.6}
 a{color:var(--jp)}
 [hidden]{display:none !important}
 .badge{display:inline-block;font-size:11.5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--ink2);background:#fff;margin:0 6px 6px 0}
 .kr-t{color:var(--kr);font-weight:700}
 .jp-t{color:var(--jp);font-weight:700}
+
+@media (max-width:560px){
+  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;min-width:560px}
+  .wrap{overflow-x:hidden}
+}
 </style>
 </head>
 <body>
@@ -286,7 +295,8 @@ a{color:var(--jp)}
 </section>
 
 <footer>
-  <p id="f-foot">Korea Travel Insider · Korea + Japan Dual-Trip · <a href="https://zioion.gumroad.com/l/korea-japan-dual-trip-pack">pack</a> · <a href="/01/">Korea hub</a> · <a href="/01/es/">Español hub</a> · <a href="/01/tw/">繁中 hub</a></p>
+  <p class="f-nav"><a href="https://zioion.gumroad.com/l/korea-japan-dual-trip-pack">10–14 day pack</a> · <a href="/01/">简体中文 (/01/)</a> · <a href="/01/en/">English (/01/en/)</a> · <a href="/01/es/">Español (/01/es/)</a> · <a href="/01/tw/">繁體中文 (/01/tw/)</a></p>
+  <p class="f-note"><span id="f-note">Korea Travel Insider · Korea + Japan Dual-Trip · independent guide, facts checked 17 November 2026</span></p>
 </footer>
 </div>
 
@@ -322,15 +332,17 @@ a{color:var(--jp)}
     document.getElementById('k-kicker').textContent = META[lang].kicker;
     document.getElementById('k-title').textContent = META[lang].title;
     document.getElementById('k-sub').textContent = META[lang].sub;
-    document.getElementById('f-foot').textContent = META[lang].foot;
+    var _fn = document.getElementById('f-note'); if (_fn) _fn.textContent = META[lang].foot;
     try{ history.replaceState(null,'', location.pathname + (lang==='en'?'':'?lang='+lang)); }catch(e){}
   }
   document.querySelectorAll('.lang button').forEach(function(b){
     b.addEventListener('click', function(){ apply(b.getAttribute('data-lang')); });
   });
-  var q = new URLSearchParams(location.search).get('lang');
-  apply(q || (navigator.language||'en').toLowerCase().indexOf('zh')===0 ? 'tw'
-        : (navigator.language||'en').toLowerCase().indexOf('es')===0 ? 'es' : 'en');
+  var q = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
+  if (q !== 'en' && q !== 'es' && q !== 'tw') q = null;
+  var nav = (navigator.language || 'en').toLowerCase();
+  var init = q ? q : (nav.indexOf('zh') === 0 ? 'tw' : nav.indexOf('es') === 0 ? 'es' : 'en');
+  apply(init);
 })();
 </script>
 </body>
