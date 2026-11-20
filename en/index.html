@@ -122,6 +122,44 @@ footer a{color:var(--brand)}
   </div>
 </header>
 
+<!-- KTB-SHARE:START -->
+<style id="ktbShareCss">
+.kts{margin:12px 0 16px;border:1px solid #d7e0ea;background:#eef2f7;border-radius:12px;padding:10px 11px}
+.kts-t{font-size:12.5px;font-weight:800;color:#33475b;margin:0 0 2px;line-height:1.35}
+.kts-s{font-size:11.5px;color:#5b6b7c;line-height:1.45;margin:0 0 8px}
+.kts-row{display:flex;flex-wrap:wrap;gap:6px}
+.kts-b{flex:1 1 0;min-width:86px;display:flex;align-items:center;justify-content:center;gap:4px;
+  font-family:inherit;font-size:12.5px;font-weight:800;line-height:1.15;padding:9px 8px;border-radius:9px;
+  border:1px solid #cfdae5;background:#fff;color:#33475b;text-decoration:none;cursor:pointer;white-space:nowrap;overflow:hidden}
+.kts-b:active{transform:scale(.98)}
+.kts-b.wa{background:#e8f8ee;border-color:#a8e0bd;color:#14663a}
+.kts-b.li{background:#e9f9ee;border-color:#a9e6bf;color:#0f6b3d}
+.kts-b.sms{background:#e8f1ff;border-color:#b9d3f7;color:#1f4f8f}
+.kts-b.wx{background:#e6f8ef;border-color:#a5e3c4;color:#0b6b3a}
+.kts-b.qq{background:#e6f6fe;border-color:#aad9f2;color:#135e86}
+.kts-b.cp{background:#0b5d4f;border-color:#0b5d4f;color:#fff}
+.kts-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,10px);background:#12211e;color:#fff;
+  font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:100px;opacity:0;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease;z-index:999;max-width:88vw;text-align:center}
+.kts-toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:430px){.kts-b{font-size:12px;padding:8px 6px;min-width:0}}
+</style>
+<div class="kts" id="ktbShare">
+  <p class="kts-t">Send this to your travel buddy — one tap</p>
+  <p class="kts-s">Free Korea travel web app: country courses, transit, maps, restaurant wait times</p>
+  <div class="kts-row" data-kts-msg="Free Korea travel web app from Korea Travel Insider — country courses, transit, maps and real restaurant wait times: https://zioion8-crypto.github.io/01/en/">
+    <a class="kts-b sms" href="sms:?&amp;body=Free%20Korea%20travel%20web%20app%20from%20Korea%20Travel%20Insider%20%E2%80%94%20country%20courses%2C%20transit%2C%20maps%20and%20real%20restaurant%20wait%20times%3A%20https%3A%2F%2Fzioion8-crypto.github.io%2F01%2Fen%2F" rel="noopener">💬 Text / SMS</a>
+    <a class="kts-b wa" href="https://wa.me/?text=Free%20Korea%20travel%20web%20app%20from%20Korea%20Travel%20Insider%20%E2%80%94%20country%20courses%2C%20transit%2C%20maps%20and%20real%20restaurant%20wait%20times%3A%20https%3A%2F%2Fzioion8-crypto.github.io%2F01%2Fen%2F" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <button class="kts-b cp" type="button" onclick="ktsCopy(this)">🔗 Copy link</button>
+  </div>
+  <div class="kts-toast" id="ktsToast" role="status" aria-live="polite">Link copied — paste it to your buddy</div>
+</div>
+<script>/*KTB-SHARE*/(function(){window.ktsCopy=function(btn){var row=btn&&btn.parentNode;var msg=(row&&row.getAttribute&&row.getAttribute('data-kts-msg'))||'';var t=document.getElementById('ktsToast');
+function done(){if(!t)return;t.classList.add('on');clearTimeout(t.__h);t.__h=setTimeout(function(){t.classList.remove('on');},2400);}
+function legacy(text){var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;left:-9999px;top:0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done,function(){legacy(msg);done();});}else{legacy(msg);done();}};})();</script>
+<!-- KTB-SHARE:END -->
+
 <div class="leadcta">
   <div class="lb">Start here · $0 · no sign-up</div>
   <a class="big" href="https://zioion.gumroad.com/l/korea-en-1pager" target="_blank" rel="noopener">Download the free one-page cheat sheet (A4 PDF · $0) →<span>Airport train, transit card and tax refund — the same numbers as this page, on one A4 sheet.</span></a>

@@ -115,6 +115,43 @@ footer a{color:var(--brand)}
   </div>
 </header>
 
+<!-- KTB-SHARE:START -->
+<style id="ktbShareCss">
+.kts{margin:12px 0 16px;border:1px solid #d7e0ea;background:#eef2f7;border-radius:12px;padding:10px 11px}
+.kts-t{font-size:12.5px;font-weight:800;color:#33475b;margin:0 0 2px;line-height:1.35}
+.kts-s{font-size:11.5px;color:#5b6b7c;line-height:1.45;margin:0 0 8px}
+.kts-row{display:flex;flex-wrap:wrap;gap:6px}
+.kts-b{flex:1 1 0;min-width:86px;display:flex;align-items:center;justify-content:center;gap:4px;
+  font-family:inherit;font-size:12.5px;font-weight:800;line-height:1.15;padding:9px 8px;border-radius:9px;
+  border:1px solid #cfdae5;background:#fff;color:#33475b;text-decoration:none;cursor:pointer;white-space:nowrap;overflow:hidden}
+.kts-b:active{transform:scale(.98)}
+.kts-b.wa{background:#e8f8ee;border-color:#a8e0bd;color:#14663a}
+.kts-b.li{background:#e9f9ee;border-color:#a9e6bf;color:#0f6b3d}
+.kts-b.sms{background:#e8f1ff;border-color:#b9d3f7;color:#1f4f8f}
+.kts-b.wx{background:#e6f8ef;border-color:#a5e3c4;color:#0b6b3a}
+.kts-b.qq{background:#e6f6fe;border-color:#aad9f2;color:#135e86}
+.kts-b.cp{background:#0b5d4f;border-color:#0b5d4f;color:#fff}
+.kts-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,10px);background:#12211e;color:#fff;
+  font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:100px;opacity:0;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease;z-index:999;max-width:88vw;text-align:center}
+.kts-toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:430px){.kts-b{font-size:12px;padding:8px 6px;min-width:0}}
+</style>
+<div class="kts" id="ktbShare">
+  <p class="kts-t">旅の同行者にシェア — ワンタップで</p>
+  <p class="kts-s">韓国旅行の無料ウェブアプリ：国別コース・交通・地図・飲食店の待ち時間</p>
+  <div class="kts-row" data-kts-msg="韓国旅行で使っている無料ウェブアプリ（Korea Travel Insider）。国別コース・交通・地図・飲食店の実際の待ち時間: https://zioion8-crypto.github.io/01/ja/">
+    <a class="kts-b li" href="https://line.me/R/msg/text/?%E9%9F%93%E5%9B%BD%E6%97%85%E8%A1%8C%E3%81%A7%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E7%84%A1%E6%96%99%E3%82%A6%E3%82%A7%E3%83%96%E3%82%A2%E3%83%97%E3%83%AA%EF%BC%88Korea%20Travel%20Insider%EF%BC%89%E3%80%82%E5%9B%BD%E5%88%A5%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%BB%E4%BA%A4%E9%80%9A%E3%83%BB%E5%9C%B0%E5%9B%B3%E3%83%BB%E9%A3%B2%E9%A3%9F%E5%BA%97%E3%81%AE%E5%AE%9F%E9%9A%9B%E3%81%AE%E5%BE%85%E3%81%A1%E6%99%82%E9%96%93%3A%20https%3A%2F%2Fzioion8-crypto.github.io%2F01%2Fja%2F" target="_blank" rel="noopener">LINE</a>
+    <button class="kts-b cp" type="button" onclick="ktsCopy(this)">🔗 コピー</button>
+  </div>
+  <div class="kts-toast" id="ktsToast" role="status" aria-live="polite">リンクをコピーしました。そのまま送れます</div>
+</div>
+<script>/*KTB-SHARE*/(function(){window.ktsCopy=function(btn){var row=btn&&btn.parentNode;var msg=(row&&row.getAttribute&&row.getAttribute('data-kts-msg'))||'';var t=document.getElementById('ktsToast');
+function done(){if(!t)return;t.classList.add('on');clearTimeout(t.__h);t.__h=setTimeout(function(){t.classList.remove('on');},2400);}
+function legacy(text){var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;left:-9999px;top:0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done,function(){legacy(msg);done();});}else{legacy(msg);done();}};})();</script>
+<!-- KTB-SHARE:END -->
+
 <div class="leadcta">
   <div class="lb">まずここから · ¥0 · 登録不要</div>
   <a class="big" href="https://zioion.gumroad.com/l/seoul-3day-checklist-jp" target="_blank" rel="noopener">無料チェックリストをダウンロード（A4 PDF・¥0）→<span>予約できる店かどうか・交通カードの選び方・レジで言う還付の3文。このページと同じ数字を1枚に。</span></a>

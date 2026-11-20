@@ -115,6 +115,43 @@ footer a{color:var(--brand)}
   </div>
 </header>
 
+<!-- KTB-SHARE:START -->
+<style id="ktbShareCss">
+.kts{margin:12px 0 16px;border:1px solid #d7e0ea;background:#eef2f7;border-radius:12px;padding:10px 11px}
+.kts-t{font-size:12.5px;font-weight:800;color:#33475b;margin:0 0 2px;line-height:1.35}
+.kts-s{font-size:11.5px;color:#5b6b7c;line-height:1.45;margin:0 0 8px}
+.kts-row{display:flex;flex-wrap:wrap;gap:6px}
+.kts-b{flex:1 1 0;min-width:86px;display:flex;align-items:center;justify-content:center;gap:4px;
+  font-family:inherit;font-size:12.5px;font-weight:800;line-height:1.15;padding:9px 8px;border-radius:9px;
+  border:1px solid #cfdae5;background:#fff;color:#33475b;text-decoration:none;cursor:pointer;white-space:nowrap;overflow:hidden}
+.kts-b:active{transform:scale(.98)}
+.kts-b.wa{background:#e8f8ee;border-color:#a8e0bd;color:#14663a}
+.kts-b.li{background:#e9f9ee;border-color:#a9e6bf;color:#0f6b3d}
+.kts-b.sms{background:#e8f1ff;border-color:#b9d3f7;color:#1f4f8f}
+.kts-b.wx{background:#e6f8ef;border-color:#a5e3c4;color:#0b6b3a}
+.kts-b.qq{background:#e6f6fe;border-color:#aad9f2;color:#135e86}
+.kts-b.cp{background:#0b5d4f;border-color:#0b5d4f;color:#fff}
+.kts-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,10px);background:#12211e;color:#fff;
+  font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:100px;opacity:0;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease;z-index:999;max-width:88vw;text-align:center}
+.kts-toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:430px){.kts-b{font-size:12px;padding:8px 6px;min-width:0}}
+</style>
+<div class="kts" id="ktbShare">
+  <p class="kts-t">傳給同行的旅伴 — 一鍵分享</p>
+  <p class="kts-s">免費韓國旅行網頁App：各路線、交通、地圖、餐廳候位時間</p>
+  <div class="kts-row" data-kts-msg="我在用的免費韓國旅行網頁App（Korea Travel Insider）：各路線、交通、地圖、餐廳實際候位時間都在裡面: https://zioion8-crypto.github.io/01/tw/">
+    <a class="kts-b li" href="https://line.me/R/msg/text/?%E6%88%91%E5%9C%A8%E7%94%A8%E7%9A%84%E5%85%8D%E8%B2%BB%E9%9F%93%E5%9C%8B%E6%97%85%E8%A1%8C%E7%B6%B2%E9%A0%81App%EF%BC%88Korea%20Travel%20Insider%EF%BC%89%EF%BC%9A%E5%90%84%E8%B7%AF%E7%B7%9A%E3%80%81%E4%BA%A4%E9%80%9A%E3%80%81%E5%9C%B0%E5%9C%96%E3%80%81%E9%A4%90%E5%BB%B3%E5%AF%A6%E9%9A%9B%E5%80%99%E4%BD%8D%E6%99%82%E9%96%93%E9%83%BD%E5%9C%A8%E8%A3%A1%E9%9D%A2%3A%20https%3A%2F%2Fzioion8-crypto.github.io%2F01%2Ftw%2F" target="_blank" rel="noopener">LINE</a>
+    <button class="kts-b cp" type="button" onclick="ktsCopy(this)">🔗 複製</button>
+  </div>
+  <div class="kts-toast" id="ktsToast" role="status" aria-live="polite">已複製連結，直接貼給旅伴即可</div>
+</div>
+<script>/*KTB-SHARE*/(function(){window.ktsCopy=function(btn){var row=btn&&btn.parentNode;var msg=(row&&row.getAttribute&&row.getAttribute('data-kts-msg'))||'';var t=document.getElementById('ktsToast');
+function done(){if(!t)return;t.classList.add('on');clearTimeout(t.__h);t.__h=setTimeout(function(){t.classList.remove('on');},2400);}
+function legacy(text){var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;left:-9999px;top:0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done,function(){legacy(msg);done();});}else{legacy(msg);done();}};})();</script>
+<!-- KTB-SHARE:END -->
+
 <div class="leadcta">
   <div class="lb">從這裡開始 · $0 · 免註冊</div>
   <a class="big" href="https://zioion.gumroad.com/l/korea-tw-1pager" target="_blank" rel="noopener">下載免費一頁通（A4 PDF・$0）→<span>機場鐵路、交通卡、退稅的數字全在一頁，和本頁同一組數字。</span></a>
