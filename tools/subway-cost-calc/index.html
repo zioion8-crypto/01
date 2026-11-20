@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5d4f">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Seoul Airport to City &amp; Transit Cost Calculator (2026 fares) — Free</title>
+<meta name="description" content="Compare AREX Express, AREX all-stop, the airport limousine and the Climate Card 1/2/3/5/7-day pass against a T-money card for your own days and rides. 2026 fares, computed on your phone, no login.">
+<link rel="canonical" href="https://zioion8-crypto.github.io/01/tools/subway-cost-calc/">
+<link rel="alternate" hreflang="en" href="https://zioion8-crypto.github.io/01/tools/subway-cost-calc/">
+<link rel="alternate" hreflang="es" href="https://zioion8-crypto.github.io/01/tools/subway-cost-calc/?lang=es">
+<link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/tools/subway-cost-calc/">
+<meta property="og:title" content="Seoul airport &amp; transit cost calculator — 2026 fares">
+<meta property="og:description" content="AREX Express ₩13,000 vs all-stop ₩4,750 vs limousine ₩17,000–18,000 vs Climate Card passes — what your trip actually costs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zioion8-crypto.github.io/01/tools/subway-cost-calc/">
+<meta property="og:locale" content="en">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Seoul Airport to City & Daily Transit Cost Calculator",
+      "url": "https://zioion8-crypto.github.io/01/tools/subway-cost-calc/",
+      "description": "Client-side calculator comparing the airport leg (AREX Express ₩13,000, AREX all-stop ₩4,750 from Incheon T1 and ₩5,350 from T2, airport limousine ₩17,000–18,000) and daily Seoul transit (T-money at ₩1,550 a ride against the Climate Card 1/2/3/5/7-day pass) for a chosen number of days and rides. 2026 fares, no login, no server.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Any (web browser)",
+      "inLanguage": ["en", "es"],
+      "isAccessibleForFree": true,
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
+      "featureList": [
+        "Airport leg compared across AREX Express, all-stop and limousine",
+        "Climate Card short-term pass against per-ride fares",
+        "Break-even rides shown for each pass length",
+        "English and Spanish, no login, no cookies"
+      ],
+      "publisher": {"@type": "Organization", "name": "Korea Travel Insider"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Climate Card cheaper than a T-money card in Seoul?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Only above the break-even point. A single ride costs ₩1,550 with a T-money card, so the 1-day pass at ₩5,000 pays off at about four rides, the 3-day pass at ₩10,000 at about seven rides in three days, and the 5-day pass at ₩15,000 at about ten rides in five days. The ₩3,000 card is bought once and is shared by both systems' price comparison only if it is the same reusable card."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I start the Climate Card short-term pass at Incheon Airport?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. The pass cannot be used to board at Incheon T1 or T2 — those stations are exit only for it. Buy the airport leg separately (AREX all-stop ₩4,750 from T1, ₩5,350 from T2, AREX Express ₩13,000, or the limousine at ₩17,000–18,000), then load the pass once you are inside Seoul."}
+        },
+        {
+          "@type": "Question",
+          "name": "What does the calculator count as one ride?",
+          "acceptedAnswer": {"@type": "Answer", "text": "One paid trip. Transfers between subway and city bus are free within 30 minutes when you tap the same card, so a journey with two transfers is still one fare. Tapping out is mandatory; missing it adds a maximum-distance surcharge of up to ₩1,400."}
+        },
+        {
+          "@type": "Question",
+          "name": "Are these fares current?",
+          "acceptedAnswer": {"@type": "Answer", "text": "They were read from the operators' own pages and the last check is dated 2026-11-20: AREX Express ₩13,000, all-stop ₩4,750 (₩5,350 from Terminal 2), airport limousine 6001/6015 ₩17,000 and 6701 ₩18,000, subway base fare ₩1,550 with a card (₩1,650 with a single ticket), Climate Card 1/2/3/5/7 days at ₩5,000/8,000/10,000/15,000/20,000 plus a ₩3,000 card."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{--ink:#12211e;--ink2:#4a5a56;--line:#dde6e2;--bg:#f4f7f5;--card:#fff;--brand:#0b5d4f;--brand2:#12766a;
+--ok:#15663f;--okbg:#eaf5ef;--amber:#8a5a12;--amberbg:#fdf6e6;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.55;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:620px;margin:0 auto;padding:0 14px}
+header{background:linear-gradient(160deg,#0b5d4f,#12766a 62%,#168a7a);color:#fff;padding:18px 0 14px}
+.kicker{font-size:11px;letter-spacing:.13em;text-transform:uppercase;opacity:.86}
+h1{font-size:22px;line-height:1.3;margin:5px 0 6px}
+header p{margin:0;font-size:13px;color:#d6ece6}
+.langs{display:flex;gap:6px;margin-top:12px}
+.langs button{font:600 12.5px/1 inherit;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.45);
+background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.langs button[aria-pressed="true"]{background:#fff;color:#0b5d4f;border-color:#fff}
+main{padding:14px 0 30px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px;margin:0 0 14px}
+h2{font-size:15px;margin:0 0 10px;display:flex;align-items:center;gap:7px}
+h2 .n{display:inline-flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:50%;
+background:var(--brand);color:#fff;font-size:11.5px;flex:0 0 auto}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{flex:1 1 0;min-width:88px;font:700 13px/1.3 inherit;padding:10px 6px;border-radius:10px;border:1px solid #cfdad5;background:#fff;color:var(--ink2);cursor:pointer}
+.seg button[aria-pressed="true"]{border-color:var(--brand);background:#e9f4f0;color:#0a4438;box-shadow:inset 0 0 0 1px var(--brand)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #eef3f0}
+.row:last-child{border-bottom:0}
+.row .lb{font-size:13.5px;font-weight:600}
+.row .lb small{display:block;font-weight:400;color:#7c8a86;font-size:11.5px}
+.step{display:flex;align-items:center;gap:8px}
+.step button{width:38px;height:38px;border-radius:10px;border:1px solid #cfdad5;background:#fff;color:var(--brand);
+font:800 18px/1 inherit;cursor:pointer}
+.step button:disabled{opacity:.35}
+.step .val{min-width:34px;text-align:center;font:800 16px/1 var(--mono);color:var(--brand)}
+.sw{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #eef3f0;font-size:13.5px;font-weight:600}
+.sw:last-child{border-bottom:0}
+.sw input{width:20px;height:20px;accent-color:#0b5d4f}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:0}
+th,td{padding:8px 5px;border-bottom:1px solid #eef3f0;text-align:left;vertical-align:top}
+th{font-size:11px;color:var(--ink2);text-transform:uppercase;letter-spacing:.05em;background:#f0f5f3}
+td.num{text-align:right;font-family:var(--mono);font-weight:700;white-space:nowrap}
+tr.best td{background:var(--okbg)}
+tr.best td.num{color:var(--ok)}
+tr:last-child td{border-bottom:0}
+.opt b{display:block;font-size:13px}
+.opt small{color:#7c8a86;font-size:11.5px;display:block;margin-top:2px}
+.big{background:linear-gradient(160deg,#0b5d4f,#12766a);color:#fff;border-radius:14px;padding:14px;margin:0 0 14px}
+.big .k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.big .v{font-size:30px;font-weight:800;line-height:1.15;margin:4px 0 2px;font-family:var(--mono)}
+.big .s{font-size:13px;color:#cfeee5}
+.note{font-size:12.5px;color:var(--ink2);background:#fff;border:1px solid var(--line);border-left:3px solid var(--brand);
+border-radius:8px;padding:10px 11px;margin:12px 0 0}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;font-size:13.5px}
+details summary{cursor:pointer;font-weight:700;color:var(--brand)}
+details p{margin:8px 0 0;color:var(--ink2);font-size:13px}
+footer{border-top:1px solid var(--line);margin-top:10px;padding:16px 0 26px;font-size:12px;color:#6f7d79}
+footer a{color:var(--brand);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0}
+.hint{font-size:11.5px;color:#7c8a86;margin:8px 0 0}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker" data-i18n="kicker">Korea Travel Insider · free tool</div>
+    <h1 data-i18n="h1">Airport to city &amp; daily transit cost</h1>
+    <p data-i18n="sub">Four ways in from Incheon, plus the Climate Card against a T-money card — with the fares in the calculation, not in a guess.</p>
+    <div class="langs" id="langs" role="group" aria-label="Interface language"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="big">
+    <div class="k" data-i18n="cheapest">Cheapest for your trip</div>
+    <div class="v" id="bigVal">—</div>
+    <div class="s" id="bigSub"></div>
+  </div>
+
+  <section class="panel">
+    <h2><span class="n">1</span><span data-i18n="s1">Your trip</span></h2>
+    <div class="seg" id="port" role="group">
+      <button type="button" data-p="T1" aria-pressed="true">Incheon T1</button>
+      <button type="button" data-p="T2" aria-pressed="false">Incheon T2</button>
+    </div>
+    <div class="row">
+      <div class="lb"><span data-i18n="lDays">Days in Seoul</span><small data-i18n="lDaysS">a park day with no rides still counts as a day</small></div>
+      <div class="step">
+        <button type="button" data-d="-1" data-t="days" aria-label="minus">−</button>
+        <span class="val" id="daysV">4</span>
+        <button type="button" data-d="1" data-t="days" aria-label="plus">+</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="lb"><span data-i18n="lRides">Paid rides per day</span><small data-i18n="lRidesS">one ride = one paid trip; transfers within 30 min are free</small></div>
+      <div class="step">
+        <button type="button" data-d="-1" data-t="rides" aria-label="minus">−</button>
+        <span class="val" id="ridesV">3</span>
+        <button type="button" data-d="1" data-t="rides" aria-label="plus">+</button>
+      </div>
+    </div>
+    <label class="sw"><span data-i18n="lReturn">Return to the airport at the end</span><input type="checkbox" id="ret" checked></label>
+    <label class="sw"><span data-i18n="lOwn">I already own a transit card</span><input type="checkbox" id="own"></label>
+  </section>
+
+  <section class="panel">
+    <h2><span class="n">2</span><span data-i18n="s2">What each plan costs</span></h2>
+    <table>
+      <thead><tr><th data-i18n="thOpt">Option</th><th class="num" data-i18n="thCost">Total</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="hint" data-i18n="hint">Totals include the ₩3,000 transit card unless you already own one, and the airport leg in both directions if you asked for the return.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span class="n">3</span><span data-i18n="s3">Break-even lines</span></h2>
+    <table>
+      <thead><tr><th data-i18n="thPass">Pass</th><th data-i18n="thPrice">Price</th><th data-i18n="thBe">Pays off at</th></tr></thead>
+      <tbody id="be"></tbody>
+    </table>
+    <p class="note" data-i18n="beNote">A single ride is ₩1,550 with a card (₩1,650 with a paper ticket). The pass starts on the day it is loaded, cannot be pre-loaded, and cannot be used to board at Incheon T1 or T2 — those are exit only for it. It does not cover GTX A/B/C, the Shinbundang Line or red intercity buses leaving Seoul.</p>
+  </section>
+
+  <section class="panel">
+    <h2><span class="n">4</span><span data-i18n="s4">The airport leg, in full</span></h2>
+    <table>
+      <thead><tr><th data-i18n="thWay">Way in</th><th data-i18n="thTime">Time</th><th class="num" data-i18n="thFare">Fare</th></tr></thead>
+      <tbody>
+        <tr><td class="opt"><b>AREX Express</b><small data-i18n="oExp">non-stop, assigned seat, separate ticket</small></td><td data-i18n="tExp">43 min</td><td class="num">₩13,000</td></tr>
+        <tr><td class="opt"><b>AREX all-stop</b><small data-i18n="oAll">subway rules, T-money accepted</small></td><td data-i18n="tAll">59 min</td><td class="num" id="allFare">₩4,750</td></tr>
+        <tr><td class="opt"><b data-i18n="oLim">Airport limousine</b><small data-i18n="oLimS">6001/6015 · 6701 costs ₩18,000 · night buses ₩17,000–18,000</small></td><td data-i18n="tLim">bus, door to door</td><td class="num">₩17,000</td></tr>
+      </tbody>
+    </table>
+    <p class="hint" data-i18n="allNote">From Terminal 2 the all-stop train is ₩5,350. A single-ticket AREX ride costs ₩100 more, with a ₩500 deposit refunded at the exit gate.</p>
+  </section>
+
+  <details>
+    <summary data-i18n="f1q">Why is the Climate Card not always the answer?</summary>
+    <p data-i18n="f1a">The pass buys unlimited rides, so it only wins when the rides you would otherwise pay for cost more than the pass. Three rides a day for four days is 12 rides — ₩18,600 on T-money, less than nothing? No: ₩18,600 is more than the 5-day pass at ₩15,000, so the pass wins. Two rides a day for four days is ₩12,400, and the pass loses. The table above does this sum for your numbers.</p>
+  </details>
+  <details>
+    <summary data-i18n="f2q">Do the numbers include the airport leg in the pass?</summary>
+    <p data-i18n="f2a">No. The pass cannot be used to board at Incheon T1 or T2, so the airport leg is always paid separately, whatever the daily plan. The totals add it: all-stop train by default, or the express or limousine if that plan says so.</p>
+  </details>
+  <details>
+    <summary data-i18n="f3q">What is not in the total?</summary>
+    <p data-i18n="f3a">Taxis, the KTX, GTX, the Shinbundang Line, red intercity buses and anything outside Seoul's city limits. A data-only eSIM and food are separate too. Airport buses and taxis take a T-money card; GTX and the Shinbundang Line take a card but not the Seoul pass.</p>
+  </details>
+
+  <footer>
+    <div class="links">
+      <a href="/01/tools/" data-i18n="allTools">All three free tools</a>
+      <a href="/01/tools/arrival-checklist/" data-i18n="t2">Arrival checklist</a>
+      <a href="/01/tools/order-card/" data-i18n="t1">Order &amp; allergy card</a>
+      <a href="/01/es/" hreflang="es">Guía en español</a>
+      <a href="/01/free/" data-i18n="freeSheet">Free 30-spot map (A4)</a>
+    </div>
+    <p data-i18n="legal">Korea Travel Insider · independent page, not affiliated with any operator or government body. Fares read from the operators' pages, last check 2026-11-20; they change by announcement and the operator's page is the final word. No ads, no cookies, no analytics, no third-party scripts.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+"use strict";
+var T={
+en:{
+kicker:"Korea Travel Insider · free tool",h1:"Airport to city & daily transit cost",
+sub:"Four ways in from Incheon, plus the Climate Card against a T-money card — with the fares in the calculation, not in a guess.",
+cheapest:"Cheapest for your trip",s1:"Your trip",
+lDays:"Days in Seoul",lDaysS:"a park day with no rides still counts as a day",
+lRides:"Paid rides per day",lRidesS:"one ride = one paid trip; transfers within 30 min are free",
+lReturn:"Return to the airport at the end",lOwn:"I already own a transit card",
+s2:"What each plan costs",thOpt:"Option",thCost:"Total",
+hint:"Totals include the ₩3,000 transit card unless you already own one, and the airport leg in both directions if you asked for the return.",
+s3:"Break-even lines",thPass:"Pass",thPrice:"Price",thBe:"Pays off at",
+beNote:"A single ride is ₩1,550 with a card (₩1,650 with a paper ticket). The pass starts on the day it is loaded, cannot be pre-loaded, and cannot be used to board at Incheon T1 or T2 — those are exit only for it. It does not cover GTX A/B/C, the Shinbundang Line or red intercity buses leaving Seoul.",
+s4:"The airport leg, in full",thWay:"Way in",thTime:"Time",thFare:"Fare",
+oExp:"non-stop, assigned seat, separate ticket",tExp:"43 min",
+oAll:"subway rules, T-money accepted",tAll:"59 min",
+oLim:"Airport limousine",oLimS:"6001/6015 · 6701 costs ₩18,000 · night buses ₩17,000–18,000",tLim:"bus, door to door",
+allNote:"From Terminal 2 the all-stop train is ₩5,350. A single-ticket AREX ride costs ₩100 more, with a ₩500 deposit refunded at the exit gate.",
+optAll:"AREX all-stop + T-money",optAllS:"cheapest way in, 59 min",
+optExp:"AREX Express + T-money",optExpS:"fastest, 43 min, assigned seat",
+optLim:"Airport limousine + T-money",optLimS:"no changes, no stairs",
+optPass:"Climate Card + airport leg",optPassS:"unlimited rides inside Seoul",
+optPassS0:"unlimited rides, but you have no rides",
+ridesN:"rides",daysN:"days",perDay:"a day",
+bigSub:"for {d} days and {r} rides a day — {x} against the next option",
+bigSub0:"no paid rides entered: the airport leg alone",
+f1q:"Why is the Climate Card not always the answer?",f1a:"The pass buys unlimited rides, so it only wins when the rides you would otherwise pay for cost more than the pass. Two rides a day for four days is ₩12,400 on T-money, less than the 5-day pass at ₩15,000 — the pass loses. Four rides a day for four days is ₩24,800, and the pass wins by ₩9,800. The table above does this sum for your numbers.",
+f2q:"Do the numbers include the airport leg in the pass?",f2a:"No. The pass cannot be used to board at Incheon T1 or T2, so the airport leg is always paid separately, whatever the daily plan. The totals add it: the all-stop train by default, or the express or limousine where that plan says so.",
+f3q:"What is not in the total?",f3a:"Taxis, the KTX, GTX, the Shinbundang Line, red intercity buses and anything outside Seoul's city limits. Food and a data eSIM are separate too. Taxis and airport buses take a T-money card; GTX and the Shinbundang Line take a card but not the Seoul pass.",
+allTools:"All three free tools",t1:"Order & allergy card",t2:"Arrival checklist",freeSheet:"Free 30-spot map (A4)",
+legal:"Korea Travel Insider · independent page, not affiliated with any operator or government body. Fares read from the operators' pages, last check 2026-11-20; they change by announcement and the operator's page is the final word. No ads, no cookies, no analytics, no third-party scripts."
+},
+es:{
+kicker:"Korea Travel Insider · herramienta gratis",h1:"Aeropuerto a la ciudad y coste diario de transporte",
+sub:"Cuatro formas de entrar desde Incheon y la Climate Card frente a la tarjeta T-money, con las tarifas dentro del cálculo.",
+cheapest:"Lo más barato para tu viaje",s1:"Tu viaje",
+lDays:"Días en Seúl",lDaysS:"un día de parque sin trayectos también cuenta",
+lRides:"Trayectos de pago al día",lRidesS:"un trayecto = un viaje pagado; los transbordos dentro de 30 min son gratis",
+lReturn:"Vuelvo al aeropuerto al final",lOwn:"Ya tengo tarjeta de transporte",
+s2:"Lo que cuesta cada plan",thOpt:"Opción",thCost:"Total",
+hint:"Los totales incluyen la tarjeta de ₩3.000 salvo que ya la tengas, y el trayecto al aeropuerto en los dos sentidos si pediste la vuelta.",
+s3:"Puntos de equilibrio",thPass:"Pase",thPrice:"Precio",thBe:"Sale a cuenta con",
+beNote:"Un trayecto cuesta ₩1.550 con tarjeta (₩1.650 con billete). El pase empieza el día que lo cargas, no se puede cargar por adelantado y no sirve para entrar en Incheon T1 ni T2: allí solo se sale. No cubre GTX A/B/C, la línea Shinbundang ni los autobuses rojos interurbanos que salen de Seúl.",
+s4:"El trayecto al aeropuerto, completo",thWay:"Forma de entrar",thTime:"Tiempo",thFare:"Tarifa",
+oExp:"sin paradas, asiento asignado, billete aparte",tExp:"43 min",
+oAll:"normas de metro, acepta T-money",tAll:"59 min",
+oLim:"Bus limusina del aeropuerto",oLimS:"6001/6015 · el 6701 cuesta ₩18.000 · buses nocturnos ₩17.000–18.000",tLim:"bus, puerta a puerta",
+allNote:"Desde la Terminal 2 el tren con paradas cuesta ₩5.350. El billete sencillo de AREX cuesta ₩100 más, con ₩500 de depósito que se devuelven en el torno de salida.",
+optAll:"AREX con paradas + T-money",optAllS:"la forma más barata, 59 min",
+optExp:"AREX exprés + T-money",optExpS:"la más rápida, 43 min, asiento asignado",
+optLim:"Bus limusina + T-money",optLimS:"sin transbordos ni escaleras",
+optPass:"Climate Card + trayecto al aeropuerto",optPassS:"trayectos sin límite dentro de Seúl",
+optPassS0:"trayectos sin límite, pero no has puesto ninguno",
+ridesN:"trayectos",daysN:"días",perDay:"al día",
+bigSub:"para {d} días y {r} trayectos al día: {x} menos que la siguiente opción",
+bigSub0:"sin trayectos de pago: solo el trayecto al aeropuerto",
+f1q:"¿Por qué la Climate Card no siempre es la respuesta?",f1a:"El pase compra trayectos sin límite, así que solo gana cuando los trayectos que pagarías cuestan más que el pase. Dos trayectos al día durante cuatro días son ₩12.400 con T-money, menos que el pase de 5 días de ₩15.000: pierde el pase. Cuatro trayectos al día durante cuatro días son ₩24.800 y el pase gana por ₩9.800. La tabla de arriba hace esta suma con tus números.",
+f2q:"¿Los totales incluyen el trayecto al aeropuerto en el pase?",f2a:"No. El pase no sirve para entrar en Incheon T1 ni T2, así que el trayecto al aeropuerto se paga siempre aparte, sea cual sea el plan diario. Los totales lo suman: el tren con paradas por defecto, o el exprés o la limusina cuando ese plan lo indica.",
+f3q:"¿Qué no está en el total?",f3a:"Taxis, KTX, GTX, la línea Shinbundang, los autobuses rojos interurbanos y todo lo que salga de los límites de Seúl. La comida y la eSIM también van aparte. Los taxis y los buses del aeropuerto aceptan T-money; GTX y la línea Shinbundang aceptan tarjeta pero no el pase de Seúl.",
+allTools:"Las tres herramientas gratis",t1:"Pedir y alergias",t2:"Lista de llegada",freeSheet:"Mapa gratis de 30 sitios (A4)",
+legal:"Korea Travel Insider · página independiente, sin relación con ningún operador ni organismo público. Tarifas leídas en las páginas de los operadores, última revisión 2026-11-20; cambian por anuncio y la página del operador es la última palabra. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros."
+}};
+
+var lang="en";
+try{var q=(location.search.match(/[?&]lang=(en|es)\b/)||[])[1];
+if(q)lang=q;else if((navigator.language||"").toLowerCase().indexOf("es")===0)lang="es";}catch(e){}
+function t(k){return (T[lang]&&T[lang][k])||T.en[k]||"";}
+
+var F={base:1550,ticket:1650,card:3000,all1:4750,all2:5350,express:13000,limo:17000,
+passes:[[1,5000],[2,8000],[3,10000],[5,15000],[7,20000]]};
+var state={port:"T1",days:4,rides:3,ret:true,own:false};
+
+function n(x){return "₩"+x.toLocaleString("en-US");}
+
+function safePass(days){for(var i=0;i<F.passes.length;i++){if(F.passes[i][0]>=days)return F.passes[i];}return F.passes[F.passes.length-1];}
+
+function airportLeg(price){return price*(state.ret?2:1);}
+
+function plans(){
+  var card=state.own?0:F.card;
+  var all=state.port==="T2"?F.all2:F.all1;
+  var ridesTotal=state.days*state.rides*F.base;
+  var legs=state.ret?2:1;
+  var out=[];
+  out.push({k:"optAll",cost:card+airportLeg(all)+ridesTotal,note:t("optAllS")});
+  out.push({k:"optExp",cost:card+airportLeg(F.express)+ridesTotal,note:t("optExpS")});
+  out.push({k:"optLim",cost:card+airportLeg(F.limo)+ridesTotal,note:t("optLimS")});
+  var p=safePass(state.days);
+  out.push({k:"optPass",cost:card+p[1]+airportLeg(all),note:(state.rides?t("optPassS"):t("optPassS0"))+" · "+p[0]+"d "+n(p[1])});
+  return out;
+}
+
+function render(){
+  document.getElementById("daysV").textContent=state.days;
+  document.getElementById("ridesV").textContent=state.rides;
+  document.getElementById("allFare").textContent=n(state.port==="T2"?F.all2:F.all1);
+  var btns=document.querySelectorAll("#port button");
+  for(var i=0;i<btns.length;i++)btns[i].setAttribute("aria-pressed",btns[i].getAttribute("data-p")===state.port?"true":"false");
+
+  var list=plans().slice().sort(function(a,b){return a.cost-b.cost;});
+  var min=list[0].cost;
+  var html="";
+  list.forEach(function(p){
+    html+='<tr class="'+(p.cost===min?"best":"")+'"><td class="opt"><b>'+t(p.k)+"</b><small>"+(p.cost===min?t("cheapest")+" · ":"")+p.note+"</small></td><td class=\"num\">"+n(p.cost)+"</td></tr>";
+  });
+  document.getElementById("rows").innerHTML=html;
+
+  document.getElementById("bigVal").textContent=n(min)+" · "+t(list[0].k);
+  var diff=list[1]?list[1].cost-min:0;
+  var sub=(state.rides>0)
+    ? t("bigSub").replace("{d}",state.days).replace("{r}",state.rides).replace("{x}",n(diff))
+    : t("bigSub0");
+  document.getElementById("bigSub").textContent=sub;
+
+  var be="";
+  F.passes.forEach(function(p){
+    var rides=Math.ceil(p[1]/F.base);
+    be+="<tr><td>"+p[0]+"-day</td><td class=\"num\">"+n(p[1])+"</td><td>"+rides+" rides ("+(rides/p[0]).toFixed(1)+" "+t("perDay")+")</td></tr>";
+  });
+  document.getElementById("be").innerHTML=be;
+}
+
+function i18nPaint(){
+  document.documentElement.lang=lang;
+  var els=document.querySelectorAll("[data-i18n]");
+  for(var i=0;i<els.length;i++){
+    var k=els[i].getAttribute("data-i18n");
+    if(T[lang]&&T[lang][k]!=null)els[i].textContent=T[lang][k];
+  }
+  var ls=document.getElementById("langs").children;
+  for(var j=0;j<ls.length;j++)ls[j].setAttribute("aria-pressed",ls[j].getAttribute("data-l")===lang?"true":"false");
+  render();
+}
+
+(function(){
+  var box=document.getElementById("langs");
+  [["en","EN"],["es","ES"]].forEach(function(p){
+    var b=document.createElement("button");b.type="button";b.textContent=p[1];b.setAttribute("data-l",p[0]);
+    b.addEventListener("click",function(){lang=p[0];i18nPaint();});
+    box.appendChild(b);
+  });
+})();
+
+document.getElementById("port").addEventListener("click",function(e){
+  var b=e.target.closest("button");if(!b)return;
+  state.port=b.getAttribute("data-p");render();
+});
+document.querySelectorAll(".step button").forEach(function(b){
+  b.addEventListener("click",function(){
+    var d=parseInt(b.getAttribute("data-d"),10),f=b.getAttribute("data-t");
+    if(f==="days"){state.days=Math.min(7,Math.max(1,state.days+d));}
+    else{state.rides=Math.min(8,Math.max(0,state.rides+d));}
+    render();
+  });
+});
+document.getElementById("ret").addEventListener("change",function(){state.ret=this.checked;render();});
+document.getElementById("own").addEventListener("change",function(){state.own=this.checked;render();});
+
+i18nPaint();
+})();
+</script>
+</body>
+</html>

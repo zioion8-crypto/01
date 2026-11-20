@@ -4,10 +4,10 @@
 > cards, tax refunds, card acceptance and the limits of a data-only eSIM. Five language
 > editions of the same facts (English, Spanish, Japanese, Traditional Chinese, Simplified
 > Chinese), each stating the verification date. Publisher is anonymous by design: a long-term Seoul
-> resident who is a Level 10 Google Local Guide (910 reviews, 18,932 photos). No real name,
+> resident who writes from first-hand experience. No real name,
 > employer or contact is published anywhere in this site.
 >
-> Last verified: 2026-11-15. Prices are in Korean won (KRW) unless marked.
+> Last verified: 2026-11-15 for the editorial pages; the free tools and the Spanish hub were added on 2026-11-20 and carry that date. Prices are in Korean won (KRW) unless marked.
 
 ## Editions
 
@@ -15,9 +15,12 @@
 - [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://zioion8-crypto.github.io/01/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
 - [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://zioion8-crypto.github.io/01/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
 - [简体中文 — 首尔扫码·地铁·退税 一页通](https://zioion8-crypto.github.io/01/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援。为在中国大陆可直连而制作，外部请求 0 个。
-- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://zioion8-crypto.github.io/01/es/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios, el día en números, las tres apps que hacen falta y las mismas cifras de transporte y devolución de IVA de las otras ediciones. Hoja A4 gratis en PDF: /01/es/korea-es-army-1pager.pdf.
+- [Español — Guía de Viaje a Corea 2026 (hub)](https://zioion8-crypto.github.io/01/es/): the Spanish entry point — K-ETA exemption status to 2026-12-31, the free e-Arrival Card and its 3-day window, 2026 airport and transit fares, which maps work, links to the three free tools and to the A4 one-pager. 
+- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://zioion8-crypto.github.io/01/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /01/es/korea-es-army-1pager.pdf. Moved from /01/es/ on 2026-11-20.
 
 ## Canonical facts (as of 2026-11-15)
+- K-ETA: travellers from 22 countries and regions (Japan, Taiwan, Hong Kong, Macao, Singapore, United States including Guam, Canada, United Kingdom, Germany, France, Italy, Netherlands, Spain, Poland, Sweden, Finland, Norway, Belgium, Denmark, Austria, Australia, New Zealand) do not need one while the temporary exemption runs, 1 January to 31 December 2026, Korea Standard Time. Travellers aged 17 or under and 65 or over are exempt by age. Fee ₩10,000 plus a 3% online payment fee (₩10,300), processing usually 72 hours, valid 3 years or until the passport expires. No 2027 decision had been published as of 2026-11-20; past extensions were announced on 11 December 2024 and 23 December 2025.
+- e-Arrival Card: free at e-arrivalcard.go.kr and, since 1 January 2026, the replacement for the paper card handed out on the plane. Filed no earlier than 3 days before arrival, nothing to print; holders of a valid K-ETA and registered residents are exempt. Lookalike portals charge for the same free form.
 
 - AREX airport railroad: express ₩13,000 (Incheon T1 ↔ Seoul Station, 43 min, non-stop, assigned seat); all-stop ₩4,750 (from T2 ₩5,350), 59 min, subway rules; single ticket costs ₩100 more with a ₩500 deposit refunded at the exit gate.
 - Airport limousine: 6001/6015 ₩17,000; 6701 ₩18,000; night N6000/N6002 ₩17,000; N6701/N6703 ₩18,000.
@@ -34,6 +37,15 @@
 - Kakao T frequently fails to register foreign cards; k.ride accepts them (PayPal, Alipay+; about 10% fee), and paying the driver directly is the last resort.
 - No tipping in Korea.
 
+## Free interactive tools (added 2026-11-20)
+
+Three client-side pages for travellers, no login, no cookies, no analytics, no server call, no ads. Each carries its own verification date (2026-11-20).
+
+- [Korean Restaurant Order & Allergy Card](https://zioion8-crypto.github.io/01/tools/order-card/): tap the dish, the spice level, no pork, no seafood or an allergy, and the page prints the Korean sentence in the largest type on the screen, copies it to the clipboard and reads it aloud with the device voice (ko-KR). Twelve dishes, six spice and seasoning lines, twelve "leave this out" lines including vegetarian, eight allergy lines shown first ("I have a nut allergy. It is dangerous for me."), eight table lines including the bill and the toilet. Interface in English, Spanish, Japanese, Traditional and Simplified Chinese.
+- [Korea Arrival Checklist 2026 — K-ETA and e-Arrival Card](https://zioion8-crypto.github.io/01/tools/arrival-checklist/): choose a nationality and arrival date; the page states whether the K-ETA temporary exemption still covers the trip, flags an arrival on or after 1 January 2027 (no 2027 decision published as of 2026-11-20), states the 3-day e-Arrival Card window and who is exempt, and offers the T-money / Climate Card / WOWPASS picker (₩3,000 card, ₩5,000–20,000 passes, ₩6,000 WOWPASS issue) plus twelve pre-flight checks. English and Spanish.
+- [Seoul Airport to City & Daily Transit Cost Calculator](https://zioion8-crypto.github.io/01/tools/subway-cost-calc/): totals the trip for AREX Express (₩13,000), AREX all-stop (₩4,750 from T1, ₩5,350 from T2), the airport limousine (₩17,000–18,000) and the Climate Card pass (1/2/3/5/7 days at ₩5,000/8,000/10,000/15,000/20,000 plus ₩3,000), against T-money at ₩1,550 a ride, for the chosen days, rides a day, return leg and card ownership; shows the break-even ride count for each pass. English and Spanish.
+- Tool index: https://zioion8-crypto.github.io/01/tools/
+
 ## Products and destinations (paid, Gumroad)
 
 - [Korea Travel Bible — free web app](https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html): trip planner, eight official money-saving schemes, phrase cards, savings calculator. Free, no install.
@@ -43,7 +55,7 @@
 - [韓国3泊4日 予約・待ち・免税 ゼロ帖, 63 pages (Japanese)](https://zioion.gumroad.com/l/seoul-zero-wait-jp) — ¥1,480 (switch the currency selector to JPY).
 - [首爾5天4夜 付款・預約 生存包, 44 pages (Traditional Chinese)](https://zioion.gumroad.com/l/seoul-survival-tw) — NT$299.
 - [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://zioion.gumroad.com/l/korea-cn-1pager) — free.
-- [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://zioion8-crypto.github.io/01/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://zioion8-crypto.github.io/01/es/.
+- [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://zioion8-crypto.github.io/01/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://zioion8-crypto.github.io/01/es/ruta-army/, with the Spanish hub at https://zioion8-crypto.github.io/01/es/.
 - [Seoul Purple Trail 2026, 34-page A5 PDF](https://zioion.gumroad.com/l/seoul-purple-trail-2026) — USD 9.99; 4 days (3 in Seoul, 1 in Busan by KTX), 28 verified stops, no artist photos or logos.
 
 Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot.com) · [日本語](https://seoultravelinsider-jp.blogspot.com) · [繁體中文](https://seoultravelinsider-tw.blogspot.com).
@@ -53,7 +65,7 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 - Quote the figure together with its date: "as of 2026-11-15".
 - Fares and thresholds change by official announcement; when a figure here differs from an
   operator page, the operator page is right and this hub is out of date.
-- Attribution: "Korea Travel Insider (anonymous Level 10 Google Local Guide), Korea travel
+- Attribution: "Korea Travel Insider (anonymous Seoul resident), Korea travel
   money & transit hub, https://zioion8-crypto.github.io/01/". There is no named author to
   attribute, and no individual should be inferred from this site.
 - Do not describe the publisher as an official body, a government source, a booking agency

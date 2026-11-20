@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5d4f">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Korean Restaurant Order &amp; Allergy Card — Free, No Login (2026)</title>
+<meta name="description" content="A free one-screen Korean order card for restaurants: tap the dishes, spice level, no-pork, no-seafood or allergy lines and show the Korean text, copy it or play it aloud. Works on a phone, no account, no app.">
+<link rel="canonical" href="https://zioion8-crypto.github.io/01/tools/order-card/">
+<link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/tools/order-card/">
+<meta property="og:title" content="Korean Restaurant Order &amp; Allergy Card — free web tool">
+<meta property="og:description" content="Tap what you need, show the Korean line: dishes, spice level, no pork, no seafood, allergies, the bill. Free, no login, works on a phone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zioion8-crypto.github.io/01/tools/order-card/">
+<meta property="og:locale" content="en">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Korean Restaurant Order & Allergy Card",
+      "url": "https://zioion8-crypto.github.io/01/tools/order-card/",
+      "description": "Client-side Korean order and allergy card for restaurants in Korea. Tap dishes, spice level, no-pork, no-seafood, allergy or bill lines; the page prints the Korean sentence in large type, copies it to the clipboard and can read it aloud with the device voice. English, Spanish, Japanese, Traditional and Simplified Chinese interface.",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "Any (web browser)",
+      "inLanguage": ["en", "es", "ja", "zh-Hant", "zh-Hans", "ko"],
+      "isAccessibleForFree": true,
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
+      "featureList": [
+        "Tap-to-build Korean sentences for ordering",
+        "Allergy lines shown first, in large Korean type",
+        "One-tap copy and text-to-speech (ko-KR)",
+        "English, Spanish, Japanese, Traditional and Simplified Chinese interface",
+        "No login, no cookies, no external requests"
+      ],
+      "publisher": {"@type": "Organization", "name": "Korea Travel Insider"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Korean order card free and does it need an account or a Korean phone number?",
+          "acceptedAnswer": {"@type": "Answer", "text": "It is free, needs no account, no sign-up, no Korean phone number and no install. The whole card is one web page that runs on the phone in the browser; nothing is sent to a server."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does the card work without internet?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Once the page has loaded it keeps working: tapping options, reading the Korean text and copying it all happen on the device. Reading it aloud depends on a Korean voice installed on the phone; if there is none, the button tells you and the Korean text is still there to show."}
+        },
+        {
+          "@type": "Question",
+          "name": "Will restaurant staff understand the allergy lines?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The lines are written in plain Korean that kitchen and floor staff read every day, and allergy lines are listed first in the largest type. Staff may not speak English, so show the screen rather than reading it out. A card reduces the risk of a misunderstanding; it does not remove it, and for a serious allergy the Korean line should be shown before the order is placed."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is this an official Korean government or restaurant service?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. It is an independent page by Korea Travel Insider, not affiliated with any restaurant, operator or government body. The Korean phrases are standard restaurant Korean, not a translation service."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{--ink:#12211e;--ink2:#4a5a56;--line:#dde6e2;--bg:#f4f7f5;--card:#fff;
+--brand:#0b5d4f;--brand2:#12766a;--hot:#b8421b;--hotbg:#fdf0ea;--ok:#15663f;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.55;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:600px;margin:0 auto;padding:0 14px}
+header{background:linear-gradient(160deg,#0b5d4f,#12766a 62%,#168a7a);color:#fff;padding:18px 0 14px}
+.kicker{font-size:11px;letter-spacing:.13em;text-transform:uppercase;opacity:.86}
+h1{font-size:22px;line-height:1.3;margin:5px 0 6px}
+header p{margin:0;font-size:13px;color:#d6ece6}
+.langs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.langs button{font:600 12.5px/1 inherit;padding:7px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.45);
+background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.langs button[aria-pressed="true"]{background:#fff;color:#0b5d4f;border-color:#fff}
+main{padding:14px 0 30px}
+.card{background:var(--card);border:2px solid var(--brand);border-radius:14px;padding:12px 12px 10px;margin:0 0 16px;
+box-shadow:0 2px 10px rgba(11,93,79,.09)}
+.cardhead{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11.5px;
+letter-spacing:.1em;text-transform:uppercase;color:var(--brand);font-weight:700;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.cardbody{min-height:96px;padding:8px 0 4px}
+.line{padding:7px 0;border-bottom:1px solid #f0f4f2}
+.line:last-child{border-bottom:0}
+.line .ko{font-size:22px;font-weight:800;line-height:1.35;letter-spacing:-.01em;overflow-wrap:anywhere}
+.line .tr{font-size:12.5px;color:var(--ink2);margin-top:2px}
+.line.hot .ko{color:var(--hot)}
+.line.hot .tr{color:#8d4a2c}
+.empty{color:#8d9a96;font-size:14px;padding:18px 2px;text-align:center}
+.cardbtns{display:flex;gap:7px;flex-wrap:wrap;padding-top:10px;border-top:1px dashed var(--line)}
+.cardbtns button{flex:1 1 0;min-width:92px;font:700 13px/1 inherit;padding:11px 8px;border-radius:10px;cursor:pointer;
+border:1px solid var(--brand);background:#fff;color:var(--brand)}
+.cardbtns button.on{background:var(--brand);color:#fff}
+.cardbtns button:disabled{opacity:.4;cursor:default}
+.hint{font-size:11.5px;color:#7c8a86;margin:8px 0 0}
+h2{font-size:15px;margin:20px 0 8px;display:flex;align-items:center;gap:7px}
+h2 .n{display:inline-flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:50%;
+background:var(--brand);color:#fff;font-size:11.5px;flex:0 0 auto}
+h2.hot .n{background:var(--hot)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.grid.one{grid-template-columns:1fr}
+.chip{text-align:left;font:600 13px/1.35 inherit;padding:10px 10px;border-radius:10px;border:1px solid var(--line);
+background:#fff;color:var(--ink);cursor:pointer;min-height:44px;display:flex;align-items:center;gap:7px}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--line);flex:0 0 auto}
+.chip[aria-pressed="true"]{border-color:var(--brand);background:#e9f4f0;color:#0a4438}
+.chip[aria-pressed="true"] .dot{background:var(--brand)}
+.chip.alert[aria-pressed="true"]{border-color:var(--hot);background:var(--hotbg);color:#7d3013}
+.chip.alert[aria-pressed="true"] .dot{background:var(--hot)}
+.note{font-size:12.5px;color:var(--ink2);background:#fff;border:1px solid var(--line);border-left:3px solid var(--brand);
+border-radius:8px;padding:10px 11px;margin:12px 0 0}
+.note.hot{border-left-color:var(--hot);background:var(--hotbg);color:#6d2f10;border-color:#f0d3c2}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;font-size:13.5px}
+details summary{cursor:pointer;font-weight:700;color:var(--brand)}
+details p{margin:8px 0 0;color:var(--ink2);font-size:13px}
+footer{border-top:1px solid var(--line);margin-top:10px;padding:16px 0 26px;font-size:12px;color:#6f7d79}
+footer a{color:var(--brand);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 8px}
+@media (min-width:430px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker" data-i18n="kicker">Korea Travel Insider · free tool</div>
+    <h1 data-i18n="h1">Korean restaurant order &amp; allergy card</h1>
+    <p data-i18n="sub">Tap what you need. The page writes it in Korean, large enough to show across the table.</p>
+    <div class="langs" id="langs" role="group" aria-label="Interface language"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card" aria-live="polite">
+    <div class="cardhead"><span data-i18n="cardLabel">Show this to the staff</span><span id="count"></span></div>
+    <div class="cardbody" id="card"></div>
+    <div class="cardbtns">
+      <button type="button" id="btnCopy" data-i18n="copy">Copy Korean</button>
+      <button type="button" id="btnSpeak" data-i18n="speak">Play Korean</button>
+      <button type="button" id="btnClear" data-i18n="clear">Clear</button>
+    </div>
+    <p class="hint" data-i18n="hint">Copy puts the plain Korean text on your clipboard; play reads it with the phone's Korean voice. No account, nothing leaves the phone.</p>
+  </section>
+
+  <h2><span class="n">1</span><span data-i18n="s1">What are you ordering?</span></h2>
+  <div class="grid" id="g-dish"></div>
+
+  <h2><span class="n">2</span><span data-i18n="s2">Spice and seasoning</span></h2>
+  <div class="grid" id="g-taste"></div>
+
+  <h2><span class="n">3</span><span data-i18n="s3">Leave this out</span></h2>
+  <div class="grid" id="g-avoid"></div>
+
+  <h2 class="hot"><span class="n">!</span><span data-i18n="s4">Allergy — shown first, in the largest type</span></h2>
+  <div class="grid" id="g-allergy"></div>
+  <p class="note hot" data-i18n="allergyNote">Show the screen before ordering. A written line lowers the risk of a misunderstanding, it does not remove it: a kitchen may not separate utensils, frying oil or stock. For a serious allergy, also ask at the door whether the kitchen can handle it.</p>
+
+  <h2><span class="n">4</span><span data-i18n="s5">The rest of the table</span></h2>
+  <div class="grid" id="g-extra"></div>
+
+  <p class="note" data-i18n="note">Phrases are standard restaurant Korean, the wording staff hear every day. Fares, opening hours and rules change; this card is information, not a booking or translation service.</p>
+
+  <details>
+    <summary data-i18n="faq1q">Is it free, and does it need a Korean number?</summary>
+    <p data-i18n="faq1a">Free, no account, no phone number, no install. One page in the browser, everything computed on the phone.</p>
+  </details>
+  <details>
+    <summary data-i18n="faq2q">Does it work without internet?</summary>
+    <p data-i18n="faq2a">Once loaded, tapping and copying work offline. Reading aloud needs a Korean voice on the phone; without one the Korean text is still there to show.</p>
+  </details>
+  <details>
+    <summary data-i18n="faq3q">Will the staff understand it?</summary>
+    <p data-i18n="faq3a">The Korean is plain and current. Staff may not speak English, so show the screen instead of reading it out, and keep the allergy lines at the top.</p>
+  </details>
+
+  <footer>
+    <div class="links">
+      <a href="/01/tools/" data-i18n="allTools">All three free tools</a>
+      <a href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html" rel="noopener">Korea Travel Bible</a>
+      <a href="/01/free/" data-i18n="freeSheet">Free 30-spot map (A4)</a>
+      <a href="/01/es/" hreflang="es">Guía en español</a>
+    </div>
+    <p data-i18n="legal">Korea Travel Insider · independent page, not affiliated with any restaurant, operator or government body. No ads, no cookies, no analytics, no third-party scripts. Phrases checked 2026-11-20.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+"use strict";
+var P=[
+// dish
+{id:"bibimbap",g:"dish",ko:"비빔밥 하나 주세요",en:"One bibimbap, please",es:"Un bibimbap, por favor",ja:"ビビンバを1つください",tw:"請給我一份拌飯",cn:"请给我一份拌饭"},
+{id:"kimchijjigae",g:"dish",ko:"김치찌개 하나 주세요",en:"One kimchi stew, please",es:"Un estofado de kimchi, por favor",ja:"キムチチゲを1つください",tw:"請給我一份泡菜鍋",cn:"请给我一份泡菜汤"},
+{id:"doenjang",g:"dish",ko:"된장찌개 하나 주세요",en:"One soybean-paste stew, please",es:"Un estofado de pasta de soja, por favor",ja:"テンジャンチゲを1つください",tw:"請給我一份大醬鍋",cn:"请给我一份大酱汤"},
+{id:"bulgogi",g:"dish",ko:"소불고기 하나 주세요",en:"One beef bulgogi, please",es:"Un bulgogi de ternera, por favor",ja:"プルコギを1つください",tw:"請給我一份烤牛肉",cn:"请给我一份烤牛肉"},
+{id:"samgyeopsal",g:"dish",ko:"삼겹살 2인분 주세요",en:"Two portions of pork belly, please",es:"Dos raciones de panceta, por favor",ja:"サムギョプサル2人前ください",tw:"請給我兩份五花肉",cn:"请给我两份五花肉"},
+{id:"naengmyeon",g:"dish",ko:"물냉면 하나 주세요",en:"One cold noodle soup, please",es:"Un fideo frío en caldo, por favor",ja:"水冷麺を1つください",tw:"請給我一份水冷麵",cn:"请给我一份水冷面"},
+{id:"kalguksu",g:"dish",ko:"칼국수 하나 주세요",en:"One knife-cut noodle soup, please",es:"Una sopa de fideos cortados, por favor",ja:"カルグクスを1つください",tw:"請給我一份刀削麵",cn:"请给我一份刀削面"},
+{id:"sundubu",g:"dish",ko:"순두부찌개 하나 주세요",en:"One soft-tofu stew, please",es:"Un estofado de tofu suave, por favor",ja:"スンドゥブチゲを1つください",tw:"請給我一份嫩豆腐鍋",cn:"请给我一份嫩豆腐汤"},
+{id:"tteokbokki",g:"dish",ko:"떡볶이 하나 주세요",en:"One tteokbokki, please",es:"Un tteokbokki, por favor",ja:"トッポッキを1つください",tw:"請給我一份辣炒年糕",cn:"请给我一份辣炒年糕"},
+{id:"gimbap",g:"dish",ko:"김밥 하나 주세요",en:"One gimbap roll, please",es:"Un gimbap, por favor",ja:"キンパを1つください",tw:"請給我一份海苔飯捲",cn:"请给我一份紫菜包饭"},
+{id:"mandu",g:"dish",ko:"군만두 하나 주세요",en:"One plate of fried dumplings, please",es:"Un plato de empanadillas fritas, por favor",ja:"焼き餃子を1つください",tw:"請給我一份煎餃",cn:"请给我一份煎饺"},
+{id:"chicken",g:"dish",ko:"후라이드 치킨 하나 주세요",en:"One fried chicken, please",es:"Un pollo frito, por favor",ja:"フライドチキンを1つください",tw:"請給我一份炸雞",cn:"请给我一份炸鸡"},
+// taste
+{id:"mild",g:"taste",ko:"안 맵게 해주세요",en:"Not spicy, please",es:"Que no pique, por favor",ja:"辛くしないでください",tw:"請不要辣",cn:"请不要辣"},
+{id:"spicy",g:"taste",ko:"아주 맵게 해주세요",en:"Extra spicy, please",es:"Bien picante, por favor",ja:"とても辛くしてください",tw:"請做很辣",cn:"请做很辣"},
+{id:"nochili",g:"taste",ko:"고추 빼주세요",en:"No chili, please",es:"Sin chile, por favor",ja:"唐辛子を抜いてください",tw:"請不要放辣椒",cn:"请不要放辣椒"},
+{id:"sidesauce",g:"taste",ko:"양념은 따로 주세요",en:"Sauce on the side, please",es:"La salsa aparte, por favor",ja:"タレは別にしてください",tw:"醬料請另外給",cn:"酱料请另外给"},
+{id:"lesssalt",g:"taste",ko:"싱겁게 해주세요",en:"Less salty, please",es:"Con menos sal, por favor",ja:"薄味にしてください",tw:"請做清淡一點",cn:"请做淡一点"},
+{id:"nomsg",g:"taste",ko:"조미료 안 넣어 주세요",en:"No MSG or seasoning powder, please",es:"Sin glutamato ni sazonador, por favor",ja:"味の素・調味料なしでお願いします",tw:"請不要加味精",cn:"请不要加味精"},
+// avoid
+{id:"nopork",g:"avoid",ko:"돼지고기 빼주세요",en:"No pork, please",es:"Sin cerdo, por favor",ja:"豚肉を抜いてください",tw:"請不要豬肉",cn:"请不要猪肉"},
+{id:"nobeef",g:"avoid",ko:"소고기 빼주세요",en:"No beef, please",es:"Sin ternera, por favor",ja:"牛肉を抜いてください",tw:"請不要牛肉",cn:"请不要牛肉"},
+{id:"noseafood",g:"avoid",ko:"해산물 빼주세요",en:"No seafood, please",es:"Sin marisco, por favor",ja:"海鮮を抜いてください",tw:"請不要海鮮",cn:"请不要海鲜"},
+{id:"noshellfish",g:"avoid",ko:"조개류 빼주세요",en:"No shellfish, please",es:"Sin mariscos con concha, por favor",ja:"貝類を抜いてください",tw:"請不要貝類",cn:"请不要贝类"},
+{id:"noegg",g:"avoid",ko:"계란 빼주세요",en:"No egg, please",es:"Sin huevo, por favor",ja:"卵を抜いてください",tw:"請不要蛋",cn:"请不要鸡蛋"},
+{id:"nodairy",g:"avoid",ko:"우유·버터 빼주세요",en:"No milk or butter, please",es:"Sin leche ni mantequilla, por favor",ja:"牛乳・バターを抜いてください",tw:"請不要牛奶和奶油",cn:"请不要牛奶和黄油"},
+{id:"nowheat",g:"avoid",ko:"밀가루 빼주세요",en:"No wheat flour, please",es:"Sin harina de trigo, por favor",ja:"小麦粉を抜いてください",tw:"請不要麵粉",cn:"请不要面粉"},
+{id:"nonuts",g:"avoid",ko:"견과류 빼주세요",en:"No nuts, please",es:"Sin frutos secos, por favor",ja:"ナッツを抜いてください",tw:"請不要堅果",cn:"请不要坚果"},
+{id:"nosesame",g:"avoid",ko:"참깨 빼주세요",en:"No sesame, please",es:"Sin sésamo, por favor",ja:"ごまを抜いてください",tw:"請不要芝麻",cn:"请不要芝麻"},
+{id:"nocilantro",g:"avoid",ko:"고수 빼주세요",en:"No cilantro, please",es:"Sin cilantro, por favor",ja:"パクチーを抜いてください",tw:"請不要香菜",cn:"请不要香菜"},
+{id:"noonion",g:"avoid",ko:"양파·마늘 빼주세요",en:"No onion or garlic, please",es:"Sin cebolla ni ajo, por favor",ja:"玉ねぎ・にんにくを抜いてください",tw:"請不要洋蔥和大蒜",cn:"请不要洋葱和大蒜"},
+{id:"vegetarian",g:"avoid",ko:"채식으로 주세요. 고기·해산물·육수 모두 빼주세요",en:"Vegetarian, please — no meat, seafood or meat stock",es:"Vegetariano, por favor: sin carne, pescado ni caldo de carne",ja:"ベジタリアンでお願いします。肉・魚介・出汁も抜いてください",tw:"請做素食，肉、海鮮、高湯都不要",cn:"请做素食，肉、海鲜、高汤都不要"},
+// allergy
+{id:"alnuts",g:"allergy",ko:"견과류 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a nut allergy. It is dangerous for me.",es:"Tengo alergia a los frutos secos. Para mí es peligroso.",ja:"ナッツアレルギーがあります。食べると危険です。",tw:"我對堅果過敏，吃了會有危險。",cn:"我对坚果过敏，吃了会有危险。"},
+{id:"alpeanut",g:"allergy",ko:"땅콩 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a peanut allergy. It is dangerous for me.",es:"Tengo alergia al cacahuete. Para mí es peligroso.",ja:"ピーナッツアレルギーがあります。食べると危険です。",tw:"我對花生過敏，吃了會有危險。",cn:"我对花生过敏，吃了会有危险。"},
+{id:"alshell",g:"allergy",ko:"조개류 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a shellfish allergy. It is dangerous for me.",es:"Tengo alergia al marisco. Para mí es peligroso.",ja:"貝アレルギーがあります。食べると危険です。",tw:"我對貝類過敏，吃了會有危險。",cn:"我对贝类过敏，吃了会有危险。"},
+{id:"alegg",g:"allergy",ko:"계란 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have an egg allergy. It is dangerous for me.",es:"Tengo alergia al huevo. Para mí es peligroso.",ja:"卵アレルギーがあります。食べると危険です。",tw:"我對蛋過敏，吃了會有危險。",cn:"我对鸡蛋过敏，吃了会有危险。"},
+{id:"almilk",g:"allergy",ko:"우유 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a milk allergy. It is dangerous for me.",es:"Tengo alergia a la leche. Para mí es peligroso.",ja:"牛乳アレルギーがあります。食べると危険です。",tw:"我對牛奶過敏，吃了會有危險。",cn:"我对牛奶过敏，吃了会有危险。"},
+{id:"alwheat",g:"allergy",ko:"밀가루(글루텐) 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a wheat (gluten) allergy. It is dangerous for me.",es:"Tengo alergia al trigo (gluten). Para mí es peligroso.",ja:"小麦（グルテン）アレルギーがあります。食べると危険です。",tw:"我對小麥（麩質）過敏，吃了會有危險。",cn:"我对小麦（麸质）过敏，吃了会有危险。"},
+{id:"alsesame",g:"allergy",ko:"참깨 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a sesame allergy. It is dangerous for me.",es:"Tengo alergia al sésamo. Para mí es peligroso.",ja:"ごまアレルギーがあります。食べると危険です。",tw:"我對芝麻過敏，吃了會有危險。",cn:"我对芝麻过敏，吃了会有危险。"},
+{id:"alfish",g:"allergy",ko:"생선 알레르기가 있습니다. 먹으면 위험합니다.",en:"I have a fish allergy. It is dangerous for me.",es:"Tengo alergia al pescado. Para mí es peligroso.",ja:"魚アレルギーがあります。食べると危険です。",tw:"我對魚類過敏，吃了會有危險。",cn:"我对鱼类过敏，吃了会有危险。"},
+// extra
+{id:"water",g:"extra",ko:"물 주세요",en:"Water, please",es:"Agua, por favor",ja:"お水をください",tw:"請給我水",cn:"请给我水"},
+{id:"refill",g:"extra",ko:"반찬 더 주세요",en:"More side dishes, please",es:"Más acompañamientos, por favor",ja:"おかずをもう少しください",tw:"請再給我一些小菜",cn:"请再给我一些小菜"},
+{id:"noricelist",g:"extra",ko:"얼음 빼주세요",en:"No ice, please",es:"Sin hielo, por favor",ja:"氷を抜いてください",tw:"請不要冰塊",cn:"请不要冰块"},
+{id:"bill",g:"extra",ko:"계산서 주세요",en:"The bill, please",es:"La cuenta, por favor",ja:"お会計をお願いします",tw:"請給我帳單",cn:"请给我账单"},
+{id:"card",g:"extra",ko:"카드로 계산할게요",en:"I'll pay by card",es:"Pago con tarjeta",ja:"カードで払います",tw:"我要刷卡",cn:"我要刷卡"},
+{id:"togo",g:"extra",ko:"포장해 주세요",en:"A box to take away, please",es:"Para llevar, por favor",ja:"お持ち帰りにしてください",tw:"請幫我打包",cn:"请帮我打包"},
+{id:"two",g:"extra",ko:"두 명이요",en:"A table for two",es:"Mesa para dos",ja:"2人です",tw:"兩位",cn:"两位"},
+{id:"toilet",g:"extra",ko:"화장실 어디예요?",en:"Where is the toilet?",es:"¿Dónde está el baño?",ja:"トイレはどこですか？",tw:"廁所在哪裡？",cn:"厕所在哪里？"}
+];
+
+var T={
+en:{kicker:"Korea Travel Insider · free tool",h1:"Korean restaurant order & allergy card",
+sub:"Tap what you need. The page writes it in Korean, large enough to show across the table.",
+cardLabel:"Show this to the staff",copy:"Copy Korean",speak:"Play Korean",clear:"Clear",
+hint:"Copy puts the plain Korean text on your clipboard; play reads it with the phone's Korean voice. No account, nothing leaves the phone.",
+s1:"What are you ordering?",s2:"Spice and seasoning",s3:"Leave this out",s4:"Allergy — shown first, in the largest type",s5:"The rest of the table",
+allergyNote:"Show the screen before ordering. A written line lowers the risk of a misunderstanding, it does not remove it: a kitchen may not separate utensils, frying oil or stock. For a serious allergy, also ask at the door whether the kitchen can handle it.",
+note:"Phrases are standard restaurant Korean, the wording staff hear every day. Rules change; this card is information, not a booking or translation service.",
+empty:"Nothing picked yet. Tap a dish, a spice level or an allergy line above.",
+none:"Copy Korean",ask:"Show this screen to the staff — the Korean line is what they read.",
+faq1q:"Is it free, and does it need a Korean number?",faq1a:"Free, no account, no phone number, no install. One page in the browser, everything computed on the phone.",
+faq2q:"Does it work without internet?",faq2a:"Once loaded, tapping and copying work offline. Reading aloud needs a Korean voice on the phone; without one the Korean text is still there to show.",
+faq3q:"Will the staff understand it?",faq3a:"The Korean is plain and current. Staff may not speak English, so show the screen instead of reading it out.",
+allTools:"All three free tools",freeSheet:"Free 30-spot map (A4)",
+legal:"Korea Travel Insider · independent page, not affiliated with any restaurant, operator or government body. No ads, no cookies, no analytics, no third-party scripts. Phrases checked 2026-11-20.",
+picked:"picked",countLabel:"lines"},
+es:{kicker:"Korea Travel Insider · herramienta gratis",h1:"Tarjeta coreana para pedir y para alergias",
+sub:"Toca lo que necesitas. La página lo escribe en coreano, en letra grande para enseñarlo desde el otro lado de la mesa.",
+cardLabel:"Enseña esto al personal",copy:"Copiar en coreano",speak:"Leer en voz alta",clear:"Borrar",
+hint:"Copiar deja el texto coreano en el portapapeles; leer lo pronuncia con la voz coreana del teléfono. Sin cuenta y nada sale del teléfono.",
+s1:"¿Qué vas a pedir?",s2:"Picante y condimento",s3:"Quita esto",s4:"Alergia: va primero y en la letra más grande",s5:"Lo demás de la mesa",
+allergyNote:"Enseña la pantalla antes de pedir. Una frase escrita reduce el riesgo de malentendido, no lo elimina: la cocina puede no separar utensilios, aceite de fritura ni caldos. Si la alergia es grave, pregunta también en la puerta si la cocina puede manejarla.",
+note:"Son frases de restaurante corrientes, las que el personal escucha todos los días. Las normas cambian: esto es información, no un servicio de reservas ni de traducción.",
+empty:"Nada elegido todavía. Toca un plato, el punto de picante o una línea de alergia.",
+none:"Copiar en coreano",ask:"Enseña esta pantalla al personal: lo que leen es la línea en coreano.",
+faq1q:"¿Es gratis y hace falta un número coreano?",faq1a:"Gratis, sin cuenta, sin número de teléfono y sin instalar nada. Una página en el navegador, todo se calcula en el teléfono.",
+faq2q:"¿Funciona sin internet?",faq2a:"Una vez cargada, tocar y copiar funcionan sin conexión. Leer en voz alta necesita una voz coreana en el teléfono; sin ella, el texto coreano sigue en pantalla para enseñarlo.",
+faq3q:"¿Va a entenderlo el personal?",faq3a:"El coreano es llano y actual. Puede que el personal no hable inglés: enseña la pantalla en vez de leerla.",
+allTools:"Las tres herramientas gratis",freeSheet:"Mapa gratis de 30 sitios (A4)",
+legal:"Korea Travel Insider · página independiente, sin relación con ningún restaurante, operador ni organismo público. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros. Frases revisadas el 2026-11-20.",
+picked:"elegidas",countLabel:"líneas"},
+ja:{kicker:"Korea Travel Insider · 無料ツール",h1:"韓国レストラン 注文・アレルギーカード",
+sub:"必要なものをタップすると、テーブル越しに見せられる大きさで韓国語が出ます。",
+cardLabel:"店員に見せてください",copy:"韓国語をコピー",speak:"韓国語を読み上げ",clear:"消す",
+hint:"コピーで韓国語のテキストがクリップボードに入ります。読み上げは端末の韓国語音声を使います。アカウント不要で、端末の外には何も送りません。",
+s1:"何を注文しますか",s2:"辛さ・味付け",s3:"これを抜いてください",s4:"アレルギー（先頭・最大文字）",s5:"そのほか",
+allergyNote:"注文の前に画面を見せてください。書いた一文は誤解の危険を下げますが、なくしはしません。厨房が器具・揚げ油・出汁を分けられないことがあります。重いアレルギーなら入店時に厨房で対応できるかも確認を。",
+note:"一般的なレストラン韓国語で、店員が毎日聞く言い方です。ルールは変わります。これは情報で、予約や翻訳のサービスではありません。",
+empty:"まだ何も選ばれていません。上の料理・辛さ・アレルギーをタップしてください。",
+none:"韓国語をコピー",ask:"この画面を店員に見せてください。読まれるのは韓国語の行です。",
+faq1q:"無料ですか。韓国の電話番号は必要ですか。",faq1a:"無料で、アカウントも電話番号もインストールも不要です。ブラウザの1ページで、すべて端末内で動きます。",
+faq2q:"ネットなしでも使えますか。",faq2a:"一度読み込めば、タップとコピーはオフラインでも動きます。読み上げは端末の韓国語音声が必要です。なければ韓国語の文字を見せてください。",
+faq3q:"店員に通じますか。",faq3a:"平易で実際に使われている韓国語です。英語が通じない場合があるので、読み上げより画面を見せてください。",
+allTools:"無料ツール3種",freeSheet:"無料30スポット地図（A4）",
+legal:"Korea Travel Insider · 独立したページで、どの飲食店・事業者・公的機関とも関係ありません。広告・Cookie・解析・外部スクリプトなし。文言確認日 2026-11-20。",
+picked:"件選択",countLabel:"行"},
+tw:{kicker:"Korea Travel Insider · 免費工具",h1:"韓國餐廳點餐・過敏卡",
+sub:"點選你需要的，頁面會用大字寫出韓文，隔著桌子也能給店員看。",
+cardLabel:"給店員看這張",copy:"複製韓文",speak:"唸出韓文",clear:"清除",
+hint:"複製會把韓文放到剪貼簿；唸出使用手機的韓文語音。不需帳號，資料不會離開手機。",
+s1:"要點什麼",s2:"辣度與調味",s3:"這些不要",s4:"過敏（排在最前、字最大）",s5:"其他",
+allergyNote:"點餐前先給店員看。寫下的一句話能降低誤會的風險，但不能消除：廚房未必分開器具、炸油或高湯。嚴重過敏請在進門時先問廚房能否處理。",
+note:"這些是一般餐廳韓文，店員每天聽到的說法。規定會變；本頁是資訊整理，不是代訂或翻譯服務。",
+empty:"還沒選任何項目。點選上面的餐點、辣度或過敏。",
+none:"複製韓文",ask:"把這個畫面給店員看，他們讀的是韓文那行。",
+faq1q:"免費嗎？需要韓國門號嗎？",faq1a:"免費，不需帳號、門號，也不用安裝。瀏覽器一頁，全部在手機上計算。",
+faq2q:"沒有網路也能用嗎？",faq2a:"載入過後，點選與複製都可在離線使用。唸出需要手機裡的韓文語音；沒有語音時，韓文文字仍可給店員看。",
+faq3q:"店員看得懂嗎？",faq3a:"用字平實、是現行說法。店員可能不講英文，請直接給對方看畫面。",
+allTools:"三種免費工具",freeSheet:"免費30個地點地圖（A4）",
+legal:"Korea Travel Insider · 獨立頁面，與任何餐廳、業者或政府機關無關。無廣告、無 Cookie、無分析、無外部腳本。用語確認日 2026-11-20。",
+picked:"已選",countLabel:"行"},
+cn:{kicker:"Korea Travel Insider · 免费工具",h1:"韩国餐厅点餐·过敏卡",
+sub:"点选你需要的，页面会用大字写出韩文，隔着桌子也能给店员看。",
+cardLabel:"给店员看这张",copy:"复制韩文",speak:"朗读韩文",clear:"清除",
+hint:"复制会把韩文放进剪贴板；朗读使用手机里的韩文语音。无需账号，数据不会离开手机。",
+s1:"要点什么",s2:"辣度与调味",s3:"这些不要",s4:"过敏（排在最前、字最大）",s5:"其他",
+allergyNote:"点餐前先给店员看。写下的一句话能降低误会风险，但不能消除：厨房未必分开用具、炸油或高汤。严重过敏请在进门时先问厨房能否处理。",
+note:"这些是常见的餐厅韩文，店员每天听到的说法。规定会变；本页是信息整理，不是代订或翻译服务。",
+empty:"还没选任何项目。点选上面的菜品、辣度或过敏项。",
+none:"复制韩文",ask:"把这个画面给店员看，他们读的是韩文那行。",
+faq1q:"免费吗？需要韩国号码吗？",faq1a:"免费，不需账号、号码，也不用安装。浏览器一页，全部在手机上计算。",
+faq2q:"没有网络也能用吗？",faq2a:"加载过之后，点选和复制都能离线使用。朗读需要手机里的韩文语音；没有语音时，韩文文字仍能给店员看。",
+faq3q:"店员能看懂吗？",faq3a:"用词平实、是现行说法。店员可能不说英文，请直接给对方看画面。",
+allTools:"三种免费工具",freeSheet:"免费30个地点地图（A4）",
+legal:"Korea Travel Insider · 独立页面，与任何餐厅、业者或政府机关无关。无广告、无 Cookie、无分析、无外部脚本。用语确认日 2026-11-20。",
+picked:"已选",countLabel:"行"}
+};
+
+var LANGS=[["en","EN"],["es","ES"],["ja","日本語"],["tw","繁中"],["cn","简体"]];
+var ORDER=["allergy","avoid","taste","dish","extra"];
+var lang="en";
+try{var q=(location.search.match(/[?&]lang=(en|es|ja|tw|cn)\b/)||[])[1];
+if(q){lang=q;}else{var n=(navigator.language||"en").toLowerCase();
+if(n.indexOf("es")===0)lang="es";else if(n.indexOf("ja")===0)lang="ja";
+else if(n.indexOf("zh")===0)lang=(n.indexOf("hant")>-1||n.indexOf("tw")>-1||n.indexOf("hk")>-1)?"tw":"cn";}}catch(e){}
+
+var sel={};
+var cardEl=document.getElementById("card");
+var countEl=document.getElementById("count");
+var btnCopy=document.getElementById("btnCopy");
+var btnSpeak=document.getElementById("btnSpeak");
+var btnClear=document.getElementById("btnClear");
+
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+function t(k){return (T[lang]&&T[lang][k])||T.en[k]||"";}
+
+function paintI18n(){
+  document.documentElement.lang=(lang==="tw")?"zh-Hant":(lang==="cn")?"zh-Hans":lang;
+  var els=document.querySelectorAll("[data-i18n]");
+  for(var i=0;i<els.length;i++){
+    var k=els[i].getAttribute("data-i18n");
+    if(T[lang]&&T[lang][k]!=null)els[i].textContent=T[lang][k];
+  }
+  btnCopy.textContent=t("copy");btnSpeak.textContent=t("speak");btnClear.textContent=t("clear");
+  var labs=document.getElementById("langs").children;
+  for(var j=0;j<labs.length;j++)labs[j].setAttribute("aria-pressed",labs[j].getAttribute("data-l")===lang?"true":"false");
+}
+
+function buildChips(){
+  var groups={dish:"g-dish",taste:"g-taste",avoid:"g-avoid",allergy:"g-allergy",extra:"g-extra"};
+  P.forEach(function(p){
+    var b=document.createElement("button");
+    b.type="button";b.className="chip"+(p.g==="allergy"?" alert":"");
+    b.setAttribute("aria-pressed","false");
+    b.setAttribute("data-id",p.id);
+    b.innerHTML='<span class="dot" aria-hidden="true"></span><span>'+esc(p[lang]||p.en)+"</span>";
+    b.addEventListener("click",function(){
+      if(sel[p.id]){delete sel[p.id];b.setAttribute("aria-pressed","false");}
+      else{sel[p.id]=true;b.setAttribute("aria-pressed","true");}
+      render();
+    });
+    document.getElementById(groups[p.g]).appendChild(b);
+  });
+}
+
+function byId(id){for(var i=0;i<P.length;i++){if(P[i].id===id)return P[i];}return null;}
+
+function selectedList(){
+  var out=[];
+  ORDER.forEach(function(g){
+    P.forEach(function(p){if(p.g===g&&sel[p.id])out.push(p);});
+  });
+  return out;
+}
+
+function render(){
+  var list=selectedList();
+  if(!list.length){
+    cardEl.innerHTML='<p class="empty">'+esc(t("empty"))+"</p>";
+    countEl.textContent="";
+    btnCopy.disabled=true;btnSpeak.disabled=true;btnClear.disabled=true;
+    return;
+  }
+  var html="";
+  list.forEach(function(p){
+    html+='<div class="line'+(p.g==="allergy"?" hot":"")+'"><div class="ko">'+esc(p.ko)+
+    '</div><div class="tr">'+esc(p[lang]||p.en)+"</div></div>";
+  });
+  cardEl.innerHTML=html;
+  countEl.textContent=list.length+" "+t("picked");
+  btnCopy.disabled=false;btnSpeak.disabled=false;btnClear.disabled=false;
+}
+
+function plainText(){
+  return selectedList().map(function(p){return p.ko;}).join("\n");
+}
+
+function flash(btn,msg){
+  var old=btn.getAttribute("data-old")||btn.textContent;
+  btn.setAttribute("data-old",old);btn.textContent=msg;
+  setTimeout(function(){btn.textContent=old;},1500);
+}
+
+function copyText(txt){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){flash(btnCopy,"✓");},function(){legacyCopy(txt);});
+  }else{legacyCopy(txt);}
+}
+function legacyCopy(txt){
+  var ta=document.createElement("textarea");
+  ta.value=txt;ta.setAttribute("readonly","");
+  ta.style.position="fixed";ta.style.top="-1000px";
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");flash(btnCopy,"✓");}catch(e){flash(btnCopy,"—");}
+  document.body.removeChild(ta);
+}
+
+var koVoice=null;
+function pickVoice(){
+  if(!("speechSynthesis" in window))return null;
+  var vs=window.speechSynthesis.getVoices()||[];
+  for(var i=0;i<vs.length;i++){if(/^ko([-_]|$)/i.test(vs[i].lang))return vs[i];}
+  return null;
+}
+if("speechSynthesis" in window){
+  koVoice=pickVoice();
+  window.speechSynthesis.onvoiceschanged=function(){koVoice=pickVoice();};
+}
+
+function speak(){
+  if(!("speechSynthesis" in window)){flash(btnSpeak,"—");return;}
+  var txt=plainText();if(!txt)return;
+  var u=new SpeechSynthesisUtterance(txt);
+  u.lang="ko-KR";u.rate=0.88;
+  if(!koVoice)koVoice=pickVoice();
+  if(koVoice)u.voice=koVoice;
+  try{window.speechSynthesis.cancel();window.speechSynthesis.speak(u);flash(btnSpeak,"▶");}catch(e){flash(btnSpeak,"—");}
+}
+
+btnCopy.addEventListener("click",function(){copyText(plainText());});
+btnSpeak.addEventListener("click",function(){speak();});
+btnClear.addEventListener("click",function(){
+  sel={};var cs=document.querySelectorAll(".chip");
+  for(var i=0;i<cs.length;i++)cs[i].setAttribute("aria-pressed","false");
+  render();
+});
+
+(function(){
+  var box=document.getElementById("langs");
+  LANGS.forEach(function(p){
+    var b=document.createElement("button");
+    b.type="button";b.textContent=p[1];b.setAttribute("data-l",p[0]);
+    b.addEventListener("click",function(){
+      lang=p[0];paintI18n();
+      var cs=document.querySelectorAll(".chip");
+      for(var i=0;i<cs.length;i++){
+        var p2=byId(cs[i].getAttribute("data-id"));
+        if(p2)cs[i].lastChild.textContent=p2[lang]||p2.en;
+      }
+      render();
+    });
+    box.appendChild(b);
+  });
+})();
+
+paintI18n();
+buildChips();
+render();
+})();
+</script>
+</body>
+</html>
