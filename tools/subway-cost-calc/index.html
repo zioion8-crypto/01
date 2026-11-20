@@ -193,7 +193,7 @@ footer a{color:var(--brand);font-weight:600}
       <thead><tr><th data-i18n="thWay">Way in</th><th data-i18n="thTime">Time</th><th class="num" data-i18n="thFare">Fare</th></tr></thead>
       <tbody>
         <tr><td class="opt"><b>AREX Express</b><small data-i18n="oExp">non-stop, assigned seat, separate ticket</small></td><td data-i18n="tExp">43 min</td><td class="num">₩13,000</td></tr>
-        <tr><td class="opt"><b>AREX all-stop</b><small data-i18n="oAll">subway rules, T-money accepted</small></td><td data-i18n="tAll">59 min</td><td class="num" id="allFare">₩4,750</td></tr>
+        <tr><td class="opt"><b data-i18n="oAllName">AREX all-stop</b><small data-i18n="oAll">subway rules, T-money accepted</small></td><td data-i18n="tAll">59 min</td><td class="num" id="allFare">₩4,750</td></tr>
         <tr><td class="opt"><b data-i18n="oLim">Airport limousine</b><small data-i18n="oLimS">6001/6015 · 6701 costs ₩18,000 · night buses ₩17,000–18,000</small></td><td data-i18n="tLim">bus, door to door</td><td class="num">₩17,000</td></tr>
       </tbody>
     </table>
@@ -218,7 +218,7 @@ footer a{color:var(--brand);font-weight:600}
       <a href="/01/tools/" data-i18n="allTools">All three free tools</a>
       <a href="/01/tools/arrival-checklist/" data-i18n="t2">Arrival checklist</a>
       <a href="/01/tools/order-card/" data-i18n="t1">Order &amp; allergy card</a>
-      <a href="/01/es/" hreflang="es">Guía en español</a>
+      <a href="/01/es/" hreflang="es" data-i18n="esHub">Guía en español</a>
       <a href="/01/free/" data-i18n="freeSheet">Free 30-spot map (A4)</a>
     </div>
     <p data-i18n="legal">Korea Travel Insider · independent page, not affiliated with any operator or government body. Fares read from the operators' pages, last check 2026-11-20; they change by announcement and the operator's page is the final word. No ads, no cookies, no analytics, no third-party scripts.</p>
@@ -241,7 +241,7 @@ hint:"Totals include the ₩3,000 transit card unless you already own one, and t
 s3:"Break-even lines",thPass:"Pass",thPrice:"Price",thBe:"Pays off at",
 beNote:"A single ride is ₩1,550 with a card (₩1,650 with a paper ticket). The pass starts on the day it is loaded, cannot be pre-loaded, and cannot be used to board at Incheon T1 or T2 — those are exit only for it. It does not cover GTX A/B/C, the Shinbundang Line or red intercity buses leaving Seoul.",
 s4:"The airport leg, in full",thWay:"Way in",thTime:"Time",thFare:"Fare",
-oExp:"non-stop, assigned seat, separate ticket",tExp:"43 min",
+oExp:"non-stop, assigned seat, separate ticket",tExp:"43 min",oAllName:"AREX all-stop",
 oAll:"subway rules, T-money accepted",tAll:"59 min",
 oLim:"Airport limousine",oLimS:"6001/6015 · 6701 costs ₩18,000 · night buses ₩17,000–18,000",tLim:"bus, door to door",
 allNote:"From Terminal 2 the all-stop train is ₩5,350. A single-ticket AREX ride costs ₩100 more, with a ₩500 deposit refunded at the exit gate.",
@@ -250,13 +250,13 @@ optExp:"AREX Express + T-money",optExpS:"fastest, 43 min, assigned seat",
 optLim:"Airport limousine + T-money",optLimS:"no changes, no stairs",
 optPass:"Climate Card + airport leg",optPassS:"unlimited rides inside Seoul",
 optPassS0:"unlimited rides, but you have no rides",
-ridesN:"rides",daysN:"days",perDay:"a day",
+ridesN:"rides",daysN:"days",daySing:"day",perDay:"a day",
 bigSub:"for {d} days and {r} rides a day — {x} against the next option",
 bigSub0:"no paid rides entered: the airport leg alone",
 f1q:"Why is the Climate Card not always the answer?",f1a:"The pass buys unlimited rides, so it only wins when the rides you would otherwise pay for cost more than the pass. Two rides a day for four days is ₩12,400 on T-money, less than the 5-day pass at ₩15,000 — the pass loses. Four rides a day for four days is ₩24,800, and the pass wins by ₩9,800. The table above does this sum for your numbers.",
 f2q:"Do the numbers include the airport leg in the pass?",f2a:"No. The pass cannot be used to board at Incheon T1 or T2, so the airport leg is always paid separately, whatever the daily plan. The totals add it: the all-stop train by default, or the express or limousine where that plan says so.",
 f3q:"What is not in the total?",f3a:"Taxis, the KTX, GTX, the Shinbundang Line, red intercity buses and anything outside Seoul's city limits. Food and a data eSIM are separate too. Taxis and airport buses take a T-money card; GTX and the Shinbundang Line take a card but not the Seoul pass.",
-allTools:"All three free tools",t1:"Order & allergy card",t2:"Arrival checklist",freeSheet:"Free 30-spot map (A4)",
+allTools:"All three free tools",t1:"Order & allergy card",t2:"Arrival checklist",freeSheet:"Free 30-spot map (A4)",esHub:"Spanish guide",
 legal:"Korea Travel Insider · independent page, not affiliated with any operator or government body. Fares read from the operators' pages, last check 2026-11-20; they change by announcement and the operator's page is the final word. No ads, no cookies, no analytics, no third-party scripts."
 },
 es:{
@@ -271,7 +271,7 @@ hint:"Los totales incluyen la tarjeta de ₩3.000 salvo que ya la tengas, y el t
 s3:"Puntos de equilibrio",thPass:"Pase",thPrice:"Precio",thBe:"Sale a cuenta con",
 beNote:"Un trayecto cuesta ₩1.550 con tarjeta (₩1.650 con billete). El pase empieza el día que lo cargas, no se puede cargar por adelantado y no sirve para entrar en Incheon T1 ni T2: allí solo se sale. No cubre GTX A/B/C, la línea Shinbundang ni los autobuses rojos interurbanos que salen de Seúl.",
 s4:"El trayecto al aeropuerto, completo",thWay:"Forma de entrar",thTime:"Tiempo",thFare:"Tarifa",
-oExp:"sin paradas, asiento asignado, billete aparte",tExp:"43 min",
+oExp:"sin paradas, asiento asignado, billete aparte",tExp:"43 min",oAllName:"AREX con paradas",
 oAll:"normas de metro, acepta T-money",tAll:"59 min",
 oLim:"Bus limusina del aeropuerto",oLimS:"6001/6015 · el 6701 cuesta ₩18.000 · buses nocturnos ₩17.000–18.000",tLim:"bus, puerta a puerta",
 allNote:"Desde la Terminal 2 el tren con paradas cuesta ₩5.350. El billete sencillo de AREX cuesta ₩100 más, con ₩500 de depósito que se devuelven en el torno de salida.",
@@ -280,13 +280,13 @@ optExp:"AREX exprés + T-money",optExpS:"la más rápida, 43 min, asiento asigna
 optLim:"Bus limusina + T-money",optLimS:"sin transbordos ni escaleras",
 optPass:"Climate Card + trayecto al aeropuerto",optPassS:"trayectos sin límite dentro de Seúl",
 optPassS0:"trayectos sin límite, pero no has puesto ninguno",
-ridesN:"trayectos",daysN:"días",perDay:"al día",
+ridesN:"trayectos",daysN:"días",daySing:"día",perDay:"al día",
 bigSub:"para {d} días y {r} trayectos al día: {x} menos que la siguiente opción",
 bigSub0:"sin trayectos de pago: solo el trayecto al aeropuerto",
 f1q:"¿Por qué la Climate Card no siempre es la respuesta?",f1a:"El pase compra trayectos sin límite, así que solo gana cuando los trayectos que pagarías cuestan más que el pase. Dos trayectos al día durante cuatro días son ₩12.400 con T-money, menos que el pase de 5 días de ₩15.000: pierde el pase. Cuatro trayectos al día durante cuatro días son ₩24.800 y el pase gana por ₩9.800. La tabla de arriba hace esta suma con tus números.",
 f2q:"¿Los totales incluyen el trayecto al aeropuerto en el pase?",f2a:"No. El pase no sirve para entrar en Incheon T1 ni T2, así que el trayecto al aeropuerto se paga siempre aparte, sea cual sea el plan diario. Los totales lo suman: el tren con paradas por defecto, o el exprés o la limusina cuando ese plan lo indica.",
 f3q:"¿Qué no está en el total?",f3a:"Taxis, KTX, GTX, la línea Shinbundang, los autobuses rojos interurbanos y todo lo que salga de los límites de Seúl. La comida y la eSIM también van aparte. Los taxis y los buses del aeropuerto aceptan T-money; GTX y la línea Shinbundang aceptan tarjeta pero no el pase de Seúl.",
-allTools:"Las tres herramientas gratis",t1:"Pedir y alergias",t2:"Lista de llegada",freeSheet:"Mapa gratis de 30 sitios (A4)",
+allTools:"Las tres herramientas gratis",t1:"Pedir y alergias",t2:"Lista de llegada",freeSheet:"Mapa gratis de 30 sitios (A4)",esHub:"Guía en español",
 legal:"Korea Travel Insider · página independiente, sin relación con ningún operador ni organismo público. Tarifas leídas en las páginas de los operadores, última revisión 2026-11-20; cambian por anuncio y la página del operador es la última palabra. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros."
 }};
 
@@ -344,7 +344,8 @@ function render(){
   var be="";
   F.passes.forEach(function(p){
     var rides=Math.ceil(p[1]/F.base);
-    be+="<tr><td>"+p[0]+"-day</td><td class=\"num\">"+n(p[1])+"</td><td>"+rides+" rides ("+(rides/p[0]).toFixed(1)+" "+t("perDay")+")</td></tr>";
+    var lab=p[0]+" "+(p[0]===1?t("daySing"):t("daysN"));
+    be+="<tr><td>"+lab+"</td><td class=\"num\">"+n(p[1])+"</td><td>"+rides+" "+t("ridesN")+" ("+(rides/p[0]).toFixed(1)+" "+t("perDay")+")</td></tr>";
   });
   document.getElementById("be").innerHTML=be;
 }
