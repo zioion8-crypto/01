@@ -97,6 +97,18 @@ footer a{color:var(--brand)}
 .two{display:grid;gap:10px}
 @media(min-width:620px){.two{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){th,td{padding:8px 8px}th.c,td.c,td.num{white-space:normal;word-break:break-word}}
+.leadcta{display:grid;gap:9px;margin:0 0 16px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:12px;background:var(--card)}
+.leadcta .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ok);text-transform:uppercase}
+.leadcta a.big{display:block;text-decoration:none;background:#15663f;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
+.leadcta a.big span{display:block;font-weight:500;font-size:12.5px;opacity:.93;margin-top:5px}
+.leadcta p.up{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.leadcta p.up a{color:var(--brand2);font-weight:700}
+.grp{font-size:12px;font-weight:800;letter-spacing:.05em;color:#8a6d1e;margin:16px 0 0;text-transform:uppercase}
+.install{margin:0 0 16px;padding:11px 13px;border:1px dashed var(--line);border-radius:11px;background:var(--card)}
+.install .t{font-size:13.5px;font-weight:800;margin:0 0 5px;color:var(--brand)}
+.install ul{margin:0;padding-left:17px;font-size:12.5px;color:var(--ink2)}
+.install li{margin:3px 0}
+.install .n{font-size:11.5px;color:var(--ink2);margin:6px 0 0;line-height:1.5}
 </style>
 </head>
 <body>
@@ -109,6 +121,21 @@ footer a{color:var(--brand)}
     <p class="sub">The prices that change, on one page. <b>Re-checked 15 Nov 2026</b> against the operator pages — AREX, Seoul Metro, the refund desks and the card networks.</p>
   </div>
 </header>
+
+<div class="leadcta">
+  <div class="lb">Start here · $0 · no sign-up</div>
+  <a class="big" href="https://zioion.gumroad.com/l/korea-en-1pager" target="_blank" rel="noopener">Download the free one-page cheat sheet (A4 PDF · $0) →<span>Airport train, transit card and tax refund — the same numbers as this page, on one A4 sheet.</span></a>
+  <p class="up"><b>Deeper upgrade (paid):</b> <a href="https://zioion.gumroad.com/l/korea-multicity-bundle" target="_blank" rel="noopener">55-page guide + 109-spot map pack — $12.99</a> · code <b>SEOUL20</b> takes $2 off for new customers.</p>
+</div>
+
+<div class="install">
+  <p class="t">Put it on your home screen — 10 seconds, free</p>
+  <ul>
+    <li><b>iPhone (Safari):</b> Share <b>⤴</b> → <b>Add to Home Screen</b></li>
+    <li><b>Android (Chrome):</b> <b>⋮</b> → <b>Add to Home screen</b></li>
+  </ul>
+  <p class="n">No app store, no account, no sign-up. One tap from the home-screen icon — this page has no external requests, so it also opens with no signal once your browser has saved it.</p>
+</div>
 
 <div class="ok"><b>Cross-Checked: Travel Guides + Korean Locals</b><br>
 Not one blogger's list: each place starts where English-language Korea guidebooks and independent writers already agree (Lonely Planet Korea 2026, Time Out Seoul, Travel + Leisure Asia), then has to survive a check against what Koreans in Seoul still use. 10 of the 109 spots carry the full evidence block — sources, date, and which side we took when they disagreed. Hours re-checked daily; sources re-crossed 2026-11-20. Independent editorial record, no paid placements.</div>
@@ -310,17 +337,26 @@ Not one blogger's list: each place starts where English-language Korea guidebook
 <section id="guides">
   <h2><span class="n">8</span>Free web app, and the paid books</h2>
   <p class="lead">The free one covers what to do. The paid ones cover the places and the queue-beating detail.</p>
+  <p class="grp">Free first · $0</p>
   <div class="deals">
-    <a class="deal" href="/01/korea-japan/" rel="noopener">
-      <div class="t">Korea + Japan in one trip · new for 2026/27</div>
-      <div class="m">Adding Japan to a Korea trip? Flights vs the overnight Busan–Hakata ferry (all fees), T-money vs Welcome Suica, AREX vs Skyliner, and the two tax-refund systems that now run in opposite directions. Free A4 sheet in English, Spanish and Chinese.</div>
-      <div class="p">free sheet · $14.99 pack · facts checked 2026-11-17</div>
+    <a class="deal" href="https://zioion.gumroad.com/l/korea-en-1pager" rel="noopener" target="_blank">
+      <div class="t">The one-page cheat sheet · free A4 PDF</div>
+      <div class="m">Everything this page quotes, on one sheet you can keep offline: AREX fares, the Climate Card and its gaps, the 440 machines that take a foreign card, the refund threshold. $0, no sign-up.</div>
+      <div class="p">$0 (PDF, instant) · same figures, re-checked 2026-11-20</div>
     </a>
     <a class="deal" href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html" rel="noopener" target="_blank">
       <div class="t">Korea Travel Bible — free web app</div>
       <div class="m">Trip planner, eight official money-saving schemes, phrase cards that staff can read, and a savings calculator. No app install, works offline once loaded.</div>
       <div class="p">free · seoultravelinsider.blogspot.com</div>
     </a>
+    <a class="deal" href="/01/korea-japan/" rel="noopener">
+      <div class="t">Korea + Japan in one trip · new for 2026/27</div>
+      <div class="m">Adding Japan to a Korea trip? Flights vs the overnight Busan–Hakata ferry (all fees), T-money vs Welcome Suica, AREX vs Skyliner, and the two tax-refund systems that now run in opposite directions. Free A4 sheet in English, Spanish and Chinese.</div>
+      <div class="p">free sheet · $14.99 pack · facts checked 2026-11-17</div>
+    </a>
+  </div>
+  <p class="grp">Deeper upgrade · paid</p>
+  <div class="deals">
     <a class="deal" href="https://zioion.gumroad.com/l/seoul-survival-guide" rel="noopener" target="_blank">
       <div class="t">The 72-Hour Seoul Survival Guide · 55 pages</div>
       <div class="m">Entry paperwork, transit cards, refunds, KTX, 47 checked places and a 72-hour plan. Code <b>SEOUL20</b> takes $2 off for new customers.</div>
@@ -388,6 +424,12 @@ Not one blogger's list: each place starts where English-language Korea guidebook
     })(spans[i]);
   }
 })();
+</script>
+<script>
+/* GA4-ready, inert until gtag exists: no request, no cookie, no data leaves the page by itself. */
+(function(){var m=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
+if(window.gtag){gtag('event','app_open',{display_mode:m?'standalone':'browser',language:document.documentElement.lang});}
+var g=document.querySelector('.install');if(g&&window.gtag){g.addEventListener('click',function(){gtag('event','install_guide_tap',{language:document.documentElement.lang});});}})();
 </script>
 </body>
 </html>

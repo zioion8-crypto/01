@@ -102,6 +102,18 @@ a.tcard span{display:block;font-size:12.5px;color:var(--ink2)}
 details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:8px 0;font-size:13px}
 details summary{cursor:pointer;font-weight:700;color:var(--brand)}
 details p{margin:7px 0 0;color:var(--ink2)}
+.leadcta{display:grid;gap:9px;margin:0 0 16px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:12px;background:var(--card)}
+.leadcta .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ok)}
+.leadcta a.big{display:block;text-decoration:none;background:#15663f;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
+.leadcta a.big span{display:block;font-weight:500;font-size:12.5px;opacity:.93;margin-top:5px}
+.leadcta p.up{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.leadcta p.up a{color:var(--brand2);font-weight:700}
+.grp{font-size:12px;font-weight:800;letter-spacing:.05em;color:#8a6d1e;margin:16px 0 0}
+.install{margin:0 0 16px;padding:11px 13px;border:1px dashed var(--line);border-radius:11px;background:var(--card)}
+.install .t{font-size:13.5px;font-weight:800;margin:0 0 5px;color:var(--brand)}
+.install ul{margin:0;padding-left:17px;font-size:12.5px;color:var(--ink2)}
+.install li{margin:3px 0}
+.install .n{font-size:11.5px;color:var(--ink2);margin:6px 0 0;line-height:1.5}
 </style>
 <script type="application/ld+json">
 {
@@ -165,6 +177,21 @@ details p{margin:7px 0 0;color:var(--ink2)}
     <p class="sub">同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是<b>两条通道</b>。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上。</p>
   </div>
 </header>
+
+<div class="leadcta">
+  <div class="lb">从这里开始 · $0 · 不用注册</div>
+  <a class="big" href="https://zioion.gumroad.com/l/korea-cn-1pager" target="_blank" rel="noopener">下载免费一页通（A4 PDF・$0）→<span>机场铁路、交通卡、退税的数字，和本页同一套，一页看完。</span></a>
+  <p class="up"><b>深度版（付费）：</b> <a href="https://zioion.gumroad.com/l/korea-multicity-bundle" target="_blank" rel="noopener">英文 55 页完整指南 + 109 处一键地图 $12.99</a> · 新客户用 <b>SEOUL20</b> 减 $2（暂无简体版 PDF）。</p>
+</div>
+
+<div class="install">
+  <p class="t">添加到主屏幕 — 10 秒，免费</p>
+  <ul>
+    <li><b>iPhone（Safari）:</b> 分享 <b>⤴</b> → <b>添加到主屏幕</b></li>
+    <li><b>Android（Chrome）:</b> <b>⋮</b> → <b>添加到主屏幕</b></li>
+  </ul>
+  <p class="n">不用应用商店、不用注册。微信／QQ 内置浏览器不支持「添加到主屏幕」，请用手机自带浏览器打开本页（本页零外部请求，保存后可离线看）。</p>
+</div>
 
 <div class="ok"><b>中国旅行指南・博主 × 韩国本地人 交叉验证</b><br>
 不是网红清单：先看中文韩国旅行指南、独立博主是否指向同一处，再确认韩国本地人现在还会去。109处中有10处附完整依据：出处、核实日期，以及说法冲突时我们采信了哪一方。营业时间每日复核，出处于 2026-11-20 重新交叉比对。入选与排序不含付费位。</div>
@@ -395,6 +422,12 @@ details p{margin:7px 0 0;color:var(--ink2)}
     })(spans[i]);
   }
 })();
+</script>
+<script>
+/* GA4-ready, inert until gtag exists: no request, no cookie, no data leaves the page by itself. */
+(function(){var m=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
+if(window.gtag){gtag('event','app_open',{display_mode:m?'standalone':'browser',language:document.documentElement.lang});}
+var g=document.querySelector('.install');if(g&&window.gtag){g.addEventListener('click',function(){gtag('event','install_guide_tap',{language:document.documentElement.lang});});}})();
 </script>
 </body>
 </html>

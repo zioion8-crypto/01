@@ -90,6 +90,18 @@ footer{border-top:1px solid var(--line);margin-top:30px;padding:16px 2px 0;font-
 footer p{margin:0 0 8px}
 footer a{color:var(--brand)}
 .small{font-size:12.5px;color:#5b6b67}
+.leadcta{display:grid;gap:9px;margin:0 0 16px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:12px;background:var(--card)}
+.leadcta .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ok)}
+.leadcta a.big{display:block;text-decoration:none;background:#15663f;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
+.leadcta a.big span{display:block;font-weight:500;font-size:12.5px;opacity:.93;margin-top:5px}
+.leadcta p.up{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.leadcta p.up a{color:var(--brand2);font-weight:700}
+.grp{font-size:12px;font-weight:800;letter-spacing:.05em;color:#8a6d1e;margin:16px 0 0}
+.install{margin:0 0 16px;padding:11px 13px;border:1px dashed var(--line);border-radius:11px;background:var(--card)}
+.install .t{font-size:13.5px;font-weight:800;margin:0 0 5px;color:var(--brand)}
+.install ul{margin:0;padding-left:17px;font-size:12.5px;color:var(--ink2)}
+.install li{margin:3px 0}
+.install .n{font-size:11.5px;color:var(--ink2);margin:6px 0 0;line-height:1.5}
 </style>
 </head>
 <body>
@@ -102,6 +114,21 @@ footer a{color:var(--brand)}
     <p class="sub">只放會變動的數字，全部在一頁。<b>2026-11-15</b> 依機場鐵路、首爾市、關稅廳的官方頁面重新複核。</p>
   </div>
 </header>
+
+<div class="leadcta">
+  <div class="lb">從這裡開始 · $0 · 免註冊</div>
+  <a class="big" href="https://zioion.gumroad.com/l/korea-tw-1pager" target="_blank" rel="noopener">下載免費一頁通（A4 PDF・$0）→<span>機場鐵路、交通卡、退稅的數字全在一頁，和本頁同一組數字。</span></a>
+  <p class="up"><b>深度版（付費）：</b> <a href="https://zioion.gumroad.com/l/seoul-survival-tw" target="_blank" rel="noopener">首爾 5 天 4 夜 付款・預約生存包（PDF 44 頁）NT$299</a></p>
+</div>
+
+<div class="install">
+  <p class="t">加到主畫面 — 10 秒，免費</p>
+  <ul>
+    <li><b>iPhone（Safari）:</b> 分享 <b>⤴</b> → <b>加入主畫面</b></li>
+    <li><b>Android（Chrome）:</b> <b>⋮</b> → <b>加到主畫面</b></li>
+  </ul>
+  <p class="n">不用 App Store、不用註冊。從主畫面圖示一點就開（本頁沒有任何外部請求，存過一次就能離線開）。</p>
+</div>
 
 <div class="ok"><b>台灣/香港旅遊指南・部落客 × 韓國在地人 交叉驗證</b><br>
 不是網紅清單：先看繁中韓國旅遊指南、部落客與 PTT・Dcard 是否指向同一處，再確認韓國在地人現在還會去。109處中有10處附完整依據：出處、查核日期，以及說法衝突時我們選了哪一邊。營業時間每日複核，出處 2026-11-20 重新交叉比對。入選與排序不含付費位。</div>
@@ -318,6 +345,7 @@ footer a{color:var(--brand)}
 <section id="guides">
   <h2><span class="n">9</span>免費網頁 App 與付費實戰包</h2>
   <p class="lead">免費版解決「要做什麼」，付費版解決「每一家店的現實」與「不用排隊的步驟」。</p>
+  <p class="grp">免費 · $0</p>
   <div class="deals">
     <a class="deal" href="/01/korea-japan/?lang=tw" rel="noopener">
       <div class="t">韓國＋日本一趟走完 · 2026/27 新版</div>
@@ -329,15 +357,18 @@ footer a{color:var(--brand)}
       <div class="m">行程規劃器、8 個官方省錢制度、給店員看的點餐卡、省錢計算機。不用安裝，開過一次就能離線看。</div>
       <div class="p">免費 · seoultravelinsider.blogspot.com</div>
     </a>
-    <a class="deal" href="https://zioion.gumroad.com/l/seoul-survival-tw" rel="noopener" target="_blank">
-      <div class="t">《首爾 5 天 4 夜 付款・預約 生存包》PDF 44 頁</div>
-      <div class="m">入境第一小時（仁川／金海／清州／大邱／濟州）、付款失敗三段備援、退稅級距例題、釜山與濟州 2 泊、快閃 3 日動線、給司機與店員的韓文卡。</div>
-      <div class="p">NT$299 · 2026 冬季版（幣別可切換）</div>
-    </a>
     <a class="deal" href="https://seoultravelinsider-tw.blogspot.com/" rel="noopener" target="_blank">
       <div class="t">繁體中文部落格 · 每週更新</div>
       <div class="m">退稅級距、交通卡對決、地方機場入境、Kakao T 刷卡失敗的解法，全部以繁體中文撰寫，數字標註複核日期。</div>
       <div class="p">免費閱讀 · seoultravelinsider-tw.blogspot.com</div>
+    </a>
+  </div>
+  <p class="grp">深度版 · 付費</p>
+  <div class="deals">
+    <a class="deal" href="https://zioion.gumroad.com/l/seoul-survival-tw" rel="noopener" target="_blank">
+      <div class="t">《首爾 5 天 4 夜 付款・預約 生存包》PDF 44 頁</div>
+      <div class="m">入境第一小時（仁川／金海／清州／大邱／濟州）、付款失敗三段備援、退稅級距例題、釜山與濟州 2 泊、快閃 3 日動線、給司機與店員的韓文卡。</div>
+      <div class="p">NT$299 · 2026 冬季版（幣別可切換）</div>
     </a>
   </div>
   <p class="aff">付費商品由 Gumroad 自動出貨（PDF）。價格為 2026-11-15 的頁面標價，貨幣可在頁面切換。文章內的連結為商品頁直連，本站不提供代訂、代購或導遊服務。</p>
@@ -391,6 +422,12 @@ footer a{color:var(--brand)}
     })(spans[i]);
   }
 })();
+</script>
+<script>
+/* GA4-ready, inert until gtag exists: no request, no cookie, no data leaves the page by itself. */
+(function(){var m=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
+if(window.gtag){gtag('event','app_open',{display_mode:m?'standalone':'browser',language:document.documentElement.lang});}
+var g=document.querySelector('.install');if(g&&window.gtag){g.addEventListener('click',function(){gtag('event','install_guide_tap',{language:document.documentElement.lang});});}})();
 </script>
 </body>
 </html>
