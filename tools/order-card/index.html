@@ -261,7 +261,7 @@ faq2q:"Does it work without internet?",faq2a:"Once loaded, tapping and copying w
 faq3q:"Will the staff understand it?",faq3a:"The Korean is plain and current. Staff may not speak English, so show the screen instead of reading it out.",
 allTools:"All three free tools",freeSheet:"Free 30-spot map (A4)",esHub:"Spanish guide",
 legal:"Korea Travel Insider · independent page, not affiliated with any restaurant, operator or government body. No ads, no cookies, no analytics, no third-party scripts. Phrases checked 2026-11-20.",
-picked:"picked",countLabel:"lines"},
+picked:"picked",picked1:"picked",pickedN:"picked",countLabel:"lines"},
 es:{kicker:"Korea Travel Insider · herramienta gratis",h1:"Tarjeta coreana para pedir y para alergias",
 sub:"Toca lo que necesitas. La página lo escribe en coreano, en letra grande para enseñarlo desde el otro lado de la mesa.",
 cardLabel:"Enseña esto al personal",copy:"Copiar en coreano",speak:"Leer en voz alta",clear:"Borrar",
@@ -276,7 +276,7 @@ faq2q:"¿Funciona sin internet?",faq2a:"Una vez cargada, tocar y copiar funciona
 faq3q:"¿Va a entenderlo el personal?",faq3a:"El coreano es llano y actual. Puede que el personal no hable inglés: enseña la pantalla en vez de leerla.",
 allTools:"Las tres herramientas gratis",freeSheet:"Mapa gratis de 30 sitios (A4)",esHub:"Guía en español",
 legal:"Korea Travel Insider · página independiente, sin relación con ningún restaurante, operador ni organismo público. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros. Frases revisadas el 2026-11-20.",
-picked:"elegidas",countLabel:"líneas"},
+picked:"elegidas",picked1:"elegida",pickedN:"elegidas",countLabel:"líneas"},
 ja:{kicker:"Korea Travel Insider · 無料ツール",h1:"韓国レストラン 注文・アレルギーカード",
 sub:"必要なものをタップすると、テーブル越しに見せられる大きさで韓国語が出ます。",
 cardLabel:"店員に見せてください",copy:"韓国語をコピー",speak:"韓国語を読み上げ",clear:"消す",
@@ -291,7 +291,7 @@ faq2q:"ネットなしでも使えますか。",faq2a:"一度読み込めば、�
 faq3q:"店員に通じますか。",faq3a:"平易で実際に使われている韓国語です。英語が通じない場合があるので、読み上げより画面を見せてください。",
 allTools:"無料ツール3種",freeSheet:"無料30スポット地図（A4）",esHub:"スペイン語ガイド",
 legal:"Korea Travel Insider · 独立したページで、どの飲食店・事業者・公的機関とも関係ありません。広告・Cookie・解析・外部スクリプトなし。文言確認日 2026-11-20。",
-picked:"件選択",countLabel:"行"},
+picked:"件選択",picked1:"件選択",pickedN:"件選択",countLabel:"行"},
 tw:{kicker:"Korea Travel Insider · 免費工具",h1:"韓國餐廳點餐・過敏卡",
 sub:"點選你需要的，頁面會用大字寫出韓文，隔著桌子也能給店員看。",
 cardLabel:"給店員看這張",copy:"複製韓文",speak:"唸出韓文",clear:"清除",
@@ -306,7 +306,7 @@ faq2q:"沒有網路也能用嗎？",faq2a:"載入過後，點選與複製都可�
 faq3q:"店員看得懂嗎？",faq3a:"用字平實、是現行說法。店員可能不講英文，請直接給對方看畫面。",
 allTools:"三種免費工具",freeSheet:"免費30個地點地圖（A4）",esHub:"西班牙語指南",
 legal:"Korea Travel Insider · 獨立頁面，與任何餐廳、業者或政府機關無關。無廣告、無 Cookie、無分析、無外部腳本。用語確認日 2026-11-20。",
-picked:"已選",countLabel:"行"},
+picked:"已選",picked1:"已選",pickedN:"已選",countLabel:"行"},
 cn:{kicker:"Korea Travel Insider · 免费工具",h1:"韩国餐厅点餐·过敏卡",
 sub:"点选你需要的，页面会用大字写出韩文，隔着桌子也能给店员看。",
 cardLabel:"给店员看这张",copy:"复制韩文",speak:"朗读韩文",clear:"清除",
@@ -321,7 +321,7 @@ faq2q:"没有网络也能用吗？",faq2a:"加载过之后，点选和复制都�
 faq3q:"店员能看懂吗？",faq3a:"用词平实、是现行说法。店员可能不说英文，请直接给对方看画面。",
 allTools:"三种免费工具",freeSheet:"免费30个地点地图（A4）",esHub:"西班牙语指南",
 legal:"Korea Travel Insider · 独立页面，与任何餐厅、业者或政府机关无关。无广告、无 Cookie、无分析、无外部脚本。用语确认日 2026-11-20。",
-picked:"已选",countLabel:"行"}
+picked:"已选",picked1:"已选",pickedN:"已选",countLabel:"行"}
 };
 
 var LANGS=[["en","EN"],["es","ES"],["ja","日本語"],["tw","繁中"],["cn","简体"]];
@@ -396,7 +396,7 @@ function render(){
     '</div><div class="tr">'+esc(p[lang]||p.en)+"</div></div>";
   });
   cardEl.innerHTML=html;
-  countEl.textContent=list.length+" "+t("picked");
+  countEl.textContent=list.length+" "+t(list.length===1?"picked1":"pickedN");
   btnCopy.disabled=false;btnSpeak.disabled=false;btnClear.disabled=false;
 }
 
