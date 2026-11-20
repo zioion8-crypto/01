@@ -334,12 +334,12 @@ function render(){
   });
   document.getElementById("rows").innerHTML=html;
 
-  document.getElementById("bigVal").textContent=n(min)+" · "+t(list[0].k);
+  document.getElementById("bigVal").textContent=n(min);
   var diff=list[1]?list[1].cost-min:0;
   var sub=(state.rides>0)
     ? t("bigSub").replace("{d}",state.days).replace("{r}",state.rides).replace("{x}",n(diff))
     : t("bigSub0");
-  document.getElementById("bigSub").textContent=sub;
+  document.getElementById("bigSub").textContent=t(list[0].k)+" — "+sub;
 
   var be="";
   F.passes.forEach(function(p){
