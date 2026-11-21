@@ -380,8 +380,8 @@ function render(){
 
   document.getElementById("bigVal").textContent=n(min);
   var diff=list[1]?list[1].cost-min:0;
-  var dw=(state.days===1?t("daySing"):state.days+" "+t("daysN"));
-  var rw=(state.rides===1?"1 "+t("rideSing"):state.rides+" "+t("ridesN"));
+  var dw=(state.days+" "+(state.days===1?t("daySing"):t("daysN")));
+  var rw=(state.rides+" "+(state.rides===1?t("rideSing"):t("ridesN")));
   var sub=(state.rides>0)
     ? t("bigSub").replace("{d}",dw).replace("{r}",rw).replace("{x}",n(diff))
     : t("bigSub0");
