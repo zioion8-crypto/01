@@ -82,6 +82,7 @@ a{color:var(--jp)}
 
 /* mobile: tables keep real table layout and scroll inside their own box */
 .tbl{position:relative;max-width:100%}
+.tbl-hint{display:none}
 @media (max-width:560px){
   .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0 6px;background:#fff;
     border:1px solid var(--line);border-radius:8px}
@@ -95,6 +96,7 @@ a{color:var(--jp)}
   .tbl::-webkit-scrollbar{height:6px}
   .tbl::-webkit-scrollbar-thumb{background:#c7cedb;border-radius:3px}
   .tbl{scrollbar-width:thin;scrollbar-color:#c7cedb #eef1f6}
+  .tbl-hint{display:block;margin:6px 2px 14px;font-size:11.5px;line-height:1.5;color:#6b7484;text-align:right}
 }
 </style>
 </head>
@@ -135,6 +137,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">Swipe the table sideways to see every column.</p>
   <p class="small">The Queen Beetle fast ferry stopped in August 2024 and JR Kyushu left the ferry business that December; the only ship to Fukuoka is the New Camellia, which does not sail every day.</p>
 
   <h2>2. Two cards, two countries</h2>
@@ -150,6 +153,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">Swipe the table sideways to see every column.</p>
 
   <h2>3. Tax back: opposite directions since 1 November 2026</h2>
   <div class="tbl">
@@ -163,6 +167,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">Swipe the table sideways to see every column.</p>
 
   <h2>4. Four things that catch people</h2>
   <ul class="tight">
@@ -206,6 +211,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">Desliza la tabla hacia un lado para ver todas las columnas.</p>
   <p class="small">El ferri rápido Queen Beetle paró en agosto de 2024 y JR Kyushu dejó el negocio de ferris ese diciembre; el único barco a Fukuoka es el New Camellia, que no navega todos los días.</p>
 
   <h2>2. Dos tarjetas, dos países</h2>
@@ -221,6 +227,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">Desliza la tabla hacia un lado para ver todas las columnas.</p>
 
   <h2>3. Devolución de impuestos: direcciones opuestas desde el 1 de noviembre de 2026</h2>
   <div class="tbl">
@@ -234,6 +241,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">Desliza la tabla hacia un lado para ver todas las columnas.</p>
 
   <h2>4. Cuatro cosas que sorprenden</h2>
   <ul class="tight">
@@ -277,6 +285,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">表格可左右滑動，查看所有欄位。</p>
   <p class="small">Queen Beetle 高速船 2024 年 8 月停航，JR 九州同年 12 月退出船舶事業；飛福岡只剩 New Camellia 一艘船，而且不是每天開。</p>
 
   <h2>2. 兩張卡、兩個國家</h2>
@@ -292,6 +301,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">表格可左右滑動，查看所有欄位。</p>
 
   <h2>3. 退稅：2026 年 11 月 1 日起方向相反</h2>
   <div class="tbl">
@@ -305,6 +315,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">表格可左右滑動，查看所有欄位。</p>
 
   <h2>4. 四個讓人措手不及的地方</h2>
   <ul class="tight">
@@ -348,6 +359,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">表は横にスワイプすると全列が見えます。</p>
   <p class="small">高速船Queen Beetleは2024年8月に運航を止め、JR九州も同年12月に船舶事業から撤退しました。福岡行きの船はNew Camelliaだけです。</p>
 
   <h2>2. 2枚のカード、2つの国</h2>
@@ -363,6 +375,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">表は横にスワイプすると全列が見えます。</p>
 
   <h2>3. 還付：2つの制度は逆向きに動いている</h2>
   <div class="tbl">
@@ -376,6 +389,7 @@ a{color:var(--jp)}
     </tbody>
     </table>
   </div>
+  <p class="tbl-hint">表は横にスワイプすると全列が見えます。</p>
 
   <h2>4. 四つの落とし穴</h2>
   <ul class="tight">
