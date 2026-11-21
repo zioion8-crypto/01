@@ -45,7 +45,7 @@
         {
           "@type": "Question",
           "name": "Is the Climate Card cheaper than a T-money card in Seoul?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Only above the break-even point. A single ride costs ₩1,550 with a T-money card, so the 1-day pass at ₩5,000 pays off at about four rides, the 3-day pass at ₩10,000 at about seven rides in three days, and the 5-day pass at ₩15,000 at about ten rides in five days. The pass needs its own ₩3,000 Climate Card — a T-money card cannot be loaded with it — and an Android phone with the mobile Climate Card replaces that ₩3,000 with ₩0. A T-money card is a separate ₩3,000 if you do not already own one."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Only above the break-even point. A single ride costs ₩1,550 with a T-money card, so the 1-day pass at ₩5,000 pays off at about four rides if you buy both cards (six if you already own a T-money card), the 3-day pass at ₩10,000 at about seven rides in three days, and the 5-day pass at ₩15,000 at about ten rides in five days. The pass needs its own ₩3,000 Climate Card — a T-money card cannot be loaded with it — and an Android phone with the mobile Climate Card replaces that ₩3,000 with ₩0. A T-money card is a separate ₩3,000 if you do not already own one."}
         },
         {
           "@type": "Question",
@@ -192,6 +192,7 @@ footer a{color:var(--brand);font-weight:600}
       <thead><tr><th data-i18n="thPass">Pass</th><th data-i18n="thPrice">Price</th><th data-i18n="thBe">Pays off at</th></tr></thead>
       <tbody id="be"></tbody>
     </table>
+    <p class="hint" data-i18n="beCardNote">These lines follow the card choices you set above: the pass fare plus the ₩3,000 physical Climate Card, against a T-money card (₩3,000 unless you already own one) at ₩1,550 a ride. An Android phone with the mobile Climate Card pays ₩0 for the card in the pass, but a T-money card you already own adds about two rides to every line.</p>
     <p class="note" data-i18n="beNote">A single ride is ₩1,550 with a card (₩1,650 with a paper ticket). The pass starts on the day it is loaded, cannot be pre-loaded, and cannot be used to board at Incheon T1 or T2 — those are exit only for it. It does not cover GTX A/B/C, the Shinbundang Line or red intercity buses leaving Seoul.</p>
   </section>
 
@@ -248,6 +249,7 @@ lPassCard:"Climate Card: the card itself",pcPhysical:"Physical card · ₩3,000"
 s2:"What each plan costs",thOpt:"Option",thCost:"Total",
 hint:"Totals include the ₩3,000 T-money card unless you already own one, the ₩3,000 Climate Card for the pass, and the airport leg in both directions if you asked for the return.",
 s3:"Break-even lines",thPass:"Pass",thPrice:"Price",thBe:"Pays off at",
+beCardNote:"These lines follow the card choices you set above: the pass fare plus the ₩3,000 physical Climate Card, against a T-money card (₩3,000 unless you already own one) at ₩1,550 a ride. An Android phone with the mobile Climate Card pays ₩0 for the card in the pass, but a T-money card you already own adds about two rides to every line.",
 beNote:"A single ride is ₩1,550 with a card (₩1,650 with a paper ticket). The pass starts on the day it is loaded, cannot be pre-loaded, and cannot be used to board at Incheon T1 or T2 — those are exit only for it. It does not cover GTX A/B/C, the Shinbundang Line or red intercity buses leaving Seoul.",
 s4:"The airport leg, in full",thWay:"Way in",thTime:"Time",thFare:"Fare",
 oExp:"non-stop, assigned seat, separate ticket",tExp:"43 min",tExp2:"51 min",oAllName:"AREX all-stop",
@@ -279,6 +281,7 @@ lPassCard:"Climate Card: la tarjeta en sí",pcPhysical:"Tarjeta física · ₩3.
 s2:"Lo que cuesta cada plan",thOpt:"Opción",thCost:"Total",
 hint:"Los totales incluyen la tarjeta T-money de ₩3.000 salvo que ya la tengas, la tarjeta de la Climate Card de ₩3.000 para el pase, y el trayecto al aeropuerto en los dos sentidos si pediste la vuelta.",
 s3:"Puntos de equilibrio",thPass:"Pase",thPrice:"Precio",thBe:"Sale a cuenta con",
+beCardNote:"Estas líneas siguen las tarjetas que elijas arriba: la tarifa del pase más la tarjeta física Climate Card de ₩3.000, frente a una T-money (₩3.000 salvo que ya la tengas) a ₩1.550 por trayecto. Con un móvil Android y la tarjeta móvil Climate Card esa tarjeta cuesta ₩0, pero una T-money que ya tengas sube cada línea unos dos trayectos.",
 beNote:"Un trayecto cuesta ₩1.550 con tarjeta (₩1.650 con billete). El pase empieza el día que lo cargas, no se puede cargar por adelantado y no sirve para entrar en Incheon T1 ni T2: allí solo se sale. No cubre GTX A/B/C, la línea Shinbundang ni los autobuses rojos interurbanos que salen de Seúl.",
 s4:"El trayecto al aeropuerto, completo",thWay:"Forma de entrar",thTime:"Tiempo",thFare:"Tarifa",
 oExp:"sin paradas, asiento asignado, billete aparte",tExp:"43 min",tExp2:"51 min",oAllName:"AREX con paradas",
@@ -388,8 +391,9 @@ function render(){
   document.getElementById("bigSub").textContent=t(list[0].k)+" — "+sub;
 
   var be="";
+  var cardDelta=(state.pcMobile?0:F.card)-(state.own?0:F.card);
   F.passes.forEach(function(p){
-    var rides=Math.ceil(p[1]/F.base);
+    var rides=Math.max(1,Math.ceil((p[1]+cardDelta)/F.base));
     var lab=p[0]+" "+(p[0]===1?t("daySing"):t("daysN"));
     be+="<tr><td>"+lab+"</td><td class=\"num\">"+n(p[1])+"</td><td>"+rides+" "+t("ridesN")+" ("+(rides/p[0]).toFixed(1)+" "+t("perDay")+")</td></tr>";
   });
