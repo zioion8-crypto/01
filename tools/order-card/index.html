@@ -7,13 +7,16 @@
 <meta name="robots" content="index,follow,max-image-preview:large">
 <title>Korean Restaurant Order &amp; Allergy Card — Free, No Login (2026)</title>
 <meta name="description" content="A free one-screen Korean order card for restaurants: tap the dishes, spice level, no-pork, no-seafood or allergy lines and show the Korean text, copy it or play it aloud. Works on a phone, no account, no app.">
-<link rel="canonical" href="https://zioion8-crypto.github.io/01/tools/order-card/">
+<link rel="canonical" id="canonical" href="https://zioion8-crypto.github.io/01/tools/order-card/">
+<link rel="alternate" hreflang="en" href="https://zioion8-crypto.github.io/01/tools/order-card/">
+<link rel="alternate" hreflang="es" href="https://zioion8-crypto.github.io/01/tools/order-card/?lang=es">
 <link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/tools/order-card/">
 <meta property="og:title" content="Korean Restaurant Order &amp; Allergy Card — free web tool">
 <meta property="og:description" content="Tap what you need, show the Korean line: dishes, spice level, no pork, no seafood, allergies, the bill. Free, no login, works on a phone.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://zioion8-crypto.github.io/01/tools/order-card/">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -343,8 +346,33 @@ function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g
 
 function t(k){return (T[lang]&&T[lang][k])||T.en[k]||"";}
 
+var META={
+en:{title:"Korean Restaurant Order & Allergy Card — Free, No Login (2026)",
+desc:"A free one-screen Korean order card for restaurants: tap the dishes, spice level, no-pork, no-seafood or allergy lines and show the Korean text, copy it or play it aloud. Works on a phone, no account, no app.",
+ogTitle:"Korean Restaurant Order & Allergy Card — free web tool",
+ogDesc:"Tap what you need, show the Korean line: dishes, spice level, no pork, no seafood, allergies, the bill. Free, no login, works on a phone.",
+locale:"en_US"},
+es:{title:"Tarjeta coreana para pedir y para alergias — gratis, sin registro (2026)",
+desc:"Tarjeta coreana de una pantalla para restaurantes: marca los platos, el picante, sin cerdo, sin marisco o las alergias y enseña el texto en coreano, cópialo o léelo en voz alta. Funciona en el móvil, sin cuenta y sin app.",
+ogTitle:"Tarjeta coreana para pedir y para alergias — herramienta gratis",
+ogDesc:"Marca lo que necesitas y enseña la frase en coreano: platos, picante, sin cerdo, sin marisco, alergias y la cuenta. Gratis, sin registro, en el móvil.",
+locale:"es_ES"}};
+
+function applyMeta(){
+  var m=META[lang]||META.en;
+  var base="https://zioion8-crypto.github.io/01/tools/order-card/";
+  document.title=m.title;
+  function set(sel,attr,val){var e=document.querySelector(sel);if(e)e.setAttribute(attr,val);}
+  set('meta[name="description"]',"content",m.desc);
+  set('meta[property="og:title"]',"content",m.ogTitle);
+  set('meta[property="og:description"]',"content",m.ogDesc);
+  set('meta[property="og:locale"]',"content",m.locale);
+  set('link[rel="canonical"]',"href",base+(lang==="es"?"?lang=es":""));
+}
+
 function paintI18n(){
   document.documentElement.lang=(lang==="tw")?"zh-Hant":(lang==="cn")?"zh-Hans":lang;
+  applyMeta();
   var els=document.querySelectorAll("[data-i18n]");
   for(var i=0;i<els.length;i++){
     var k=els[i].getAttribute("data-i18n");
