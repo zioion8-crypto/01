@@ -105,6 +105,7 @@ footer a{color:#4d6b64}
 }
 
 #answer td:first-child,#answer th:first-child{width:31%}
+#kr td:first-child,#kr th:first-child{width:27%}
 #jpkr td:first-child,#jpkr th:first-child{width:24%}
 #jpkr td:nth-child(2),#jpkr th:nth-child(2){width:38%}
 #rule td:first-child,#rule th:first-child{width:28%}
@@ -233,7 +234,7 @@ footer a{color:#4d6b64}
       <div class="q">영수증이랑 환급 전표 같이 주세요.（領収書と還付伝票をください）</div>
     </div>
   </div>
-  <div class="krcopy" id="kr">
+  <div class="krcopy" id="krphrases">
     <span data-kr="여권 여기 있습니다"><b>여권 여기 있습니다</b> パスポートはこちらです<button type="button">コピー</button></span>
     <span data-kr="즉시환급 되나요?"><b>즉시환급 되나요?</b> 即時還付できますか<button type="button">コピー</button></span>
     <span data-kr="영수증이랑 환급 전표 같이 주세요"><b>영수증이랑 환급 전표 같이 주세요</b> 領収書と還付伝票をください<button type="button">コピー</button></span>
@@ -399,7 +400,7 @@ footer a{color:#4d6b64}
 
 <script>
 (function(){
-  var box=document.getElementById("kr");
+  var box=document.getElementById("krphrases");
   if(!box) return;
   var els=box.querySelectorAll("span[data-kr]");
   for(var i=0;i<els.length;i++){
