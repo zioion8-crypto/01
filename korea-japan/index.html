@@ -80,9 +80,21 @@ a{color:var(--jp)}
 .kr-t{color:var(--kr);font-weight:700}
 .jp-t{color:var(--jp);font-weight:700}
 
+/* mobile: tables keep real table layout and scroll inside their own box */
+.tbl{position:relative;max-width:100%}
 @media (max-width:560px){
-  table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;min-width:560px}
-  .wrap{overflow-x:hidden}
+  .tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0 6px;background:#fff;
+    border:1px solid var(--line);border-radius:8px}
+  .tbl>table{min-width:560px;width:560px;margin:0;border:0}
+  .tbl>table th:first-child,.tbl>table td:first-child{border-left:0}
+  .tbl>table th:last-child,.tbl>table td:last-child{border-right:0}
+  .tbl>table tr:first-child>th,.tbl>table tr:first-child>td{border-top:0}
+  .tbl>table tr:last-child>td{border-bottom:0}
+  table{font-size:12.6px}
+  th,td{padding:6px 7px}
+  .tbl::-webkit-scrollbar{height:6px}
+  .tbl::-webkit-scrollbar-thumb{background:#c7cedb;border-radius:3px}
+  .tbl{scrollbar-width:thin;scrollbar-color:#c7cedb #eef1f6}
 }
 </style>
 </head>
@@ -111,7 +123,8 @@ a{color:var(--jp)}
 
   <h2>1. The hop: five routes, priced the same day</h2>
   <p class="lead">There is no fast ferry any more. What is left is one overnight ship, three airport pairs and a shinkansen — and the cheapest is not the one that saves the most time.</p>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th>Route</th><th>Time</th><th>Cheapest, Nov 2026</th><th>When it wins</th></tr></thead>
     <tbody>
       <tr><td>Incheon → Narita (air)</td><td class="num">2 h 28</td><td>LCC from ~US$72 one way; return from US$180</td><td>The lowest fare. Narita is 60–90 min from central Tokyo</td></tr>
@@ -120,11 +133,13 @@ a{color:var(--jp)}
       <tr><td>Busan → Hakata (ferry)</td><td class="num">22:30 → 07:30</td><td>₩171,000 all-in (~US$128) / ¥19,900 back</td><td>The night is your bed: nine hours, seven of them asleep</td></tr>
       <tr><td>Hakata → Shin-Osaka (rail)</td><td class="num">2 h 30</td><td>Nozomi ¥15,600; the JR Pass is not worth it here</td><td>City centre to city centre, no airport at either end</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
   <p class="small">The Queen Beetle fast ferry stopped in August 2024 and JR Kyushu left the ferry business that December; the only ship to Fukuoka is the New Camellia, which does not sail every day.</p>
 
   <h2>2. Two cards, two countries</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">Korea</th><th>Japan</th></tr></thead>
     <tbody>
       <tr><td>Buy</td><td><span class="kr-t">T-money</span> for everything, plus the <span class="kr-t">Climate Card</span> short-term pass if you spend 2+ days in Seoul</td><td><span class="jp-t">Welcome Suica</span> (no deposit) or Mobile Suica on an iPhone; ICOCA if you land at Kansai</td></tr>
@@ -133,10 +148,12 @@ a{color:var(--jp)}
       <tr><td>Airport train</td><td>AREX Express ₩13,000 (43 min, separate ticket) · all-stop ₩4,750 (59 min, T-money)</td><td>Skyliner ¥2,570 (41 min) · N’EX ¥3,070 (53 min) · Haruka ¥1,900 Osaka, ¥2,700 Kyoto</td></tr>
       <tr><td>The limit that bites</td><td>The Climate Card cannot start at Incheon Airport stations; the 30-day pass ended September 2026</td><td>28-day tourist cards refund nothing. Android Suica is not here until 2027</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>3. Tax back: opposite directions since 1 November 2026</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">Korea</th><th>Japan (purchases from 2026.11.01)</th></tr></thead>
     <tbody>
       <tr><td>Where</td><td>At the till, before you pay, with the original passport</td><td>At a customs kiosk on departure, after showing the goods</td></tr>
@@ -144,7 +161,8 @@ a{color:var(--jp)}
       <tr><td>Deadline</td><td>Goods out of the country, unused, within 3 months</td><td>Customs check within 90 days of purchase</td></tr>
       <tr><td>Trap</td><td>Asking after paying — the passport must be scanned first</td><td>Checking the bag first; one missing item cancels the receipt</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>4. Four things that catch people</h2>
   <ul class="tight">
@@ -176,7 +194,8 @@ a{color:var(--jp)}
 
   <h2>1. El cruce: cinco rutas con el precio del mismo día</h2>
   <p class="lead">Ya no hay ferri rápido. Queda un barco nocturno, tres pares de aeropuertos y un shinkansen; el más barato no es el que ahorra más tiempo.</p>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th>Ruta</th><th>Tiempo</th><th>Lo más barato, nov 2026</th><th>Cuándo conviene</th></tr></thead>
     <tbody>
       <tr><td>Incheon → Narita (avión)</td><td class="num">2 h 28</td><td>Low cost desde ~US$72 por tramo; ida y vuelta desde US$180</td><td>La tarifa más baja. Narita está a 60–90 min del centro de Tokio</td></tr>
@@ -185,11 +204,13 @@ a{color:var(--jp)}
       <tr><td>Busan → Hakata (ferri)</td><td class="num">22:30 → 07:30</td><td>₩171.000 todo incluido (~US$128) / ¥19.900 de vuelta</td><td>La noche es tu cama: nueve horas, siete dormidas</td></tr>
       <tr><td>Hakata → Shin-Osaka (tren)</td><td class="num">2 h 30</td><td>Nozomi ¥15.600; el JR Pass no compensa aquí</td><td>Centro a centro, sin aeropuerto en los extremos</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
   <p class="small">El ferri rápido Queen Beetle paró en agosto de 2024 y JR Kyushu dejó el negocio de ferris ese diciembre; el único barco a Fukuoka es el New Camellia, que no navega todos los días.</p>
 
   <h2>2. Dos tarjetas, dos países</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">Corea</th><th>Japón</th></tr></thead>
     <tbody>
       <tr><td>Qué comprar</td><td><span class="kr-t">T-money</span> para todo, más el pase corto <span class="kr-t">Climate Card</span> si pasas 2 días o más en Seúl</td><td><span class="jp-t">Welcome Suica</span> (sin depósito) o Mobile Suica en iPhone; ICOCA si aterrizas en Kansai</td></tr>
@@ -198,10 +219,12 @@ a{color:var(--jp)}
       <tr><td>Tren del aeropuerto</td><td>AREX Express ₩13.000 (43 min, billete aparte) · paradas ₩4.750 (59 min, T-money)</td><td>Skyliner ¥2.570 (41 min) · N’EX ¥3.070 (53 min) · Haruka ¥1.900 Osaka, ¥2.700 Kioto</td></tr>
       <tr><td>El límite que duele</td><td>La Climate Card no se puede iniciar en las estaciones del aeropuerto de Incheon; el pase de 30 días terminó en septiembre de 2026</td><td>Las tarjetas de 28 días no devuelven nada. El Suica de Android llega en 2027</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>3. Devolución de impuestos: direcciones opuestas desde el 1 de noviembre de 2026</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">Corea</th><th>Japón (compras desde 2026.11.01)</th></tr></thead>
     <tbody>
       <tr><td>Dónde</td><td>En la caja, antes de pagar, con el pasaporte original</td><td>En un kiosco de aduana al salir, mostrando los productos</td></tr>
@@ -209,7 +232,8 @@ a{color:var(--jp)}
       <tr><td>Plazo</td><td>Productos fuera del país, sin usar, en 3 meses</td><td>Control de aduana en 90 días desde la compra</td></tr>
       <tr><td>Trampa</td><td>Pedirlo después de pagar: el pasaporte se escanea antes</td><td>Facturar la maleta primero; un producto que falte anula el recibo</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>4. Cuatro cosas que sorprenden</h2>
   <ul class="tight">
@@ -241,7 +265,8 @@ a{color:var(--jp)}
 
   <h2>1. 跨境：五條路線，同一天查的價格</h2>
   <p class="lead">高速船已經沒有了。現在只剩一艘夜船、三組機場和一條新幹線，而最便宜的那條並不是最省時間的那條。</p>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th>路線</th><th>時間</th><th>2026 年 11 月最低價</th><th>什麼時候選它</th></tr></thead>
     <tbody>
       <tr><td>仁川 → 成田（飛機）</td><td class="num">2 小時 28 分</td><td>廉航單程約 US$72 起；來回 US$180 起</td><td>票價最低。成田到東京市區 60–90 分鐘</td></tr>
@@ -250,11 +275,13 @@ a{color:var(--jp)}
       <tr><td>釜山 → 博多（渡輪）</td><td class="num">22:30 → 07:30</td><td>含稅費 ₩171,000（約 US$128）／回程 ¥19,900</td><td>今晚的床就是船艙：九小時，七小時在睡</td></tr>
       <tr><td>博多 → 新大阪（鐵路）</td><td class="num">2 小時 30 分</td><td>Nozomi ¥15,600；這段買 JR Pass 不划算</td><td>市中心到市中心，兩端都不用進機場</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
   <p class="small">Queen Beetle 高速船 2024 年 8 月停航，JR 九州同年 12 月退出船舶事業；飛福岡只剩 New Camellia 一艘船，而且不是每天開。</p>
 
   <h2>2. 兩張卡、兩個國家</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">韓國</th><th>日本</th></tr></thead>
     <tbody>
       <tr><td>買什麼</td><td>全部用 <span class="kr-t">T-money</span>；在首爾待兩天以上再加 <span class="kr-t">氣候同行卡</span>短期券</td><td><span class="jp-t">Welcome Suica</span>（免押金）或 iPhone 的 Mobile Suica；從關西落地可買 ICOCA</td></tr>
@@ -263,10 +290,12 @@ a{color:var(--jp)}
       <tr><td>機場鐵路</td><td>AREX 直達 ₩13,000（43 分，另購票）· 普通車 ₩4,750（59 分，T-money）</td><td>Skyliner ¥2,570（41 分）· N’EX ¥3,070（53 分）· Haruka ¥1,900 大阪、¥2,700 京都</td></tr>
       <tr><td>最容易踩的限制</td><td>氣候同行卡不能在仁川機場兩站上車；30 日券已於 2026 年 9 月結束</td><td>28 天觀光卡餘額不退。Android 版 Suica 要等到 2027 年</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>3. 退稅：2026 年 11 月 1 日起方向相反</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">韓國</th><th>日本（2026.11.01 起的消費）</th></tr></thead>
     <tbody>
       <tr><td>在哪裡</td><td>結帳前在櫃檯，出示護照正本</td><td>出境時在海關自助機，出示商品本人</td></tr>
@@ -274,7 +303,8 @@ a{color:var(--jp)}
       <tr><td>期限</td><td>商品 3 個月內未使用帶出境</td><td>購買日起 90 天內完成海關查驗</td></tr>
       <tr><td>陷阱</td><td>付完錢才問：護照必須先掃描</td><td>先託運行李；同一張收據少一件，整張都不能退</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>4. 四個讓人措手不及的地方</h2>
   <ul class="tight">
@@ -306,7 +336,8 @@ a{color:var(--jp)}
 
   <h2>1. 移動：5ルート、同じ日に値付け</h2>
   <p class="lead">高速船はもうありません。残ったのは夜行の船1隻、3つの空港ペアと新幹線。いちばん安いのが、いちばん時間を節約できる便とは限りません。</p>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th>ルート</th><th>時間</th><th>最安値（2026年11月）</th><th>選ぶ目安</th></tr></thead>
     <tbody>
       <tr><td>仁川 → 成田（飛行機）</td><td class="num">2時間28分</td><td>LCC片道 約$72〜、往復 $180〜</td><td>運賃最安。成田から東京市中心部へ60〜90分</td></tr>
@@ -315,11 +346,13 @@ a{color:var(--jp)}
       <tr><td>釜山 → 博多（フェリー）</td><td class="num">22:30 → 07:30</td><td>₩171,000 込み（約$128）／復路 ¥19,900</td><td>今夜のベッドが船室。9時間のうち7時間は睡眠</td></tr>
       <tr><td>博多 → 新大阪（鉄道）</td><td class="num">2時間30分</td><td>Nozomi ¥15,600。この区間でJRパスは割高</td><td>市中心部から市中心部へ、空港を通らない</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
   <p class="small">高速船Queen Beetleは2024年8月に運航を止め、JR九州も同年12月に船舶事業から撤退しました。福岡行きの船はNew Camelliaだけです。</p>
 
   <h2>2. 2枚のカード、2つの国</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">韓国</th><th>日本</th></tr></thead>
     <tbody>
       <tr><td>買うもの</td><td><span class="kr-t">T-money</span>で全部まかなう。ソウルに2日以上なら短期 <span class="kr-t">気候同行カード</span> を追加</td><td><span class="jp-t">Welcome Suica</span>（デポジットなし）か iPhoneの<span class="jp-t">Mobile Suica</span>。関西ならICOCA</td></tr>
@@ -328,10 +361,12 @@ a{color:var(--jp)}
       <tr><td>空港鉄道</td><td>AREX直通 ₩13,000（43分・別切符）· 各駅停車 ₩4,750（59分・T-money）</td><td>Skyliner ¥2,570（41分）· N’EX ¥3,070（53分）· Haruka 大阪 ¥1,900、京都 ¥2,700</td></tr>
       <tr><td>効く制限</td><td>気候同行カードは仁川空港の駅から乗車不可。30日定期は2026年9月で終了</td><td>28日間の観光カードは残金を返金しない。Android版Suicaは2027年まで</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>3. 還付：2つの制度は逆向きに動いている</h2>
-  <table>
+  <div class="tbl">
+    <table>
     <thead><tr><th></th><th class="kr">韓国</th><th>日本（2026.11.01以降の購入）</th></tr></thead>
     <tbody>
       <tr><td>どこで・いつ</td><td>会計前にレジで、パスポート（原本）を見せる</td><td>出国時の税関キオスクで、商品を見せて申請</td></tr>
@@ -339,7 +374,8 @@ a{color:var(--jp)}
       <tr><td>期限</td><td>未使用のまま3か月以内に持ち出す</td><td>購入から90日以内に税関審査</td></tr>
       <tr><td>落とし穴</td><td>払った後にお願いする。決済完了前にパスポートをスキャンさせる</td><td>先にスーツケースを預ける。1点でも欠けるとレシート全体が無効</td></tr>
     </tbody>
-  </table>
+    </table>
+  </div>
 
   <h2>4. 四つの落とし穴</h2>
   <ul class="tight">
