@@ -104,6 +104,29 @@ footer a{color:#4d6b64}
   .st .q{background:#17251f;color:#bfe6d8}
 }
 
+/* 深夜バス時刻表: 640px以下は路線ごとのカードに切り替える */
+td.time .tt{display:block}
+@media (max-width:640px){
+  table.bustable{display:block;margin:8px 0 2px}
+  table.bustable thead{display:none}
+  table.bustable tbody{display:block}
+  table.bustable tr{display:block;background:#fbfdfc;border:1px solid var(--line);border-radius:12px;padding:11px 12px;margin:0 0 10px}
+  table.bustable td{display:block;border:0;padding:1px 0;text-align:left;white-space:normal}
+  table.bustable td.route{font-size:15px;color:var(--brand);line-height:1.35}
+  table.bustable td.route br{display:none}
+  table.bustable td.route .small{display:block;font-size:12.5px;margin-top:2px;color:var(--ink2)}
+  table.bustable td[data-label]{padding-top:5px;font-size:12.5px;line-height:1.6}
+  table.bustable td[data-label]::before{content:attr(data-label);display:inline-block;min-width:46px;font-size:12px;font-weight:700;color:var(--ink2);vertical-align:top}
+  table.bustable td.time{font-family:inherit}
+  table.bustable td.time .tt{display:inline;font-family:var(--mono);white-space:nowrap}
+  table.bustable td.time .tt + .tt::before{content:"·";margin:0 3px;color:#9aa8a4;font-family:inherit}
+  table.bustable td.fare{font-size:13px}
+  table.bustable td.stops{color:var(--ink2)}
+}
+@media (prefers-color-scheme:dark){
+  table.bustable tr{background:#16211d}
+}
+
 #answer td:first-child,#answer th:first-child{width:31%}
 #jpkr td:first-child,#jpkr th:first-child{width:24%}
 #jpkr td:nth-child(2),#jpkr th:nth-child(2){width:38%}
@@ -191,7 +214,7 @@ footer a{color:#4d6b64}
   <a href="#calc">③ 着陸時刻から逆算</a>
   <a href="#night">④ 深夜バス全時刻</a>
   <a href="#taxi">⑤ タクシー</a>
-  <a href="#pick">⑥ 一張表で選ぶ</a>
+  <a href="#pick">⑥ 一覧表で選ぶ</a>
   <a href="#gap">⑦ 01:40以降の空白</a>
   <a href="#morning">⑧ 空港で朝を待つ</a>
   <a href="#first">⑨ 市内で最初にやること</a>
@@ -246,13 +269,37 @@ footer a{color:#4d6b64}
 <section id="night">
   <h2><span class="n">3</span>深夜バス：4路線の全時刻</h2>
   <p class="lead">空港鉄道が終わったあとの主力。料金は路線で固定、行き先で選ぶだけ。タクシーより一桁安く、ぼったくりの心配もありません。</p>
-  <table>
+  <table class="bustable">
     <thead><tr><th>路線</th><th class="c">運賃</th><th class="c">T2 発</th><th class="c">T1 発</th><th>主な停留所（T1からの所要）</th></tr></thead>
     <tbody>
-      <tr><td><b>N6701</b><br><span class="small">東大門DDP行</span></td><td class="c num">₩18,000</td><td class="c num">23:30<br>00:20<br>01:20<br>03:25<br>04:20</td><td class="c num">23:50<br>00:40<br>01:40<br>03:45<br>04:40</td><td>麻浦50分・<b>ソウル駅60分</b>・乙支路入口（明洞の最寄り）65分・DDP 70分</td></tr>
-      <tr><td><b>N6002</b><br><span class="small">清涼里行</span></td><td class="c num">₩17,000</td><td class="c num">23:40<br>00:10<br>00:40<br>01:20<br>03:40<br>04:20</td><td class="c num">00:00<br>00:30<br>01:00<br>01:40<br>04:00<br>04:40</td><td>弘大45分・光化門（フォーシーズンズ）60分・興仁之門75分・清涼里90分</td></tr>
-      <tr><td><b>N6703</b><br><span class="small">広ナル駅行</span></td><td class="c num">₩18,000</td><td class="c num">23:20<br>00:00<br>00:45<br>01:25<br>03:30<br>04:30</td><td class="c num">23:40<br>00:20<br>01:05<br>01:45<br>03:50<br>04:50</td><td>COEX 85分・蚕室（ロッテワールド）90分・江辺100分・広ナル駅105分</td></tr>
-      <tr><td><b>N6000</b><br><span class="small">江南高速バスターミナル行</span></td><td class="c num">₩17,000</td><td class="c num">23:50<br>00:30<br>01:10<br>01:50<br>03:20<br>04:00</td><td class="c num">00:10<br>00:50<br>01:30<br>02:10<br>03:40<br>04:20</td><td>松亭40分・塩倉50分・江南高速バスターミナル70分</td></tr>
+      <tr>
+        <td class="route"><b>N6701</b><br><span class="small">東大門DDP行</span></td>
+        <td class="c num fare" data-label="運賃">₩18,000</td>
+        <td class="c num time" data-label="T2 発"><span class="tt">23:30</span><span class="tt">00:20</span><span class="tt">01:20</span><span class="tt">03:25</span><span class="tt">04:20</span></td>
+        <td class="c num time" data-label="T1 発"><span class="tt">23:50</span><span class="tt">00:40</span><span class="tt">01:40</span><span class="tt">03:45</span><span class="tt">04:40</span></td>
+        <td class="stops" data-label="停留所">麻浦50分・<b>ソウル駅60分</b>・乙支路入口（明洞の最寄り）65分・DDP 70分</td>
+      </tr>
+      <tr>
+        <td class="route"><b>N6002</b><br><span class="small">清涼里行</span></td>
+        <td class="c num fare" data-label="運賃">₩17,000</td>
+        <td class="c num time" data-label="T2 発"><span class="tt">23:40</span><span class="tt">00:10</span><span class="tt">00:40</span><span class="tt">01:20</span><span class="tt">03:40</span><span class="tt">04:20</span></td>
+        <td class="c num time" data-label="T1 発"><span class="tt">00:00</span><span class="tt">00:30</span><span class="tt">01:00</span><span class="tt">01:40</span><span class="tt">04:00</span><span class="tt">04:40</span></td>
+        <td class="stops" data-label="停留所">弘大45分・光化門（フォーシーズンズ）60分・興仁之門75分・清涼里90分</td>
+      </tr>
+      <tr>
+        <td class="route"><b>N6703</b><br><span class="small">広ナル駅行</span></td>
+        <td class="c num fare" data-label="運賃">₩18,000</td>
+        <td class="c num time" data-label="T2 発"><span class="tt">23:20</span><span class="tt">00:00</span><span class="tt">00:45</span><span class="tt">01:25</span><span class="tt">03:30</span><span class="tt">04:30</span></td>
+        <td class="c num time" data-label="T1 発"><span class="tt">23:40</span><span class="tt">00:20</span><span class="tt">01:05</span><span class="tt">01:45</span><span class="tt">03:50</span><span class="tt">04:50</span></td>
+        <td class="stops" data-label="停留所">COEX 85分・蚕室（ロッテワールド）90分・江辺100分・広ナル駅105分</td>
+      </tr>
+      <tr>
+        <td class="route"><b>N6000</b><br><span class="small">江南高速バスターミナル行</span></td>
+        <td class="c num fare" data-label="運賃">₩17,000</td>
+        <td class="c num time" data-label="T2 発"><span class="tt">23:50</span><span class="tt">00:30</span><span class="tt">01:10</span><span class="tt">01:50</span><span class="tt">03:20</span><span class="tt">04:00</span></td>
+        <td class="c num time" data-label="T1 発"><span class="tt">00:10</span><span class="tt">00:50</span><span class="tt">01:30</span><span class="tt">02:10</span><span class="tt">03:40</span><span class="tt">04:20</span></td>
+        <td class="stops" data-label="停留所">松亭40分・塩倉50分・江南高速バスターミナル70分</td>
+      </tr>
     </tbody>
   </table>
   <div class="ok"><b>買い方：</b>到着ロビー（1階）の乗車券売り場か自動券売機。N6701とN6703は<b>T-money GOアプリ</b>でも購入できます。N6000・N6002は現地購入のみ。小人運賃はN6000・N6002が₩10,000、N6701・N6703が₩12,000。</div>
@@ -305,7 +352,7 @@ footer a{color:#4d6b64}
 </section>
 
 <section id="pick">
-  <h2><span class="n">5</span>一張表で選ぶ：金額・時間・荷物</h2>
+  <h2><span class="n">5</span>一覧表で選ぶ：金額・時間・荷物</h2>
   <table>
     <thead><tr><th>手段</th><th class="c">料金</th><th class="c">市内まで</th><th>向いている人</th></tr></thead>
     <tbody>
@@ -352,7 +399,7 @@ footer a{color:#4d6b64}
     <li><b>T-moneyを買って現金でチャージ。</b>カード₩3,000（デザイン物₩4,000〜5,000）。1回₩20,000〜30,000。</li>
     <li><b>気候同行カードは空港から乗れない。</b>仁川T1・T2は降車のみ。空港区間は別に切符を買う。</li>
     <li><b>改札はカードと1回券だけ。</b>QRコードは通りません。改札の前で試さない。</li>
-    <li><b>ソウル地下鉄の基本運賃は₩1,550</b>（1回券₩1,650）。30分以内の地下鉄↔バス乗り継ぎは無料。降りるときも必ずタッチ（しないと最大₩1,400の加算）。</li>
+    <li><b>ソウル地下鉄の基本運賃は₩1,550</b>（1回券₩1,650）。30分以内の地下鉄↔バス乗り継ぎは無料。降りるときも必ずタッチ——降り忘れると記録され、<b>次に乗るときに基本運賃（大人₩1,550／中高校生₩900／子ども₩550）が自動で加算</b>されます。</li>
   </ol>
   <div class="ok">深夜の判断はこの3行で足ります：<b>鉄道に乗れるならタクシーは不要、N深夜バスで行けるならタクシーも不要、タクシーは指定乗り場からだけ。</b></div>
 </section>

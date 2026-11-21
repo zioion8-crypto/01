@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
 <name>Korea 1-Tap Map Pack — FREE Seoul 30 · verified 2026-11-15</name>
-<description><![CDATA[<b>FREE sampler — 30 of the 109 verified spots, all in Seoul.</b><br>Hours and status re-checked against Google Maps business records on 2026-11-15. Every pin carries the Korean name and a Naver Map link. Curated by a Level 10 Google Local Guide (the highest level) · Korea Travel Insider. The full pack (Seoul 66 · Busan 20 · Jeju 23) is 109 pins — see the link in your email.]]></description>
+<description><![CDATA[<b>FREE sampler — 30 of the 109 verified spots, all in Seoul.</b><br>Hours and status re-checked against Google Maps business records on 2026-11-15. Every pin carries the Korean name and a Naver Map link. Curated by a volunteer Google Local Guide contributor · Korea Travel Insider. The full pack (Seoul 66 · Busan 20 · Jeju 23) is 109 pins — see the link in your email.]]></description>
 <Style id="pin-food"><IconStyle><color>ff2f6bff</color><scale>1.0</scale></IconStyle><LabelStyle><scale>0.8</scale></LabelStyle><BalloonStyle><text>$[description]</text></BalloonStyle></Style>
 <Style id="pin-market"><IconStyle><color>ff2f8cd8</color><scale>1.0</scale></IconStyle><LabelStyle><scale>0.8</scale></LabelStyle><BalloonStyle><text>$[description]</text></BalloonStyle></Style>
 <Style id="pin-cafe"><IconStyle><color>ffb06a1f</color><scale>1.0</scale></IconStyle><LabelStyle><scale>0.8</scale></LabelStyle><BalloonStyle><text>$[description]</text></BalloonStyle></Style>
