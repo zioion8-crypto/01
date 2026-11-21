@@ -46,12 +46,12 @@
         {
           "@type": "Question",
           "name": "Do I still need a K-ETA in 2026?",
-          "acceptedAnswer": {"@type": "Answer", "text": "If you hold a passport from one of the 22 exempt countries and regions, no: the temporary exemption runs from 1 January to 31 December 2026, Korea Standard Time. Every other nationality needs an approved K-ETA before boarding. As of 20 November 2026 no 2027 decision had been published, so an arrival on or after 1 January 2027 should assume a K-ETA is needed."}
+          "acceptedAnswer": {"@type": "Answer", "text": "If you hold a passport from one of the 22 exempt countries and regions, no: the temporary exemption runs from 1 January to 31 December 2026, Korea Standard Time. Other nationalities need an approved K-ETA before boarding if their passport is from a K-ETA country; passports from China (mainland), India, the Philippines and other visa-required countries need a Korean visa instead, and cannot use the K-ETA. As of 20 November 2026 no 2027 decision had been published, so an arrival on or after 1 January 2027 should assume a K-ETA is needed."}
         },
         {
           "@type": "Question",
           "name": "Who is exempt from the K-ETA by age?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Travellers aged 17 or under and 65 or over do not need a K-ETA. Everyone between those ages from a non-exempt nationality needs one."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Travellers aged 17 or under and 65 or over do not need a K-ETA. Everyone between those ages needs a K-ETA unless their passport comes from a visa-required country, which needs a visa instead."}
         },
         {
           "@type": "Question",
@@ -179,7 +179,8 @@ li{margin:4px 0}
       <option value="exempt:AT" data-i18n="optAT">Austria</option>
       <option value="exempt:AU" data-i18n="optAU">Australia</option>
       <option value="exempt:NZ" data-i18n="optNZ">New Zealand</option>
-      <option value="other" data-i18n="optOther">Another country (K-ETA required)</option>
+      <option value="visa:CN" data-i18n="optCN">China (mainland) — visa, not K-ETA</option>
+      <option value="other" data-i18n="optOther">Another country (K-ETA or visa)</option>
     </select>
 
     <label class="fld" for="arrive" data-i18n="fDate">Arrival date in Korea</label>
@@ -266,7 +267,8 @@ s1:"Your trip",fNat:"Passport nationality",fDate:"Arrival date in Korea",fAge:"A
 ageAdult:"18 – 64",ageMinor:"17 or under",ageSenior:"65 or over",optJP:"Japan",optTW:"Taiwan",optHK:"Hong Kong",optMO:"Macao",optSG:"Singapore",optUS:"United States (including Guam)",optCA:"Canada",optGB:"United Kingdom",optDE:"Germany",optFR:"France",optIT:"Italy",optNL:"Netherlands",optES:"Spain",optPL:"Poland",optSE:"Sweden",optFI:"Finland",optNO:"Norway",optBE:"Belgium",optDK:"Denmark",optAT:"Austria",optAU:"Australia",optNZ:"New Zealand",tMoneyH:"T-money · ₩3,000 card",climateH:"Climate Card · ₩3,000 card + pass",wowpH:"WOWPASS · ₩6,000 issue",
 noSave:"Nothing is saved or sent: the answer is computed on your phone.",
 s2:"What you need before boarding",s3:"Transit card picker",s4:"Before you fly — 12 items",
-optOther:"Another country (K-ETA required)",
+optCN:"China (mainland) — visa, not K-ETA",
+optOther:"Another country (K-ETA or visa)",
 pTmoney:"₩1,550 a ride, transfers free within 30 minutes. Charge it with cash.",
 pClimate:"1 day ₩5,000 · 2 days ₩8,000 · 3 days ₩10,000 · 5 days ₩15,000 · 7 days ₩20,000. Unlimited Seoul subway and city buses.",
 pWow:"₩5,500 if pre-booked; ₩500 to move money into the T-money pocket; cash out at the end for a ₩1,000 fee, up to ₩100,000. Foreign passports only.",
@@ -281,6 +283,8 @@ kAge:"Not required by age: travellers aged 17 or under and 65 or over are exempt
 kNow:"Not required today if you arrive by 31 December 2026. The exemption is temporary and expires that night; add the date above to be sure.",
 kFuture:"A K-ETA will be needed unless the exemption is extended. No 2027 decision had been published as of 20 November 2026 — check the notice board on k-eta.go.kr in late December.",
 kReq:"Required before boarding: ₩10,000 plus a 3% online payment fee (₩10,300), applied at k-eta.go.kr or in the official app. Processing is usually 72 hours and there is no expedited service; an approval is valid 3 years, or until the passport expires.",
+kOther:"If your passport is from a K-ETA country, apply at k-eta.go.kr before boarding: ₩10,000 plus a 3% online payment fee (₩10,300), usually decided within 72 hours, valid 3 years. K-ETA does not cover every nationality — passports from China (mainland), India, the Philippines and other visa-required countries cannot use it and need a Korean visa instead.",
+kVisa:"K-ETA does not apply to a mainland Chinese passport. You need a Korean visa before travel, applied for through a Korean embassy or consulate or the visa portal at visa.go.kr — allow weeks, not days. The free e-Arrival Card below is still filed within 3 days of arrival.",
 kLink:"Official: k-eta.go.kr",
 eAlways:"Free at e-arrivalcard.go.kr, no earlier than 3 days before arrival. Nothing to print. Lookalike sites charge for the same free form.",
 eExempt:"Not needed if you hold an approved K-ETA or a Korean residence card. Otherwise file it free at e-arrivalcard.go.kr within 3 days of arrival.",
@@ -315,7 +319,8 @@ s1:"Tu viaje",fNat:"Nacionalidad del pasaporte",fDate:"Fecha de llegada a Corea"
 ageAdult:"18 – 64",ageMinor:"17 o menos",ageSenior:"65 o más",optJP:"Japón",optTW:"Taiwán",optHK:"Hong Kong",optMO:"Macao",optSG:"Singapur",optUS:"Estados Unidos (incluido Guam)",optCA:"Canadá",optGB:"Reino Unido",optDE:"Alemania",optFR:"Francia",optIT:"Italia",optNL:"Países Bajos",optES:"España",optPL:"Polonia",optSE:"Suecia",optFI:"Finlandia",optNO:"Noruega",optBE:"Bélgica",optDK:"Dinamarca",optAT:"Austria",optAU:"Australia",optNZ:"Nueva Zelanda",tMoneyH:"T-money · tarjeta ₩3.000",climateH:"Climate Card · tarjeta ₩3.000 + pase",wowpH:"WOWPASS · emisión ₩6.000",
 noSave:"No se guarda ni se envía nada: la respuesta se calcula en tu teléfono.",
 s2:"Lo que necesitas antes de embarcar",s3:"Elige tu tarjeta de transporte",s4:"Antes de volar: 12 puntos",
-optOther:"Otro país (K-ETA obligatorio)",
+optCN:"China continental — visado, no K-ETA",
+optOther:"Otro país (K-ETA o visado)",
 pTmoney:"₩1.550 por trayecto, transbordo gratis dentro de 30 minutos. Se recarga en efectivo.",
 pClimate:"1 día ₩5.000 · 2 días ₩8.000 · 3 días ₩10.000 · 5 días ₩15.000 · 7 días ₩20.000. Metro y autobuses urbanos de Seúl sin límite.",
 pWow:"₩5.500 si la reservas antes; ₩500 por pasar dinero al bolsillo T-money; al final devuelves el saldo por ₩1.000 de comisión, hasta ₩100.000. Solo pasaportes extranjeros.",
@@ -330,6 +335,8 @@ kAge:"No hace falta por edad: los viajeros de 17 años o menos y de 65 o más es
 kNow:"Hoy no hace falta si llegas antes del 31 de diciembre de 2026. La exención es temporal y termina esa noche; pon la fecha arriba para estar seguro.",
 kFuture:"Hará falta la K-ETA salvo que se prorrogue la exención. El 20 de noviembre de 2026 no se había publicado ninguna decisión para 2027: mira el tablón de k-eta.go.kr a finales de diciembre.",
 kReq:"Obligatoria antes de embarcar: ₩10.000 más un 3% de comisión de pago en línea (₩10.300), en k-eta.go.kr o en la app oficial. El trámite suele tardar 72 horas y no hay servicio exprés; la autorización vale 3 años o hasta que caduque el pasaporte.",
+kOther:"Si tu pasaporte es de un país con K-ETA, tramítala en k-eta.go.kr antes de embarcar: ₩10.000 más un 3% de comisión (₩10.300), suele resolverse en 72 horas y vale 3 años. La K-ETA no cubre todas las nacionalidades: los pasaportes de China continental, India, Filipinas y otros países con visado obligatorio no pueden usarla y necesitan un visado coreano.",
+kVisa:"La K-ETA no se aplica al pasaporte de China continental. Necesitas un visado coreano antes del viaje, tramitado en una embajada o consulado de Corea o en el portal visa.go.kr: cuenta semanas, no días. La tarjeta de llegada electrónica gratuita de abajo se rellena igualmente en los 3 días previos.",
 kLink:"Oficial: k-eta.go.kr",
 eAlways:"Gratis en e-arrivalcard.go.kr, como muy pronto 3 días antes de la llegada. No hay que imprimir nada. Hay webs parecidas que cobran por el mismo formulario gratuito.",
 eExempt:"No la necesitas si tienes una K-ETA aprobada o una tarjeta de residencia coreana. Si no, rellénala gratis en e-arrivalcard.go.kr dentro de los 3 días antes de llegar.",
@@ -440,9 +447,10 @@ function fmtDate(iso){
 function classify(){
   var v=natEl.value||"";
   var exempt=v.indexOf("exempt:")===0;
+  var visa=v.indexOf("visa:")===0;
   var d=dateEl.value||"";
   var age=ageValue();
-  return {exempt:exempt,date:d,age:age,after:d?d>EXEMPT_END:false,on2027:d?d>="2027-01-01":false};
+  return {exempt:exempt,visa:visa,date:d,age:age,after:d?d>EXEMPT_END:false,on2027:d?d>="2027-01-01":false,other:!exempt&&!visa};
 }
 
 function resBlock(cls,tag,title,body,link){
@@ -458,8 +466,10 @@ function evaluate(){
   // K-ETA
   if(c.age==="minor"||c.age==="senior"){
     html+=resBlock("ok",t("tagNow"),t("kTitle"),t("kAge"));
+  }else if(c.visa){
+    html+=resBlock("hot",t("tagNeeded"),t("kTitle"),t("kVisa"),"https://www.visa.go.kr");
   }else if(!c.exempt){
-    html+=resBlock("hot",t("tagNeeded"),t("kTitle"),t("kReq"),"https://www.k-eta.go.kr");
+    html+=resBlock("hot",t("tagNeeded"),t("kTitle"),c.other?t("kOther"):t("kReq"),"https://www.k-eta.go.kr");
   }else if(c.on2027){
     html+=resBlock("warn",t("tagCheck"),t("kTitle"),t("kFuture"),"https://www.k-eta.go.kr");
   }else if(c.after){
