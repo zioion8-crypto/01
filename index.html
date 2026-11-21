@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -12,17 +12,21 @@
 <link rel="alternate" hreflang="zh-Hant" href="https://zioion8-crypto.github.io/01/tw/">
 <link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/en/">
 <title>首尔扫码·地铁·退税 一页通 | 韩国自由行 2026</title>
-<meta name="description" content="同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是两条通道。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上：支付矩阵、地铁闸机四种过法、退税级距、Naver 地图三步、现场失败救援。简体中文，无需安装。">
+<meta name="description" content="同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是两条通道。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上：仁川机场到市区的票价（AREX 直通 ₩13,000／普通 ₩4,750）与深夜巴士 N6701／N6002、支付矩阵、地铁闸机四种过法、T-money 与气候同行卡、退税级距、Naver 地图三步、现场失败救援。简体中文，无需安装。">
 <meta property="og:title" content="首尔扫码·地铁·退税 一页通">
-<meta property="og:description" content="支付矩阵 · 闸机 4 种过法 · 退税级距 · Naver 地图 · 现场失败救援（简体中文，轻量离线可存）">
+<meta property="og:description" content="仁川机场票价与深夜巴士 · 支付矩阵 · 闸机 4 种过法 · 退税级距 · Naver 地图（简体中文，轻量离线可存）">
 <meta property="og:type" content="article">
+<meta property="og:url" content="https://zioion8-crypto.github.io/01/">
+<meta property="og:site_name" content="Korea Travel Insider">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
 <!--
   KTB 简体中文轻量镜像 / Korea Travel Insider
   设计约束（중국 본토 접속 대비）:
   - 外部请求 0 个：无 CDN、无 Google Fonts、无 Google Maps、无分析脚本、无外部图片
   - 只用系统字体 + 内联 CSS + 极少量内联 JS
   - 地图一律用 Naver 深링크(map.naver.com / nmap://)，不依赖 Google
-  内容 기준일: 2026-11-15
+  内容 기준일: 2026-11-15 / 机场交通 및 深夜巴士 2026-11-21 复核
 -->
 <style>
 :root{
@@ -128,9 +132,12 @@ details p{margin:7px 0 0;color:var(--ink2)}
       "applicationCategory": "TravelApplication",
       "operatingSystem": "Any (web browser)",
       "inLanguage": "zh-Hans",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-21",
       "isAccessibleForFree": true,
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
       "featureList": [
+        "仁川机场到市区：AREX 直通／普通、机场巴士、深夜 N 巴士",
         "支付矩阵：9 种场景 × 5 条通道",
         "地铁闸机四种过法",
         "退税级距与上限",
@@ -154,6 +161,21 @@ details p{margin:7px 0 0;color:var(--ink2)}
         },
         {
           "@type": "Question",
+          "name": "深夜到仁川机场，还有车去首尔市区吗？",
+          "acceptedAnswer": {"@type": "Answer", "text": "有深夜巴士。N6701（成人 ₩18,000）从 T1 23:50 起发车，经麻浦、首尔站、乙支路入口到 DDP；N6002（₩17,000）走弘大、光化门到清凉里；N6703（₩18,000）往 COEX、蚕室；N6000（₩17,000）往江南高速巴士客运站。01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车，落地时间要算上入境和取行李。票在到达层售票处或自助机买，N6701／N6703 也可用 T-money GO。"}
+        },
+        {
+          "@type": "Question",
+          "name": "支付宝和微信支付，先装哪一个？",
+          "acceptedAnswer": {"@type": "Answer", "text": "两条通道不是一回事：同一家店可能只开其中一条，所以两个都装、都绑卡最稳。便利店（CU·GS25·7-Eleven）两家多数能用；Olive Young 等门店要看终端；地铁闸机一律不收付款码，必须用 T-money 或单程票。"}
+        },
+        {
+          "@type": "Question",
+          "name": "不会韩语，在餐厅怎么点菜、说过敏？",
+          "acceptedAnswer": {"@type": "Answer", "text": "用免登录的「韩语点餐・过敏卡」网页工具：点菜名、辣度、不要猪肉／海鲜和过敏项，屏幕出大字韩文，可复制给店员看或朗读。坚果、花生、乳制品等 8 种过敏句排在最前，另有结账、洗手间等 8 句台面用语。"}
+        },
+        {
+          "@type": "Question",
           "name": "韩国自由行有哪些免登录的免费工具？",
           "acceptedAnswer": {"@type": "Answer", "text": "本站有三款免登录的浏览器工具：韩语点餐与过敏卡（简中界面）、2026 入境清单（K-ETA 临时免签到 2026-12-31、电子入境卡 3 天内提交）、机场与市内交通费用计算器（AREX、机场巴士、气候同行卡 1/2/3/5/7 日券对照）。全部在手机上计算，不上传任何数据。"}
         },
@@ -172,7 +194,7 @@ details p{margin:7px 0 0;color:var(--ink2)}
 <div class="wrap">
 <header>
   <div class="h">
-    <div class="kicker">SEOUL 2026-11-15（主站 2026-11-21 复核）· 简体中文 · 1 页</div>
+    <div class="kicker">SEOUL 2026-11-21 机场交通复核 · 简体中文 · 1 页</div>
     <h1>首尔扫码·地铁·退税 一页通</h1>
     <p class="sub">同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是<b>两条通道</b>。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上。</p>
   </div>
@@ -314,6 +336,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 
 <nav class="chips">
   <a class="mc-chip" href="#mixcourse"><span class="mc-chip-b">🔥</span> <span>经典路线</span></a>
+  <a href="#arrival">⓪ 机场・深夜到达</a>
   <a href="#pay">① 支付矩阵</a>
   <a href="#gate">② 闸机四解法</a>
   <a href="#tax">③ 退税</a>
@@ -323,6 +346,26 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
   <a href="#tour">⑦ 不自驾</a>
   <a href="#book">⑧ 先订票券</a>
 </nav>
+
+<section id="arrival">
+  <h2><span class="n">0</span>仁川机场 → 首尔市区（含深夜到达）</h2>
+  <p class="lead">落地后先决定「坐什么车」，再决定「买什么卡」。下表为成人单程价，2026-11-21 依机场铁路与仁川机场官网核对。</p>
+  <table>
+    <thead><tr><th>方式</th><th class="c">票价</th><th class="c">时间</th><th>怎么用</th></tr></thead>
+    <tbody>
+      <tr><td><b>AREX 直通</b>（직통）</td><td class="c">₩13,000</td><td class="c">43 分钟</td><td>T1 直达首尔站，指定座；T2 出发 51 分钟。票在柜台／自助机／线上买，不刷交通卡。</td></tr>
+      <tr><td><b>AREX 普通</b>（일반）</td><td class="c">₩4,750<br><span class="small">T2 ₩5,350</span></td><td class="c">59 分钟</td><td>刷 T-money 直接进站，13 个站，弘大・孔德・金浦机场都能下。单程票贵 ₩100，出站退 ₩500 押金。</td></tr>
+      <tr><td>机场巴士 6001／6015</td><td class="c">₩17,000</td><td class="c">—</td><td>明洞・首尔站・孔德・市厅。大厅售票处或自助机买票，不用 App、不用韩国号码。</td></tr>
+      <tr><td>机场巴士 6701</td><td class="c">₩18,000</td><td class="c">—</td><td>光化门・钟路・仁寺洞方向的酒店。</td></tr>
+      <tr><td><b>深夜 N6701</b></td><td class="c">₩18,000</td><td class="c">首尔站约 80 分</td><td>T1 23:50／00:40／01:40／03:45／04:40 发车（T2 早 20 分），经麻浦 → 首尔站 → 乙支路入口 → DDP。</td></tr>
+      <tr><td><b>深夜 N6703</b></td><td class="c">₩18,000</td><td class="c">—</td><td>COEX・蚕室乐天世界・江边・广津方向。</td></tr>
+      <tr><td><b>深夜 N6000</b></td><td class="c">₩17,000</td><td class="c">江南约 90 分</td><td>往江南高速巴士客运站，经松亭、盐仓。</td></tr>
+      <tr><td><b>深夜 N6002</b></td><td class="c">₩17,000</td><td class="c">弘大约 65 分</td><td>弘大 → 四季酒店（光化门）→ 兴仁之门 → 清凉里。</td></tr>
+    </tbody>
+  </table>
+  <div class="warn"><b>深夜两个坑</b>：① 01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车（仁川机场官网时刻表，2026-11-21 核对）——落地时间先把入境审查和取行李算进去；② 深夜巴士在到达层售票处或自助机买票，N6701・N6703 也可用 T-money GO 买，N6000・N6002 只能现场买。</div>
+  <p class="note">气候同行卡（1／2／3／5／7 日券 ₩5,000／8,000／10,000／15,000／20,000 ＋ 卡 ₩3,000）<b>不能在仁川 T1／T2 上车</b>，只能出站：机场这一段用 AREX 普通车、单程票或深夜巴士，进城以后再充卡。</p>
+</section>
 
 <section id="pay">
   <h2><span class="n">1</span>支付矩阵：场景 × 通道</h2>
@@ -489,6 +532,9 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
   <p class="note">三款工具都标注了核对日期（2026-11-20）；票价与规定会随官方公告变化，以运营方当天公告为准。</p>
   <details><summary>地铁闸机为什么不认二维码？</summary><p>闸机只认交通卡和单程票。付款码能在便利店和餐厅用，过不了闸机；1～8 号线 273 个车站的 440 台机器收境外 Visa／Mastercard（平均 3.7% 手续费），可以买单程票，也能给气候同行卡充值。</p></details>
   <details><summary>从仁川机场到市区，哪种最省？</summary><p>AREX 普通车 ₩4,750（T2 ₩5,350，59 分钟，用 T-money），直通车 ₩13,000（43 分钟），机场巴士 ₩17,000～18,000。气候同行卡不能在 T1／T2 上车，只能出站（机场铁路只覆盖金浦机场～首尔站），机场段要单独买。</p></details>
+  <details><summary>深夜到仁川机场，还有车去市区吗？</summary><p>有深夜巴士。N6701（₩18,000）从 T1 23:50 起发车，经首尔站到 DDP；N6002（₩17,000）走弘大、光化门；N6703 往 COEX・蚕室；N6000 往江南。01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车。</p></details>
+  <details><summary>支付宝和微信支付，先装哪一个？</summary><p>两条通道不是一回事，同一家店可能只开一条，所以两个都装、都绑卡最稳。便利店两家多数能用，Olive Young 要看终端，地铁闸机一律不收付款码。</p></details>
+  <details><summary>不会韩语，怎么点菜、怎么说过敏？</summary><p>用上面的「韩语点餐・过敏卡」（免登录）：点菜名、辣度、不要猪肉／海鲜、过敏项，屏幕出大字韩文，可复制给店员看或朗读；坚果、花生、乳制品等 8 种过敏句排在最前。</p></details>
   <details><summary>Google 地图在韩国能用吗？</summary><p>截至 2026 年 11 月没有步行／驾车路线。用 Naver 地图，搜韩文地名；出租车司机也靠韩文地名。</p></details>
 </section>
 
@@ -503,7 +549,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 
 <footer>
   <p><b>Korea Travel Insider</b> · 编辑：首尔长住者。姓名与所属不公开。</p>
-  <p>信息以当日官方公告为准，最后核对 <b>2026-11-15</b>。价格、营业时间、政策随时会变；变化处会在下一页更新。</p>
+  <p>信息以当日官方公告为准，最后核对 <b>2026-11-21</b>（机场交通・深夜巴士・交通卡依机场铁路、仁川机场、首尔市官网当日复核；其余内容 2026-11-15）。价格、营业时间、政策随时会变，变化处会在下一页更新。</p>
   <p>本页为轻量镜像：不含任何外部脚本、字体或地图接口，只为在中国大陆能打开。完整版（40+ 家本地门店的通道与预约、5 天动线、三阶备份）另售；本页不含任何代订服务。</p>
   <p><a href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html?lang=zh_cn">完整版：韩国旅行圣经（60 个问答）</a> · <a href="https://zioion8-crypto.github.io/01/free/">免费 30 个地点地图</a> · <a href="https://zioion.gumroad.com/l/korea-cn-1pager">免费一页通 PDF（$0）</a></p>
   <p><a href="/01/tools/">免费工具 3 种</a> · <a href="https://map.naver.com" rel="noopener">Naver 地图</a> · <a href="https://www.klook.com/zh-CN/?aid=143459" rel="noopener sponsored">Klook 韩国</a>（联盟链接）</p>

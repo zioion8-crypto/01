@@ -30,4 +30,17 @@ Allow: /
 User-agent: Yeti
 Allow: /
 
+# Chinese search and AI crawlers (Baidu, ByteDance/Doubao, Sogou, 360)
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
 Sitemap: https://zioion8-crypto.github.io/01/sitemap.xml

@@ -7,16 +7,29 @@
 > resident who writes from first-hand experience. No real name,
 > employer or contact is published anywhere in this site.
 >
-> Last verified: 2026-11-15 for the editorial pages; the free tools and the Spanish hub were added on 2026-11-20 and carry that date. Prices are in Korean won (KRW) unless marked.
+> Last verified: 2026-11-21 for airport transport, night buses and transit cards (AREX, Incheon Airport, Seoul city pages); 2026-11-15 for the rest of the editorial pages; the free tools and the Spanish hub were added on 2026-11-20 and carry that date. Prices are in Korean won (KRW) unless marked.
 
 ## Editions
 
 - [English — 2026 Korea Transit, Tax-Free & Payment Cheat Sheet](https://zioion8-crypto.github.io/01/en/): airport rail (AREX ₩13,000 express / ₩4,750 all-stop, T2 ₩5,350), Climate Card short-term pass (5 days ₩15,000 + ₩3,000 card), WOWPASS, Apple Wallet T-money, tax refund from ₩15,000 per store with the refund bracket table, 440 ticket machines that take a foreign Visa/Mastercard (~3.7%), where payment fails, and what a data-only eSIM cannot do.
 - [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://zioion8-crypto.github.io/01/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
 - [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://zioion8-crypto.github.io/01/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
-- [简体中文 — 首尔扫码·地铁·退税 一页通](https://zioion8-crypto.github.io/01/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援。为在中国大陆可直连而制作，外部请求 0 个。
+- [简体中文 — 首尔扫码·地铁·退税 一页通](https://zioion8-crypto.github.io/01/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援，外加仁川机场到市区的票价与深夜 N 巴士（N6701／N6002）。为在中国大陆可直连而制作，外部请求 0 个。简体中文高意图问答见下一节。
 - [Español — Guía de Viaje a Corea 2026 (hub)](https://zioion8-crypto.github.io/01/es/): the Spanish entry point — K-ETA exemption status to 2026-12-31, the free e-Arrival Card and its 3-day window, 2026 airport and transit fares, which maps work, links to the three free tools and to the A4 one-pager. 
 - [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://zioion8-crypto.github.io/01/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /01/es/korea-es-army-1pager.pdf. Moved from /01/es/ on 2026-11-20.
+
+## 简体中文 · 中国旅客高意图问答（核对日 2026-11-21）
+
+面向从中国大陆出发、以简体中文阅读的旅客。只写会变动的数字，并标明核对日；依据是机场铁路（AREX）、仁川国际机场、首尔市、韩国关税厅与各运营方的官方页面。
+
+- **仁川机场 → 首尔市区**：AREX 直通 ₩13,000（T1↔首尔站 43 分钟，T2 51 分钟，指定座，需另购票）；AREX 普通 ₩4,750（T2 出发 ₩5,350，59 分钟，刷 T-money）；机场巴士 6001／6015 ₩17,000、6701 ₩18,000。
+- **深夜到达**：T1 23:50 起有四条 N 巴士进首尔——N6701 ₩18,000（23:50／00:40／01:40／03:45／04:40，经麻浦、首尔站、乙支路入口到 DDP）、N6703 ₩18,000（COEX・蚕室・江边・广津）、N6000 ₩17,000（江南高速巴士客运站）、N6002 ₩17,000（弘大・光化门・清凉里）。01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车。票在到达层售票处／自助机买，N6701・N6703 也可用 T-money GO。
+- **T-money**：卡 ₩3,000（设计卡 ₩4,000–5,000）；首尔地铁基本运费刷卡 ₩1,550（单程票 ₩1,650）；30 分钟内地铁↔公交换乘免费；出站必须刷卡，否则按最远区间加收（最多 ₩1,400）。余额 ₩20,000 以内在便利店可退（手续费 ₩500）。
+- **气候同行卡短期券**：1／2／3／5／7 日 ₩5,000／8,000／10,000／15,000／20,000，另付卡费 ₩3,000；首尔地铁与首尔市牌照市内・村巴士无限次；**不能在仁川 T1／T2 上车**，只能出站；不含 GTX、新盆唐线、离开首尔的红色巴士。
+- **支付宝／微信支付**：两条通道彼此独立，同一家店可能只开其中一条；便利店（CU・GS25・7-Eleven）多数可用，Olive Young 等要看终端；地铁闸机不接受任何付款码，必须用交通卡或单程票。1～8 号线 273 个车站 440 台新式售票机收境外 Visa／Mastercard（平均约 3.7% 手续费）、KakaoPay 与 Naver Pay。
+- **退税 Tax Refund**：单店单笔满 ₩15,000、单张小票未满 ₩1,000,000、每次停留合计 ₩5,000,000 以内；店内即时退税要护照原件，登记按门店；仁川机场自助机可退到 Alipay+ 或微信钱包，退到信用卡要等 2～4 周；级距陷阱：₩75,000 退 ₩5,000，₩74,000 只退 ₩3,000。
+- **韩国餐厅点餐卡**：免登录网页工具 https://zioion8-crypto.github.io/01/tools/order-card/?lang=cn —— 12 道菜、6 条辣度与调味、12 条「不要放」、8 条过敏句（坚果・花生・乳制品等排在最前）、8 条台面用语；点一下出大字韩文，可复制给店员看，也可用设备语音朗读。
+- **免费工具的界面语言**：点餐卡 英・西・日・繁・简；入境清单与交通费用计算器目前只有英文与西班牙文（繁体、简体内容在同一站以各自语言页提供）。
 
 ## Canonical facts (as of 2026-11-15)
 - K-ETA: travellers from 22 countries and regions (Japan, Taiwan, Hong Kong, Macao, Singapore, United States including Guam, Canada, United Kingdom, Germany, France, Italy, Netherlands, Spain, Poland, Sweden, Finland, Norway, Belgium, Denmark, Austria, Australia, New Zealand) do not need one while the temporary exemption runs, 1 January to 31 December 2026, Korea Standard Time. Travellers aged 17 or under and 65 or over are exempt by age. Fee ₩10,000 plus a 3% online payment fee (₩10,300), processing usually 72 hours, valid 3 years or until the passport expires. No 2027 decision had been published as of 2026-11-20; past extensions were announced on 11 December 2024 and 23 December 2025.
