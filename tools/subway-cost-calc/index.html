@@ -200,9 +200,9 @@ footer a{color:var(--brand);font-weight:600}
     <table>
       <thead><tr><th data-i18n="thWay">Way in</th><th data-i18n="thTime">Time</th><th class="num" data-i18n="thFare">Fare</th></tr></thead>
       <tbody>
-        <tr><td class="opt"><b>AREX Express</b><small data-i18n="oExp">non-stop, assigned seat, separate ticket</small></td><td id="expTime" data-i18n="tExp">43 min</td><td class="num">₩13,000</td></tr>
+        <tr><td class="opt"><b>AREX Express</b><small data-i18n="oExp">non-stop, assigned seat, separate ticket</small></td><td id="expTime" data-i18n="tExp">43 min</td><td class="num" id="expFare">₩13,000</td></tr>
         <tr><td class="opt"><b data-i18n="oAllName">AREX all-stop</b><small data-i18n="oAll">subway rules, T-money accepted</small></td><td id="allTime" data-i18n="tAll">59 min</td><td class="num" id="allFare">₩4,750</td></tr>
-        <tr><td class="opt"><b data-i18n="oLim">Airport limousine</b><small data-i18n="oLimS">6001/6015 · 6701 costs ₩18,000 · night buses ₩17,000–18,000</small></td><td data-i18n="tLim">bus, door to door</td><td class="num">₩17,000</td></tr>
+        <tr><td class="opt"><b data-i18n="oLim">Airport limousine</b><small data-i18n="oLimS">6001/6015 · 6701 costs ₩18,000 · night buses ₩17,000–18,000</small></td><td data-i18n="tLim">bus, door to door</td><td class="num" id="limFare">₩17,000</td></tr>
       </tbody>
     </table>
     <p class="hint" data-i18n="allNote">From Terminal 2 the all-stop train is ₩5,350. A single-ticket AREX ride costs ₩100 more, with a ₩500 deposit refunded at the exit gate.</p>
@@ -333,7 +333,8 @@ function applyMeta(){
   set('link[rel="canonical"]',"href",base+(lang==="es"?"?lang=es":""));
 }
 
-function n(x){return "₩"+x.toLocaleString(lang==="es"?"es-ES":"en-US");}
+function grp(x){var s=String(x),r="";while(s.length>3){r="."+s.slice(-3)+r;s=s.slice(0,-3);}return s+r;}
+function n(x){return "₩"+(lang==="es"?grp(x):x.toLocaleString("en-US"));}
 
 function safePass(days){for(var i=0;i<F.passes.length;i++){if(F.passes[i][0]>=days)return F.passes[i];}return F.passes[F.passes.length-1];}
 
@@ -360,6 +361,8 @@ function render(){
   document.getElementById("daysV").textContent=state.days;
   document.getElementById("ridesV").textContent=state.rides;
   document.getElementById("allFare").textContent=n(state.port==="T2"?F.all2:F.all1);
+  document.getElementById("expFare").textContent=n(F.express);
+  document.getElementById("limFare").textContent=n(F.limo);
   document.getElementById("expTime").textContent=t(state.port==="T2"?"tExp2":"tExp");
   document.getElementById("allTime").textContent=t(state.port==="T2"?"tAll2":"tAll");
   var btns=document.querySelectorAll("#port button");
