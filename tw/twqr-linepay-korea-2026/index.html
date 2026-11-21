@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5d4f">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://zioion8-crypto.github.io/01/tw/twqr-linepay-korea-2026/">
+<title>2026 韓國掃碼付款：TWQR・全支付・LINE Pay 哪裡能付、刷不過怎麼辦</title>
+<meta name="description" content="韓國店家的 QR 有三條軌道：TWQR（台灣Pay・悠遊付・icash Pay 走 Paybooc）、ZeroPay／HIVEX（全支付主掃）、LINE Pay 合作店。三個錢包各自認哪張貼紙、手續費、綁定與切換國家、刷不過的 5 個原因與 30 秒處置、現金與 WOWPASS 保底。核對日 2026-11-21。">
+<meta property="og:title" content="2026 韓國掃碼付款：TWQR・全支付・LINE Pay 怎麼用">
+<meta property="og:description" content="櫃台貼哪張貼紙，決定你掏哪個 App。三個錢包的差別、手續費、刷不過的處置順序（2026-11-21 核對）">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zioion8-crypto.github.io/01/tw/twqr-linepay-korea-2026/">
+<meta property="og:site_name" content="Korea Travel Insider">
+<meta property="og:locale" content="zh_TW">
+<!--
+  KTB 繁體中文長尾頁 / Korea Travel Insider
+  設計限制：外部請求 0 個 — 無 CDN、無外部字型、無地圖 API、無分析腳本
+  內容核對日: 2026-11-21（各錢包官方公告與台灣、韓國媒體報導；商家名單以付款當下官方頁面為準）
+-->
+<style>
+:root{
+  --ink:#12211e; --ink2:#3f4f4b; --line:#dfe6e3; --bg:#f6f8f7; --card:#fff;
+  --brand:#0b5d4f; --brand2:#0f7768; --warn:#a4451a; --warnbg:#fdf1e9;
+  --ok:#15663f; --okbg:#eaf6ef; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Hiragino Sans CNS","Microsoft JhengHei","Noto Sans TC","Source Han Sans TC",sans-serif;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px 40px}
+header{background:linear-gradient(160deg,#0b5d4f,#12766a 60%,#14857a);color:#fff;padding:20px 14px 18px;margin:0 -14px 16px}
+header .h{max-width:760px;margin:0 auto}
+.kicker{font-size:12px;letter-spacing:.14em;opacity:.85}
+h1{font-size:23px;line-height:1.35;margin:6px 0 8px;letter-spacing:.01em}
+.sub{font-size:13.5px;opacity:.93;margin:0}
+.sub b{background:rgba(255,255,255,.16);padding:1px 6px;border-radius:5px;font-weight:600}
+nav.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
+nav.chips::-webkit-scrollbar{display:none}
+@media (min-width:700px){nav.chips{flex-wrap:wrap;overflow:visible}}
+nav.chips a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--brand);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 13px;margin:0 0 14px;box-shadow:0 1px 0 rgba(18,33,30,.03)}
+h2{font-size:16.5px;margin:0 0 4px;letter-spacing:.01em;display:flex;align-items:center;gap:7px}
+h2 .n{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font-size:12.5px;flex:0 0 auto}
+h3{font-size:14.5px;margin:14px 0 4px;color:var(--brand)}
+.lead{font-size:13px;color:var(--ink2);margin:0 0 10px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 2px}
+th,td{padding:6px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+th{background:#f0f5f3;color:var(--ink2);font-weight:600;font-size:12px;white-space:nowrap}
+td.c,th.c{text-align:center}
+td.num{font-family:var(--mono);white-space:nowrap}
+.o{color:var(--ok);font-weight:700}
+.x{color:#b3391b;font-weight:700}
+.d{color:#b07d16;font-weight:700}
+.small{font-size:12px;color:var(--ink2)}
+.note{font-size:12.5px;color:var(--ink2);margin:9px 0 0;padding-left:10px;border-left:3px solid var(--line)}
+.warn{background:var(--warnbg);border:1px solid #f0d3c2;border-radius:10px;padding:10px 11px;font-size:13px;color:#6d2f10;margin:10px 0 0}
+.ok{background:var(--okbg);border:1px solid #cbe7d7;border-radius:10px;padding:10px 11px;font-size:13px;color:#0f4a30;margin:10px 0 0}
+ol,ul{margin:8px 0 0;padding-left:20px}
+li{margin:5px 0}
+.steps li{margin:7px 0}
+.big3{display:grid;gap:9px;margin:10px 0 0}
+.st{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fbfdfc}
+.st .t{font-weight:800;font-size:14.5px;color:var(--brand);display:flex;gap:7px;align-items:center}
+.st .t i{font-style:normal;display:inline-flex;width:21px;height:21px;border-radius:50%;background:var(--brand);color:#fff;font-size:12px;align-items:center;justify-content:center;flex:0 0 auto}
+.st .m{font-size:13px;color:var(--ink2);margin-top:5px}
+.st .m b{color:var(--ink)}
+.st .q{font-family:var(--mono);font-size:12.5px;color:#0d3f37;background:#f0f5f3;border-radius:7px;padding:6px 8px;margin-top:6px;display:block}
+.krcopy{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 0}
+.krcopy span{display:inline-flex;align-items:center;gap:6px;background:#f0f5f3;border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:12.5px}
+.krcopy b{font-family:var(--mono);font-weight:600;color:#0d3f37}
+.krcopy button{border:0;background:var(--brand);color:#fff;border-radius:5px;font-size:11px;padding:2px 6px;cursor:pointer;line-height:1.5}
+.deals{display:grid;gap:9px;margin:8px 0 0}
+a.deal{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:11px;padding:10px 11px;background:#fbfdfc}
+a.deal .t{font-weight:700;font-size:14px;color:var(--brand)}
+a.deal .m{font-size:12.5px;color:var(--ink2);margin-top:2px}
+a.deal .p{font-size:12.5px;color:#8a4a12;margin-top:3px}
+.leadcta{display:grid;gap:9px;margin:0 0 16px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:12px;background:var(--card)}
+.leadcta .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ok)}
+.leadcta a.big{display:block;text-decoration:none;background:#15663f;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
+.leadcta a.big span{display:block;font-weight:500;font-size:12.5px;opacity:.93;margin-top:5px}
+.leadcta p.up{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+.leadcta p.up a{color:var(--brand2);font-weight:700}
+a.tcard{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 12px;margin:8px 0}
+a.tcard b{display:block;font-size:14.5px;color:var(--brand);margin-bottom:3px}
+a.tcard span{display:block;font-size:12.5px;color:var(--ink2)}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:8px 0;font-size:13px}
+details summary{cursor:pointer;font-weight:700;color:var(--brand)}
+details p{margin:7px 0 0;color:var(--ink2)}
+footer{font-size:11.5px;color:#6b7a76;line-height:1.7;padding:6px 2px 0}
+footer a{color:#4d6b64}
+.aff{font-size:11.5px;color:#6b7a76;margin-top:8px}
+.crumb{font-size:12px;color:var(--ink2);margin:0 0 10px}
+.crumb a{color:var(--brand2);text-decoration:none}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#e8efec;--ink2:#adbdb8;--line:#26403a;--bg:#0d1513;--card:#131f1c;--okbg:#12291f;--warnbg:#2a1a12}
+  th{background:#17251f;color:#b7c8c2}
+  a.deal,a.tcard,details{background:#16211d}
+  .st{background:#16211d}
+  header{background:linear-gradient(160deg,#0a3f36,#0d5a4e 60%,#0f6a5c)}
+  .krcopy span{background:#17251f}
+  .st .q{background:#17251f;color:#bfe6d8}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "2026 韓國掃碼付款：TWQR・全支付・LINE Pay 哪裡能付、刷不過怎麼辦",
+      "inLanguage": "zh-Hant",
+      "datePublished": "2026-11-21",
+      "dateModified": "2026-11-21",
+      "description": "韓國店家的 QR 有三條軌道：TWQR（台灣Pay・悠遊付・icash Pay 走 Paybooc）、ZeroPay／HIVEX（全支付主掃）、LINE Pay 合作店。三個錢包各自認哪張貼紙、手續費、出發前設定、刷不過的五個原因，以及現金與 WOWPASS 的保底用法。",
+      "author": {"@type": "Organization", "name": "Korea Travel Insider"},
+      "publisher": {"@type": "Organization", "name": "Korea Travel Insider"},
+      "mainEntityOfPage": "https://zioion8-crypto.github.io/01/tw/twqr-linepay-korea-2026/",
+      "about": ["TWQR", "ZeroPay", "LINE Pay 韓國", "全支付", "悠遊付", "WOWPASS"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "2026 韓國自由行 交通・退稅・付款速查表", "item": "https://zioion8-crypto.github.io/01/tw/"},
+        {"@type": "ListItem", "position": 2, "name": "韓國掃碼付款 TWQR・LINE Pay", "item": "https://zioion8-crypto.github.io/01/tw/twqr-linepay-korea-2026/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "韓國可以用台灣的 TWQR 掃碼付款嗎？",
+          "acceptedAnswer": {"@type": "Answer", "text": "可以。台灣Pay、悠遊付、icash Pay 走的是 TWQR 跨境通道（韓國端為 Paybooc／ZeroPay 網絡），在店門口或櫃台貼有 TWQR 標誌的店家，打開 App 把付款碼切到韓國，出示條碼讓店員掃即可，扣的是新台幣。同一品牌不一定每一家分店都能付，要看現場貼紙。"}
+        },
+        {
+          "@type": "Question",
+          "name": "全支付在韓國怎麼付？跟台灣Pay 有什麼不同？",
+          "acceptedAnswer": {"@type": "Answer", "text": "方向相反。台灣Pay 與悠遊付是「出示自己的條碼讓店家掃」，全支付是「用 App 掃店家的 ZeroPay 或 HIVEX 收款碼」，適用地點超過 190 萬家，餐廳、傳統市場、超商都常見。少數 ZeroPay 店家沒有開跨境交易，掃了會顯示不支援此通路，換別的方式付即可。"}
+        },
+        {
+          "@type": "Question",
+          "name": "LINE Pay 在韓國到處都能用嗎？",
+          "acceptedAnswer": {"@type": "Answer", "text": "不行。LINE Pay 只在合作店家能用，包括四大超商（CU、7-ELEVEN、emart24）、樂天超市與樂天百貨、新羅／樂天／新世界免稅店、Olive Young、innisfree、ABC-MART、愛寶樂園等。一般餐廳、咖啡廳、市場、計程車當作不能用比較安全。"}
+        },
+        {
+          "@type": "Question",
+          "name": "掃碼付款失敗，最常見的原因是什麼？",
+          "acceptedAnswer": {"@type": "Answer", "text": "五個：一、付款碼的國家沒切到韓國；二、沒有行動數據，條碼不會更新；三、店家貼的碼不屬於你的錢包支援的通路；四、發卡銀行的海外交易被鎖；五、訊號不穩或店員操作錯誤。處置順序是：看國家、看網路、看貼紙、換實體卡、付現。"}
+        },
+        {
+          "@type": "Question",
+          "name": "手機錢包付不了，現金怎麼補？",
+          "acceptedAnswer": {"@type": "Answer", "text": "先找 ATM 領韓元，或在明洞的換錢所換現。需要用卡的地方改用實體 Visa／Mastercard，交通與小額消費用 T-money。想把換匯和交通卡合在一張，可辦 WOWPASS（發行 ₩6,000，預約 ₩5,500），但它和 T-money 的錢包是分開的，交通功能要另外儲值。"}
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="h">
+    <div class="kicker">2026-11-21 核對 · 繁體中文 · 掃碼付款</div>
+    <h1>櫃台貼哪張貼紙，決定你掏哪一個 App</h1>
+    <p class="sub">韓國的 QR 付款不是一條路，是<b>三條軌道</b>：TWQR、ZeroPay、LINE Pay 合作店。刷不過多半不是卡的問題，而是「你認的碼」跟「店家貼的碼」不是同一個。</p>
+  </div>
+</header>
+
+<p class="crumb"><a href="/01/tw/">← 2026 韓國自由行 交通・退稅・付款速查表（母頁）</a></p>
+
+<div class="leadcta">
+  <div class="lb">從這裡開始 · NT$0 · 不用註冊</div>
+  <a class="big" href="https://zioion.gumroad.com/l/seoul-survival-tw?utm_source=gh01&amp;utm_medium=tw_geo&amp;utm_campaign=twqr2026" target="_blank" rel="noopener">付款與預約的完整做法（NT$299・PDF 56 頁）→<span>付款失敗三段備援、各錢包的通路對照、退稅級距例題、給司機與店員的韓文卡。想先看免費內容，下面三個工具直接開。</span></a>
+  <p class="up"><b>先看免費的：</b> <a href="/01/tw/tax-refund-emart-oliveyoung-2026/">Olive Young・E-mart・Lotte Mart 即時退稅</a> · <a href="/01/tools/subway-cost-calc/">交通費計算器</a> · 本頁下方三個免費工具。</p>
+</div>
+
+<nav class="chips">
+  <a href="#answer">① 30 秒答案</a>
+  <a href="#tracks">② 三條軌道</a>
+  <a href="#matrix">③ 錢包對照表</a>
+  <a href="#setup">④ 出發前設定</a>
+  <a href="#twqr">⑤ TWQR 怎麼付</a>
+  <a href="#pxpay">⑥ 全支付主掃</a>
+  <a href="#linepay">⑦ LINE Pay</a>
+  <a href="#fail">⑧ 刷不過 30 秒</a>
+  <a href="#cash">⑨ 現金・WOWPASS</a>
+  <a href="#faq">FAQ</a>
+</nav>
+
+<section id="answer">
+  <h2><span class="n">✓</span>30 秒答案</h2>
+  <table>
+    <thead><tr><th>你的問題</th><th>答案（2026-11-21 時點）</th></tr></thead>
+    <tbody>
+      <tr><td>韓國能用台灣的掃碼錢包嗎？</td><td><b>能，但每個錢包只認自己的通路。</b>台灣Pay／悠遊付／icash Pay 找 <b>TWQR</b> 貼紙；全支付掃 <b>ZeroPay／HIVEX</b> 的收款碼；LINE Pay 只限合作店家。</td></tr>
+      <tr><td>要先換韓元嗎？</td><td>要，但不必多。<b>₩30,000〜50,000</b> 就夠應付市場、小店、交通卡儲值。掃碼能付的地方比想像中多。</td></tr>
+      <tr><td>手續費差多少？</td><td>台灣Pay、全支付<b>不收 1.5% 海外手續費</b>；悠遊付在 2026-12-31 前的活動期間免收；LINE Pay 綁信用卡則依發卡行，通常 1.5%。</td></tr>
+      <tr><td>刷卡機問台幣還是韓元？</td><td><b>選韓元。</b>選台幣（DCC）等於讓店家決定匯率，通常還照收 1.5%。</td></tr>
+      <tr><td>地鐵閘門可以掃碼嗎？</td><td><b>不行。</b>閘門只認交通卡（T-money、氣候同行卡）與單程票。</td></tr>
+      <tr><td>付不了最後怎麼辦？</td><td>實體 Visa／Mastercard → 現金 → 換一家店。順序不要顛倒，也不要在同一台機器前重刷五次。</td></tr>
+    </tbody>
+  </table>
+  <p class="note">通路的數量與回饋每季都在改，本頁只寫「哪一種貼紙配哪一個錢包」這種不會過期的結構，實際名單以付款當下 App 內公告與現場貼紙為準。</p>
+</section>
+
+<section id="tracks">
+  <h2><span class="n">1</span>三條軌道：先看貼紙，再掏手機</h2>
+  <p class="lead">韓國店家收 QR 的方式不是統一的。櫃台上那張貼紙，直接決定你哪一個 App 會成功。</p>
+  <div class="big3">
+    <div class="st">
+      <div class="t"><i>1</i>TWQR（配 Paybooc）</div>
+      <div class="m">台灣主導的共通 QR 標準，跨境時接到韓國的 <b>Paybooc</b> 網絡。<b>台灣Pay、悠遊付、icash Pay</b> 走這條，是你出示條碼給店員掃（被掃）。</div>
+      <div class="q">認這個：TWQR／台灣Pay 標誌、Paybooc（페이북）標誌</div>
+    </div>
+    <div class="st">
+      <div class="t"><i>2</i>ZeroPay／HIVEX</div>
+      <div class="m">韓國自己的小額支付網。<b>全支付</b>走這條，而且方向相反——<b>你用 App 去掃店家的 ZeroPay 收款碼</b>（主掃），所以連市場攤位、小吃店都可能通。</div>
+      <div class="q">認這個：ZeroPay（제로페이）立牌、HIVEX 標誌</div>
+    </div>
+    <div class="st">
+      <div class="t"><i>3</i>LINE Pay 合作店</div>
+      <div class="m">不是共通碼，是<b>一家一家談的合作</b>。免稅店、超商、美妝與百貨為主，一般餐廳幾乎不能用。看得到 LINE Pay 標誌才拿出來。</div>
+      <div class="q">認這個：櫃台的 LINE Pay 貼紙、App 內的「遊韓專區」名單</div>
+    </div>
+  </div>
+  <div class="warn"><b>最常見的誤會：</b>「韓國可以用 LINE Pay」→ 只在合作店。反過來「台灣Pay 在韓國都能用」→ 只有貼 TWQR／Paybooc 的店。貼紙不對，App 再新也刷不過。</div>
+</section>
+
+<section id="matrix">
+  <h2><span class="n">2</span>錢包對照表</h2>
+  <table>
+    <thead><tr><th>錢包</th><th>店家要有</th><th>怎麼付</th><th class="c">1.5% 手續費</th></tr></thead>
+    <tbody>
+      <tr><td><b>台灣Pay</b></td><td>TWQR／台灣Pay／Paybooc 標誌</td><td>出示條碼（被掃），扣綁定的金融卡帳戶</td><td class="c o">不收</td></tr>
+      <tr><td><b>悠遊付</b></td><td>TWQR 標誌</td><td>付款碼切到韓國，出示條碼（被掃）</td><td class="c o">2026-12-31 前活動免收</td></tr>
+      <tr><td><b>icash Pay</b></td><td>TWQR／Paybooc 標誌</td><td>出示條碼（被掃），扣帳戶或綁定帳戶</td><td class="c o">依活動公告</td></tr>
+      <tr><td><b>全支付</b></td><td>ZeroPay／HIVEX 收款碼</td><td><b>你掃店家的碼</b>（主掃），可反掃也可被掃</td><td class="c o">不收</td></tr>
+      <tr><td><b>LINE Pay</b></td><td>LINE Pay 合作店</td><td>多數出示條碼讓店員掃；7-ELEVEN 等要你掃櫃台螢幕</td><td class="c d">依發卡行（約 1.5%）</td></tr>
+      <tr><td>實體卡／Apple Pay</td><td>有開感應或插卡的刷卡機</td><td>感應或插卡；問幣別時選韓元</td><td class="c d">依發卡行</td></tr>
+    </tbody>
+  </table>
+  <p class="note">規模參考（會變動、不保證單店可用）：全支付經 ZeroPay／HIVEX 的適用地點超過 <b>190 萬家</b>（2025 年起）；悠遊付 2025-12 上線時約 <b>36 萬</b>家，2026-06 公布超過 37 萬家；台灣Pay 的通路以四大超商、大創、各免稅店、愛寶樂園等連鎖為主。同品牌不同分店仍可能沒開。</p>
+</section>
+
+<section id="setup">
+  <h2><span class="n">3</span>出發前 10 分鐘：只能在台灣做的事</h2>
+  <ol class="steps">
+    <li><b>先把 App 裝好、帳號開通。</b>台灣Pay 只能綁金融卡帳戶（信用卡不行），且 App 只開放台灣地區下載，落地才裝會卡住。</li>
+    <li><b>向銀行確認金融卡已開通跨國服務。</b>台灣Pay 的韓國購物功能走的是帳戶扣款，沒開就是刷不過。</li>
+    <li><b>悠遊付／icash Pay：綁好銀行帳戶或錢包餘額。</b>悠遊付要綁指定銀行帳戶才能掃韓國。</li>
+    <li><b>全支付：關掉「全點折抵」。</b>韓國交易時開著折抵會失敗；並在「我的 → 設定 → 地區設定」確認為韓國。</li>
+    <li><b>LINE Pay：綁一張台灣發行的 Visa／Mastercard／JCB，並打開 App 的定位服務。</b>到韓國才會自動切成韓國版條碼；回饋活動多半要事先在 App 內點「參加」。</li>
+    <li><b>帶一張實體 Visa 或 Mastercard。</b>手機是加分，不是替代。感應不良時插卡，插卡不行時付現。</li>
+  </ol>
+  <div class="ok"><b>一句話：</b>先把「扣款來源」與「跨國開關」在台灣處理完。到韓國才處理，等於在櫃台前重辦一次手續。</div>
+</section>
+
+<section id="twqr">
+  <h2><span class="n">4</span>TWQR：出示條碼，扣新台幣</h2>
+  <p class="lead">台灣Pay 與悠遊付、icash Pay 的用法幾乎一樣：把付款碼切到韓國，遞給店員掃。螢幕上會同時顯示韓元與新台幣。</p>
+  <ol class="steps">
+    <li><b>確認付款碼上方顯示「韓國」。</b>沒切換就手動改。這是刷不過的第一號原因。</li>
+    <li><b>讓店員掃條碼。</b>店員看不懂時說「페이북（Paybooc）」或直接指螢幕上的 Korea。</li>
+    <li><b>當場看扣款金額。</b>交易成功會立刻換算並從帳戶扣新台幣，金額不對就當場說。</li>
+    <li><b>退款要回原店。</b>出示原 QR 與紙本明細，退回原帳戶，匯率按付款時計算。</li>
+  </ol>
+  <p class="note">匯率由各錢包公告的機制決定（例如台灣Pay 以韓國與台灣銀行的前一日美元牌價換算）。不要拿它跟明洞換錢所的現鈔價直接比——一個是帳戶扣款，一個是現金。</p>
+  <div class="warn"><b>地雷：</b>店員把條碼掃了兩次、或第一次顯示失敗其實已扣款。App 跳出失敗但店員說成功時，<b>先開交易紀錄</b>再決定要不要換方式付，避免付兩次。</div>
+</section>
+
+<section id="pxpay">
+  <h2><span class="n">5</span>全支付：主掃 ZeroPay 碼，範圍最廣</h2>
+  <p class="lead">全支付在韓國是「你掃店家」。櫃台擺著 ZeroPay 立牌（藍粉橘格子邊框的 QR）就能掃，餐廳、市場、超商都常見。</p>
+  <ol class="steps">
+    <li><b>開全支付 → 掃碼。</b>對準立牌上的 QR，輸入韓元金額後<b>再確認一次位數</b>。₩10,000 約 NT$220，多按一個 0 是現場最常見的損失。</li>
+    <li><b>看到「不支援此通路」就換方式。</b>少數 ZeroPay 店家沒有開跨境交易，這不是你的帳號壞了。</li>
+    <li><b>大連鎖店可以出示條碼被掃。</b>四大超商、大創、連鎖咖啡等，兩種方向都支援。</li>
+    <li><b>回饋是「全點」，韓國交易不能折抵。</b>點數回台後再用，別在櫃台前開折抵。</li>
+  </ol>
+  <div class="ok"><b>怎麼選：</b>貼 TWQR 的店用台灣Pay 或悠遊付，擺 ZeroPay 立牌的店用全支付。兩邊都有回饋活動時，這樣分開用才拿得滿。</div>
+</section>
+
+<section id="linepay">
+  <h2><span class="n">6</span>LINE Pay：只有合作店，但折扣最深</h2>
+  <p class="lead">LINE Pay 在韓國不是通用錢包，是一份合作名單。名單以購物場景為主，餐廳與交通幾乎不在裡面。</p>
+  <table>
+    <thead><tr><th>類別</th><th>代表通路（2026-11 時點）</th></tr></thead>
+    <tbody>
+      <tr><td>免稅店</td><td>新羅（2024-07 起）、樂天（2025-07 起線下全店）、新世界（2026-03-24 起明洞店・仁川機場店等）</td></tr>
+      <tr><td>便利商店</td><td>CU、emart24、7-ELEVEN（2026-04 起支援 QR）</td></tr>
+      <tr><td>超市・百貨</td><td>樂天超市、樂天百貨、新世界百貨、樂天 Outlet／Mall 等樂天系列</td></tr>
+      <tr><td>美妝・服飾</td><td>Olive Young、innisfree、雪花秀、ABC-MART、SPAO、TOPTEN10 等</td></tr>
+      <tr><td>景點</td><td>愛寶樂園、南怡島、樂天世界、LINE FRIENDS SQUARE 等</td></tr>
+    </tbody>
+  </table>
+  <div class="warn"><b>回饋不是每筆都拿得到。</b>2026 年第四季（10-01〜12-31）的活動是「吃喝補給」最高 25%、「旅遊購物」最高 8%，但每一層都有名額與每月上限，且多數要事先登錄、選對卡別。額滿就只剩基本回饋。<b>不要把回饋當成折扣來規劃預算</b>，把它當成事後多拿的。</div>
+  <p class="note">付款前看兩件事：付款碼上方是否為「韓國」，以及這家分店是否還在官方名單內。同品牌不同分店、百貨裡的專櫃，都可能不在名單上。</p>
+</section>
+
+<section id="fail">
+  <h2><span class="n">7</span>刷不過的 30 秒：按這個順序查</h2>
+  <div class="big3">
+    <div class="st">
+      <div class="t"><i>1</i>看國家（5 秒）</div>
+      <div class="m">付款碼上方是不是「韓國」。不是就手動切。九成的「刷不過」停在這裡。</div>
+    </div>
+    <div class="st">
+      <div class="t"><i>2</i>看網路（5 秒）</div>
+      <div class="m">沒有數據，條碼不會更新。關掉 Wi-Fi 用行動數據再試一次；eSIM 剛開通時常卡在這。</div>
+    </div>
+    <div class="st">
+      <div class="t"><i>3</i>看貼紙（5 秒）</div>
+      <div class="m">店家的碼屬於哪條軌道？TWQR 的店用全支付掃不到，ZeroPay 的店用台灣Pay 也付不了。</div>
+    </div>
+    <div class="st">
+      <div class="t"><i>4</i>換實體卡（10 秒）</div>
+      <div class="m">掏 Visa／Mastercard 插卡。被問幣別時選韓元。海外交易被鎖的卡，在這裡就會露出來。</div>
+    </div>
+    <div class="st">
+      <div class="t"><i>5</i>付現（5 秒）</div>
+      <div class="m">₩10,000 以下的小店、市場攤位本來就該用現金。不要在櫃台前跟機器搏鬥。</div>
+    </div>
+  </div>
+  <div class="warn"><b>不要做的三件事：</b>① 在同一個失敗畫面重複按確認（可能重複扣款）；② 把「向個人帳戶轉帳」的畫面當付款碼；③ 在閘門前試 QR——閘門只認交通卡。</div>
+</section>
+
+<section id="cash">
+  <h2><span class="n">8</span>保底：現金、T-money、WOWPASS</h2>
+  <table>
+    <thead><tr><th>工具</th><th>費用・重點</th><th>什麼時候用</th></tr></thead>
+    <tbody>
+      <tr><td><b>韓元現金</b></td><td>ATM 領或換錢所換；一次領足，減少手續費</td><td>市場、攤販、小店、交通卡儲值</td></tr>
+      <tr><td><b>T-money</b></td><td>卡片 ₩3,000（設計卡 ₩4,000〜5,000）；<b>儲值只收現金</b></td><td>地鐵、公車、計程車、便利店小額</td></tr>
+      <tr><td><b>WOWPASS</b></td><td>發行 ₩6,000（預約 ₩5,500）；轉到 T-money 錢包 ₩500；ATM 提領 ₩1,000（上限 ₩100,000）</td><td>想把換匯、消費、交通放一張卡；外國護照限定</td></tr>
+      <tr><td>實體 Visa／Mastercard</td><td>海外手續費約 1〜2%；被問幣別選韓元</td><td>百貨、飯店、餐廳、大額消費</td></tr>
+    </tbody>
+  </table>
+  <div class="ok"><b>最穩的組合：</b>一張掃碼錢包（拿回饋）＋一張實體卡（付款主力）＋一張 T-money（交通）＋₩30,000 現金（填縫）。四樣齊了，韓國幾乎沒有結不了的帳。</div>
+  <p class="note">退稅和付款方式是兩件事：即時退稅看的是<b>護照正本</b>與金額，用哪個錢包付不影響退稅；退稅傳票上的名字也可以和付款卡不同人。</p>
+</section>
+
+<section id="tools">
+  <h2><span class="n">＋</span>三個免費工具（不用登入）</h2>
+  <p class="lead">手機瀏覽器直接開，不用註冊、不用韓國門號，資料不上傳。</p>
+  <a class="tcard" href="/01/tools/order-card/?lang=tw"><b>1 · 韓語點餐・過敏卡（繁體介面）</b><span>點菜、辣度、不要豬肉／海鮮、過敏，一點就出大字韓文，可複製、可朗讀。</span></a>
+  <a class="tcard" href="/01/tools/arrival-checklist/"><b>2 · 2026 入境清單</b><span>選國籍與入境日，看 K-ETA 臨時免簽（到 2026-12-31）是否涵蓋你的行程、電子入境卡何時送出（介面為英文・西班牙文）。</span></a>
+  <a class="tcard" href="/01/tools/subway-cost-calc/"><b>3 · 機場與市內交通費計算器</b><span>AREX 直達／普通、機場巴士、氣候同行卡 1／2／3／5／7 日券，依天數與趟數算總價（英文・西班牙文）。</span></a>
+  <p class="note">三款工具都標了核對日（2026-11-20）；票價與規定會隨官方公告變動。</p>
+</section>
+
+<section id="more">
+  <h2><span class="n">＋</span>下一頁：退稅在櫃台就結束</h2>
+  <div class="deals">
+    <a class="deal" href="/01/tw/tax-refund-emart-oliveyoung-2026/">
+      <div class="t">Olive Young・E-mart・Lotte Mart 即時退稅：櫃台怎麼退、為什麼食品退得少</div>
+      <div class="m">單店滿 ₩15,000、護照正本、單筆未滿 ₩100 萬、整趟 ₩500 萬以內。大型超市是「先結帳再到服務台」，退稅級距表與三個最常見的失敗。</div>
+      <div class="p">2026-11-21 核對 · 免費</div>
+    </a>
+    <a class="deal" href="https://www.klook.com/activity/109354/?aid=143459&amp;utm_source=gh01&amp;utm_medium=tw_geo&amp;utm_campaign=twqr2026" rel="noopener sponsored" target="_blank">
+      <div class="t">韓國 5G eSIM（SKT）· QR／App 安裝</div>
+      <div class="m">掃碼付款需要即時連線，沒有數據就沒有條碼。純上網、沒有韓國門號，出發前裝好，落地連上才開始計時。</div>
+      <div class="p">依天數與流量計價（2026-11-15）</div>
+    </a>
+    <a class="deal" href="https://www.klook.com/activity/1163/?aid=143459&amp;utm_source=gh01&amp;utm_medium=tw_geo&amp;utm_campaign=twqr2026" rel="noopener sponsored" target="_blank">
+      <div class="t">AREX 直達車票 · 仁川 → 首爾站</div>
+      <div class="m">43 分鐘直達。App 內開通後直接進站，不必排櫃台。</div>
+      <div class="p">US$8.60 起（2026-11-15 頁面價）</div>
+    </a>
+    <a class="deal" href="https://zioion.gumroad.com/l/korea-1tap-map-pack?utm_source=gh01&amp;utm_medium=tw_geo&amp;utm_campaign=twqr2026" target="_blank" rel="noopener">
+      <div class="t">一鍵地圖包 109 處（首爾 66・釜山 20・濟州 23）</div>
+      <div class="m">109 處全部在 2026-11-20 重新核對，買了以後免費更新；店名帶韓文，可以直接給司機看。</div>
+      <div class="p">$4.99 · 一次購買</div>
+    </a>
+  </div>
+  <p class="aff"><b>聯盟連結揭露：</b>Klook 與 Gumroad 的連結為聯盟連結。透過它們下單，<b>你的價格不變</b>，本站可能取得少量佣金。本頁數字與連結無關，獨立核對。</p>
+</section>
+
+<section id="faq">
+  <h2><span class="n">?</span>常見問題</h2>
+  <details><summary>悠遊付在韓國免手續費到什麼時候？</summary><p>目前公告的活動是 2026-09-01 至 2026-12-31 免收 1.5% 海外交易手續費。2027 年出發前，請先看悠遊付 App 的最新公告，不要沿用這一頁的日期。</p></details>
+  <details><summary>可以用 LINE Pay 付計程車嗎？</summary><p>不要當作可以。計程車車機的 QR 多半屬於韓國本地錢包，LINE Pay 的合作名單也不含計程車。請用現金、實體卡，或用叫車 App 綁卡。</p></details>
+  <details><summary>付款成功但 App 顯示失敗，怎麼辦？</summary><p>先開交易紀錄。有紀錄就是成功了，不要再付一次；沒有紀錄才換方式。重複付款的爭議要回原店處理，收據留著。</p></details>
+  <details><summary>WOWPASS 和 T-money 是同一張嗎？</summary><p>是同一張卡、兩個錢包。消費用的餘額和交通卡餘額分開，交通那部分要另外儲值。發行 ₩6,000、轉入 T-money ₩500，只限外國護照。</p></details>
+  <details><summary>掃碼付的錢，退稅時會被查嗎？</summary><p>退稅只看購買金額與護照，付款方式不影響。但即時退稅的商品在出境時仍屬海關查驗對象，請保持未開封。</p></details>
+</section>
+
+<footer>
+  <p><b>Korea Travel Insider</b> · 編輯：長住首爾。<b>姓名與所屬不公開。</b></p>
+  <p>資訊以當日官方公告為準，最後核對 <b>2026-11-21</b>：各錢包的通路與手續費依其官方公告與 App 內頁面，商家名單以付款當下官方名單與現場貼紙為準。回饋活動、上限與名額隨時變動。</p>
+  <p>本頁為輕量頁：不含外部腳本、外部字型、地圖介面或分析工具。不提供代訂、代購或導遊服務。</p>
+  <p><a href="/01/tw/">交通・退稅・付款速查表</a> · <a href="/01/tw/tax-refund-emart-oliveyoung-2026/">Olive Young・E-mart・Lotte Mart 即時退稅</a> · <a href="/01/tools/">免費工具 3 種</a> · <a href="/01/llms.txt">llms.txt</a></p>
+  <!-- copyright-notice -->
+  <p>© 2026 Korea Travel Insider 版權所有。未經授權不得轉載、鏡像或轉售；引用請註明出處並附本頁連結。</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var box=document.getElementById("kr");
+  if(!box) return;
+  var els=box.querySelectorAll("span[data-kr]");
+  for(var i=0;i<els.length;i++){
+    (function(sp){
+      var kr=sp.getAttribute("data-kr");
+      var btn=sp.querySelector("button");
+      if(!btn) return;
+      btn.onclick=function(){
+        var done=function(){btn.textContent="已複製";setTimeout(function(){btn.textContent="複製";},1400);};
+        var fallback=function(){
+          var ta=document.createElement("textarea");
+          ta.value=kr;ta.setAttribute("readonly","");
+          ta.style.position="fixed";ta.style.top="-1000px";
+          document.body.appendChild(ta);ta.select();
+          try{document.execCommand("copy");done();}catch(e){btn.textContent="長按複製";}
+          document.body.removeChild(ta);
+        };
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+          navigator.clipboard.writeText(kr).then(done,fallback);
+        }else{fallback();}
+      };
+    })(els[i]);
+  }
+})();
+</script>
+</body>
+</html>
