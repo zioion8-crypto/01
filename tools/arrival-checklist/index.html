@@ -56,7 +56,7 @@
         {
           "@type": "Question",
           "name": "When do I file the e-Arrival Card and what does it cost?",
-          "acceptedAnswer": {"@type": "Answer", "text": "The e-Arrival Card is free at e-arrivalcard.go.kr. Since 1 January 2026 it replaces the paper card and can be filed no earlier than 3 days before arrival. Holders of a valid K-ETA and registered residents do not file one, and there is nothing to print. Lookalike sites charge for the same free form."}
+          "acceptedAnswer": {"@type": "Answer", "text": "The e-Arrival Card is the arrival form, and it can be filed online or on paper. The online version is free at e-arrivalcard.go.kr and opens no earlier than 3 days before arrival. Holders of a valid K-ETA and registered residents do not file one, and there is nothing to print. Lookalike sites charge for the same free form."}
         },
         {
           "@type": "Question",
@@ -140,6 +140,15 @@ li{margin:4px 0}
 .exitb a:last-child{margin:0}
 .exitb b{display:block;font-size:13px;font-weight:700;color:var(--brand);line-height:1.35}
 .exitb span{display:block;font-size:11px;color:#7c8a86;margin-top:1px;line-height:1.4}
+.bridge{display:grid;gap:8px;grid-template-columns:1fr;margin:0 0 12px}
+@media(min-width:460px){.bridge{grid-template-columns:1fr 1fr}}
+.bridge a{display:block;text-decoration:none;border-radius:12px;padding:10px 12px;border:1px solid var(--line);background:#fff}
+.bridge a.free{border-color:#bcd8cd;background:#f2f9f5}
+.bridge a.paid{border-color:#0b5d4f;background:#0b5d4f}
+.bridge b{display:block;font-size:13.5px;font-weight:800;line-height:1.35;color:var(--brand)}
+.bridge a.paid b{color:#fff}
+.bridge span{display:block;font-size:11.5px;color:#6f7d79;margin-top:2px;line-height:1.4}
+.bridge a.paid span{color:#cfe6df}
 </style>
 </head>
 <body>
@@ -153,6 +162,17 @@ li{margin:4px 0}
 </header>
 
 <main class="wrap">
+  <section class="bridge" aria-label="Free and paid downloads">
+    <a class="free" href="/01/free/?utm_source=ktb_tools&amp;utm_medium=bridge&amp;utm_campaign=arrival_checklist">
+      <b data-i18n="bridgeFreeT">Free: 30-pin Seoul map</b>
+      <span data-i18n="bridgeFreeS">No sign-up · opens each pin in Google Maps</span>
+    </a>
+    <a class="paid" id="bridgePaid" href="https://zioion.gumroad.com/l/korea-multicity-bundle?utm_source=ktb_tools&amp;utm_medium=bridge&amp;utm_campaign=arrival_checklist" rel="noopener" target="_blank">
+      <b data-i18n="bridgePaidT">Complete Korea Local Kit — $12.99</b>
+      <span data-i18n="bridgePaidS">55-page guide + the 109-spot map pack, one download</span>
+    </a>
+  </section>
+
   <section class="panel">
     <h2><span class="n">1</span><span data-i18n="s1">Your trip</span></h2>
     <label class="fld" for="nat" data-i18n="fNat">Passport nationality</label>
@@ -219,8 +239,8 @@ li{margin:4px 0}
 
   <section class="exitb">
     <p class="exitb-k" data-i18n="exitK">Next step</p>
-    <p class="exitb-t" data-i18n="exitT">Two downloads for the same trip</p>
-    <p class="exitb-d" data-i18n="exitD">The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.</p>
+    <p class="exitb-t" data-i18n="exitT">Free first, then two paid shortcuts</p>
+    <p class="exitb-d" data-i18n="exitD">The 30-pin map and the one-page sheet cost nothing. The 109-spot pack and the full kit are the same data, finished and clickable.</p>
     <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
       <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
       <span data-i18n="exitFreeS">PDF · one page · free download</span>
@@ -228,6 +248,14 @@ li{margin:4px 0}
     <a id="exitPaid" href="https://zioion.gumroad.com/l/korea-1tap-map-pack?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
       <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
       <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
+    </a>
+    <a id="exitMap" href="/01/free/?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=arrival_checklist">
+      <b data-i18n="exitMapT">$0 Free Seoul 30-Pin Map</b>
+      <span data-i18n="exitMapS">KML for Google Maps · 30 pins · no sign-up</span>
+    </a>
+    <a id="exitFull" href="https://zioion.gumroad.com/l/korea-multicity-bundle?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=arrival_checklist" rel="noopener" target="_blank">
+      <b data-i18n="exitFullT">$12.99 Complete Korea Local Kit</b>
+      <span data-i18n="exitFullS">55-page guide + 109-spot map pack (code SEOUL20 takes $2 off)</span>
     </a>
   </section>
 
@@ -241,7 +269,7 @@ li{margin:4px 0}
   </details>
   <details>
     <summary data-i18n="f3q">Is the e-Arrival Card the same as the K-ETA?</summary>
-    <p data-i18n="f3a">No. The K-ETA is an entry approval decided before you fly; the e-Arrival Card is the customs-and-immigration form that replaced the paper card on 1 January 2026. It is free, filed online no earlier than 3 days before arrival, and it is not needed by travellers holding a valid K-ETA or by registered residents.</p>
+    <p data-i18n="f3a">No. The K-ETA is an entry approval decided before you fly; the e-Arrival Card is the arrival form you hand in when you land, and it can be submitted online or on paper. The online version is free, opens no earlier than 3 days before arrival, and is not needed by travellers holding a valid K-ETA or by registered residents.</p>
   </details>
 
   <footer>
@@ -304,12 +332,16 @@ c12:"Emergency numbers saved: 112 police · 119 fire and ambulance · 1330 Korea
 cntZero:"0 of 12 done",cntOf:"of 12 done",
 f1q:"Why does the K-ETA answer change on 1 January 2027?",f1a:"The exemption for the 22 countries and regions runs from 1 January to 31 December 2026, Korea time. Past extensions were announced on 11 December 2024 and 23 December 2025, so a 2027 decision is expected late in December 2026. Until it is posted, an arrival on or after 1 January 2027 should assume a K-ETA is needed.",
 f2q:"Landed 31 December, leaving 1 January — which rule applies?",f2a:"The date that matters is normally the date of entry, and the exemption is written to end at 23:59 Korea time on 31 December 2026. A flight that departs before midnight and lands after it is the grey case: applying for the K-ETA in advance costs ₩10,300 and removes the question.",
-f3q:"Is the e-Arrival Card the same as the K-ETA?",f3a:"No. The K-ETA is an entry approval decided before you fly; the e-Arrival Card is the customs-and-immigration form that replaced the paper card on 1 January 2026. It is free, filed online no earlier than 3 days before arrival, and it is not needed by travellers holding a valid K-ETA or by registered residents.",
+f3q:"Is the e-Arrival Card the same as the K-ETA?",f3a:"No. The K-ETA is an entry approval decided before you fly; the e-Arrival Card is the arrival form you hand in when you land, and it can be submitted online or on paper. The online version is free, opens no earlier than 3 days before arrival, and is not needed by travellers holding a valid K-ETA or by registered residents.",
 allTools:"All three free tools",t1:"Order & allergy card",t3:"Airport & transit cost",esHub:"Spanish guide",
-exitK:"Next step",exitT:"Two downloads for the same trip",
-exitD:"The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.",
+exitK:"Next step",exitT:"Free first, then two paid shortcuts",
 exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free download",
 exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
+exitD:"The 30-pin map and the one-page sheet cost nothing. The 109-spot pack and the full kit are the same data, finished and clickable.",
+exitMapT:"$0 Free Seoul 30-Pin Map",exitMapS:"KML for Google Maps · 30 pins · no sign-up",
+exitFullT:"$12.99 Complete Korea Local Kit",exitFullS:"55-page guide + 109-spot map pack (code SEOUL20 takes $2 off)",
+bridgeFreeT:"Free: 30-pin Seoul map",bridgeFreeS:"No sign-up · opens each pin in Google Maps",
+bridgePaidT:"Complete Korea Local Kit — $12.99",bridgePaidS:"55-page guide + the 109-spot map pack, one download",
 legal:"Korea Travel Insider · independent page, not affiliated with any government body or operator. Figures read from the official pages and dated 2026-11-20. Rules change by announcement: k-eta.go.kr and e-arrivalcard.go.kr are the final word. No ads, no cookies, no analytics, no third-party scripts."
 },
 es:{
@@ -356,12 +388,16 @@ c12:"Teléfonos de emergencia guardados: 112 policía · 119 bomberos y ambulanc
 cntZero:"0 de 12 completados",cntOf:"de 12 completados",
 f1q:"¿Por qué cambia la respuesta de la K-ETA el 1 de enero de 2027?",f1a:"La exención para los 22 países y regiones va del 1 de enero al 31 de diciembre de 2026, hora coreana. Las prórrogas anteriores se anunciaron el 11 de diciembre de 2024 y el 23 de diciembre de 2025, así que la decisión para 2027 se espera a finales de diciembre de 2026. Mientras no se publique, una llegada el 1 de enero de 2027 o después debe dar por hecho que hace falta la K-ETA.",
 f2q:"Aterrizo el 31 de diciembre y salgo el 1 de enero: ¿qué norma aplica?",f2a:"La fecha que cuenta es normalmente la de entrada, y la exención está escrita para terminar a las 23:59, hora coreana, del 31 de diciembre de 2026. Un vuelo que sale antes de medianoche y aterriza después es el caso dudoso: pedir la K-ETA con antelación cuesta ₩10.300 y elimina la duda.",
-f3q:"¿La tarjeta de llegada es lo mismo que la K-ETA?",f3a:"No. La K-ETA es una autorización de entrada que se decide antes de volar; la tarjeta de llegada electrónica es el formulario de inmigración que sustituyó a la tarjeta de papel el 1 de enero de 2026. Es gratis, se envía en línea como muy pronto 3 días antes de llegar, y no la necesitan quienes tienen una K-ETA válida ni los residentes registrados.",
+f3q:"¿La tarjeta de llegada es lo mismo que la K-ETA?",f3a:"No. La K-ETA es una autorización de entrada que se decide antes de volar; la tarjeta de llegada electrónica es el formulario de llegada que se entrega al aterrizar, y se puede presentar en línea o en papel. La versión en línea es gratis, se abre como muy pronto 3 días antes de llegar, y no la necesitan quienes tienen una K-ETA válida ni los residentes registrados.",
 allTools:"Las tres herramientas gratis",t1:"Pedir y alergias",t3:"Coste aeropuerto y transporte",esHub:"Guía en español",
-exitK:"Siguiente paso",exitT:"Dos descargas para el mismo viaje",
-exitD:"La hoja de una página es gratis; el paquete de 109 sitios abre cada lugar en Naver Map con un toque.",
+exitK:"Siguiente paso",exitT:"Primero gratis, luego dos atajos de pago",
 exitFreeT:"$0 Hoja de Corea gratis de 1 página",exitFreeS:"PDF · una página · descarga gratis",
 exitPaidT:"$4.99 · 109 sitios en Naver Map en 1 toque (English)",exitPaidS:"109 sitios · enlaces a Naver Map y archivos de Google Maps · texto en inglés",
+exitD:"El mapa de 30 pines y la hoja de una página son gratis. El paquete de 109 sitios y el kit completo son los mismos datos, terminados y con enlaces.",
+exitMapT:"$0 Mapa gratis de Seúl con 30 pines",exitMapS:"KML para Google Maps · 30 pines · sin registro",
+exitFullT:"$12.99 Kit completo de Corea",exitFullS:"Guía de 55 páginas + paquete de mapas de 109 sitios (el código SEOUL20 quita $2)",
+bridgeFreeT:"Gratis: mapa de Seúl con 30 pines",bridgeFreeS:"Sin registro · abre cada pin en Google Maps",
+bridgePaidT:"Kit completo de Corea — $12.99",bridgePaidS:"Guía de 55 páginas + paquete de mapas de 109 sitios",
 legal:"Korea Travel Insider · página independiente, sin relación con ningún organismo público ni operador. Cifras leídas en las páginas oficiales y fechadas el 2026-11-20. Las normas cambian por anuncio: k-eta.go.kr y e-arrivalcard.go.kr son la última palabra. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros."
 }};
 
