@@ -126,6 +126,14 @@ footer{border-top:1px solid var(--line);margin-top:10px;padding:16px 0 26px;font
 footer a{color:var(--brand);font-weight:600}
 .links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 8px}
 @media (min-width:430px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.exitb{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px;margin:0 0 14px}
+.exitb-k{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#8d9a96;margin:0;font-weight:700}
+.exitb-t{font-size:14px;font-weight:800;margin:3px 0 3px;color:var(--ink)}
+.exitb-d{font-size:12px;color:var(--ink2);margin:0 0 9px}
+.exitb a{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:0 0 6px}
+.exitb a:last-child{margin:0}
+.exitb b{display:block;font-size:13px;font-weight:700;color:var(--brand);line-height:1.35}
+.exitb span{display:block;font-size:11px;color:#7c8a86;margin-top:1px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -167,6 +175,20 @@ footer a{color:var(--brand);font-weight:600}
   <div class="grid" id="g-extra"></div>
 
   <p class="note" data-i18n="note">Phrases are standard restaurant Korean, the wording staff hear every day. Fares, opening hours and rules change; this card is information, not a booking or translation service.</p>
+
+  <section class="exitb">
+    <p class="exitb-k" data-i18n="exitK">Next step</p>
+    <p class="exitb-t" data-i18n="exitT">Two downloads for the same trip</p>
+    <p class="exitb-d" data-i18n="exitD">The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.</p>
+    <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+      <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
+      <span data-i18n="exitFreeS">PDF · one page · free download</span>
+    </a>
+    <a id="exitPaid" href="https://zioion.gumroad.com/l/korea-1tap-map-pack?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+      <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
+      <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
+    </a>
+  </section>
 
   <details>
     <summary data-i18n="faq1q">Is it free, and does it need a Korean number?</summary>
@@ -263,6 +285,10 @@ faq1q:"Is it free, and does it need a Korean number?",faq1a:"Free, no account, n
 faq2q:"Does it work without internet?",faq2a:"Once loaded, tapping and copying work offline. Reading aloud needs a Korean voice on the phone; without one the Korean text is still there to show.",
 faq3q:"Will the staff understand it?",faq3a:"The Korean is plain and current. Staff may not speak English, so show the screen instead of reading it out.",
 allTools:"All three free tools",freeSheet:"Free 30-spot map (A4)",esHub:"Spanish guide",
+exitK:"Next step",exitT:"Two downloads for the same trip",
+exitD:"The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.",
+exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free download",
+exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
 legal:"Korea Travel Insider · independent page, not affiliated with any restaurant, operator or government body. No ads, no cookies, no analytics, no third-party scripts. Phrases checked 2026-11-20.",
 picked:"picked",picked1:"picked",pickedN:"picked",countLabel:"lines"},
 es:{kicker:"Korea Travel Insider · herramienta gratis",h1:"Tarjeta coreana para pedir y para alergias",
@@ -278,6 +304,10 @@ faq1q:"¿Es gratis y hace falta un número coreano?",faq1a:"Gratis, sin cuenta, 
 faq2q:"¿Funciona sin internet?",faq2a:"Una vez cargada, tocar y copiar funcionan sin conexión. Leer en voz alta necesita una voz coreana en el teléfono; sin ella, el texto coreano sigue en pantalla para enseñarlo.",
 faq3q:"¿Va a entenderlo el personal?",faq3a:"El coreano es llano y actual. Puede que el personal no hable inglés: enseña la pantalla en vez de leerla.",
 allTools:"Las tres herramientas gratis",freeSheet:"Mapa gratis de 30 sitios (A4)",esHub:"Guía en español",
+exitK:"Siguiente paso",exitT:"Dos descargas para el mismo viaje",
+exitD:"La hoja de una página es gratis; el paquete de 109 sitios abre cada lugar en Naver Map con un toque.",
+exitFreeT:"$0 Hoja de Corea gratis de 1 página",exitFreeS:"PDF · una página · descarga gratis",
+exitPaidT:"$4.99 · 109 sitios en Naver Map en 1 toque (English)",exitPaidS:"109 sitios · enlaces a Naver Map y archivos de Google Maps · texto en inglés",
 legal:"Korea Travel Insider · página independiente, sin relación con ningún restaurante, operador ni organismo público. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros. Frases revisadas el 2026-11-20.",
 picked:"elegidas",picked1:"elegida",pickedN:"elegidas",countLabel:"líneas"},
 ja:{kicker:"Korea Travel Insider · 無料ツール",h1:"韓国レストラン 注文・アレルギーカード",
@@ -293,6 +323,10 @@ faq1q:"無料ですか。韓国の電話番号は必要ですか。",faq1a:"無�
 faq2q:"ネットなしでも使えますか。",faq2a:"一度読み込めば、タップとコピーはオフラインでも動きます。読み上げは端末の韓国語音声が必要です。なければ韓国語の文字を見せてください。",
 faq3q:"店員に通じますか。",faq3a:"平易で実際に使われている韓国語です。英語が通じない場合があるので、読み上げより画面を見せてください。",
 allTools:"無料ツール3種",freeSheet:"無料30スポット地図（A4）",esHub:"スペイン語ガイド",
+exitK:"次の一歩",exitT:"同じ旅のための2つ",
+exitD:"1ページのPDFは無料、109スポットの地図パックは1タップでNaver Mapが開きます。",
+exitFreeT:"$0 韓国 1ページ PDF（無料）",exitFreeS:"A4・1枚・無料ダウンロード",
+exitPaidT:"$4.99 109スポット ワンタップ地図パック（英語）",exitPaidS:"109スポット・Naver Mapの1タップリンクとGoogleマップのファイル",
 legal:"Korea Travel Insider · 独立したページで、どの飲食店・事業者・公的機関とも関係ありません。広告・Cookie・解析・外部スクリプトなし。文言確認日 2026-11-20。",
 picked:"件選択",picked1:"件選択",pickedN:"件選択",countLabel:"行"},
 tw:{kicker:"Korea Travel Insider · 免費工具",h1:"韓國餐廳點餐・過敏卡",
@@ -308,6 +342,10 @@ faq1q:"免費嗎？需要韓國門號嗎？",faq1a:"免費，不需帳號、門�
 faq2q:"沒有網路也能用嗎？",faq2a:"載入過後，點選與複製都可在離線使用。唸出需要手機裡的韓文語音；沒有語音時，韓文文字仍可給店員看。",
 faq3q:"店員看得懂嗎？",faq3a:"用字平實、是現行說法。店員可能不講英文，請直接給對方看畫面。",
 allTools:"三種免費工具",freeSheet:"免費30個地點地圖（A4）",esHub:"西班牙語指南",
+exitK:"下一步",exitT:"同一趟旅程的兩份下載",
+exitD:"一頁 PDF 免費；109 個地點的地圖包一點就開 Naver Map。",
+exitFreeT:"$0 韓國一頁 PDF（免費）",exitFreeS:"A4・一頁・免費下載",
+exitPaidT:"$4.99 109 地點一鍵地圖包（英語）",exitPaidS:"109 地點・Naver Map 一鍵連結與 Google 地圖檔案",
 legal:"Korea Travel Insider · 獨立頁面，與任何餐廳、業者或政府機關無關。無廣告、無 Cookie、無分析、無外部腳本。用語確認日 2026-11-20。",
 picked:"已選",picked1:"已選",pickedN:"已選",countLabel:"行"},
 cn:{kicker:"Korea Travel Insider · 免费工具",h1:"韩国餐厅点餐·过敏卡",
@@ -323,6 +361,10 @@ faq1q:"免费吗？需要韩国号码吗？",faq1a:"免费，不需账号、号�
 faq2q:"没有网络也能用吗？",faq2a:"加载过之后，点选和复制都能离线使用。朗读需要手机里的韩文语音；没有语音时，韩文文字仍能给店员看。",
 faq3q:"店员能看懂吗？",faq3a:"用词平实、是现行说法。店员可能不说英文，请直接给对方看画面。",
 allTools:"三种免费工具",freeSheet:"免费30个地点地图（A4）",esHub:"西班牙语指南",
+exitK:"下一步",exitT:"同一趟旅程的两份下载",
+exitD:"一页 PDF 免费；109 个地点的地图包一点就打开 Naver Map。",
+exitFreeT:"$0 韩国一页 PDF（免费）",exitFreeS:"A4・一页・免费下载",
+exitPaidT:"$4.99 109 地点一键地图包（英语）",exitPaidS:"109 个地点・Naver Map 一键链接与 Google 地图文件",
 legal:"Korea Travel Insider · 独立页面，与任何餐厅、业者或政府机关无关。无广告、无 Cookie、无分析、无外部脚本。用语确认日 2026-11-20。",
 picked:"已选",picked1:"已选",pickedN:"已选",countLabel:"行"}
 };
@@ -381,6 +423,15 @@ function paintI18n(){
   btnCopy.textContent=t("copy");btnSpeak.textContent=t("speak");btnClear.textContent=t("clear");
   var labs=document.getElementById("langs").children;
   for(var j=0;j<labs.length;j++)labs[j].setAttribute("aria-pressed",labs[j].getAttribute("data-l")===lang?"true":"false");
+  exitLinks();
+}
+
+var FREE_PAGER={en:"korea-en-1pager",es:"korea-es-1pager",ja:"korea-jp-1pager",tw:"korea-tw-1pager",cn:"korea-cn-1pager"};
+function exitLinks(){
+  var g="https://zioion.gumroad.com/l/",u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_gumroad";
+  var f=document.getElementById("exitFree"),p=document.getElementById("exitPaid");
+  if(f)f.setAttribute("href",g+(FREE_PAGER[lang]||FREE_PAGER.en)+u);
+  if(p)p.setAttribute("href",g+"korea-1tap-map-pack"+u);
 }
 
 function buildChips(){

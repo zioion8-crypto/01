@@ -63,6 +63,14 @@ a.tool .meta{font-size:11.5px;color:#8d9a96;margin-top:8px}
 footer{border-top:1px solid var(--line);margin-top:16px;padding:16px 0 26px;font-size:12px;color:#6f7d79}
 footer a{color:var(--brand);font-weight:600}
 .links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0}
+.exitb{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px;margin:0}
+.exitb-k{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#8d9a96;margin:0;font-weight:700}
+.exitb-t{font-size:14px;font-weight:800;margin:3px 0 3px;color:var(--ink)}
+.exitb-d{font-size:12px;color:var(--ink2);margin:0 0 9px}
+.exitb a{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:0 0 6px}
+.exitb a:last-child{margin:0}
+.exitb b{display:block;font-size:13px;font-weight:700;color:var(--brand);line-height:1.35}
+.exitb span{display:block;font-size:11px;color:#7c8a86;margin-top:1px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -94,6 +102,19 @@ footer a{color:var(--brand);font-weight:600}
     <div class="meta" data-i18n="meta3">EN · ES · fares checked 2026-11-20</div>
   </a>
   <p class="note" data-i18n="note">These pages are independent: no ads, no cookies, no analytics, no third-party scripts, and no booking or agency service. Fares and rules change by announcement, so the operator's own page is always the final word.</p>
+  <section class="exitb">
+    <p class="exitb-k" data-i18n="exitK">Next step</p>
+    <p class="exitb-t" data-i18n="exitT">Two downloads for the same trip</p>
+    <p class="exitb-d" data-i18n="exitD">The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.</p>
+    <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+      <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
+      <span data-i18n="exitFreeS">PDF · one page · free download</span>
+    </a>
+    <a id="exitPaid" href="https://zioion.gumroad.com/l/korea-1tap-map-pack?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+      <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
+      <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
+    </a>
+  </section>
   <footer>
     <div class="links">
       <a href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html" rel="noopener" data-i18n="bible">Korea Travel Bible</a>
@@ -121,6 +142,10 @@ desc3:"AREX Express, AREX all-stop, the airport limousine and the Climate Card p
 go3:"Open the calculator",meta3:"EN · ES · fares checked 2026-11-20",
 note:"These pages are independent: no ads, no cookies, no analytics, no third-party scripts, and no booking or agency service. Fares and rules change by announcement, so the operator's own page is always the final word.",
 bible:"Korea Travel Bible",freeMap:"Free 30-spot map (A4)",esHub:"Guía en español",kj:"Korea + Japan dual trip",
+exitK:"Next step",exitT:"Two downloads for the same trip",
+exitD:"The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.",
+exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free download",
+exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
 foot:"Korea Travel Insider · © 2026. Facts dated 2026-11-20."},
 es:{kicker:"Korea Travel Insider · herramientas gratis",h1:"Tres herramientas gratis para tu viaje a Corea",
 sub:"Sin registro, sin app y sin anuncios. Funcionan en el navegador y calculan todo en el teléfono.",
@@ -135,6 +160,10 @@ desc3:"AREX exprés, AREX con paradas, el bus limusina y los pases Climate Card,
 go3:"Abrir la calculadora",meta3:"EN · ES · tarifas revisadas el 2026-11-20",
 note:"Estas páginas son independientes: sin anuncios, sin cookies, sin analítica, sin scripts de terceros y sin servicio de reservas ni agencia. Las tarifas y las normas cambian por anuncio, así que la página del operador es siempre la última palabra.",
 bible:"Korea Travel Bible",freeMap:"Mapa gratis de 30 lugares (A4)",esHub:"Guía en español",kj:"Corea + Japón en un viaje",
+exitK:"Siguiente paso",exitT:"Dos descargas para el mismo viaje",
+exitD:"La hoja de una página es gratis; el paquete de 109 sitios abre cada lugar en Naver Map con un toque.",
+exitFreeT:"$0 Hoja de Corea gratis de 1 página",exitFreeS:"PDF · una página · descarga gratis",
+exitPaidT:"$4.99 · 109 sitios en Naver Map en 1 toque (English)",exitPaidS:"109 sitios · enlaces a Naver Map y archivos de Google Maps · texto en inglés",
 foot:"Korea Travel Insider · © 2026. Datos fechados el 2026-11-20."}
 };
 
@@ -182,6 +211,14 @@ function paint(){
     var a=document.getElementById("t"+n);
     if(a)a.setAttribute("href","/01/tools/"+["order-card","arrival-checklist","subway-cost-calc"][Number(n)-1]+"/"+(lang==="es"?"?lang=es":""));
   });
+  exitLinks();
+}
+
+function exitLinks(){
+  var g="https://zioion.gumroad.com/l/",u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_gumroad";
+  var f=document.getElementById("exitFree"),p=document.getElementById("exitPaid");
+  if(f)f.setAttribute("href",g+(lang==="es"?"korea-es-1pager":"korea-en-1pager")+u);
+  if(p)p.setAttribute("href",g+"korea-1tap-map-pack"+u);
 }
 
 (function(){

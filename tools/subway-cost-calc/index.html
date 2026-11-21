@@ -125,6 +125,14 @@ footer{border-top:1px solid var(--line);margin-top:10px;padding:16px 0 26px;font
 footer a{color:var(--brand);font-weight:600}
 .links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0}
 .hint{font-size:11.5px;color:#7c8a86;margin:8px 0 0}
+.exitb{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px;margin:0 0 14px}
+.exitb-k{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#8d9a96;margin:0;font-weight:700}
+.exitb-t{font-size:14px;font-weight:800;margin:3px 0 3px;color:var(--ink)}
+.exitb-d{font-size:12px;color:var(--ink2);margin:0 0 9px}
+.exitb a{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:0 0 6px}
+.exitb a:last-child{margin:0}
+.exitb b{display:block;font-size:13px;font-weight:700;color:var(--brand);line-height:1.35}
+.exitb span{display:block;font-size:11px;color:#7c8a86;margin-top:1px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -209,6 +217,20 @@ footer a{color:var(--brand);font-weight:600}
     <p class="hint" data-i18n="allNote">From Terminal 2 the all-stop train is ₩5,350. A single-ticket AREX ride costs ₩100 more, with a ₩500 deposit refunded at the exit gate.</p>
   </section>
 
+  <section class="exitb">
+    <p class="exitb-k" data-i18n="exitK">Next step</p>
+    <p class="exitb-t" data-i18n="exitT">Two downloads for the same trip</p>
+    <p class="exitb-d" data-i18n="exitD">The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.</p>
+    <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+      <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
+      <span data-i18n="exitFreeS">PDF · one page · free download</span>
+    </a>
+    <a id="exitPaid" href="https://zioion.gumroad.com/l/korea-1tap-map-pack?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+      <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
+      <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
+    </a>
+  </section>
+
   <details>
     <summary data-i18n="f1q">Why is the Climate Card not always the answer?</summary>
     <p data-i18n="f1a">The pass buys unlimited rides, so it only wins when the rides you would otherwise pay for cost more than the pass. Two rides a day for four days is ₩12,400 on T-money, less than the 5-day pass at ₩15,000 — the pass loses. Four rides a day for four days is ₩24,800, and the pass wins by ₩9,800. The table above does this sum for your numbers.</p>
@@ -268,6 +290,10 @@ f1q:"Why is the Climate Card not always the answer?",f1a:"The pass buys unlimite
 f2q:"Do the numbers include the airport leg in the pass?",f2a:"No. The pass cannot be used to board at Incheon T1 or T2, so the airport leg is always paid separately, whatever the daily plan. The totals add it: the all-stop train by default, or the express or limousine where that plan says so.",
 f3q:"What is not in the total?",f3a:"Taxis, the KTX, GTX, the Shinbundang Line, red intercity buses and anything outside Seoul's city limits. Food and a data eSIM are separate too. Taxis and airport buses take a T-money card; GTX and the Shinbundang Line take a card but not the Seoul pass.",
 allTools:"All three free tools",t1:"Order & allergy card",t2:"Arrival checklist",freeSheet:"Free 30-spot map (A4)",esHub:"Spanish guide",
+exitK:"Next step",exitT:"Two downloads for the same trip",
+exitD:"The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.",
+exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free download",
+exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
 legal:"Korea Travel Insider · independent page, not affiliated with any operator or government body. Fares read from the operators' pages, last check 2026-11-20; they change by announcement and the operator's page is the final word. No ads, no cookies, no analytics, no third-party scripts."
 },
 es:{
@@ -300,6 +326,10 @@ f1q:"¿Por qué la Climate Card no siempre es la respuesta?",f1a:"El pase compra
 f2q:"¿Los totales incluyen el trayecto al aeropuerto en el pase?",f2a:"No. El pase no sirve para entrar en Incheon T1 ni T2, así que el trayecto al aeropuerto se paga siempre aparte, sea cual sea el plan diario. Los totales lo suman: el tren con paradas por defecto, o el exprés o la limusina cuando ese plan lo indica.",
 f3q:"¿Qué no está en el total?",f3a:"Taxis, KTX, GTX, la línea Shinbundang, los autobuses rojos interurbanos y todo lo que salga de los límites de Seúl. La comida y la eSIM también van aparte. Los taxis y los buses del aeropuerto aceptan T-money; GTX y la línea Shinbundang aceptan tarjeta pero no el pase de Seúl.",
 allTools:"Las tres herramientas gratis",t1:"Pedir y alergias",t2:"Lista de llegada",freeSheet:"Mapa gratis de 30 sitios (A4)",esHub:"Guía en español",
+exitK:"Siguiente paso",exitT:"Dos descargas para el mismo viaje",
+exitD:"La hoja de una página es gratis; el paquete de 109 sitios abre cada lugar en Naver Map con un toque.",
+exitFreeT:"$0 Hoja de Corea gratis de 1 página",exitFreeS:"PDF · una página · descarga gratis",
+exitPaidT:"$4.99 · 109 sitios en Naver Map en 1 toque (English)",exitPaidS:"109 sitios · enlaces a Naver Map y archivos de Google Maps · texto en inglés",
 legal:"Korea Travel Insider · página independiente, sin relación con ningún operador ni organismo público. Tarifas leídas en las páginas de los operadores, última revisión 2026-11-20; cambian por anuncio y la página del operador es la última palabra. Sin anuncios, sin cookies, sin analítica, sin scripts de terceros."
 }};
 
@@ -410,7 +440,15 @@ function i18nPaint(){
   }
   var ls=document.getElementById("langs").children;
   for(var j=0;j<ls.length;j++)ls[j].setAttribute("aria-pressed",ls[j].getAttribute("data-l")===lang?"true":"false");
+  exitLinks();
   render();
+}
+
+function exitLinks(){
+  var g="https://zioion.gumroad.com/l/",u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_gumroad";
+  var f=document.getElementById("exitFree"),p=document.getElementById("exitPaid");
+  if(f)f.setAttribute("href",g+(lang==="es"?"korea-es-1pager":"korea-en-1pager")+u);
+  if(p)p.setAttribute("href",g+"korea-1tap-map-pack"+u);
 }
 
 (function(){
