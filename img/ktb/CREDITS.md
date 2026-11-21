@@ -13,3 +13,4 @@ All images are Wikimedia Commons files, cropped to 2:1 and converted to WebP (qu
 | national-museum.webp | National Museum of Korea | Ethan Doyle White | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Interior_View_of_the_National_Museum_of_Korea.jpg |
 | noryangjin-market.webp | Noryangjin Fish Market | Clément Chevallier | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Noryangjin_Fish_Market.jpg |
 | the-hyundai-seoul.webp | The Hyundai Seoul, Yeouido | kallerna | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_Hyundai_Seoul_Yeoui-dong_3.jpg |
+| gwanghwamun-mijin-memil-guksu.webp | Korean buckwheat noodles in chilled soy broth (memil guksu) — used as a representative photo on the Gwanghwamun Mijin card, not a photo of the restaurant | jetohs (Flickr) | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Korean_buckwheat_noodles-Memil_guksu-01.jpg |
