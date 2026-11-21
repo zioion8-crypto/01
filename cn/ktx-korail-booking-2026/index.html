@@ -47,7 +47,7 @@ h2 .n{display:inline-flex;align-items:center;justify-content:center;width:22px;h
 .lead{font-size:13px;color:var(--ink2);margin:0 0 10px}
 table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 2px}
 th,td{padding:6px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-th{background:#f0f5f3;color:var(--ink2);font-weight:600;font-size:12px;white-space:nowrap}
+th{background:#f0f5f3;color:var(--ink2);font-weight:600;font-size:12px;white-space:normal;overflow-wrap:anywhere}
 td.c,th.c{text-align:center}
 .o{color:var(--ok);font-weight:700}
 .x{color:#b3391b;font-weight:700}
@@ -102,7 +102,7 @@ footer a{color:#4d6b64}
   .st .q{background:#17251f;color:#bfe6d8}
 }
 </style><style>
-.num{font-family:var(--mono);white-space:nowrap}
+.num{font-family:var(--mono);white-space:normal}
 .hl{background:#fff6e2;border-radius:5px;padding:1px 5px;font-weight:700;color:#7a4a06}
 .grid2{display:grid;gap:9px;margin:10px 0 0}
 @media(min-width:620px){.grid2{grid-template-columns:1fr 1fr}}
@@ -201,15 +201,29 @@ footer a{color:#4d6b64}
 <section id="channels">
   <h2><span class="n">2</span>三个渠道，差在支付和退票</h2>
   <p class="lead">同一趟车、同一个座位，三个渠道卖的是同一张票，但付款方式、预订窗口和退票规则完全不同。</p>
-  <table>
-    <thead><tr><th>渠道</th><th class="c">价格</th><th>支付</th><th class="c">提前预订</th><th>退票</th></tr></thead>
-    <tbody>
-      <tr><td><b>korail.com 官网</b></td><td class="c num">₩54,400 定价</td><td>海外 Visa・Mastercard 等国际信用卡；<b class="x">支付宝／微信未开通</b></td><td class="c">2 个月</td><td>按出发日星期几计算</td></tr>
-      <tr><td><b>Trip.com</b></td><td class="c num">约 US$40 起<br><span class="small">＋订票费</span></td><td>支付宝・微信・PayPal・国际卡</td><td class="c">约 1 个月</td><td>平台自己的规则</td></tr>
-      <tr><td><b>Klook</b></td><td class="c num">US$44.45<br><span class="small">2026-11-21</span></td><td>支付宝・微信・国际卡・Apple Pay 等</td><td class="c">3 个月</td><td>平台自己的规则</td></tr>
-    </tbody>
-  </table>
-  <div class="ok"><b>一句话选：</b>有能用的国际信用卡 → 官网，最便宜、退票最宽松；只有支付宝或微信 → Trip.com 或 Klook，多花的钱买的是「能用熟悉的支付方式结账」。</div>
+  <div class="grid2">
+    <div class="box">
+      <div class="t">korail.com 官网</div>
+      <div class="m"><b>价格</b>　₩54,400（定价，无手续费）<br>
+      <b>支付</b>　海外 Visa・Mastercard 等国际信用卡；<b>支付宝／微信未开通</b><br>
+      <b>提前预订</b>　2 个月（07:00 起）<br>
+      <b>退票</b>　按出发日星期几计算，周一到周四最宽松</div>
+    </div>
+    <div class="box">
+      <div class="t">Trip.com</div>
+      <div class="m"><b>价格</b>　约 US$40 起 ＋ 每张 US$1–2 订票费<br>
+      <b>支付</b>　支付宝・微信・PayPal・国际卡<br>
+      <b>提前预订</b>　约 1 个月<br>
+      <b>退票</b>　平台自己的规则（1 天前免费）</div>
+    </div>
+    <div class="box">
+      <div class="t">Klook</div>
+      <div class="m"><b>价格</b>　US$44.45（2026-11-21 页面）<br>
+      <b>支付</b>　支付宝・微信・国际卡・Apple Pay 等<br>
+      <b>提前预订</b>　3 个月，发车前 20 分钟截止<br>
+      <b>退票</b>　平台自己的规则（2 天前 ₩400）</div>
+    </div>
+  </div>
   <p class="note">Klook 是 Korail 的正式销售伙伴（2025-10-24 签约，2026 年起开卖，并已与 Korail 订票系统直连）；中国旅客的支付宝、微信支付在 Klook 结账页可用。Trip.com 也支持支付宝与微信。两家都不是「代抢」，出票后都是官方座位。</p>
 </section>
 
@@ -298,7 +312,7 @@ footer a{color:#4d6b64}
     <li><b>提前 15 分钟到，先看大屏。</b>找到车次与站台再上楼；KTX 车站大多没有闸机，直接走到站台。</li>
     <li><b>按车厢号上车。</b>车厢编号在车门上方，座位号在行李架边缘。大件行李放在每节车厢两端的行李架。</li>
   </ol>
-  <div class="ok"><b>到了釜山：</b>釜山站出站即是地铁 1 号线，到西面约 20 分钟、到海云台约 40 分钟（需在多大浦海滩方向换乘或直接坐 1 号线到西面换 2 号线）。行程紧就把行李先寄在车站储物柜。</div>
+  <div class="ok"><b>到了釜山：</b>釜山站出站就是地铁 1 号线。到西面约 20 分钟；到海云台在西面换 2 号线，全程约 45 分钟。行程紧就先把行李寄在车站储物柜。</div>
   <p class="note">列车员查票时出示手机电子票即可；截图、打印件多数情况下也能看，但以 App／网页里的车票画面为准。手机没电会很麻烦，带个充电宝。</p>
 </section>
 
