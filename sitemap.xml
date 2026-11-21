@@ -82,6 +82,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/korea-japan/"/>
   </url>
   <url>
+    <loc>https://zioion8-crypto.github.io/01/cn/alipay-wechat-korea-2026/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zioion8-crypto.github.io/01/cn/alipay-wechat-korea-2026/"/>
+  </url>
+  <url>
+    <loc>https://zioion8-crypto.github.io/01/cn/incheon-midnight-bus-2026/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://zioion8-crypto.github.io/01/cn/incheon-midnight-bus-2026/"/>
+  </url>
+  <url>
     <loc>https://zioion8-crypto.github.io/01/tools/</loc>
     <lastmod>2026-11-21</lastmod>
     <changefreq>monthly</changefreq>
