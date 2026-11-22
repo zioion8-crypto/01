@@ -34,7 +34,7 @@
 </header>
 
 <main class="wrap">
-  <section class="card" aria-label="Find places near me">
+  <section class="card" data-i18n-aria="nb.ariaFind" aria-label="Find places near me">
     <div class="btn-row">
       <button class="btn" id="btnLocate" type="button">📍 Find near me</button>
       <button class="btn ghost" id="btnArea" type="button" data-i18n="nb.areaBtn">Choose an area instead</button>
@@ -45,13 +45,13 @@
     <noscript><p class="msg warn">This tool needs JavaScript. The place list is in <a href="../data/spots.json">spots.json</a>.</p></noscript>
   </section>
 
-  <section class="card" aria-label="Filters">
+  <section class="card" data-i18n-aria="nb.ariaFilters" aria-label="Filters">
     <div class="field">
       <label class="fl" for="q" data-i18n="nb.search">Search</label>
       <input type="search" id="q" data-i18n-ph="nb.searchPh" placeholder="Place, dish, area or Korean name" autocomplete="off" enterkeyhint="search">
     </div>
 
-    <div class="chips" id="catChips" role="group" aria-label="Category"></div>
+    <div class="chips" id="catChips" role="group" data-i18n-aria="nb.ariaCat" aria-label="Category"></div>
 
     <div class="two-col" style="margin-top:11px">
       <div class="field" style="margin:0">

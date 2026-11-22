@@ -32,7 +32,7 @@ header.top .h{max-width:720px;margin:0 auto}
 .kicker{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.86;margin:0}
 h1{font-size:24px;line-height:1.25;margin:6px 0 8px;letter-spacing:.005em}
 header.top .sub{font-size:13.5px;margin:0;opacity:.94;max-width:56ch}
-header.top .sub b{background:rgba(255,255,255,.17);padding:1px 6px;border-radius:5px;font-weight:600}
+header.top .sub b{background:rgba(255,255,255,.17);padding:1px 4px;border-radius:5px;font-weight:600}
 
 /* ---------- home ---------- */
 .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 18px}
@@ -47,7 +47,7 @@ header.top .sub b{background:rgba(255,255,255,.17);padding:1px 6px;border-radius
 .tile .tt{display:block;font-size:18px;font-weight:800;letter-spacing:-.01em;line-height:1.2}
 .tile .tk{display:block;font-size:12.5px;color:var(--ink3);margin-top:3px;font-weight:600}
 .tile .td{display:block;font-size:12.5px;color:var(--ink2);margin-top:7px}
-.tile .go{font-size:12px;font-weight:800;color:var(--brand);letter-spacing:.03em;margin-top:auto;display:flex;align-items:center;gap:4px}
+.tile .go{font-size:12px;font-weight:800;color:var(--brand);letter-spacing:.03em;margin-top:auto;display:flex;align-items:center;gap:4px;white-space:nowrap}
 .tile.wide .td{margin-top:4px}
 .tile.wide .txt{flex:1 1 auto;min-width:0}
 @media(min-width:700px){
