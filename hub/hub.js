@@ -50,7 +50,7 @@
     applyLang: function () {
       var l = this._lang;
       var self = this;
-      document.documentElement.lang = (l === 'zh' ? 'zh-Hant' : (l === 'ja' ? 'ja' : 'en'));
+      document.documentElement.lang = (l === 'zh' ? 'zh-Hant' : (l === 'cn' ? 'zh-Hans' : (l === 'ja' ? 'ja' : 'en')));
 
       var nodes = document.querySelectorAll('[data-i18n]');
       for (var i = 0; i < nodes.length; i++) {
@@ -67,6 +67,11 @@
       var ar = document.querySelectorAll('[data-i18n-aria]');
       for (var k = 0; k < ar.length; k++) {
         ar[k].setAttribute('aria-label', self.t(ar[k].getAttribute('data-i18n-aria')));
+      }
+
+      var lo = document.querySelectorAll('[data-lang-only]');
+      for (var q = 0; q < lo.length; q++) {
+        lo[q].hidden = lo[q].getAttribute('data-lang-only').split(/\s+/).indexOf(l) === -1;
       }
 
       var tk = document.documentElement.getAttribute('data-title-key');
@@ -86,7 +91,8 @@
         bars[i].innerHTML =
           '<button type="button" data-lang="en">EN</button>' +
           '<button type="button" data-lang="ja">日本語</button>' +
-          '<button type="button" data-lang="zh">繁體</button>';
+          '<button type="button" data-lang="zh">繁體</button>' +
+          '<button type="button" data-lang="cn">简体</button>';
         bars[i].addEventListener('click', function (e) {
           var b = e.target.closest('button[data-lang]');
           if (!b) return;
@@ -200,7 +206,10 @@
   };
 
   /* ---------- boot ---------- */
-  HUB._lang = HUB.get(KEY_LANG, 'en');
+  var qp = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
+  if (qp === 'zh-hans' || qp === 'zh-cn' || qp === 'zh-sg') qp = 'cn';
+  if (qp === 'zh-hant' || qp === 'zh-tw' || qp === 'zh-hk') qp = 'zh';
+  HUB._lang = I18N[qp] ? qp : HUB.get(KEY_LANG, 'en');
   if (!I18N[HUB._lang]) HUB._lang = 'en';
   HUB.langBar();
   HUB.applyLang();

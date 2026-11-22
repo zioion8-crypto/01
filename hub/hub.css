@@ -214,3 +214,12 @@ footer.bot{margin:22px 0 0;padding:14px 0 0;border-top:1px solid var(--line);fon
 footer.bot p{margin:0 0 7px}
 footer.bot a{color:var(--brand)}
 .skip{position:absolute;left:-9999px}
+
+/* Simplified-Chinese-only strip on the hub home: the three first-day pain points */
+.cn-pains{background:#fff7ed;border:1px solid #f0c9a4;border-left:5px solid #b45309;border-radius:12px;
+  padding:12px 14px;margin:0 0 16px}
+.cn-pains[hidden]{display:none}
+.cn-pains .cn-t{margin:0 0 6px;font-weight:800;font-size:14px;color:#8a3c07}
+.cn-pains ul{margin:0;padding-left:18px}
+.cn-pains li{margin:5px 0;font-size:13.5px;line-height:1.6;color:#3f3a33}
+.cn-pains a{color:#8a3c07;font-weight:700}

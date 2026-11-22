@@ -10,6 +10,7 @@
 <meta property="og:title" content="Free Seoul 30-Pin Map">
 <meta property="og:description" content="30 verified Seoul spots with Korean names, hours and one-tap Naver links. Import the KML once.">
 <meta property="og:type" content="article">
+<link rel="alternate" hreflang="zh-Hans" href="https://zioion8-crypto.github.io/01/free/?lang=cn">
 <!--
   Korea Travel Insider · free sampler of the 109-pin Korea 1-Tap Map Pack
   Data: global/digital-products/map-pack/verified_all.json (2026-11-15)
@@ -66,6 +67,12 @@ h1{font-size:26px;line-height:1.25;margin:0 0 8px}
 .tag.rain{background:#e0f2fe;color:#075985}
 footer{margin-top:34px;font-size:12px;color:var(--ink2);border-top:1px solid var(--line);padding-top:16px}
 footer p{margin:0 0 8px}
+.cn-hint{margin:14px 0 0;padding:12px 14px;background:#fff7ed;border:1px solid #f0c9a4;border-left:5px solid #b45309;border-radius:12px}
+.cn-hint p.t{margin:0 0 6px;font-weight:800;font-size:13.5px;color:#8a3c07}
+.cn-hint ul{margin:0;padding-left:18px}
+.cn-hint li{margin:5px 0;font-size:12.8px;line-height:1.6;color:#3f3a33}
+.cn-hint a{color:#8a3c07;font-weight:700}
+.cn-hint .sm{display:block;margin:6px 0 0;font-size:12px;color:#6b6257}
 @media(max-width:560px){.upsell{grid-template-columns:1fr}}
 </style>
 </head>
@@ -88,6 +95,16 @@ footer p{margin:0 0 8px}
     <div>🇨🇳 <b>使用方法</b> — 点「NAVER Map」会用韩文店名直接打开地图。KML 请在电脑版 mymaps.google.com 导入，30 个点会变成一张地图（手机没有 My Maps App）。</div>
     <div>🇬🇧 <b>Why the Korean name matters</b> — Google Maps still cannot give walking or driving directions in Korea (as of Nov 2026). Naver can, and it needs the Korean name: every card below carries it.</div>
     <div>🇪🇸 <b>Ruta de 4 paradas</b> — la ruta ARMY de un día en Seúl, con horas, estaciones y precios, en una hoja A4 gratis: <a href="/01/es/">zioion8-crypto.github.io/01/es</a></div>
+  </div>
+
+  <div class="cn-hint" id="cn-hint">
+    <p class="t">来韩国前先弄明白这三件（中国大陆护照）</p>
+    <ul>
+      <li><b>支付</b> — 便利店（CU·GS25·7-Eleven）现金、支付宝、微信都能用；<b>地铁 1–8 号线自助售票机支付宝不可用</b>，微信可以；<b>出租车车内终端不收微信</b>。卡住时按「换通道 → 换介质 → 现金＋交通卡」三阶处理。→ <a href="/01/cn/alipay-wechat-korea-2026/">扫码失败三阶救援</a></li>
+      <li><b>签证</b> — K-ETA 临时免签只适用 22 个国家和地区，<b>中国大陆护照不在名单内</b>，须单独办旅游签证；团体签证手续费豁免不等于个人免签。</li>
+      <li><b>退税</b> — 单张收据满 ₩15,000 可在店里当场退（明洞 Olive Young 等参与店，出示护照原件），不能拆单。→ <a href="/01/cn/seoul-tax-refund-myeongdong-seongsu-2026/">退税与市内退税点</a></li>
+    </ul>
+    <span class="sm">下面的地点卡片以英文撰写：每张卡上的韩文店名可以直接抄给店员，或点「NAVER Map」用韩文名打开地图。</span>
   </div>
 
   <p class="legend"><b>NIGHT</b> = better after dark · <b>RAIN</b> = works in bad weather.<br><b>The number</b> on each card is that spot's pin number in the 109-pin pack — the 30 free pins were picked by area, so the numbers are not 1 to 30.</p>
@@ -128,5 +145,15 @@ footer p{margin:0 0 8px}
   <p><b>Privacy.</b> This page sets no cookie and stores nothing about you in your browser. If you email us for a guide or a code, your address is used only to send that and Seoul updates, never sold — reply to any email we sent you, or use the contact button on our Gumroad store, and it is deleted.</p>
 </footer>
 </div>
+<script>
+(function(){
+  var q=(new URLSearchParams(location.search).get('lang')||'').toLowerCase();
+  if(q==='cn'||q==='zh-hans'||q==='zh-cn'||q==='zh-sg'){
+    document.documentElement.lang='zh-Hans';
+    var h=document.getElementById('cn-hint');
+    if(h){h.style.borderLeftWidth='7px';}
+  }
+})();
+</script>
 </body>
 </html>
