@@ -36,7 +36,7 @@ window.KTB_I18N = {
     'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': 'A 4-day plan booked, queued and refunded for you — winter 2026 edition',
 
-    'title.home': 'KTB Hub — Find nearby, get around, speak & show (Korea, free)',
+    'title.home': 'KTB Hub (首尔攻略 KTB) — Find nearby, get around, speak & show (Korea, free)',
     'title.nearby': 'Find nearby — 109 checked places in Seoul, Busan & Jeju (free) | KTB Hub',
     'title.around': 'Get around Korea — airport fares & point-to-point directions (free) | KTB Hub',
     'title.speak': 'Speak & Show — Korean lines in big type to show staff (free) | KTB Hub',
@@ -55,6 +55,7 @@ window.KTB_I18N = {
     'home.f1': '<b>Privacy:</b> no cookies, no analytics, no external scripts. Your location is only read after you press the location button, used on the device for straight-line distance, and never saved to the browser or the link. The only things kept in this browser are your saved places and your last filters — with a button that clears them.',
     'home.f2': '<b>Places:</b> 109 pins last verified 2026-11-21. Hours and prices change; check the operator or the map link before you go.',
     'home.f3': 'More from Korea Travel Insider: <a href="../free/">Free Seoul 30-pin map</a> · <a href="../tools/subway-cost-calc/">Transit cost calculator</a> · <a href="../tools/order-card/">Korean order &amp; allergy card</a> · <a href="../en/">Transit, tax &amp; payment cheat sheet</a>',
+    'home.brand': 'KTB Hub is also on Xiaohongshu (小红书) as <b lang="zh-Hans">首尔攻略 KTB</b>, where the same checked places are written in Simplified Chinese. <a href="./?lang=cn">简体中文版 →</a>',
     'home.f4': '© 2026 Korea Travel Insider. Written by a long-term Seoul resident; name and affiliation are not published.',
 
     'nb.kicker': 'KTB Hub · 주변 찾기',
@@ -193,7 +194,7 @@ window.KTB_I18N = {
     'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': '3泊4日の予約・待ち時間・免税をゼロ手間に — ソウル2026冬版',
 
-    'title.home': 'KTB Hub — 近くを探す・移動する・見せて話す（韓国・無料）',
+    'title.home': 'KTB Hub（首尔攻略 KTB）— 近くを探す・移動する・見せて話す（韓国・無料）',
     'title.nearby': '近くを探す — ソウル・プサン・チェジュ109か所（無料）| KTB Hub',
     'title.around': '移動する — 空港運賃とA地点→B地点のルート（無料）| KTB Hub',
     'title.speak': '見せて話す — 大きな文字の韓国語（無料）| KTB Hub',
@@ -212,6 +213,7 @@ window.KTB_I18N = {
     'home.f1': '<b>プライバシー：</b>Cookie・解析・外部スクリプトはありません。位置情報は位置ボタンを押したときだけ読み、端末内で直線距離の計算に使い、ブラウザにもリンクにも保存しません。このブラウザに残るのは保存した場所と最後の絞り込みだけで、消去ボタンがあります。',
     'home.f2': '<b>場所：</b>109ピンは2026-11-21に最終確認。営業時間や価格は変わります。出かける前に営業元か地図リンクで確認してください。',
     'home.f3': 'Korea Travel Insider のほかのツール：<a href="../free/">無料ソウル30ピンマップ</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓国語 注文・アレルギーカード</a> · <a href="../en/">交通・免税・支払いの一覧表</a>',
+    'home.brand': 'KTB Hub は Xiaohongshu（小红书）でも <b lang="zh-Hans">首尔攻略 KTB</b> として、同じ内容を簡体字中国語で出しています。 <a href="./?lang=cn">简体中文版 →</a>',
     'home.f4': '© 2026 Korea Travel Insider. ソウルに長く住む編集者による匿名編集（氏名・所属は非公開）。',
 
     'nb.kicker': 'KTB Hub · 주변 찾기',
@@ -350,7 +352,7 @@ window.KTB_I18N = {
     'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': '四天三夜預約、候位、退稅一次搞定 — 首爾 2026 冬季版',
 
-    'title.home': 'KTB Hub — 找附近、怎麼去、說與出示（韓國・免費）',
+    'title.home': 'KTB Hub（首尔攻略 KTB）— 找附近、怎麼去、說與出示（韓國・免費）',
     'title.nearby': '找附近 — 首爾・釜山・濟州 109 處（免費）| KTB Hub',
     'title.around': '怎麼去 — 機場票價與 A 點到 B 點（免費）| KTB Hub',
     'title.speak': '說與出示 — 大字韓語給對方看（免費）| KTB Hub',
@@ -369,6 +371,7 @@ window.KTB_I18N = {
     'home.f1': '<b>隱私：</b>沒有 Cookie、沒有分析、沒有外部腳本。位置只在你按下位置按鈕後讀取，在裝置上計算直線距離，不會存進瀏覽器或連結。這個瀏覽器只保留你存的景點與上次的篩選，並有清除按鈕。',
     'home.f2': '<b>景點：</b>109 個定位點最後核對於 2026-11-21。營業時間與價格會變，出發前請看店家或地圖連結。',
     'home.f3': 'Korea Travel Insider 的其他工具：<a href="../free/">免費首爾 30 點地圖</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓語點餐・過敏卡</a> · <a href="../en/">交通、退稅、付款總表</a>',
+    'home.brand': 'KTB Hub 在小紅書（小红书）也叫做「<b lang="zh-Hans">首尔攻略 KTB</b>」，簡體中文版內容相同。 <a href="./?lang=cn">简体中文版 →</a>',
     'home.f4': '© 2026 Korea Travel Insider. 由長住首爾的編輯匿名撰寫，姓名與所屬不公開。',
 
     'nb.kicker': 'KTB Hub · 주변 찾기',
@@ -507,12 +510,12 @@ window.KTB_I18N = {
     'p.jp.name': '韩国3泊4日 予约・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': '四天三夜预订、排队、退税一次搞定 — 首尔 2026 冬季版',
 
-    'title.home': 'KTB Hub — 找附近、怎么去、说与出示（韩国・免费）',
-    'title.nearby': '找附近 — 首尔・釜山・济州 109 处（免费）| KTB Hub',
-    'title.around': '怎么去 — 机场票价与 A 点到 B 点（免费）| KTB Hub',
-    'title.speak': '说与出示 — 大字韩语给对方看（免费）| KTB Hub',
+    'title.home': '首尔攻略 KTB — 韩国旅行三件免费工具｜找附近、怎么去、说与出示',
+    'title.nearby': '找附近 — 首尔・釜山・济州 109 处（免费）| 首尔攻略 KTB',
+    'title.around': '怎么去 — 机场票价与 A 点到 B 点（免费）| 首尔攻略 KTB',
+    'title.speak': '说与出示 — 大字韩语给对方看（免费）| 首尔攻略 KTB',
 
-    'home.kicker': 'Korea Travel Insider · KTB Hub',
+    'home.kicker': '首尔攻略 KTB · Korea Travel Insider',
     'home.h1': '在韩国真的用得到的三件事',
     'home.sub': '<b>附近有什么</b> · <b>怎么去</b> · <b>怎么说</b>。免费、免注册，位置只在你按下按钮时读取。',
     'home.t1': '找附近', 'home.t1k': '주변 찾기',
@@ -526,6 +529,7 @@ window.KTB_I18N = {
     'home.f1': '<b>隐私：</b>没有 Cookie、没有分析、没有外部脚本。位置只在你按下位置按钮后读取，在设备上计算直线距离，不会存进浏览器或链接。这个浏览器只保留你存的景点与上次的筛选，并有清除按钮。',
     'home.f2': '<b>景点：</b>109 个地点最后核对于 2026-11-21。营业时间与价格会变，出发前请看店家或地图链接。',
     'home.f3': 'Korea Travel Insider 的其他工具：<a href="../free/">免费首尔 30 个地点地图</a> · <a href="../tools/subway-cost-calc/">交通费计算器</a> · <a href="../tools/order-card/">韩语点餐・过敏卡</a> · <a href="../en/">交通、退税、付款总表</a>',
+    'home.brand': '小红书同名账号：<b>首尔攻略 KTB</b>（小编现场核对 109 处，简体中文）。这里的简体中文版内容相同。',
     'home.f4': '© 2026 Korea Travel Insider. 由长住首尔的编辑匿名撰写，姓名与所属不公开。',
 
     'nb.kicker': 'KTB Hub · 주변 찾기',

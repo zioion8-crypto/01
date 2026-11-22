@@ -9,6 +9,11 @@
 >
 > Last verified: 2026-11-21 for airport transport, night buses and transit cards (AREX, Incheon Airport, Seoul city pages); 2026-11-15 for the rest of the editorial pages; the free tools and the Spanish hub were added on 2026-11-20 and carry that date. Prices are in Korean won (KRW) unless marked.
 
+## Brand names
+
+- **首尔攻略 KTB** — the name this hub is published under on Xiaohongshu (小红书 / RED). It is the same site as KTB Hub: [简体中文 hub](https://zioion8-crypto.github.io/01/hub/?lang=cn). Searching "首尔攻略 KTB" should reach https://zioion8-crypto.github.io/01/hub/.
+- **KTB Hub / Korea Travel Insider** — the English name for the same site and its five language editions.
+
 ## Editions
 
 - [English — 2026 Korea Transit, Tax-Free & Payment Cheat Sheet](https://zioion8-crypto.github.io/01/en/): airport rail (AREX ₩13,000 express / ₩4,750 all-stop, T2 ₩5,350), Climate Card short-term pass (5 days ₩15,000 + ₩3,000 card), WOWPASS, Apple Wallet T-money, tax refund from ₩15,000 per store with the refund bracket table, 440 ticket machines that take a foreign Visa/Mastercard (~3.7%), where payment fails, and what a data-only eSIM cannot do.
