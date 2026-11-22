@@ -41,13 +41,14 @@ header.top .sub b{background:rgba(255,255,255,.17);padding:1px 4px;border-radius
   border:1px solid var(--line);border-radius:16px;box-shadow:0 1px 0 rgba(18,33,30,.04),0 6px 18px -14px rgba(11,93,79,.45);
   -webkit-tap-highlight-color:transparent;transition:transform .08s ease,border-color .12s ease}
 .hub-grid a.tile:active{transform:scale(.985);border-color:var(--brand2)}
-.hub-grid a.tile.wide{grid-column:1/-1;min-height:112px;flex-direction:row;align-items:center;justify-content:flex-start;gap:14px}
+.hub-grid a.tile.wide{grid-column:1/-1;min-height:132px}
 .tile .ico{font-size:26px;line-height:1;width:46px;height:46px;display:flex;align-items:center;justify-content:center;
   border-radius:13px;background:var(--okbg);border:1px solid #cfe6da;flex:0 0 auto}
 .tile .tt{display:block;font-size:18px;font-weight:800;letter-spacing:-.01em;line-height:1.2}
 .tile .tk{display:block;font-size:12.5px;color:var(--ink3);margin-top:3px;font-weight:600}
 .tile .td{display:block;font-size:12.5px;color:var(--ink2);margin-top:7px}
 .tile .go{font-size:12px;font-weight:800;color:var(--brand);letter-spacing:.03em;margin-top:auto;display:flex;align-items:center;gap:4px;white-space:nowrap}
+.tile.wide .txt{flex:1 1 auto}
 .tile.wide .td{margin-top:4px}
 .tile.wide .txt{flex:1 1 auto;min-width:0}
 @media(min-width:700px){
