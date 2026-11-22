@@ -32,7 +32,7 @@ header.top .h{max-width:720px;margin:0 auto}
 .kicker{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.86;margin:0}
 h1{font-size:24px;line-height:1.25;margin:6px 0 8px;letter-spacing:.005em}
 header.top .sub{font-size:13.5px;margin:0;opacity:.94;max-width:56ch}
-header.top .sub b{background:rgba(255,255,255,.17);padding:1px 4px;border-radius:5px;font-weight:600}
+header.top .sub b{background:rgba(255,255,255,.17);box-shadow:0 0 0 3px rgba(255,255,255,.17);padding:1px 0;border-radius:4px;font-weight:600}
 
 /* ---------- home ---------- */
 .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 18px}
