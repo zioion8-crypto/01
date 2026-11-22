@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="title.nearby">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5d4f">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Find nearby — 109 checked places in Seoul, Busan &amp; Jeju (free) | KTB Hub</title>
+<meta name="description" content="Search 109 places last checked on 2026-11-21 by area, category or distance. Tap once to read your location and sort by straight-line distance — or pick a neighbourhood instead. No account, coordinates never saved.">
+<link rel="canonical" href="https://zioion8-crypto.github.io/01/hub/nearby/">
+<link rel="alternate" hreflang="en" href="https://zioion8-crypto.github.io/01/hub/nearby/">
+<link rel="alternate" hreflang="ja" href="https://zioion8-crypto.github.io/01/hub/nearby/">
+<link rel="alternate" hreflang="zh-Hant" href="https://zioion8-crypto.github.io/01/hub/nearby/">
+<link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/hub/nearby/">
+<meta property="og:title" content="Find nearby — 109 checked places, sorted by distance">
+<meta property="og:description" content="Filter by food, cafes, markets, area. Location is read only when you tap, and never saved.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zioion8-crypto.github.io/01/hub/nearby/">
+<meta property="og:site_name" content="Korea Travel Insider">
+<link rel="icon" href="../../icons/ktb-favicon.png">
+<link rel="stylesheet" href="../hub.css">
+</head>
+<body>
+<header class="top">
+  <div class="h">
+    <div class="h-top">
+      <a class="crumb" href="../" data-i18n="c.back">← KTB Hub</a>
+      <div class="langbar" data-langbar role="group" aria-label="Language"></div>
+    </div>
+    <p class="kicker" data-i18n="nb.kicker">KTB Hub · 주변 찾기</p>
+    <h1 data-i18n="nb.h1">Find nearby</h1>
+    <p class="sub" data-i18n="nb.sub">109 places in Seoul, Busan and Jeju, last checked <b>2026-11-21</b>. Filter by what it is or which neighbourhood, or ask for straight-line distance from where you stand.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card" aria-label="Find places near me">
+    <div class="btn-row">
+      <button class="btn" id="btnLocate" type="button">📍 Find near me</button>
+      <button class="btn ghost" id="btnArea" type="button" data-i18n="nb.areaBtn">Choose an area instead</button>
+    </div>
+    <p class="tiny" id="locNote" data-i18n="nb.locNote">Your location is read only when you press the button above — once, on this device. It is not saved in the browser or in any link.</p>
+    <p class="msg ok" id="msgOk" hidden></p>
+    <p class="msg warn" id="msgWarn" hidden></p>
+    <noscript><p class="msg warn">This tool needs JavaScript. The place list is in <a href="../data/spots.json">spots.json</a>.</p></noscript>
+  </section>
+
+  <section class="card" aria-label="Filters">
+    <div class="field">
+      <label class="fl" for="q" data-i18n="nb.search">Search</label>
+      <input type="search" id="q" data-i18n-ph="nb.searchPh" placeholder="Place, dish, area or Korean name" autocomplete="off" enterkeyhint="search">
+    </div>
+
+    <div class="chips" id="catChips" role="group" aria-label="Category"></div>
+
+    <div class="two-col" style="margin-top:11px">
+      <div class="field" style="margin:0">
+        <label class="fl" for="selCity" data-i18n="nb.city">City</label>
+        <select id="selCity">
+          <option value="" data-i18n="nb.allCities">All cities</option>
+          <option value="Seoul">Seoul</option>
+          <option value="Busan">Busan</option>
+          <option value="Jeju">Jeju</option>
+        </select>
+      </div>
+      <div class="field" style="margin:0">
+        <label class="fl" for="selArea" data-i18n="nb.area">Neighbourhood</label>
+        <select id="selArea"><option value="" data-i18n="nb.allAreas">All areas</option></select>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:11px">
+      <div class="field" style="margin:0">
+        <label class="fl" for="selSort" data-i18n="nb.sort">Sort</label>
+        <select id="selSort">
+          <option value="area" data-i18n="nb.sortArea">By city &amp; area</option>
+          <option value="az" data-i18n="nb.sortAz">A–Z</option>
+          <option value="near" disabled data-i18n="nb.sortNear">Nearest first</option>
+        </select>
+      </div>
+      <div class="field" style="margin:0">
+        <label class="fl" for="btnSaved" data-i18n="nb.saved">Saved places</label>
+        <button class="btn ghost" id="btnSaved" type="button" aria-pressed="false" style="width:100%">★ Saved (0)</button>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin-top:12px">
+      <button class="btn ghost small" id="btnClear" type="button" data-i18n="nb.clear">Clear saved places &amp; filters</button>
+    </div>
+    <p class="msg info" id="msgInfo" hidden></p>
+  </section>
+
+  <div class="status">
+    <span id="count"><b>109</b> places</span>
+    <span id="sorted" class="small"></span>
+  </div>
+
+  <ul class="spots" id="list" aria-live="polite"></ul>
+  <div class="more"><button class="btn ghost" id="btnMore" type="button" hidden>Show more</button></div>
+  <p class="empty" id="empty" hidden data-i18n="nb.empty">No place matches these filters. Try “All cities” or a shorter word.</p>
+
+  <div id="ctaSentinel" aria-hidden="true" style="height:1px"></div>
+  <div id="moneyHost"></div>
+
+  <footer class="bot">
+    <p data-i18n="nb.f1"><b>How the list is built.</b> Every place comes from the 109 daily-checked pins of the Korea 1-Tap Map Pack: name, area, category, address, map links and the date it was last checked. Hours, prices and the local notes are not published on this page.</p>
+    <p data-i18n="nb.f2"><b>Privacy.</b> No cookies, no analytics. Pressing “Find near me” asks the browser once; the coordinates are used in memory for straight-line distance and then dropped. Saved places and your last city/area/category are kept in this browser only, and the button above clears them.</p>
+    <p data-i18n="nb.f3"><b>Distance</b> is a straight line (“as the crow flies”), not a walking route — a river or a hill can make it longer.</p>
+    <p data-i18n="nb.f4">© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../free/">Free Seoul 30-pin map</a> · <a href="../../tools/subway-cost-calc/">Transit calculator</a></p>
+  </footer>
+</main>
+
+<script src="../lang.js"></script>
+<script src="../hub.js"></script>
+<script src="nearby.js"></script>
+</body>
+</html>

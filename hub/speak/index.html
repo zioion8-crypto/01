@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-title-key="title.speak">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b5d4f">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>Speak &amp; Show — Korean lines in big type to show staff (free) | KTB Hub</title>
+<meta name="description" content="39 reviewed Korean lines for restaurants, allergies, taxis, hotels, pharmacies and emergencies. Tap one and the screen turns into one sentence in large high-contrast type to show staff or a driver. Free, no login, no translation API.">
+<link rel="canonical" href="https://zioion8-crypto.github.io/01/hub/speak/">
+<link rel="alternate" hreflang="en" href="https://zioion8-crypto.github.io/01/hub/speak/">
+<link rel="alternate" hreflang="ja" href="https://zioion8-crypto.github.io/01/hub/speak/">
+<link rel="alternate" hreflang="zh-Hant" href="https://zioion8-crypto.github.io/01/hub/speak/">
+<link rel="alternate" hreflang="x-default" href="https://zioion8-crypto.github.io/01/hub/speak/">
+<meta property="og:title" content="Speak &amp; Show — Korean in big type, for showing">
+<meta property="og:description" content="39 reviewed lines: restaurant, allergy, taxi, hotel, pharmacy, payment, emergency. Tap once and turn the screen around.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zioion8-crypto.github.io/01/hub/speak/">
+<meta property="og:site_name" content="Korea Travel Insider">
+<link rel="icon" href="../../icons/ktb-favicon.png">
+<link rel="stylesheet" href="../hub.css">
+</head>
+<body>
+<header class="top">
+  <div class="h">
+    <div class="h-top">
+      <a class="crumb" href="../" data-i18n="c.back">← KTB Hub</a>
+      <div class="langbar" data-langbar role="group" aria-label="Language"></div>
+    </div>
+    <p class="kicker" data-i18n="sp.kicker">KTB Hub · 언어 도움</p>
+    <h1 data-i18n="sp.h1">Speak &amp; Show</h1>
+    <p class="sub" data-i18n="sp.sub">Checked Korean lines by situation. Tap one and the screen becomes one sentence in big type — turn the phone around and let them read it.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <p class="lead" data-i18n="sp.lead">Show the screen rather than reading it out: the person in front of you reads Korean far faster than you can pronounce it. Allergy lines come first and are written the way kitchens read them.</p>
+    <div class="chips" id="groupChips" role="group" aria-label="Situation"></div>
+  </section>
+
+  <ul class="phrases" id="list"></ul>
+
+  <div id="ctaSentinel" aria-hidden="true" style="height:1px"></div>
+  <div id="moneyHost"></div>
+
+  <footer class="bot">
+    <p data-i18n="sp.f1"><b>Not a translation service.</b> These are fixed, reviewed lines — there is no machine translation here. For anything outside them, the free order card builds more sentences.</p>
+    <p data-i18n="sp.f2"><b>A card lowers the risk of a misunderstanding; it does not remove it.</b> For a serious allergy, show the line before you order, and use a translation app for anything medical.</p>
+    <p data-i18n="sp.f3">© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/order-card/">Korean order &amp; allergy card</a></p>
+  </footer>
+</main>
+
+<!-- full-screen single line -->
+<div class="overlay" id="ov" hidden role="dialog" aria-modal="true">
+  <div class="bar">
+    <button class="x" id="ovClose" type="button" data-i18n="sp.close">Close</button>
+  </div>
+  <div class="body">
+    <p class="big" id="ovKr" lang="ko"></p>
+    <div class="trans">
+      <p class="en" id="ovMean"></p>
+      <p class="rom" id="ovRom"></p>
+    </div>
+  </div>
+  <div class="foot">
+    <button class="btn" id="ovCopy" type="button" data-i18n="sp.copy">Copy Korean</button>
+    <p class="note" id="ovNote" hidden></p>
+  </div>
+</div>
+
+<script src="../lang.js"></script>
+<script src="../hub.js"></script>
+<script src="phrases.js"></script>
+<script src="speak.js"></script>
+</body>
+</html>
