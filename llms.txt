@@ -116,7 +116,10 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 
 ## Korea + Japan dual trip (new 2026-11-17)
 
-- URL: https://zioion8-crypto.github.io/01/korea-japan/  (English; ?lang=es Spanish, ?lang=tw Traditional Chinese)
+- URL: https://zioion8-crypto.github.io/01/korea-japan/  (English; ?lang=es Spanish, ?lang=ja Japanese,
+  ?lang=tw Traditional Chinese, ?lang=cn Simplified Chinese)
+- Free A4 one-pagers in five languages, same figures: Korea_Japan_Dual-Trip_1Pager_EN.pdf, _ES.pdf, _JA.pdf,
+  _zh-Hant.pdf and _CN.pdf (Simplified Chinese, added 2026-11-22), all under /01/korea-japan/.
 - For travellers adding Japan to a Korea trip in 2026/27. One A4 sheet (free) plus a premium 34-page
   pack: https://zioion.gumroad.com/l/korea-japan-dual-trip-pack (US$14.99, no refunds on the digital file).
 - Facts checked 2026-11-17 and each carries its date: Busan–Hakata overnight ferry (New Camellia) fares and
