@@ -213,6 +213,13 @@ body.show{margin:0;background:#070d0b}
 footer.bot{margin:22px 0 0;padding:14px 0 0;border-top:1px solid var(--line);font-size:12px;color:var(--ink3);line-height:1.6}
 footer.bot p{margin:0 0 7px}
 footer.bot a{color:var(--brand)}
+/* No-JS fallback for crawlers and browsers without scripts: a Simplified-Chinese summary of the three tools */
+.noscript-cn{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:16px 0 0;font-size:13.5px;line-height:1.65;color:var(--ink2)}
+.noscript-cn h2{font-size:16px;margin:0 0 6px;color:var(--ink)}
+.noscript-cn ul{margin:8px 0;padding-left:18px}
+.noscript-cn li{margin:4px 0}
+.noscript-cn a{color:var(--brand);font-weight:700}
+
 .skip{position:absolute;left:-9999px}
 
 /* Simplified-Chinese-only strip on the hub home: the three first-day pain points */
