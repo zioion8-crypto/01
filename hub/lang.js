@@ -36,7 +36,7 @@ window.KTB_I18N = {
     'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': 'A 4-day plan booked, queued and refunded for you — winter 2026 edition',
 
-    'title.home': 'KTB Hub (首尔攻略 KTB) — Find nearby, get around, speak & show (Korea, free)',
+    'title.home': 'KTB Hub (首尔攻略 KTB) — Korea travel tools, free',
     'title.nearby': 'Find nearby — 109 checked places in Seoul, Busan & Jeju (free) | KTB Hub',
     'title.around': 'Get around Korea — airport fares & point-to-point directions (free) | KTB Hub',
     'title.speak': 'Speak & Show — Korean lines in big type to show staff (free) | KTB Hub',
@@ -194,7 +194,7 @@ window.KTB_I18N = {
     'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': '3泊4日の予約・待ち時間・免税をゼロ手間に — ソウル2026冬版',
 
-    'title.home': 'KTB Hub（首尔攻略 KTB）— 近くを探す・移動する・見せて話す（韓国・無料）',
+    'title.home': 'KTB Hub（首尔攻略 KTB）— 韓国旅行の無料ツール',
     'title.nearby': '近くを探す — ソウル・プサン・チェジュ109か所（無料）| KTB Hub',
     'title.around': '移動する — 空港運賃とA地点→B地点のルート（無料）| KTB Hub',
     'title.speak': '見せて話す — 大きな文字の韓国語（無料）| KTB Hub',
@@ -352,7 +352,7 @@ window.KTB_I18N = {
     'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': '四天三夜預約、候位、退稅一次搞定 — 首爾 2026 冬季版',
 
-    'title.home': 'KTB Hub（首尔攻略 KTB）— 找附近、怎麼去、說與出示（韓國・免費）',
+    'title.home': 'KTB Hub（首尔攻略 KTB）— 韓國旅行免費工具',
     'title.nearby': '找附近 — 首爾・釜山・濟州 109 處（免費）| KTB Hub',
     'title.around': '怎麼去 — 機場票價與 A 點到 B 點（免費）| KTB Hub',
     'title.speak': '說與出示 — 大字韓語給對方看（免費）| KTB Hub',
@@ -510,7 +510,7 @@ window.KTB_I18N = {
     'p.jp.name': '韩国3泊4日 予约・待ち・免税 ゼロ帖 ソウル2026冬',
     'p.jp.sub': '四天三夜预订、排队、退税一次搞定 — 首尔 2026 冬季版',
 
-    'title.home': '首尔攻略 KTB — 韩国旅行三件免费工具｜找附近、怎么去、说与出示',
+    'title.home': '首尔攻略 KTB — 韩国旅行三件免费工具',
     'title.nearby': '找附近 — 首尔・釜山・济州 109 处（免费）| 首尔攻略 KTB',
     'title.around': '怎么去 — 机场票价与 A 点到 B 点（免费）| 首尔攻略 KTB',
     'title.speak': '说与出示 — 大字韩语给对方看（免费）| 首尔攻略 KTB',
