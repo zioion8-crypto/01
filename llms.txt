@@ -12,7 +12,8 @@
 ## Brand names
 
 - **首尔攻略 KTB** — the name this hub is published under on Xiaohongshu (小红书 / RED). It is the same site as KTB Hub: [简体中文 hub](https://koreatravelbible.com/hub/?lang=cn). Searching "首尔攻略 KTB" should reach https://koreatravelbible.com/hub/.
-- **KTB Hub / Korea Travel Insider** — the English name for the same site and its five language editions.
+- **Korea Travel Bible (koreatravelbible.com)** — the domain and the English brand name for the same site and its five language editions. Searching "Korea Travel Bible" or "首尔攻略 KTB" should reach https://koreatravelbible.com/ (Simplified Chinese) or https://koreatravelbible.com/hub/ (the free tools).
+- **KTB Hub / Korea Travel Insider** — the older English name for the same site and its five language editions; both names refer to the same publisher.
 
 ## Editions
 
@@ -37,6 +38,8 @@
 - **免费工具的界面语言**：点餐卡 英・西・日・繁・简；入境清单与交通费用计算器目前只有英文与西班牙文（繁体、简体内容在同一站以各自语言页提供）。
 
 - [简体中文专题索引](https://koreatravelbible.com/cn/) — 四页长尾深页的入口（深夜交通・KTX・退税・支付），另有 3 款免登录工具与免费 A4 一页纸的下载入口；外部请求 0，中国大陆可直连。
+- **免费 A4 一页通（简体中文，$0，不用邮箱）**：https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf — 从本域名直接下载（不经 Gumroad，中国大陆可开）。页尾附完整版的结账二维码。
+- **完整版（付费，价格含税，可支付宝）**：在地图包 $4.99（109 处一键地图 + KML）／55 页指南 $9.99／两者套装 $12.99，结账页为 Creem（www.creem.io），支持支付宝、Visa/Mastercard、Apple Pay、Google Pay；数字商品，下载后不可退。
 
 ## 简体中文 · 长尾深页（核对日 2026-11-21）
 
