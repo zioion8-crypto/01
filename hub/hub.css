@@ -137,7 +137,7 @@ li.spot{background:var(--card);border:1px solid var(--line);border-radius:13px;p
   border:1px solid #cfe6da;border-radius:999px;padding:2px 8px;white-space:nowrap}
 .dist{margin-left:auto;font-size:12px;font-weight:800;color:var(--warn);background:var(--warnbg);border:1px solid #f0d3c2;
   border-radius:999px;padding:2px 8px;white-space:nowrap}
-.fav{margin-left:auto;border:1px solid var(--line);background:#fff;color:#b9c4c0;border-radius:10px;width:40px;height:38px;
+.fav{margin-left:auto;border:1px solid var(--line);background:#fff;color:#9a9385;border-radius:10px;width:40px;height:38px;
   font-size:17px;line-height:1;cursor:pointer;flex:0 0 auto;-webkit-tap-highlight-color:transparent}
 .dist + .fav{margin-left:6px}
 .fav[aria-pressed=true]{color:var(--gold);border-color:#e6d6a4;background:#fdf8e8}
