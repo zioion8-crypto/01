@@ -637,3 +637,123 @@ window.KTB_I18N = {
     'sp.g.pharmacy': '药店・身体不适', 'sp.g.pay': '付款・购物', 'sp.g.emergency': '紧急・求助'
   }
 };
+
+/* ======================================================================
+   2026-11-24 — warmer home copy, the location-safety note used on / and
+   /hub/nearby/, and the real-page preview of the paid packs. Kept in one
+   block so the strings above stay untouched; merged into each language
+   before hub.js reads them.
+   ====================================================================== */
+(function () {
+  var LAYER = {
+
+    en: {
+      'home.kicker': 'Korea Travel Bible · checked on the ground in Seoul',
+      'home.h1': 'The three things that get you unstuck in Korea',
+      'home.sub': 'What is <b>near you</b>, how to <b>get there</b>, and how to <b>say it</b> — free, no sign-up. We read your location only when you tap, and only to show distance.',
+
+      'safe.t': 'No location sharing needed',
+      'safe.b': 'Pick your neighbourhood or station and the list opens at once — no permission pop-up. If you do tap <b>find near me</b>, the coordinates are read once on this device, used only for straight-line distance, and never saved to the browser or to a link.',
+
+      'prev.eyebrow': 'What you get',
+      'prev.h2': 'The paid packs, opened up',
+      'prev.sub': 'These are actual pages from the PDFs on sale — not mockups. The three tools above stay free, always.',
+      'prev.capGuide': '55-page guide · page 23, as sold',
+      'prev.altGuide': 'A real page from the 55-page Seoul guide, “Getting a table without a number”, with a comparison table of two booking apps.',
+      'prev.capMap': '109-pin map pack · page 3, as sold',
+      'prev.altMap': 'A real page from the 109-pin map pack: three Seoul places, each with its Korean name and Naver Map and Google Maps buttons.',
+      'up.h3': 'Four packs, one-time payment',
+      'u.map.inc': '20-page PDF with 36 spots · KML with all 109 pins · 13 phrase cards',
+      'u.guide.inc': '55-page A5 PDF · 2026 winter edition · landing, cards, tables, refunds, 47 places',
+      'u.bundle.inc': 'The 55-page guide and the 109-pin map pack, together',
+      'u.kj.inc': '35-page PDF · a 10–14 day route through both countries · ferries, flights, booking order',
+      'u.get': 'Open the instant checkout ↗',
+      'u.note': 'Digital goods sold by Creem. Prices include tax. The file downloads straight after payment; sales are final.',
+      'p.kj.name': 'Korea + Japan 10–14 Day Dual-Trip Pack 2026/27',
+      'p.kj.sub': 'Two countries, one booking sheet — 35-page PDF'
+    },
+
+    ja: {
+      'home.kicker': 'Korea Travel Bible · ソウルで現地確認',
+      'home.h1': '韓国で困った瞬間に、必要なものだけすぐ',
+      'home.sub': '<b>近くに何があるか</b>、<b>どう行くか</b>、<b>どう言うか</b>。無料・登録不要。位置情報はボタンを押したときだけ、距離を出すために読みます。',
+
+      'safe.t': '位置情報を共有しなくても使えます',
+      'safe.b': 'エリアか駅を選べば、その場で一覧が開きます — 許可のポップアップは出ません。<b>近くを探す</b>を押した場合も、座標はこの端末で一度読むだけで、直線距離の計算にだけ使い、ブラウザにもリンクにも保存しません。',
+
+      'prev.eyebrow': '中身の実物',
+      'prev.h2': '有料パックの中は、こんなページです',
+      'prev.sub': '販売中のPDFから実際のページをそのまま載せています（モックアップではありません）。上の3つの無料ツールはこれからも無料です。',
+      'prev.capGuide': '55ページガイド · 販売中の23ページ目',
+      'prev.altGuide': '55ページのソウルガイドの実際のページ「番号なしで席を取る」。予約アプリ2つの比較表つき。',
+      'prev.capMap': '109ピンの地図パック · 販売中の3ページ目',
+      'prev.altMap': '109ピン地図パックの実際のページ。ソウルの3か所を、韓国語名とNaverマップ・Googleマップのボタン付きで掲載。',
+      'up.h3': '4つのパック · 買い切りのみ',
+      'u.map.inc': '36か所を載せた20ページPDF · 全109ピンのKML · フレーズカード13枚',
+      'u.guide.inc': '55ページA5 PDF · 2026冬版 · 入国書類・カード・席・免税・47か所',
+      'u.bundle.inc': '55ページガイド＋109ピン地図パックのセット',
+      'u.kj.inc': '35ページPDF · 2か国10〜14日のルート · フェリー・航空券・予約順',
+      'u.get': 'すぐに決済ページへ ↗',
+      'u.note': 'Creem が販売するデジタル商品です。表示価格は税込。支払い後すぐにダウンロードでき、返品はできません。',
+      'p.kj.name': '韓国＋日本 10〜14日 デュアルトリップパック 2026/27',
+      'p.kj.sub': '2か国を1枚の予約表で — 35ページPDF'
+    },
+
+    zh: {
+      'home.kicker': 'Korea Travel Bible · 在首爾實地核對',
+      'home.h1': '在韓國卡住的那一刻，這裡剛好有你需要的',
+      'home.sub': '<b>附近有什麼</b>、<b>怎麼過去</b>、<b>怎麼開口</b>。免費、不用註冊。位置只在你按下按鈕時讀取，也只拿來算距離。',
+
+      'safe.t': '不用開定位也能用',
+      'safe.b': '直接選區域或車站，清單馬上打開 — 不會跳出權限視窗。就算按下<b>找附近</b>，座標也只在這台裝置上讀一次，只用來算直線距離，不會存進瀏覽器或連結。',
+
+      'prev.eyebrow': '實物內容',
+      'prev.h2': '付費組合裡，就是這些頁面',
+      'prev.sub': '以下是販售中 PDF 的真實頁面（不是模擬圖）。上方三件免費工具永遠免費。',
+      'prev.capGuide': '55 頁指南 · 販售版第 23 頁',
+      'prev.altGuide': '55 頁首爾指南的真實頁面「沒有電話號碼也能訂位」，附兩個訂位 App 的比較表。',
+      'prev.capMap': '109 個地點地圖包 · 販售版第 3 頁',
+      'prev.altMap': '109 個地點地圖包的真實頁面：首爾三個地點，含韓文名與 Naver 地圖、Google 地圖按鈕。',
+      'up.h3': '四種組合 · 一次付款',
+      'u.map.inc': '20 頁 PDF（36 個地點）· 全部 109 個地點的 KML · 13 張句子卡',
+      'u.guide.inc': '55 頁 A5 PDF · 2026 冬季版 · 入境文件、交通卡、訂位、退稅、47 個地點',
+      'u.bundle.inc': '55 頁指南＋109 個地點地圖包',
+      'u.kj.inc': '35 頁 PDF · 韓日 10–14 天路線 · 渡輪、航班、訂票順序',
+      'u.get': '前往結帳 ↗',
+      'u.note': '由 Creem 販售的數位商品。價格已含稅，付款後立即下載，售出後不可退。',
+      'p.kj.name': '韓國＋日本 10–14 天雙國套票 2026/27',
+      'p.kj.sub': '兩個國家、一張預訂表 — 35 頁 PDF'
+    },
+
+    cn: {
+      'home.kicker': 'Korea Travel Bible · 在首尔实地核对',
+      'home.h1': '在韩国卡住的那一刻，这里刚好有你需要的',
+      'home.sub': '<b>附近有什么</b>、<b>怎么过去</b>、<b>怎么开口</b>。免费、不用注册。位置只在你按下按钮时读取，也只用来算距离。',
+
+      'safe.t': '不用开定位也能用',
+      'safe.b': '直接选区域或车站，列表马上打开 — 不会弹出权限窗口。就算按下<b>找附近</b>，坐标也只在这台设备上读一次，只用来算直线距离，不会存进浏览器或链接。',
+
+      'prev.eyebrow': '实物内容',
+      'prev.h2': '付费组合里，就是这些页面',
+      'prev.sub': '以下是正在售卖的 PDF 真实页面（不是模拟图）。上方三件免费工具永远免费。',
+      'prev.capGuide': '55 页指南 · 售卖版第 23 页',
+      'prev.altGuide': '55 页首尔指南的真实页面「没有电话号码也能订位」，附两个订位 App 的对比表。',
+      'prev.capMap': '109 个地点地图包 · 售卖版第 3 页',
+      'prev.altMap': '109 个地点地图包的真实页面：首尔三个地点，含韩文名与 Naver 地图、Google 地图按钮。',
+      'up.h3': '四种组合 · 一次付款',
+      'u.map.inc': '20 页 PDF（36 个地点）· 全部 109 个地点的 KML · 13 张句子卡',
+      'u.guide.inc': '55 页 A5 PDF · 2026 冬季版 · 入境文件、交通卡、订位、退税、47 个地点',
+      'u.bundle.inc': '55 页指南＋109 个地点地图包',
+      'u.kj.inc': '35 页 PDF · 韩日 10–14 天路线 · 渡轮、航班、订票顺序',
+      'u.get': '前往结账 ↗',
+      'u.note': '由 Creem 销售的电子商品。价格已含税，付款后立即下载，售出后不可退。',
+      'p.kj.name': '韩国＋日本 10–14 天双国套票 2026/27',
+      'p.kj.sub': '两个国家、一张预订表 — 35 页 PDF'
+    }
+  };
+
+  Object.keys(LAYER).forEach(function (l) {
+    if (!window.KTB_I18N[l]) return;
+    Object.keys(LAYER[l]).forEach(function (k) { window.KTB_I18N[l][k] = LAYER[l][k]; });
+  });
+})();

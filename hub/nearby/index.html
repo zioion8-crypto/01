@@ -39,7 +39,8 @@
       <button class="btn" id="btnLocate" type="button">📍 Find near me</button>
       <button class="btn ghost" id="btnArea" type="button" data-i18n="nb.areaBtn">Choose an area instead</button>
     </div>
-    <p class="tiny" id="locNote" data-i18n="nb.locNote">Your location is read only when you press the button above — once, on this device. It is not saved in the browser or in any link.</p>
+    <!-- Same location-safety note as the hub, filled by HUB.safety() in hub/hub.js -->
+    <div id="locSafe"></div>
     <p class="msg ok" id="msgOk" hidden></p>
     <p class="msg warn" id="msgWarn" hidden></p>
     <noscript><p class="msg warn">This tool needs JavaScript. The place list is in <a href="../data/spots.json">spots.json</a>.</p></noscript>

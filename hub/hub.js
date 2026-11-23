@@ -68,6 +68,10 @@
       for (var k = 0; k < ar.length; k++) {
         ar[k].setAttribute('aria-label', self.t(ar[k].getAttribute('data-i18n-aria')));
       }
+      var al = document.querySelectorAll('[data-i18n-alt]');
+      for (var ai = 0; ai < al.length; ai++) {
+        al[ai].setAttribute('alt', self.t(al[ai].getAttribute('data-i18n-alt')));
+      }
 
       var lo = document.querySelectorAll('[data-lang-only]');
       for (var q = 0; q < lo.length; q++) {
@@ -168,6 +172,18 @@
       }, { passive: true });
     },
 
+    /* ---------- location-safety note (one wording for / and /hub/nearby/) ---------- */
+    safety: function (host) {
+      if (!host || host.__done) return;
+      host.__done = true;
+      host.innerHTML =
+        '<div class="safe" role="note">' +
+        '<p class="sh"><span class="ic" aria-hidden="true">🔒</span>' +
+        '<span data-i18n="safe.t">No location sharing needed</span></p>' +
+        '<p class="sb" data-i18n="safe.b">Pick your neighbourhood or station and the list opens at once.</p>' +
+        '</div>';
+    },
+
     /* ---------- storage: favourites + filters only ---------- */
     get: function (k, d) {
       try {
@@ -212,5 +228,6 @@
   HUB._lang = I18N[qp] ? qp : HUB.get(KEY_LANG, 'en');
   if (!I18N[HUB._lang]) HUB._lang = 'en';
   HUB.langBar();
+  HUB.safety(document.getElementById('locSafe'));
   HUB.applyLang();
 })();

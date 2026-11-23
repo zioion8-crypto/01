@@ -119,6 +119,75 @@
     </a>
   </nav>
 
+  <!-- Location-safety note, filled by HUB.safety() in hub.js so / and /hub/nearby/ share one wording. -->
+  <div id="locSafe"></div>
+
+  <!-- Paid packs: real pages from the PDFs on sale (rendered from the delivered files).
+       Four live Creem checkouts, prices include tax. -->
+  <section class="prev" aria-labelledby="prevTitle">
+    <p class="prev-eyebrow" data-i18n="prev.eyebrow">What you get</p>
+    <h2 id="prevTitle" data-i18n="prev.h2">The paid packs, opened up</h2>
+    <p class="prev-sub" data-i18n="prev.sub">These are actual pages from the PDFs on sale — not mockups. The three tools above stay free, always.</p>
+
+    <div class="shots">
+      <figure class="shot">
+        <img src="hub/img/prev-guide.jpg" width="600" height="800" loading="lazy" decoding="async"
+             data-i18n-alt="prev.altGuide" alt="A real page from the 55-page Seoul guide">
+        <figcaption data-i18n="prev.capGuide">55-page guide · page 23, as sold</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="hub/img/prev-map.jpg" width="600" height="800" loading="lazy" decoding="async"
+             data-i18n-alt="prev.altMap" alt="A real page from the 109-pin map pack">
+        <figcaption data-i18n="prev.capMap">109-pin map pack · page 3, as sold</figcaption>
+      </figure>
+    </div>
+
+    <h3 data-i18n="up.h3">Four packs, one-time payment</h3>
+
+    <a class="upc" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener">
+      <span class="upc-top">
+        <span class="upc-nm" data-i18n="p.map.name">Korea 1-Tap Map Pack 2026</span>
+        <span class="upc-pr"><b>$4.99</b><em data-i18n="c.paidTag">Paid product</em></span>
+      </span>
+      <span class="upc-inc" data-i18n="u.map.inc">20-page PDF with 36 spots · KML with all 109 pins · 13 phrase cards</span>
+      <span class="upc-go" data-i18n="u.get">Open the instant checkout ↗</span>
+    </a>
+
+    <a class="upc" href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" target="_blank" rel="noopener">
+      <span class="upc-top">
+        <span class="upc-nm" data-i18n="p.guide.name">Korea Zero-Friction Guide 2026</span>
+        <span class="upc-pr"><b>$9.99</b><em data-i18n="c.paidTag">Paid product</em></span>
+      </span>
+      <span class="upc-inc" data-i18n="u.guide.inc">55-page A5 PDF · 2026 winter edition · landing, cards, tables, refunds, 47 places</span>
+      <span class="upc-go" data-i18n="u.get">Open the instant checkout ↗</span>
+    </a>
+
+    <a class="upc" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener">
+      <span class="upc-top">
+        <span class="upc-nm" data-i18n="p.kit.name">Complete Korea Local Kit 2026</span>
+        <span class="upc-pr"><b>$12.99</b><em data-i18n="c.paidTag">Paid product</em></span>
+      </span>
+      <span class="upc-inc" data-i18n="u.bundle.inc">The 55-page guide and the 109-pin map pack, together</span>
+      <span class="upc-go" data-i18n="u.get">Open the instant checkout ↗</span>
+    </a>
+
+    <a class="upc" href="https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v" target="_blank" rel="noopener">
+      <span class="upc-top">
+        <span class="upc-nm" data-i18n="p.kj.name">Korea + Japan 10–14 Day Dual-Trip Pack 2026/27</span>
+        <span class="upc-pr"><b>$14.99</b><em data-i18n="c.paidTag">Paid product</em></span>
+      </span>
+      <span class="upc-inc" data-i18n="u.kj.inc">35-page PDF · a 10–14 day route through both countries · ferries, flights, booking order</span>
+      <span class="upc-go" data-i18n="u.get">Open the instant checkout ↗</span>
+    </a>
+
+    <p class="prev-note" data-i18n="u.note">Digital goods sold by Creem. Prices include tax. The file downloads straight after payment; sales are final.</p>
+
+    <div class="prev-qr" data-lang-only="cn" hidden>
+      <img src="/cn/qr-creem-bundle.png" alt="二维码：Creem 结账页（套装 $12.99，含税）" width="92" height="92" loading="lazy" decoding="async">
+      <p>支付宝 / 微信 / Visa・Mastercard / Apple Pay（价格含税）。手机相机或支付宝「扫一扫」→ 直接到套装结账页。上方三个免费工具永久免费，不用注册；付费是数字商品，下载后不可退。</p>
+    </div>
+  </section>
+
   <section class="cn-jp" data-lang-only="cn" hidden aria-labelledby="cnJpTitle">
     <p class="cn-brand"><span lang="zh-Hans">韩国＋日本</span> · 10–14 天一起走</p>
     <p class="cn-jp-t" id="cnJpTitle">下一站：这一页的免费与付费</p>
@@ -128,19 +197,6 @@
     </ul>
   </section>
 
-  <section class="cn-jp cn-pay" data-lang-only="cn" hidden aria-labelledby="cnPayTitle">
-    <p class="cn-brand"><span lang="zh-Hans">完整版</span> · 支付宝 / Visa・Mastercard / Apple Pay（价格含税）</p>
-    <p class="cn-jp-t" id="cnPayTitle">想带走全部 109 处和 55 页指南</p>
-    <ul>
-      <li><a href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener"><b>$4.99 109 处一键地图</b></a> — 首尔・釜山・济州，每处带韩文名、营业时间、休息日、价格；可导入谷歌「我的地图」。</li>
-      <li><a href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" target="_blank" rel="noopener"><b>$9.99 55 页指南</b></a> — 没有韩国手机号怎么订、交通卡怎么选、退税怎么算、深夜到达怎么走（英文 PDF）。</li>
-      <li><a href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener"><b>$12.99 套装（最省）</b></a> — 地图 + 指南，含税总价 $12.99。</li>
-    </ul>
-    <div style="display:flex;gap:12px;align-items:center;margin-top:9px">
-      <img src="/cn/qr-creem-bundle.png" alt="二维码：Creem 结账页（套装 $12.99，含税）" width="92" height="92" style="flex:0 0 auto;border:1px solid #cfe3d8;border-radius:8px;background:#fff">
-      <p style="margin:0;font-size:12.5px;line-height:1.55;color:#243a33">手机相机或支付宝「扫一扫」→ 直接到套装结账页。上方三个免费工具永久免费，不用注册；付费是数字商品，下载后不可退。</p>
-    </div>
-  </section>
 
   <p class="home-sheet" data-i18n="home.sheet"><a href="cheat-sheet/">1-page cheat sheet — 首尔扫码·地铁·退税 一页通 (简体中文)</a></p>
   <p class="home-note" data-i18n="home.note">Works in the browser. Nothing to install.</p>
