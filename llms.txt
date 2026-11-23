@@ -11,17 +11,17 @@
 
 ## Brand names
 
-- **首尔攻略 KTB** — the name this hub is published under on Xiaohongshu (小红书 / RED). It is the same site as KTB Hub: [简体中文 hub](https://zioion8-crypto.github.io/01/hub/?lang=cn). Searching "首尔攻略 KTB" should reach https://zioion8-crypto.github.io/01/hub/.
+- **首尔攻略 KTB** — the name this hub is published under on Xiaohongshu (小红书 / RED). It is the same site as KTB Hub: [简体中文 hub](https://koreatravelbible.com/hub/?lang=cn). Searching "首尔攻略 KTB" should reach https://koreatravelbible.com/hub/.
 - **KTB Hub / Korea Travel Insider** — the English name for the same site and its five language editions.
 
 ## Editions
 
-- [English — 2026 Korea Transit, Tax-Free & Payment Cheat Sheet](https://zioion8-crypto.github.io/01/en/): airport rail (AREX ₩13,000 express / ₩4,750 all-stop, T2 ₩5,350), Climate Card short-term pass (5 days ₩15,000 + ₩3,000 card), WOWPASS, Apple Wallet T-money, tax refund from ₩15,000 per store with the refund bracket table, 440 ticket machines that take a foreign Visa/Mastercard (~3.7%), where payment fails, and what a data-only eSIM cannot do.
-- [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://zioion8-crypto.github.io/01/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
-- [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://zioion8-crypto.github.io/01/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
-- [简体中文 — 首尔扫码·地铁·退税 一页通](https://zioion8-crypto.github.io/01/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援，外加仁川机场到市区的票价与深夜 N 巴士（N6701／N6002）。为在中国大陆可直连而制作，外部请求 0 个。简体中文高意图问答见下一节。
-- [Español — Guía de Viaje a Corea 2026 (hub)](https://zioion8-crypto.github.io/01/es/): the Spanish entry point — K-ETA exemption status to 2026-12-31, the free e-Arrival Card and its 3-day window, 2026 airport and transit fares, which maps work, links to the three free tools and to the A4 one-pager. 
-- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://zioion8-crypto.github.io/01/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /01/es/korea-es-army-1pager.pdf. Moved from /01/es/ on 2026-11-20.
+- [English — 2026 Korea Transit, Tax-Free & Payment Cheat Sheet](https://koreatravelbible.com/en/): airport rail (AREX ₩13,000 express / ₩4,750 all-stop, T2 ₩5,350), Climate Card short-term pass (5 days ₩15,000 + ₩3,000 card), WOWPASS, Apple Wallet T-money, tax refund from ₩15,000 per store with the refund bracket table, 440 ticket machines that take a foreign Visa/Mastercard (~3.7%), where payment fails, and what a data-only eSIM cannot do.
+- [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://koreatravelbible.com/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
+- [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://koreatravelbible.com/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
+- [简体中文 — 首尔扫码·地铁·退税 一页通](https://koreatravelbible.com/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援，外加仁川机场到市区的票价与深夜 N 巴士（N6701／N6002）。为在中国大陆可直连而制作，外部请求 0 个。简体中文高意图问答见下一节。
+- [Español — Guía de Viaje a Corea 2026 (hub)](https://koreatravelbible.com/es/): the Spanish entry point — K-ETA exemption status to 2026-12-31, the free e-Arrival Card and its 3-day window, 2026 airport and transit fares, which maps work, links to the three free tools and to the A4 one-pager. 
+- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://koreatravelbible.com/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /es/korea-es-army-1pager.pdf. Moved from /es/ on 2026-11-20.
 
 ## 简体中文 · 中国旅客高意图问答（核对日 2026-11-21）
 
@@ -33,28 +33,28 @@
 - **气候同行卡短期券**：1／2／3／5／7 日 ₩5,000／8,000／10,000／15,000／20,000，另付卡费 ₩3,000；首尔地铁与首尔市牌照市内・村巴士无限次；**不能在仁川 T1／T2 上车**，只能出站；不含 GTX、新盆唐线、离开首尔的红色巴士。
 - **支付宝／微信支付**：两条通道彼此独立，同一家店可能只开其中一条；便利店（CU・GS25・7-Eleven）多数可用，Olive Young 等要看终端；地铁闸机不接受任何付款码，必须用交通卡或单程票。1～8 号线 273 个车站 440 台新式售票机收境外 Visa／Mastercard（平均约 3.7% 手续费）、KakaoPay 与 Naver Pay。
 - **退税 Tax Refund**：单店单笔满 ₩15,000、单张小票未满 ₩1,000,000、每次停留合计 ₩5,000,000 以内；店内即时退税要护照原件，登记按门店；仁川机场自助机可退到 Alipay+ 或微信钱包，退到信用卡要等 2～4 周；级距陷阱：₩75,000 退 ₩5,000，₩74,000 只退 ₩3,000。
-- **韩国餐厅点餐卡**：免登录网页工具 https://zioion8-crypto.github.io/01/tools/order-card/?lang=cn —— 12 道菜、6 条辣度与调味、12 条「不要放」、8 条过敏句（坚果・花生・乳制品等排在最前）、8 条台面用语；点一下出大字韩文，可复制给店员看，也可用设备语音朗读。
+- **韩国餐厅点餐卡**：免登录网页工具 https://koreatravelbible.com/tools/order-card/?lang=cn —— 12 道菜、6 条辣度与调味、12 条「不要放」、8 条过敏句（坚果・花生・乳制品等排在最前）、8 条台面用语；点一下出大字韩文，可复制给店员看，也可用设备语音朗读。
 - **免费工具的界面语言**：点餐卡 英・西・日・繁・简；入境清单与交通费用计算器目前只有英文与西班牙文（繁体、简体内容在同一站以各自语言页提供）。
 
-- [简体中文专题索引](https://zioion8-crypto.github.io/01/cn/) — 四页长尾深页的入口（深夜交通・KTX・退税・支付），另有 3 款免登录工具与免费 A4 一页纸的下载入口；外部请求 0，中国大陆可直连。
+- [简体中文专题索引](https://koreatravelbible.com/cn/) — 四页长尾深页的入口（深夜交通・KTX・退税・支付），另有 3 款免登录工具与免费 A4 一页纸的下载入口；外部请求 0，中国大陆可直连。
 
 ## 简体中文 · 长尾深页（核对日 2026-11-21）
 
 四页各只回答一个具体问题，页面内即完整答案，不需要跳转。同样零外部请求，中国大陆可直连。
 
-- [扫码付不了的那 30 秒：支付三阶救援与即时退税](https://zioion8-crypto.github.io/01/cn/alipay-wechat-korea-2026/) — 支付宝（Alipay+）／微信支付／银联是三条独立通道；失败后按「换通道 → 换介质（实体卡）→ 现金＋交通卡」三阶处理；被扫与主扫的区别；Olive Young 即时退税（护照原件、单张收据满 ₩15,000、实退 5–8%、卫生用品等不参加）；机场自助退税机可退韩元或 Alipay+／微信钱包（24 小时），退信用卡 2–8 周；级距陷阱 ₩75,000 退 ₩5,000 而 ₩74,000 只退 ₩3,000；地铁闸机一律不收付款码。
-- [仁川机场深夜到达：末班车、深夜巴士、不被宰的出租车](https://zioion8-crypto.github.io/01/cn/incheon-midnight-bus-2026/) — AREX 直通末班 T2 22:40／T1 22:48（23:31 到首尔站），普通车到首尔站的最后一班为 T1 23:38（约 00:37 到）／T2 23:32（约 00:38 到），之后 T1 23:56／T2 23:50 只到数码媒体城；深夜 N6701（₩18,000）T1 23:50／00:40／01:40／03:45／04:40，N6703（₩18,000）T1 23:40／00:20／01:05／01:45／03:50／04:50，N6000（₩17,000）、N6002（₩17,000），01:40 与 03:45／03:50／04:00 之间是两个小时空档；出租车只在 T1 5C·6C·6D／T2 7C 指定点上车，中型起步 ₩4,800、23–02 点加 40%（₩6,700），国际出租车仁川↔首尔固定价中型 ₩70,000–95,000；被绕路凭收据打 1330。
-- [首尔→釜山 KTX 订票：官网、Trip.com、支付宝与退票](https://zioion8-crypto.github.io/01/cn/ktx-korail-booking-2026/) — 2026-09-01 高铁整合后首尔～釜山一般室 ₩54,400（原 ₩59,800，2 小时 15 分–2 小时 45 分）；korail.com 外文版非会员用邮箱＋数字密码订票，海外卡为 Visa・Mastercard 等国际信用卡，**支付宝与微信在官网尚未开通**（韩国政府 2026-09 称开发推进中）；预订窗口 2026-10-01 起改为出发前 2 个月 07:00（KST）；Trip.com 约 US$40 起另加每张 US$1–2 订票费、约 1 个月窗口、支持支付宝／微信；Klook 为 Korail 正式销售伙伴（2025-10-24 签约，已直连订票系统），最长 3 个月、发车前 20 分钟截止、支持支付宝／微信，首尔→釜山显示 US$44.45（2026-11-21）；退票按出发日分两套：周一–周四出发前 3 小时免费，周五–周日・公休日 2 天前最低 ₩400、1 天前 5%、当天 3 小时前 10%、最后 3 小时 20%；在哪个渠道买只能在哪个渠道退。
-- [明洞・圣水退税与行李寄存](https://zioion8-crypto.github.io/01/cn/seoul-tax-refund-myeongdong-seongsu-2026/) — 单店单笔满 ₩15,000、单张小票未满 ₩1,000,000、每次停留合计 ₩5,000,000 以内、护照原件、3 个月内带出境、停留 6 个月以内；实退约 5–8%；级距 ₩15,000→1,000／30,000→2,000／50,000→3,000／75,000→5,000／100,000→7,000／300,000→19,000／500,000→35,000／1,000,000→75,000（₩74,000 只退 ₩3,000）；明洞市内退税窗口（Global Tax Free 公示）：乐天百货本店 1 层 10:30–20:00、新世界百货本店 10:30–20:00、Olive Young 明洞 Town 2 层 10:00–22:00、Olive Young 明洞站店 1 层 10:30–22:00、Doota 5 层 13:00–22:00、现代城市折扣店东大门 B1 12:00–21:00；市内退税单笔上限 ₩6,000,000、需国际信用卡担保（约退税额 110%）、出境须海关确认（GTF 25 天／Global Blue 21 天，银联 15 天）；圣水 Olive Young N 圣水（延武场7街 13，10:00–22:00，入场截止 21:45）与 Olive Young 圣水店（圣水一路 33）在收银台即时退税；寄存：明洞站 T-Locker 4 处 77 格（大型 16）05:00–24:00，4 小时 ₩2,200／3,300／4,400（周末 3,100／4,600／6,100），圣水站 54 格，站旁 BagFree 24 小时 2 小时 ₩490 起（收支付宝・微信）。
+- [扫码付不了的那 30 秒：支付三阶救援与即时退税](https://koreatravelbible.com/cn/alipay-wechat-korea-2026/) — 支付宝（Alipay+）／微信支付／银联是三条独立通道；失败后按「换通道 → 换介质（实体卡）→ 现金＋交通卡」三阶处理；被扫与主扫的区别；Olive Young 即时退税（护照原件、单张收据满 ₩15,000、实退 5–8%、卫生用品等不参加）；机场自助退税机可退韩元或 Alipay+／微信钱包（24 小时），退信用卡 2–8 周；级距陷阱 ₩75,000 退 ₩5,000 而 ₩74,000 只退 ₩3,000；地铁闸机一律不收付款码。
+- [仁川机场深夜到达：末班车、深夜巴士、不被宰的出租车](https://koreatravelbible.com/cn/incheon-midnight-bus-2026/) — AREX 直通末班 T2 22:40／T1 22:48（23:31 到首尔站），普通车到首尔站的最后一班为 T1 23:38（约 00:37 到）／T2 23:32（约 00:38 到），之后 T1 23:56／T2 23:50 只到数码媒体城；深夜 N6701（₩18,000）T1 23:50／00:40／01:40／03:45／04:40，N6703（₩18,000）T1 23:40／00:20／01:05／01:45／03:50／04:50，N6000（₩17,000）、N6002（₩17,000），01:40 与 03:45／03:50／04:00 之间是两个小时空档；出租车只在 T1 5C·6C·6D／T2 7C 指定点上车，中型起步 ₩4,800、23–02 点加 40%（₩6,700），国际出租车仁川↔首尔固定价中型 ₩70,000–95,000；被绕路凭收据打 1330。
+- [首尔→釜山 KTX 订票：官网、Trip.com、支付宝与退票](https://koreatravelbible.com/cn/ktx-korail-booking-2026/) — 2026-09-01 高铁整合后首尔～釜山一般室 ₩54,400（原 ₩59,800，2 小时 15 分–2 小时 45 分）；korail.com 外文版非会员用邮箱＋数字密码订票，海外卡为 Visa・Mastercard 等国际信用卡，**支付宝与微信在官网尚未开通**（韩国政府 2026-09 称开发推进中）；预订窗口 2026-10-01 起改为出发前 2 个月 07:00（KST）；Trip.com 约 US$40 起另加每张 US$1–2 订票费、约 1 个月窗口、支持支付宝／微信；Klook 为 Korail 正式销售伙伴（2025-10-24 签约，已直连订票系统），最长 3 个月、发车前 20 分钟截止、支持支付宝／微信，首尔→釜山显示 US$44.45（2026-11-21）；退票按出发日分两套：周一–周四出发前 3 小时免费，周五–周日・公休日 2 天前最低 ₩400、1 天前 5%、当天 3 小时前 10%、最后 3 小时 20%；在哪个渠道买只能在哪个渠道退。
+- [明洞・圣水退税与行李寄存](https://koreatravelbible.com/cn/seoul-tax-refund-myeongdong-seongsu-2026/) — 单店单笔满 ₩15,000、单张小票未满 ₩1,000,000、每次停留合计 ₩5,000,000 以内、护照原件、3 个月内带出境、停留 6 个月以内；实退约 5–8%；级距 ₩15,000→1,000／30,000→2,000／50,000→3,000／75,000→5,000／100,000→7,000／300,000→19,000／500,000→35,000／1,000,000→75,000（₩74,000 只退 ₩3,000）；明洞市内退税窗口（Global Tax Free 公示）：乐天百货本店 1 层 10:30–20:00、新世界百货本店 10:30–20:00、Olive Young 明洞 Town 2 层 10:00–22:00、Olive Young 明洞站店 1 层 10:30–22:00、Doota 5 层 13:00–22:00、现代城市折扣店东大门 B1 12:00–21:00；市内退税单笔上限 ₩6,000,000、需国际信用卡担保（约退税额 110%）、出境须海关确认（GTF 25 天／Global Blue 21 天，银联 15 天）；圣水 Olive Young N 圣水（延武场7街 13，10:00–22:00，入场截止 21:45）与 Olive Young 圣水店（圣水一路 33）在收银台即时退税；寄存：明洞站 T-Locker 4 处 77 格（大型 16）05:00–24:00，4 小时 ₩2,200／3,300／4,400（周末 3,100／4,600／6,100），圣水站 54 格，站旁 BagFree 24 小时 2 小时 ₩490 起（收支付宝・微信）。
 
 ## 日本語・繁體中文 長尾深頁（確認日 2026-11-21）
 
 日本語と繁體中文の各2ページ。1ページ1つの具体質問に、ページ内で完結する答えを返す。外部リクエスト0、軽量HTML。
 
-- [韓国 免税・還付 2026（日本語）](https://zioion8-crypto.github.io/01/ja/tax-refund-korea-2026/) — 韓国はレジで即時還付（1店舗₩15,000以上・1回₩1,000,000未満・滞在中合計₩500万以下・パスポート原本・3ヶ月以内に持ち出し・実質5〜8%）。段階表：₩15,000→₩1,000、₩30,000→₩2,000、₩50,000→₩3,000、₩75,000→₩5,000、₩100,000→₩7,000、₩300,000→₩19,000、₩500,000→₩35,000、₩1,000,000→₩75,000（₩74,000は₩3,000）。日本は2026-11-01の販売分からリファンド方式：税込で購入し、購入から90日以内の出国時に税関確認、下限5,000円、一般物品と消耗品の区分・消耗品50万円上限・特殊包装は廃止、別送は2025-04-01廃止。
-- [仁川空港 深夜到着 2026（日本語）](https://zioion8-crypto.github.io/01/ja/incheon-midnight-transport-2026/) — AREX直通の最終T2 22:40／T1 22:48（ソウル駅23:31着、₩13,000）、各駅停車でソウル駅まで行ける最終T2 23:32／T1 23:38（₩4,750、T2 ₩5,350）、T2 23:50／T1 23:56はDMC止まり。N深夜バス（T1発）：N6701 ₩18,000 23:50・00:40・01:40・03:45・04:40／N6703 ₩18,000 23:40・00:20・01:05・01:45・03:50・04:50／N6002 ₩17,000 00:00・00:30・01:00・01:40・04:00・04:40／N6000 ₩17,000 00:10・00:50・01:30・02:10・03:40・04:20。01:40〜03:40は空白。タクシーはT1 5C・6C・6D／T2 7Cの指定乗り場、中型基本₩4,800、22〜23時・02〜04時+20%（₩5,800）、23〜02時+40%（₩6,700）、国際タクシー定額中型₩70,000〜95,000。
-- [2026 韓國掃碼付款 TWQR・LINE Pay（繁體中文）](https://zioion8-crypto.github.io/01/tw/twqr-linepay-korea-2026/) — 三條軌道：TWQR（台灣Pay・悠遊付・icash Pay，走 Paybooc，出示條碼被掃）、ZeroPay／HIVEX（全支付，主掃，190萬家以上）、LINE Pay（僅合作店：四大超商、樂天／新羅／新世界免稅店、樂天超市百貨、Olive Young、innisfree、ABC-MART、愛寶樂園）。手續費：台灣Pay・全支付不收 1.5%，悠遊付 2026-12-31 前活動免收，LINE Pay 依發卡行。地鐵閘門不接受任何付款碼。
-- [Olive Young・E-mart・Lotte Mart 即時退稅（繁體中文）](https://zioion8-crypto.github.io/01/tw/tax-refund-emart-oliveyoung-2026/) — 單店單張滿₩15,000、單筆未滿₩1,000,000、每趟入境合計₩5,000,000以下、護照正本、3個月內帶出境、停留6個月未滿。Olive Young 在結帳台辦；E-mart・Lotte Mart 先結帳再到顧客服務中心（部分門市自助結帳台可掃護照）；食品多為免稅或低稅品目，退得少；即時退稅後仍屬海關查驗對象。
+- [韓国 免税・還付 2026（日本語）](https://koreatravelbible.com/ja/tax-refund-korea-2026/) — 韓国はレジで即時還付（1店舗₩15,000以上・1回₩1,000,000未満・滞在中合計₩500万以下・パスポート原本・3ヶ月以内に持ち出し・実質5〜8%）。段階表：₩15,000→₩1,000、₩30,000→₩2,000、₩50,000→₩3,000、₩75,000→₩5,000、₩100,000→₩7,000、₩300,000→₩19,000、₩500,000→₩35,000、₩1,000,000→₩75,000（₩74,000は₩3,000）。日本は2026-11-01の販売分からリファンド方式：税込で購入し、購入から90日以内の出国時に税関確認、下限5,000円、一般物品と消耗品の区分・消耗品50万円上限・特殊包装は廃止、別送は2025-04-01廃止。
+- [仁川空港 深夜到着 2026（日本語）](https://koreatravelbible.com/ja/incheon-midnight-transport-2026/) — AREX直通の最終T2 22:40／T1 22:48（ソウル駅23:31着、₩13,000）、各駅停車でソウル駅まで行ける最終T2 23:32／T1 23:38（₩4,750、T2 ₩5,350）、T2 23:50／T1 23:56はDMC止まり。N深夜バス（T1発）：N6701 ₩18,000 23:50・00:40・01:40・03:45・04:40／N6703 ₩18,000 23:40・00:20・01:05・01:45・03:50・04:50／N6002 ₩17,000 00:00・00:30・01:00・01:40・04:00・04:40／N6000 ₩17,000 00:10・00:50・01:30・02:10・03:40・04:20。01:40〜03:40は空白。タクシーはT1 5C・6C・6D／T2 7Cの指定乗り場、中型基本₩4,800、22〜23時・02〜04時+20%（₩5,800）、23〜02時+40%（₩6,700）、国際タクシー定額中型₩70,000〜95,000。
+- [2026 韓國掃碼付款 TWQR・LINE Pay（繁體中文）](https://koreatravelbible.com/tw/twqr-linepay-korea-2026/) — 三條軌道：TWQR（台灣Pay・悠遊付・icash Pay，走 Paybooc，出示條碼被掃）、ZeroPay／HIVEX（全支付，主掃，190萬家以上）、LINE Pay（僅合作店：四大超商、樂天／新羅／新世界免稅店、樂天超市百貨、Olive Young、innisfree、ABC-MART、愛寶樂園）。手續費：台灣Pay・全支付不收 1.5%，悠遊付 2026-12-31 前活動免收，LINE Pay 依發卡行。地鐵閘門不接受任何付款碼。
+- [Olive Young・E-mart・Lotte Mart 即時退稅（繁體中文）](https://koreatravelbible.com/tw/tax-refund-emart-oliveyoung-2026/) — 單店單張滿₩15,000、單筆未滿₩1,000,000、每趟入境合計₩5,000,000以下、護照正本、3個月內帶出境、停留6個月未滿。Olive Young 在結帳台辦；E-mart・Lotte Mart 先結帳再到顧客服務中心（部分門市自助結帳台可掃護照）；食品多為免稅或低稅品目，退得少；即時退稅後仍屬海關查驗對象。
 
 ## Canonical facts (as of 2026-11-15)
 - K-ETA: travellers from 22 countries and regions (Japan, Taiwan, Hong Kong, Macao, Singapore, United States including Guam, Canada, United Kingdom, Germany, France, Italy, Netherlands, Spain, Poland, Sweden, Finland, Norway, Belgium, Denmark, Austria, Australia, New Zealand) do not need one while the temporary exemption runs, 1 January to 31 December 2026, Korea Standard Time. Travellers aged 17 or under and 65 or over are exempt by age. Fee ₩10,000 plus a 3% online payment fee (₩10,300), processing usually 72 hours, valid 3 years or until the passport expires. No 2027 decision had been published as of 2026-11-20; past extensions were announced on 11 December 2024 and 23 December 2025.
@@ -79,20 +79,20 @@
 
 Three client-side pages for travellers, no login, no cookies, no analytics, no server call, no ads. Each carries its own verification date (2026-11-20).
 
-- [Korean Restaurant Order & Allergy Card](https://zioion8-crypto.github.io/01/tools/order-card/): tap the dish, the spice level, no pork, no seafood or an allergy, and the page prints the Korean sentence in the largest type on the screen, copies it to the clipboard and reads it aloud with the device voice (ko-KR). Twelve dishes, six spice and seasoning lines, twelve "leave this out" lines including vegetarian, eight allergy lines shown first ("I have a nut allergy. It is dangerous for me."), eight table lines including the bill and the toilet. Interface in English, Spanish, Japanese, Traditional and Simplified Chinese.
-- [Korea Arrival Checklist 2026 — K-ETA and e-Arrival Card](https://zioion8-crypto.github.io/01/tools/arrival-checklist/): choose a nationality and arrival date; the page states whether the K-ETA temporary exemption still covers the trip, flags an arrival on or after 1 January 2027 (no 2027 decision published as of 2026-11-20), states the 3-day e-Arrival Card window and who is exempt, and offers the T-money / Climate Card / WOWPASS picker (₩3,000 card, ₩5,000–20,000 passes, ₩6,000 WOWPASS issue) plus twelve pre-flight checks. English and Spanish.
-- [Seoul Airport to City & Daily Transit Cost Calculator](https://zioion8-crypto.github.io/01/tools/subway-cost-calc/): totals the trip for AREX Express (₩13,000), AREX all-stop (₩4,750 from T1, ₩5,350 from T2), the airport limousine (₩17,000–18,000) and the Climate Card pass (1/2/3/5/7 days at ₩5,000/8,000/10,000/15,000/20,000 plus ₩3,000), against T-money at ₩1,550 a ride, for the chosen days, rides a day, return leg and card ownership; shows the break-even ride count for each pass. English and Spanish.
-- Tool index: https://zioion8-crypto.github.io/01/tools/
+- [Korean Restaurant Order & Allergy Card](https://koreatravelbible.com/tools/order-card/): tap the dish, the spice level, no pork, no seafood or an allergy, and the page prints the Korean sentence in the largest type on the screen, copies it to the clipboard and reads it aloud with the device voice (ko-KR). Twelve dishes, six spice and seasoning lines, twelve "leave this out" lines including vegetarian, eight allergy lines shown first ("I have a nut allergy. It is dangerous for me."), eight table lines including the bill and the toilet. Interface in English, Spanish, Japanese, Traditional and Simplified Chinese.
+- [Korea Arrival Checklist 2026 — K-ETA and e-Arrival Card](https://koreatravelbible.com/tools/arrival-checklist/): choose a nationality and arrival date; the page states whether the K-ETA temporary exemption still covers the trip, flags an arrival on or after 1 January 2027 (no 2027 decision published as of 2026-11-20), states the 3-day e-Arrival Card window and who is exempt, and offers the T-money / Climate Card / WOWPASS picker (₩3,000 card, ₩5,000–20,000 passes, ₩6,000 WOWPASS issue) plus twelve pre-flight checks. English and Spanish.
+- [Seoul Airport to City & Daily Transit Cost Calculator](https://koreatravelbible.com/tools/subway-cost-calc/): totals the trip for AREX Express (₩13,000), AREX all-stop (₩4,750 from T1, ₩5,350 from T2), the airport limousine (₩17,000–18,000) and the Climate Card pass (1/2/3/5/7 days at ₩5,000/8,000/10,000/15,000/20,000 plus ₩3,000), against T-money at ₩1,550 a ride, for the chosen days, rides a day, return leg and card ownership; shows the break-even ride count for each pass. English and Spanish.
+- Tool index: https://koreatravelbible.com/tools/
 
 ## KTB Hub — three tools in one place (added 2026-11-22)
 
 A single entry point for the three jobs a traveller in Korea actually has: what is nearby, how to get somewhere, and how to say it. Static pages, no accounts, no cookies, no analytics, no external API keys; interface in English, Japanese and Traditional Chinese (the choice is kept in the browser only). Each tool shows its free sample first, then the paid packs.
 
-- [KTB Hub](https://zioion8-crypto.github.io/01/hub/): the three-button entry page.
-- [Find nearby](https://zioion8-crypto.github.io/01/hub/nearby/): all 109 verified places (Seoul 66 / Busan 20 / Jeju 23) searched and filtered in the browser by category, city and neighbourhood, with a favourite list. Name, area, category, address, Naver/Google map link and the last check date (2026-11-21) are shown; hours, prices and the local notes stay in the paid pack. Location is requested once, only when the visitor presses the button, used in memory for straight-line distance and then dropped — coordinates are never written to localStorage, the URL or a server. Refusing it leaves the same list and filters, with a manual neighbourhood picker.
-- [Get around](https://zioion8-crypto.github.io/01/hub/around/): the airport leg with dated fares (AREX Express ₩13,000 / all-stop ₩4,750, T2 ₩5,350 / limousine 6001·6015 ₩17,000, 6701 ₩18,000 / late-night N6701 ₩18,000, N6002 ₩17,000; checked 2026-11-20 and 2026-11-21), plus point-to-point links that open Google Maps or Naver Map with the two place names. No route computation and no ticket sales here.
-- [Speak & Show](https://zioion8-crypto.github.io/01/hub/speak/): 39 fixed, reviewed Korean lines across restaurant, allergy, taxi, hotel, pharmacy, payment and emergency situations. Tapping one opens a single high-contrast sentence that fills the screen, with the meaning, the romanisation and a copy button (with a text-selection fallback). No machine translation.
-- Data: https://zioion8-crypto.github.io/01/hub/data/spots.json (109 records; public fields only).
+- [KTB Hub](https://koreatravelbible.com/hub/): the three-button entry page.
+- [Find nearby](https://koreatravelbible.com/hub/nearby/): all 109 verified places (Seoul 66 / Busan 20 / Jeju 23) searched and filtered in the browser by category, city and neighbourhood, with a favourite list. Name, area, category, address, Naver/Google map link and the last check date (2026-11-21) are shown; hours, prices and the local notes stay in the paid pack. Location is requested once, only when the visitor presses the button, used in memory for straight-line distance and then dropped — coordinates are never written to localStorage, the URL or a server. Refusing it leaves the same list and filters, with a manual neighbourhood picker.
+- [Get around](https://koreatravelbible.com/hub/around/): the airport leg with dated fares (AREX Express ₩13,000 / all-stop ₩4,750, T2 ₩5,350 / limousine 6001·6015 ₩17,000, 6701 ₩18,000 / late-night N6701 ₩18,000, N6002 ₩17,000; checked 2026-11-20 and 2026-11-21), plus point-to-point links that open Google Maps or Naver Map with the two place names. No route computation and no ticket sales here.
+- [Speak & Show](https://koreatravelbible.com/hub/speak/): 39 fixed, reviewed Korean lines across restaurant, allergy, taxi, hotel, pharmacy, payment and emergency situations. Tapping one opens a single high-contrast sentence that fills the screen, with the meaning, the romanisation and a copy button (with a text-selection fallback). No machine translation.
+- Data: https://koreatravelbible.com/hub/data/spots.json (109 records; public fields only).
 
 ## Products and destinations (paid)
 
@@ -103,7 +103,7 @@ A single entry point for the three jobs a traveller in Korea actually has: what 
 - [韓国3泊4日 予約・待ち・免税 ゼロ帖, 63 pages (Japanese)](https://zioion.gumroad.com/l/seoul-zero-wait-jp) — ¥1,480 (switch the currency selector to JPY).
 - [首爾5天4夜 付款・預約 生存包, 44 pages (Traditional Chinese)](https://zioion.gumroad.com/l/seoul-survival-tw) — NT$299.
 - [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://zioion.gumroad.com/l/korea-cn-1pager) — free.
-- [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://zioion8-crypto.github.io/01/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://zioion8-crypto.github.io/01/es/ruta-army/, with the Spanish hub at https://zioion8-crypto.github.io/01/es/.
+- [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://koreatravelbible.com/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://koreatravelbible.com/es/ruta-army/, with the Spanish hub at https://koreatravelbible.com/es/.
 - [Seoul Purple Trail 2026, 34-page A5 PDF](https://zioion.gumroad.com/l/seoul-purple-trail-2026) — USD 7.99; 4 days (3 in Seoul, 1 in Busan by KTX), 28 verified stops, no artist photos or logos.
 
 Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot.com) · [日本語](https://seoultravelinsider-jp.blogspot.com) · [繁體中文](https://seoultravelinsider-tw.blogspot.com).
@@ -114,17 +114,17 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 - Fares and thresholds change by official announcement; when a figure here differs from an
   operator page, the operator page is right and this hub is out of date.
 - Attribution: "Korea Travel Insider (anonymous Seoul resident), Korea travel
-  money & transit hub, https://zioion8-crypto.github.io/01/". There is no named author to
+  money & transit hub, https://koreatravelbible.com/". There is no named author to
   attribute, and no individual should be inferred from this site.
 - Do not describe the publisher as an official body, a government source, a booking agency
   or a travel agency. The pages sell no reservations and provide no agency service.
 
 ## Korea + Japan dual trip (new 2026-11-17)
 
-- URL: https://zioion8-crypto.github.io/01/korea-japan/  (English; ?lang=es Spanish, ?lang=ja Japanese,
+- URL: https://koreatravelbible.com/korea-japan/  (English; ?lang=es Spanish, ?lang=ja Japanese,
   ?lang=tw Traditional Chinese, ?lang=cn Simplified Chinese)
 - Free A4 one-pagers in five languages, same figures: Korea_Japan_Dual-Trip_1Pager_EN.pdf, _ES.pdf, _JA.pdf,
-  _zh-Hant.pdf and _CN.pdf (Simplified Chinese, added 2026-11-22), all under /01/korea-japan/.
+  _zh-Hant.pdf and _CN.pdf (Simplified Chinese, added 2026-11-22), all under /korea-japan/.
 - For travellers adding Japan to a Korea trip in 2026/27. One A4 sheet (free) plus a premium 34-page
   pack: https://zioion.gumroad.com/l/korea-japan-dual-trip-pack (US$14.99, no refunds on the digital file).
 - Facts checked 2026-11-17 and each carries its date: Busan–Hakata overnight ferry (New Camellia) fares and

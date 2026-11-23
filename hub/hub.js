@@ -15,9 +15,9 @@
   };
 
   var FREE = {
-    nearby: { url: 'https://zioion8-crypto.github.io/01/free/' },
-    around: { url: 'https://zioion8-crypto.github.io/01/tools/subway-cost-calc/' },
-    speak: { url: 'https://zioion8-crypto.github.io/01/tools/order-card/' }
+    nearby: { url: 'https://koreatravelbible.com/free/' },
+    around: { url: 'https://koreatravelbible.com/tools/subway-cost-calc/' },
+    speak: { url: 'https://koreatravelbible.com/tools/order-card/' }
   };
 
   var HUB = window.HUB = {

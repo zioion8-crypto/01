@@ -47,7 +47,7 @@
       render();
     })
     .catch(function (e) {
-      el.list.innerHTML = '<li class="empty">' + H.esc(e.message) + ' — <a href="https://zioion8-crypto.github.io/01/free/">free sample</a></li>';
+      el.list.innerHTML = '<li class="empty">' + H.esc(e.message) + ' — <a href="https://koreatravelbible.com/free/">free sample</a></li>';
     });
 
   /* ---------- favourites (ids only) ---------- */

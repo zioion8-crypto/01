@@ -1,4 +1,4 @@
-# Korea Travel Insider — Korea travel money & transit hub (zioion8-crypto.github.io/01)
+# Korea Travel Insider — Korea travel money & transit hub (koreatravelbible.com)
 # Publisher is anonymous by design. No personal data, no tracking, no cookies on any page.
 
 User-agent: *
@@ -43,4 +43,4 @@ Allow: /
 User-agent: 360Spider
 Allow: /
 
-Sitemap: https://zioion8-crypto.github.io/01/sitemap.xml
+Sitemap: https://koreatravelbible.com/sitemap.xml
