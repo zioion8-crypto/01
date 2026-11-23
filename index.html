@@ -1,632 +1,174 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<!-- Site root = KTB Hub. This file is the single source for the hub screen;
+     the three tools keep their own URLs under /hub/, and /hub/ itself only forwards here. -->
+<html lang="en" data-title-key="title.home">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0b5d4f">
-<meta name="robots" content="index,follow">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<title>KTB Hub · 首尔攻略 KTB — Korea travel tools, free · Korea Travel Bible</title>
+<meta name="description" content="KTB Hub — Korea Travel Bible (首尔攻略 KTB): 109 checked places nearby, 2026 airport fares and A-to-B routes, Korean lines in big type to show staff. Free, no login. 首尔攻略 KTB 简体中文版，免费；韩国自由行现场实测的 109 处地点与机场深夜交通。">
+<meta name="keywords" content="首尔攻略 KTB, KTB Hub, 韩国旅行工具, 首尔自由行, 首尔周边景点">
 <link rel="canonical" href="https://koreatravelbible.com/">
-<link rel="alternate" hreflang="zh-Hans" href="https://koreatravelbible.com/">
-<link rel="alternate" hreflang="en" href="https://koreatravelbible.com/en/">
-<link rel="alternate" hreflang="ja" href="https://koreatravelbible.com/ja/">
-<link rel="alternate" hreflang="zh-Hant" href="https://koreatravelbible.com/tw/">
-<link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/en/">
-<title>首尔扫码·地铁·退税 一页通｜韩国自由行 2026（首尔攻略 KTB · Korea Travel Bible）</title>
-<meta name="description" content="首尔攻略 KTB（Korea Travel Bible）：仁川机场深夜大巴与票价、支付宝微信避坑支付矩阵、地铁闸机四种过法、T-money 气候卡、退税级距。首尔本地实测，核对 2026-11-23。">
-<meta property="og:title" content="首尔攻略 KTB（Korea Travel Bible）· 首尔扫码·地铁·退税 一页通">
-<meta property="og:description" content="仁川机场票价与深夜巴士 · 支付矩阵 · 闸机 4 种过法 · 退税级距 · Naver 地图（简体中文，轻量离线可存）">
-<meta property="og:type" content="article">
+<meta name="author" content="Korea Travel Insider">
+<link rel="alternate" hreflang="en" href="https://koreatravelbible.com/">
+<link rel="alternate" hreflang="ja" href="https://koreatravelbible.com/?lang=ja">
+<link rel="alternate" hreflang="zh-Hant" href="https://koreatravelbible.com/?lang=zh">
+<link rel="alternate" hreflang="zh-Hans" href="https://koreatravelbible.com/?lang=cn">
+<link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/">
+<meta property="og:title" content="KTB Hub (首尔攻略 KTB) — nearby, around, and what to say">
+<meta property="og:description" content="109 daily-checked places near you, directions from the airport or anywhere, and Korean lines in big type to show staff. Free, no login.">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://koreatravelbible.com/">
 <meta property="og:site_name" content="Korea Travel Bible · 首尔攻略 KTB">
-<meta property="og:locale" content="zh_CN">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
 <meta property="og:locale:alternate" content="zh_TW">
-<!--
-  KTB 简体中文轻量镜像 / Korea Travel Insider
-  设计约束（중국 본토 접속 대비）:
-  - 外部请求 0 个：无 CDN、无 Google Fonts、无 Google Maps、无分析脚本、无外部图片
-  - 只用系统字体 + 内联 CSS + 极少量内联 JS
-  - 地图一律用 Naver 深링크(map.naver.com / nmap://)，不依赖 Google
-  内容 기준일: 2026-11-15 / 机场交通 및 深夜巴士 2026-11-21 复核
--->
-<style>
-:root{
-  --ink:#12211e; --ink2:#3f4f4b; --line:#dfe6e3; --bg:#f6f8f7; --card:#fff;
-  --brand:#0b5d4f; --brand2:#0f7768; --warn:#a4451a; --warnbg:#fdf1e9;
-  --ok:#15663f; --okbg:#eaf6ef; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC","Noto Sans CJK KR",sans-serif;
-  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
-.wrap{max-width:760px;margin:0 auto;padding:0 14px 40px}
-header{background:linear-gradient(160deg,#0b5d4f,#12766a 60%,#14857a);color:#fff;padding:20px 14px 18px;margin:0 -14px 16px}
-header .h{max-width:760px;margin:0 auto}
-.kicker{font-size:12px;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
-h1{font-size:23px;line-height:1.3;margin:6px 0 8px;letter-spacing:.01em}
-.sub{font-size:13.5px;opacity:.93;margin:0}
-.sub b{background:rgba(255,255,255,.16);padding:1px 6px;border-radius:5px;font-weight:600}
-nav.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
-nav.chips::-webkit-scrollbar{display:none}
-@media (min-width:700px){nav.chips{flex-wrap:wrap;overflow:visible}}
-nav.chips a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--brand);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600}
-section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 13px;margin:0 0 14px;box-shadow:0 1px 0 rgba(18,33,30,.03)}
-h2{font-size:16.5px;margin:0 0 4px;letter-spacing:.01em;display:flex;align-items:center;gap:7px}
-h2 .n{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font-size:12.5px;flex:0 0 auto}
-.lead{font-size:13px;color:var(--ink2);margin:0 0 10px}
-table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 2px}
-th,td{padding:6px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-th{background:#f0f5f3;color:var(--ink2);font-weight:600;font-size:12px;white-space:nowrap}
-td.c,th.c{text-align:center}
-.o{color:var(--ok);font-weight:700}
-.x{color:#b3391b;font-weight:700}
-.d{color:#b07d16;font-weight:700}
-.small{font-size:12px;color:var(--ink2)}
-.note{font-size:12.5px;color:var(--ink2);margin:9px 0 0;padding-left:10px;border-left:3px solid var(--line)}
-.warn{background:var(--warnbg);border:1px solid #f0d3c2;border-radius:10px;padding:10px 11px;font-size:13px;color:#6d2f10;margin:10px 0 0}
-.ok{background:var(--okbg);border:1px solid #cbe7d7;border-radius:10px;padding:10px 11px;font-size:13px;color:#0f4a30;margin:10px 0 0}
-ol,ul{margin:8px 0 0;padding-left:20px}
-li{margin:5px 0}
-.steps li{margin:7px 0}
-table.gate td:first-child{white-space:nowrap;font-weight:600;color:var(--brand)}
-.kr{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 0}
-.kr span{display:inline-flex;align-items:center;gap:6px;background:#f0f5f3;border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:12.5px}
-.kr b{font-family:var(--mono);font-weight:600;color:#0d3f37}
-.kr i{font-style:normal;color:#5b6b67;font-size:11.5px}
-.kr button{border:0;background:var(--brand);color:#fff;border-radius:5px;font-size:11px;padding:2px 6px;cursor:pointer;line-height:1.5}
-.kr button:active{background:#094238}
-.deals{display:grid;gap:9px;margin:8px 0 0}
-a.deal{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:11px;padding:10px 11px;background:#fbfdfc}
-a.deal .t{font-weight:700;font-size:14px;color:var(--brand)}
-a.deal .m{font-size:12.5px;color:var(--ink2);margin-top:2px}
-a.deal .p{font-size:12.5px;color:#8a4a12;margin-top:3px}
-footer{font-size:11.5px;color:#6b7a76;line-height:1.7;padding:6px 2px 0}
-footer a{color:#4d6b64}
-.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 5px;border-radius:4px;background:#eef3f1;color:#4b5f5a}
-.aff{font-size:11.5px;color:#6b7a76;margin-top:8px}
-
-.spots{display:grid;gap:10px;margin:10px 0 0}
-.spot{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fbfdfc}
-.spot .t{font-weight:700;font-size:14.5px;color:var(--brand)}
-.spot .m{font-size:13px;color:var(--ink2);margin-top:5px}
-.spot .m b{color:var(--ink)}
-a.mapbtn{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:700;text-decoration:none;color:#fff;background:var(--brand2);border-radius:8px;padding:6px 10px}
-a.mapbtn:active{background:#0a5a4e}
-@media (prefers-color-scheme:dark){.spot{background:#16211d}}
-@media (prefers-color-scheme:dark){
-  :root{--ink:#e8efec;--ink2:#adbdb8;--line:#26403a;--bg:#0d1513;--card:#131f1c;--okbg:#12291f;--warnbg:#2a1a12}
-  th{background:#17251f;color:#b7c8c2}
-  a.deal{background:#16211d}
-  header{background:linear-gradient(160deg,#0a3f36,#0d5a4e 60%,#0f6a5c)}
-  .kr span{background:#17251f}
-}
-a.tcard{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 12px;margin:8px 0}
-a.tcard b{display:block;font-size:14.5px;color:var(--brand);margin-bottom:3px}
-a.tcard span{display:block;font-size:12.5px;color:var(--ink2)}
-details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;margin:8px 0;font-size:13px}
-details summary{cursor:pointer;font-weight:700;color:var(--brand)}
-details p{margin:7px 0 0;color:var(--ink2)}
-.leadcta{display:grid;gap:9px;margin:0 0 16px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:12px;background:var(--card)}
-.leadcta .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ok)}
-.leadcta a.big{display:block;text-decoration:none;background:#15663f;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
-.leadcta a.big span{display:block;font-weight:500;font-size:12.5px;opacity:.93;margin-top:5px}
-.leadcta p.up{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
-.leadcta p.up a{color:var(--brand2);font-weight:700}
-.grp{font-size:12px;font-weight:800;letter-spacing:.05em;color:#8a6d1e;margin:16px 0 0}
-.install{margin:0 0 16px;padding:11px 13px;border:1px dashed var(--line);border-radius:11px;background:var(--card)}
-.install .t{font-size:13.5px;font-weight:800;margin:0 0 5px;color:var(--brand)}
-.install ul{margin:0;padding-left:17px;font-size:12.5px;color:var(--ink2)}
-.install li{margin:3px 0}
-.install .n{font-size:11.5px;color:var(--ink2);margin:6px 0 0;line-height:1.5}
-</style>
+<meta property="og:locale:alternate" content="ja_JP">
+<link rel="icon" href="../icons/ktb-favicon.png">
+<link rel="apple-touch-icon" href="../icons/ktb-192.png">
+<link rel="stylesheet" href="hub/hub.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebApplication",
-      "name": "首尔扫码·地铁·退税 一页通",
-      "alternateName": "Seoul QR, Subway and Tax Refund one-pager (Simplified Chinese)",
-      "url": "https://koreatravelbible.com/",
-      "description": "简体中文的韩国自由行一页通：九种场景五种支付通道的矩阵、地铁闸机四种过法、退税级距、Naver 地图三步、现场失败救援。零外部请求，中国大陆可直连，可离线保存。",
-      "applicationCategory": "TravelApplication",
-      "operatingSystem": "Any (web browser)",
-      "inLanguage": "zh-Hans",
-      "datePublished": "2026-11-15",
-      "dateModified": "2026-11-21",
-      "isAccessibleForFree": true,
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "KRW"},
-      "featureList": [
-        "仁川机场到市区：AREX 直通／普通、机场巴士、深夜 N 巴士",
-        "支付矩阵：9 种场景 × 5 条通道",
-        "地铁闸机四种过法",
-        "退税级距与上限",
-        "Naver 地图三步与现场失败救援",
-        "零外部请求，可离线保存"
-      ],
-      "publisher": {"@type": "Organization", "name": "Korea Travel Insider"}
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "首尔地铁闸机为什么不认支付宝和微信的付款码？",
-          "acceptedAnswer": {"@type": "Answer", "text": "闸机只认交通卡（T-money、气候同行卡）和单程票。付款码能在便利店、餐厅和小店用，但过不了闸机；要在自助机上把交通卡充值，或在 1～8 号线 273 个车站的 440 台机器上用境外 Visa／Mastercard 买单程票、给气候卡充值。"}
-        },
-        {
-          "@type": "Question",
-          "name": "从仁川机场到首尔市区，哪种交通最省？",
-          "acceptedAnswer": {"@type": "Answer", "text": "AREX 普通车 ₩4,750（T2 出发 ₩5,350，59 分钟，用 T-money），AREX 直通车 ₩13,000（43 分钟，另购票），机场巴士 6001／6015 ₩17,000、6701 ₩18,000。气候同行卡不能在仁川 T1／T2 上车，只能出站，机场这一段要单独买。"}
-        },
-        {
-          "@type": "Question",
-          "name": "深夜到仁川机场，还有车去首尔市区吗？",
-          "acceptedAnswer": {"@type": "Answer", "text": "有深夜巴士。N6701（成人 ₩18,000）从 T1 23:50 起发车，经麻浦、首尔站、乙支路入口到 DDP；N6002（₩17,000）走弘大、光化门到清凉里；N6703（₩18,000）往 COEX、蚕室；N6000（₩17,000）往江南高速巴士客运站。01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车，落地时间要算上入境和取行李。票在到达层售票处或自助机买，N6701／N6703 也可用 T-money GO。"}
-        },
-        {
-          "@type": "Question",
-          "name": "支付宝和微信支付，先装哪一个？",
-          "acceptedAnswer": {"@type": "Answer", "text": "两条通道不是一回事：同一家店可能只开其中一条，所以两个都装、都绑卡最稳。便利店（CU·GS25·7-Eleven）两家多数能用；Olive Young 等门店要看终端；地铁闸机一律不收付款码，必须用 T-money 或单程票。"}
-        },
-        {
-          "@type": "Question",
-          "name": "不会韩语，在餐厅怎么点菜、说过敏？",
-          "acceptedAnswer": {"@type": "Answer", "text": "用免登录的「韩语点餐・过敏卡」网页工具：点菜名、辣度、不要猪肉／海鲜和过敏项，屏幕出大字韩文，可复制给店员看或朗读。坚果、花生、乳制品等 8 种过敏句排在最前，另有结账、洗手间等 8 句台面用语。"}
-        },
-        {
-          "@type": "Question",
-          "name": "韩国自由行有哪些免登录的免费工具？",
-          "acceptedAnswer": {"@type": "Answer", "text": "本站有三款免登录的浏览器工具：韩语点餐与过敏卡（简中界面）、2026 入境清单（K-ETA 临时免签到 2026-12-31、电子入境卡 3 天内提交）、机场与市内交通费用计算器（AREX、机场巴士、气候同行卡 1/2/3/5/7 日券对照）。全部在手机上计算，不上传任何数据。"}
-        },
-        {
-          "@type": "Question",
-          "name": "Google 地图在韩国能用吗？",
-          "acceptedAnswer": {"@type": "Answer", "text": "截至 2026 年 11 月，Google 地图在韩国境内没有步行和驾车路线。要用 Naver 地图，并且搜韩文地名；出租车司机也靠韩文地名找路。"}
-        }
-      ]
-    }
-  ]
+  "@type": "WebApplication",
+  "name": "KTB Hub",
+  "alternateName": ["首尔攻略 KTB", "首尔攻略", "KTB Hub 首尔攻略", "Korea Travel Bible", "Korea Travel Insider"],
+  "url": "https://koreatravelbible.com/",
+  "areaServed": {"@type": "Country", "name": "South Korea"},
+  "description": "Three free browser tools for travellers in Korea: find a verified place nearby (109 daily-checked pins, with a manual neighbourhood picker), plan the airport leg or a point-to-point route, and show a checked Korean line in large type to staff or a driver.",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "Any (web browser)",
+  "inLanguage": ["en", "ja", "zh-Hant", "zh-Hans", "ko"],
+  "isAccessibleForFree": true,
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "featureList": [
+    "Find nearby: 109 places with category, area and distance filters",
+    "Get around: airport fares and point-to-point map links",
+    "Speak & show: Korean lines in full-screen large type",
+    "Interface in English, Japanese, Traditional Chinese and Simplified Chinese",
+    "No account, no cookies, no location stored"
+  ],
+  "publisher": {"@type": "Organization", "name": "Korea Travel Bible", "alternateName": ["首尔攻略 KTB", "Korea Travel Insider"]}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Korea Travel Bible",
+  "alternateName": ["首尔攻略 KTB", "KTB Hub", "Korea Travel Insider"],
+  "url": "https://koreatravelbible.com/",
+  "inLanguage": ["en", "ja", "zh-Hant", "zh-Hans", "ko"]
 }
 </script>
 </head>
 <body>
-<div class="wrap">
-<header>
+<header class="top">
   <div class="h">
-    <div class="kicker">SEOUL 2026-11-21 机场交通复核 · 简体中文 · 1 页</div>
-    <h1>首尔扫码·地铁·退税 一页通</h1>
-    <p class="sub">同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是<b>两条通道</b>。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上。</p>
+    <div class="h-top">
+      <p class="kicker" data-i18n="home.kicker">Korea Travel Insider · KTB Hub</p>
+      <div class="langbar" data-langbar role="group" aria-label="Language"></div>
+    </div>
+    <h1 data-i18n="home.h1">Three things you actually need in Korea</h1>
+    <p class="sub" data-i18n="home.sub">What is <b>near you</b>, how to <b>get there</b>, and how to <b>say it</b>. Free, no account, and your location is read only when you tap.</p>
   </div>
 </header>
 
-<!-- KTB-SHARE:START -->
-<style id="ktbShareCss">
-.kts{margin:12px 0 16px;border:1px solid #d7e0ea;background:#eef2f7;border-radius:12px;padding:10px 11px}
-.kts-t{font-size:12.5px;font-weight:800;color:#33475b;margin:0 0 2px;line-height:1.35}
-.kts-s{font-size:11.5px;color:#5b6b7c;line-height:1.45;margin:0 0 8px}
-.kts-row{display:flex;flex-wrap:wrap;gap:6px}
-.kts-b{flex:1 1 0;min-width:86px;display:flex;align-items:center;justify-content:center;gap:4px;
-  font-family:inherit;font-size:12.5px;font-weight:800;line-height:1.15;padding:9px 8px;border-radius:9px;
-  border:1px solid #cfdae5;background:#fff;color:#33475b;text-decoration:none;cursor:pointer;white-space:nowrap;overflow:hidden}
-.kts-b:active{transform:scale(.98)}
-.kts-b.wa{background:#e8f8ee;border-color:#a8e0bd;color:#14663a}
-.kts-b.li{background:#e9f9ee;border-color:#a9e6bf;color:#0f6b3d}
-.kts-b.sms{background:#e8f1ff;border-color:#b9d3f7;color:#1f4f8f}
-.kts-b.wx{background:#e6f8ef;border-color:#a5e3c4;color:#0b6b3a}
-.kts-b.qq{background:#e6f6fe;border-color:#aad9f2;color:#135e86}
-.kts-b.cp{background:#0b5d4f;border-color:#0b5d4f;color:#fff}
-.kts-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,10px);background:#12211e;color:#fff;
-  font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:100px;opacity:0;pointer-events:none;
-  transition:opacity .18s ease,transform .18s ease;z-index:999;max-width:88vw;text-align:center}
-.kts-toast.on{opacity:1;transform:translate(-50%,0)}
-@media(max-width:430px){.kts-b{font-size:12px;padding:8px 6px;min-width:0}}
-</style>
-<div class="kts" id="ktbShare">
-  <p class="kts-t">发给同行的旅伴 — 一键分享</p>
-  <p class="kts-s">免费韩国旅行网页App：各路线、交通、地图、餐厅等位时间</p>
-  <div class="kts-row" data-kts-msg="我在用的免费韩国旅行网页App（Korea Travel Insider）：各语言路线、交通、地图、餐厅实际等位时间都在里面: https://koreatravelbible.com/">
-    <button class="kts-b wx" type="button" onclick="ktsCopy(this)">💬 微信</button>
-    <a class="kts-b qq" href="https://connect.qq.com/widget/shareqq/index.html?url=https%3A%2F%2Fkoreatravelbible.com%2F&amp;title=Korea%20Travel%20Insider%20%E2%80%94%20Korea%20travel%20web%20app" target="_blank" rel="noopener">🐧 QQ</a>
-    <button class="kts-b cp" type="button" onclick="ktsCopy(this)">🔗 复制链接</button>
-  </div>
-  <div class="kts-toast" id="ktsToast" role="status" aria-live="polite">已复制文案与链接 — 打开微信粘贴发给旅伴</div>
-</div>
-<script>/*KTB-SHARE*/(function(){window.ktsCopy=function(btn){var row=btn&&btn.parentNode;var msg=(row&&row.getAttribute&&row.getAttribute('data-kts-msg'))||'';var t=document.getElementById('ktsToast');
-function done(){if(!t)return;t.classList.add('on');clearTimeout(t.__h);t.__h=setTimeout(function(){t.classList.remove('on');},2400);}
-function legacy(text){var ta=document.createElement('textarea');ta.value=text;ta.setAttribute('readonly','');ta.style.cssText='position:fixed;left:-9999px;top:0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}document.body.removeChild(ta);}
-if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done,function(){legacy(msg);done();});}else{legacy(msg);done();}};})();</script>
-<!-- KTB-SHARE:END -->
+<main class="wrap">
+  <aside class="cn-pains" data-lang-only="cn" hidden>
+    <p class="cn-brand"><span lang="zh-Hans">首尔攻略 <b>KTB</b></span> · 韩国落地三件事，免费，不用注册</p>
+    <p class="cn-t">落地前先弄明白这三件</p>
+    <ul>
+      <li><b>支付</b> 便利店现金、支付宝、微信都行；<b>地铁 1–8 号线售票机支付宝不行</b>、微信可以；<b>出租车不收微信</b> — <a href="../cn/alipay-wechat-korea-2026/">扫码失败怎么救 →</a></li>
+      <li><b>签证</b> K-ETA 临时免签不含中国大陆护照，须单独办旅游签证（团体签证手续费豁免≠个人免签）。</li>
+      <li><b>退税</b> 单张收据满 ₩15,000 可在店里当场退（明洞 Olive Young 等），不能拆单 — <a href="../cn/seoul-tax-refund-myeongdong-seongsu-2026/">怎么拿 →</a></li>
+    </ul>
+  </aside>
 
-<div class="leadcta">
-  <div class="lb">从这里开始 · $0 · 不用注册</div>
-  <a class="big" href="/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf">下载免费一页通（A4 PDF・$0・本站直开）→<span>机场铁路、深夜巴士、交通卡、退税的数字，和本页同一套，一页看完；页尾附完整版支付宝结账二维码。</span></a>
-  <p class="up"><b>深度版（付费，含税，支付宝/卡/Apple Pay）：</b> <a href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener">55 页指南 + 109 处一键地图 $12.99</a> · <a href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener">只要地图 $4.99</a> · <a href="https://www.creem.io/product/prod_7rXnDal9fK81tIcLWyXc" target="_blank" rel="noopener">只要指南 $9.99</a>（英文，暂无简体版 PDF）</p>
-</div>
+  <nav class="hub-grid" data-i18n-aria="c.toolsAria" aria-label="KTB Hub tools">
+    <a class="tile" href="hub/nearby/">
+      <span class="ico" aria-hidden="true">📍</span>
+      <span class="txt">
+        <span class="tt" data-i18n="home.t1">Find Nearby</span>
+        <span class="tk" data-i18n="home.t1k">주변 찾기</span>
+        <span class="td" data-i18n="home.t1d">109 checked places · filter by food, cafes, markets, area</span>
+      </span>
+      <span class="go" data-i18n="home.open">Open →</span>
+    </a>
 
-<div class="install">
-  <p class="t">添加到主屏幕 — 10 秒，免费</p>
-  <ul>
-    <li><b>iPhone（Safari）:</b> 分享 <b>⤴</b> → <b>添加到主屏幕</b></li>
-    <li><b>Android（Chrome）:</b> <b>⋮</b> → <b>添加到主屏幕</b></li>
-  </ul>
-  <p class="n">不用应用商店、不用注册。微信／QQ 内置浏览器不支持「添加到主屏幕」，请用手机自带浏览器打开本页（本页零外部请求，保存后可离线看）。</p>
-</div>
+    <a class="tile" href="hub/around/">
+      <span class="ico" aria-hidden="true">🚇</span>
+      <span class="txt">
+        <span class="tt" data-i18n="home.t2">Get Around</span>
+        <span class="tk" data-i18n="home.t2k">이동하기</span>
+        <span class="td" data-i18n="home.t2d">Airport fares · point A to point B</span>
+      </span>
+      <span class="go" data-i18n="home.open">Open →</span>
+    </a>
 
-<div class="ok"><b>中国旅行指南・博主 × 韩国本地人 交叉验证</b><br>
-不是网红清单：先看中文韩国旅行指南、独立博主是否指向同一处，再确认韩国本地人现在还会去。109处中有10处附完整依据：出处、核实日期，以及说法冲突时我们采信了哪一方。营业时间每日复核，出处于 2026-11-21 重新交叉比对。入选与排序不含付费位。</div>
+    <a class="tile wide" href="hub/speak/">
+      <span class="ico" aria-hidden="true">💬</span>
+      <span class="txt">
+        <span class="tt" data-i18n="home.t3">Speak &amp; Show</span>
+        <span class="tk" data-i18n="home.t3k">언어 도움</span>
+        <span class="td" data-i18n="home.t3d">Korean lines in big type — turn the screen around and let them read it</span>
+      </span>
+      <span class="go" data-i18n="home.open">Open →</span>
+    </a>
+  </nav>
 
-<div class="deals">
-  <a class="deal" href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html?lang=zh_cn">
-    <div class="t">完整版：韩国旅行圣经（60 个问答）</div>
-    <div class="m">本页只是落地用的一页。完整版把 60 个问答、5 天动线、47 处核实景点与 109 处地图放在一起；英文与繁中版已上线（打开后可选语言）。</div>
-    <div class="p">免费阅读 · 完整版入口</div>
-  </a>
-  <a class="deal" href="https://koreatravelbible.com/free/">
-    <div class="t">免费 30 个地点地图</div>
-    <div class="m">首尔 30 处先看的地图页，一屏一张，不用注册、零外部请求。</div>
-    <div class="p">免费</div>
-  </a>
-  <a class="deal" href="/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf">
-    <div class="t">免费一页通 PDF（$0 · 本站直开）</div>
-    <div class="m">本页内容的 A4 版：机场铁路、深夜巴士、交通卡、退税的数字在一张纸上，没信号也能看；页尾附完整版支付宝结账二维码。</div>
-    <div class="p">$0 · 不用卡</div>
-  </a>
-</div>
+  <section class="cn-jp" data-lang-only="cn" hidden aria-labelledby="cnJpTitle">
+    <p class="cn-brand"><span lang="zh-Hans">韩国＋日本</span> · 10–14 天一起走</p>
+    <p class="cn-jp-t" id="cnJpTitle">下一站：这一页的免费与付费</p>
+    <ul>
+      <li><a href="/korea-japan/?lang=cn"><b>$0 免费 A4 一页通</b></a> — 韩国＋日本 10–14 天路线、跨境船与航班、订票顺序，简体中文 PDF，不用邮箱。</li>
+      <li><a href="https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v"><b>$14.99 韩日套票</b></a> — 35 页逐日路线、渡轮逐步流程、退税动线（数字商品不可退，结账金额以商品页为准）。</li>
+    </ul>
+  </section>
 
-
-
-<!-- KTB-MIXCOURSE:START -->
-<style id="ktbMixCss">
-.kmc{margin:0 0 26px}
-.kmc .mc-lgd{font-size:13px;color:var(--ink2);margin:0 0 10px;line-height:1.55}
-.kmc .mc-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 13px 11px;box-shadow:0 1px 2px rgba(16,40,34,.06)}
-.kmc .mc-hd{border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:2px}
-.kmc .mc-kick{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--brand2)}
-.kmc .mc-name{display:block;font-size:15.5px;font-weight:800;line-height:1.35;margin:2px 0 3px}
-.kmc .mc-meta{display:block;font-size:12px;color:var(--ink2);line-height:1.5}
-.kmc .mc-day{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--brand);margin:12px 0 2px}
-.kmc ol{list-style:none;margin:0;padding:0}
-.kmc li{display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
-.kmc li.mc-first{border-top:0}
-.kmc .mc-t{flex:0 0 42px;font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--brand2);padding-top:2px}
-.kmc .mc-b{flex:1;min-width:0}
-.kmc .mc-p{font-size:14.5px;font-weight:800;line-height:1.35;color:var(--ink)}
-.kmc .mc-ko{font-weight:600;font-size:12.5px;color:var(--ink2);margin-left:4px;word-break:keep-all}
-.kmc .mc-bg{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:999px;margin-left:5px;vertical-align:2px;line-height:1.5}
-.kmc .mc-gc{background:#eef4f2;color:#0b5d4f;border:1px solid #cfdfda}
-.kmc .mc-lp{background:#fdf1e9;color:#a4451a;border:1px solid #f0d3bf}
-.kmc .mc-s{display:block;font-size:12.5px;color:var(--ink2);line-height:1.55;margin-top:3px}
-.kmc .mc-why{display:block;font-size:12.5px;color:#134a30;background:var(--okbg);border-radius:7px;padding:6px 9px;margin-top:5px;line-height:1.55}
-.kmc .mc-w{display:block;font-size:12.5px;color:#7a4a12;background:#fdf3e6;border:1px solid #f0dcc2;border-radius:7px;padding:6px 9px;margin-top:5px;line-height:1.55}
-.kmc .mc-l{display:block;font-size:12.5px;color:#33475b;background:#eef2f7;border:1px solid #d7e0ea;border-radius:7px;padding:6px 9px;margin-top:4px;line-height:1.55}
-.kmc .mc-why b{color:#0b5d4f}
-.kmc .mc-warn{background:var(--warnbg);border-left:3px solid var(--warn);color:#6d2f10;padding:9px 11px;border-radius:0 8px 8px 0;font-size:13px;line-height:1.55;margin:11px 0 0}
-.kmc .mc-ft{font-size:11.5px;color:var(--ink2);line-height:1.55;margin:9px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
-nav.chips a.mc-chip{background:#fdf1e9;border-color:#f0d3bf;color:#a4451a;font-weight:700}
-nav.chips a.mc-chip .mc-chip-b{font-size:11px}
-@media (max-width:430px){.kmc .mc-t{flex:0 0 38px;font-size:12px}.kmc .mc-p{font-size:14px}}
-</style>
-<section id="mixcourse" class="kmc">
-  <h2><span class="n">🔥</span>中文指南的经典线 ＋ 韩国本地人去的2个地方</h2>
-  <p class="mc-lgd"><b>Guide Consensus</b>＝本语言至少2份资料共同点名（这里是3份），并经过韩国资料确认。<b>[🔥 Korean Local Pick]</b>＝不在那些清单里、首尔人自己在用的地方（2026-11-21的109处每日检查确认营业）。两者刻意分开标注，看标签就知道每个点来自哪一份清单。</p>
-  <div class="mc-card">
-    <div class="mc-hd">
-      <span class="mc-kick">CN · 首尔经典历史与城市地标线</span>
-      <span class="mc-name">3天：景福宫 → 北村 → 益善洞 → 明洞 → 미성옥 → N首尔塔 → DDP</span>
-      <span class="mc-meta">7个点 · 3天 · 简体来源3份 + 韩国现地确认 · 状态: PARTIAL</span>
+  <section class="cn-jp cn-pay" data-lang-only="cn" hidden aria-labelledby="cnPayTitle">
+    <p class="cn-brand"><span lang="zh-Hans">完整版</span> · 支付宝 / Visa・Mastercard / Apple Pay（价格含税）</p>
+    <p class="cn-jp-t" id="cnPayTitle">想带走全部 109 处和 55 页指南</p>
+    <ul>
+      <li><a href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener"><b>$4.99 109 处一键地图</b></a> — 首尔・釜山・济州，每处带韩文名、营业时间、休息日、价格；可导入谷歌「我的地图」。</li>
+      <li><a href="https://www.creem.io/product/prod_7rXnDal9fK81tIcLWyXc" target="_blank" rel="noopener"><b>$9.99 55 页指南</b></a> — 没有韩国手机号怎么订、交通卡怎么选、退税怎么算、深夜到达怎么走（英文 PDF）。</li>
+      <li><a href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener"><b>$12.99 套装（最省）</b></a> — 地图 + 指南，含税总价 $12.99。</li>
+    </ul>
+    <div style="display:flex;gap:12px;align-items:center;margin-top:9px">
+      <img src="/cn/qr-creem-bundle.png" alt="二维码：Creem 结账页（套装 $12.99，含税）" width="92" height="92" style="flex:0 0 auto;border:1px solid #cfe3d8;border-radius:8px;background:#fff">
+      <p style="margin:0;font-size:12.5px;line-height:1.55;color:#243a33">手机相机或支付宝「扫一扫」→ 直接到套装结账页。上方三个免费工具永久免费，不用注册；付费是数字商品，下载后不可退。</p>
     </div>
-    <div class="mc-warn">周二景福宫休息，这条路线周二不成立；那天改用昌德宫、德寿宫。</div>
-    <ol>
-    <div class="mc-day">第1天 · 景福宫 → 北村 → 益善洞</div>
-    <li class="mc-first"><div class="mc-t">09:00</div><div class="mc-b"><div class="mc-p">景福宫<span class="mc-ko">경복궁</span><span class="mc-bg mc-gc">Guide Consensus</span></div><span class="mc-s">周二休。09:00–18:00，闭园前1小时停止入场。3,000韩元，穿韩服免费。步行12分钟到北村（727米）。</span></div></li>
-    <li><div class="mc-t">10:40</div><div class="mc-b"><div class="mc-p">北村韩屋村<span class="mc-ko">북촌한옥마을</span><span class="mc-bg mc-gc">Guide Consensus</span></div><span class="mc-s">免费，10:00–17:00。这里是居民区巷子，安静是重点；观光巴士时段10:00–16:00最挤。</span></div></li>
-    <li><div class="mc-t">12:00</div><div class="mc-b"><div class="mc-p">益善洞韩屋街<span class="mc-ko">익선동 한옥거리</span><span class="mc-bg mc-lp">[🔥 Korean Local Pick]</span></div><span class="mc-why"><b></b> 为什么本地人来：巷子里由韩屋改成的小店，首尔人专挑17点以后院子亮灯时来。</span><span class="mc-s">17点以后才是本来时段 · 白天多为咖啡店 · 每间不到20个位子，15分钟等位是常态 · 从北村走下来17分钟（1.0公里）</span><span class="mc-w">⏱️ 周末13:00–17:00等位30–90分钟，平日14:00–16:00只需5–15分钟 · 热门店可用 CatchTable 远程排队（청수당·치즈인더스트리），部分店只收现场名单</span><span class="mc-l">🕒 咖啡店不午休：청수당 11:30–22:00、치즈인더스트리 10:00–22:00，最后点单21:30 · 餐厅午休各家不同，进店前看门口告示</span></div></li>
-    <div class="mc-day">第2天 · 明洞 → 南山 → 东大门</div>
-    <li><div class="mc-t">10:00</div><div class="mc-b"><div class="mc-p">明洞<span class="mc-ko">명동</span><span class="mc-bg mc-gc">Guide Consensus</span></div><span class="mc-s">街道本身没有单一地点，以올리브영 명동타운（10:00–22:30）为对照点；免税即时退税从折后15,000韩元起。安国→明洞地铁2站。</span></div></li>
-    <li><div class="mc-t">12:30</div><div class="mc-b"><div class="mc-p">미성옥<span class="mc-ko">Miseongok</span><span class="mc-bg mc-lp">[🔥 Korean Local Pick]</span></div><span class="mc-why"><b></b> 为什么本地人来：只卖雪浓汤、06点开门的老店；排队的人都挤在明洞饺子那边，这里多是上班前用一碗汤解决早饭的首尔人。</span><span class="mc-s">06:00–21:00每天 · 雪浓汤12,000韩元（大14,000）· 水肉35,000韩元起 · 步行2分钟（112米）</span><span class="mc-w">⏱️ 平日12:00–13:00等位10–20分钟（周末中午常常不用等）· 06:00–09:00最空 · 不可预约，直接进店</span><span class="mc-l">🕒 06:00–21:00 全年无休、没有午休 · 最后点单时间店家未公示（21:00关门）</span></div></li>
-    <li><div class="mc-t">17:30</div><div class="mc-b"><div class="mc-p">N首尔塔<span class="mc-ko">N서울타워</span><span class="mc-bg mc-gc">Guide Consensus</span></div><span class="mc-s">10:00–22:30（周末23:00）。观景台付费、爱情锁平台免费。步行＋缆车约25分钟（1.5公里）。</span></div></li>
-    <div class="mc-day">第3天 · 东大门</div>
-    <li><div class="mc-t">19:00</div><div class="mc-b"><div class="mc-p">东大门 DDP<span class="mc-ko">동대문디자인플라자</span><span class="mc-bg mc-gc">Guide Consensus</span></div><span class="mc-s">10:00–20:00，夜市以周末为主。外观与广场免费，夜市另计。明洞→东大门历史文化公园地铁2站。</span></div></li>
-    </ol>
-    <p class="mc-ft">营业时间与价格取自2026-11-21的109处每日检查所记录的公开值（今天没有重新观测）。在地点位只标示为现地确认过的地点，不写评论条数。状态PARTIAL：这三份简体资料的共同项不到8个，我们没有用库存补满，就停在5个共同点加2个在地点。</p>
-  </div>
-</section>
-<!-- KTB-MIXCOURSE:END -->
+  </section>
 
-<nav class="chips">
-  <a href="https://koreatravelbible.com/hub/">🧭 KTB Hub — 附近・交通・韩语（英/日/繁）</a>
-  <a class="mc-chip" href="#mixcourse"><span class="mc-chip-b">🔥</span> <span>经典路线</span></a>
-  <a href="#arrival">⓪ 机场・深夜到达</a>
-  <a href="#pay">① 支付矩阵</a>
-  <a href="#gate">② 闸机四解法</a>
-  <a href="#tax">③ 退税</a>
-  <a href="#map">④ Naver 地图</a>
-  <a href="#fail">⑤ 失败救援</a>
-  <a href="#spots">⑥ 打卡圣地</a>
-  <a href="#tour">⑦ 不自驾</a>
-  <a href="#book">⑧ 先订票券</a>
-</nav>
+  <p class="home-sheet" data-i18n="home.sheet"><a href="cheat-sheet/">1-page cheat sheet — 首尔扫码·地铁·退税 一页通 (简体中文)</a></p>
+  <p class="home-note" data-i18n="home.note">Works in the browser. Nothing to install.</p>
 
-<section id="arrival">
-  <h2><span class="n">0</span>仁川机场 → 首尔市区（含深夜到达）</h2>
-  <p class="lead">落地后先决定「坐什么车」，再决定「买什么卡」。下表为成人单程价，2026-11-21 依机场铁路与仁川机场官网核对。</p>
-  <table>
-    <thead><tr><th>方式</th><th class="c">票价</th><th class="c">时间</th><th>怎么用</th></tr></thead>
-    <tbody>
-      <tr><td><b>AREX 直通</b>（직통）</td><td class="c">₩13,000</td><td class="c">43 分钟</td><td>T1 直达首尔站，指定座；T2 出发 51 分钟。票在柜台／自助机／线上买，不刷交通卡。</td></tr>
-      <tr><td><b>AREX 普通</b>（일반）</td><td class="c">₩4,750<br><span class="small">T2 ₩5,350</span></td><td class="c">59 分钟</td><td>刷 T-money 直接进站，13 个站，弘大・孔德・金浦机场都能下。单程票贵 ₩100，出站退 ₩500 押金。</td></tr>
-      <tr><td>机场巴士 6001／6015</td><td class="c">₩17,000</td><td class="c">—</td><td>明洞・首尔站・孔德・市厅。大厅售票处或自助机买票，不用 App、不用韩国号码。</td></tr>
-      <tr><td>机场巴士 6701</td><td class="c">₩18,000</td><td class="c">—</td><td>光化门・钟路・仁寺洞方向的酒店。</td></tr>
-      <tr><td><b>深夜 N6701</b></td><td class="c">₩18,000</td><td class="c">首尔站约 80 分</td><td>T1 23:50／00:40／01:40／03:45／04:40 发车（T2 早 20 分），经麻浦 → 首尔站 → 乙支路入口 → DDP。</td></tr>
-      <tr><td><b>深夜 N6703</b></td><td class="c">₩18,000</td><td class="c">—</td><td>COEX・蚕室乐天世界・江边・广津方向。</td></tr>
-      <tr><td><b>深夜 N6000</b></td><td class="c">₩17,000</td><td class="c">江南约 90 分</td><td>往江南高速巴士客运站，经松亭、盐仓。</td></tr>
-      <tr><td><b>深夜 N6002</b></td><td class="c">₩17,000</td><td class="c">弘大约 65 分</td><td>弘大 → 四季酒店（光化门）→ 兴仁之门 → 清凉里。</td></tr>
-    </tbody>
-  </table>
-  <div class="warn"><b>深夜两个坑</b>：① 01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车（仁川机场官网时刻表，2026-11-21 核对）——落地时间先把入境审查和取行李算进去；② 深夜巴士在到达层售票处或自助机买票，N6701・N6703 也可用 T-money GO 买，N6000・N6002 只能现场买。</div>
-  <p class="note">气候同行卡（1／2／3／5／7 日券 ₩5,000／8,000／10,000／15,000／20,000 ＋ 卡 ₩3,000）<b>不能在仁川 T1／T2 上车</b>，只能出站：机场这一段用 AREX 普通车、单程票或深夜巴士，进城以后再充卡。</p>
-</section>
+  <noscript>
+    <section class="noscript-cn" lang="zh-Hans">
+      <h2>首尔攻略 KTB — 韩国旅行三件免费工具</h2>
+      <p>首尔攻略 KTB（KTB Hub）是韩国旅行的三个免费网页工具：找附近、怎么去、说与出示。109 处地点最后核对于 2026-11-21，免费、免注册，位置只在你按下按钮时读取。不需要安装 App，简体中文界面在 <a href="./?lang=cn">?lang=cn</a>。</p>
+      <ul>
+        <li><a href="hub/nearby/">找附近</a> — 首尔・釜山・济州 109 处，按餐饮、咖啡、市场、区域筛选</li>
+        <li><a href="hub/around/">怎么去</a> — 机场票价（AREX 直通 ₩13,000／普通 ₩4,750）与 A 点到 B 点路线</li>
+        <li><a href="hub/speak/">说与出示</a> — 39 句核对过的韩语，大字显示给对方看</li>
+        <li><a href="../free/">免费首尔 30 地地图</a> · <a href="../cn/">简体中文韩国旅行指南</a></li>
+      </ul>
+      <p>小红书同名账号：首尔攻略 KTB。</p>
+    </section>
+  </noscript>
 
-<section id="pay">
-  <h2><span class="n">1</span>支付矩阵：场景 × 通道</h2>
-  <p class="lead">O = 已确认可用 · X = 不可用 · △ = 多数门店可用（未逐店确认）</p>
-  <table>
-    <thead><tr><th>场景</th><th class="c">支付宝</th><th class="c">微信</th><th class="c">银联</th><th class="c">外卡</th><th class="c">现金</th></tr></thead>
-    <tbody>
-      <tr><td>便利店 CU·GS25·7-Eleven</td><td class="c o">O</td><td class="c o">O</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td></tr>
-      <tr><td>美妆 Olive Young</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td></tr>
-      <tr><td>免税店（乐天·新罗）</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td></tr>
-      <tr><td>出租车（车内终端）</td><td class="c d">△</td><td class="c x">X</td><td class="c x">X</td><td class="c d">△</td><td class="c o">O</td></tr>
-      <tr><td>地铁售票机 1~8 号线</td><td class="c x">X</td><td class="c o">O</td><td class="c d">△</td><td class="c o">O</td><td class="c d">△</td></tr>
-      <tr><td><b>地铁闸机</b></td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td></tr>
-      <tr><td>KTX·火车票</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td><td class="c d">△</td></tr>
-      <tr><td>外卖（配送 App）</td><td class="c o">O</td><td class="c o">O</td><td class="c x">X</td><td class="c o">O</td><td class="c x">X</td></tr>
-      <tr><td>传统市场摊位</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td></tr>
-    </tbody>
-  </table>
-  <p class="note">最省事的一组：<b>支付宝/微信 + T-money</b>。这两样齐了，上表 9 个场景里 8 个能过；闸机那一行谁都不行，所以必须有 T-money。</p>
-</section>
+  <footer class="bot">
+    <p data-i18n="home.f1"><b>Privacy:</b> no cookies, no analytics, no external scripts. Your location is only read after you press the location button, used on the device for straight-line distance, and never saved to the browser or the link. The only things kept in this browser are your saved places and your last filters — with a button that clears them.</p>
+    <p data-i18n="home.f2"><b>Places:</b> 109 pins last verified 2026-11-21. Hours and prices change; check the operator or the map link before you go.</p>
+    <p data-i18n="home.f3">More from Korea Travel Insider: <a href="../free/">Free Seoul 30-pin map</a> · <a href="../tools/subway-cost-calc/">Transit cost calculator</a> · <a href="../tools/order-card/">Korean order &amp; allergy card</a> · <a href="../en/">Transit, tax &amp; payment cheat sheet</a></p>
+    <p class="brandline" data-i18n="home.brand">KTB Hub is also on Xiaohongshu (小红书) as <b lang="zh-Hans">首尔攻略 KTB</b> — the same checked places, written in Simplified Chinese. <a href="./?lang=cn">简体中文版 →</a></p>
+    <p data-i18n="home.f4">© 2026 Korea Travel Insider. Written by a long-term Seoul resident; name and affiliation are not published.</p>
+  </footer>
+</main>
 
-<section id="gate">
-  <h2><span class="n">2</span>闸机：QR 刷不开，四种过闸方式</h2>
-  <p class="lead">刷闸机不是「试试看」的地方。第一次进站前，从下面四种里选一种，之后每天照做。</p>
-  <table class="gate">
-    <tbody>
-      <tr><td>① 实体 T-money</td><td>便利店买卡 3,000~4,000 韩元，现金充值；机场到达层也有售。<b>最稳</b>。</td></tr>
-      <tr><td>② Apple 钱包 T-money</td><td>iPhone／Apple Watch：Apple Pay T-money 自 2025-07-22 起全国可用；钱包 App 内充值需韩国发行的卡，改用手机 T-money iOS App 的「Foreigner」模式，可用海外 Mastercard／Amex／UnionPay 充值（Visa 暂不支持，2026 年 3 月）。嫌麻烦就买实体卡。Android：手机 T-money／三星钱包。</td></tr>
-      <tr><td>③ NAMANE 交通卡</td><td>Alipay+ 版交通卡，机场与市区自助机可办，余额可退。</td></tr>
-      <tr><td>④ 售票机买单程票</td><td>1~8 号线 273 站 440 台支持海外 Visa/Mastercard（约 3.7% 手续费）及 KakaoPay / Naver Pay。</td></tr>
-    </tbody>
-  </table>
-  <div class="warn"><b>两个常踩的坑</b>：① 手机贴闸机不用打开 App，但要确认是 T-money 卡本身，不是支付码；② 出站也要刷——只进不出会被记录，下次乘车时按票种自动加收基本运费。</div>
-</section>
-
-<section id="tax">
-  <h2><span class="n">3</span>退税：退到支付宝/微信</h2>
-  <ol class="steps">
-    <li><b>门槛</b>：单笔 15,000 韩元以上、单张小票未满 100 万韩元、停留期间合计 500 万韩元以内。</li>
-    <li><b>机场自助机（仁川）</b>可以直接退到 Alipay+ 或微信钱包，不必排人工柜台；退到信用卡要等 2~4 周。</li>
-    <li><b>同一家店一次结完</b>，不要拆单——拆单会掉进级距。</li>
-  </ol>
-  <div class="warn"><b>级距陷阱</b>：75,000 韩元退 5,000；74,000 韩元只退 3,000。差 1,000，少拿 2,000。</div>
-  <p class="note">店里能当场退的，就在店里退（护照要带原件）。机场退税请<b>留足出发前的时间</b>——仁川高峰会很忙，退税物品和海关手续在值机／托运行李时一并确认。</p>
-</section>
-
-<section id="map">
-  <h2><span class="n">4</span>Naver 地图：三步设置</h2>
-  <ol class="steps">
-    <li>安装 Naver Map → 右上角设置 → 语言选「简体中文」。</li>
-    <li>复制韩文店名（下面的韩文名），粘贴到搜索框。<b>不要用中文店名搜</b>。</li>
-    <li>选「步行」或「公交」，出口编号会写在路线第一步。</li>
-  </ol>
-  <div class="ok">截至 2026 年 11 月，<b>Google 地图在韩国仍无步行/驾车导航</b>（数据 2026-11-13 确认：安全要件审查通过，正式上线时间待官方公布）。在那之前，韩文名就是地图钥匙。</div>
-  <p class="lead" style="margin-top:12px">韩文店名（点「复制」→ 去 Naver 搜索）</p>
-  <div class="kr" id="kr">
-    <span data-kr="성수동 카페거리"><b>성수동 카페거리</b><i>圣水洞咖啡街</i></span>
-    <span data-kr="을지로 노가리골목"><b>을지로 노가리골목</b><i>乙支路下酒菜巷</i></span>
-    <span data-kr="광장시장 먹자골목"><b>광장시장 먹자골목</b><i>广藏市场美食巷</i></span>
-    <span data-kr="명동교자 본점"><b>명동교자 본점</b><i>明洞饺子 本店</i></span>
-    <span data-kr="남대문시장"><b>남대문시장</b><i>南大门市场</i></span>
-    <span data-kr="올리브영 명동 타운"><b>올리브영 명동 타운</b><i>Olive Young 明洞城</i></span>
-    <span data-kr="홍대 걷고싶은거리"><b>홍대 걷고싶은거리</b><i>弘大 想走的路</i></span>
-    <span data-kr="북촌한옥마을"><b>북촌한옥마을</b><i>北村韩屋村</i></span>
-  </div>
-  <p class="small" style="margin-top:9px"><a href="https://map.naver.com" rel="noopener">map.naver.com</a> 打不开时，用 Naver Map App 直接扫街牌上的韩文，或问店员要名片。</p>
-</section>
-
-<section id="fail">
-  <h2><span class="n">5</span>现场失败 → 下一步</h2>
-  <table>
-    <tbody>
-      <tr><td><b>卡片被拒</b></td><td>换一张卡 → 现金 → 让店员刷两次不同终端（明洞能刷、弘大不能刷，是同品牌不同终端）。</td></tr>
-      <tr><td><b>闸机不响</b></td><td>余额不足，或两张卡叠在一起。到站内充值机加钱，<b>别在闸机前重试</b>。</td></tr>
-      <tr><td><b>售票机不认卡</b></td><td>1~8 号线以外的站可能没有海外卡机台。改去便利店买 T-money。</td></tr>
-      <tr><td><b>KTX 买不了票</b></td><td>3D 验证被拒。换 Korail 英文站、换卡，或在车站窗口现金买。</td></tr>
-      <tr><td><b>退税机不认护照</b></td><td>用护照<b>原件</b>（不是照片）。仍不行就改机场人工柜台，出发前留足时间（高峰很忙）。</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<section id="spots">
-  <h2><span class="n">6</span>打卡圣地：圣水 · 汉南 · 汉江</h2>
-  <p class="lead">拍出来最好看的三个地方，也是付款最容易卡住的地方。地图一律用 Naver 搜（韩文名可点上面的「复制」）。</p>
-  <div class="spots">
-    <div class="spot">
-      <div class="t">① 圣水洞 성수동 · 咖啡街 &amp; 快闪</div>
-      <div class="m">红砖仓库改的咖啡店、每周换一轮的快闪店、Olive Young 圣水店。周末排队 40 分钟起，工作日上午最舒服。</div>
-      <div class="m"><b>付款</b>：连锁咖啡与美妆店多数能扫支付宝／微信；独立咖啡店常常只有外卡或现金。快闪店多为现场排队，部分要先用 Naver 预约。</div>
-      <a class="mapbtn" href="https://map.naver.com/p/search/%EC%84%B1%EC%88%98%EB%8F%99%20%EC%B9%B4%ED%8E%98%EA%B1%B0%EB%A6%AC" rel="noopener">Naver 地图 · 圣水洞咖啡街</a>
-    </div>
-    <div class="spot">
-      <div class="t">② 汉南洞 한남동 · 选品店 &amp; 咖啡</div>
-      <div class="m">斜坡上的小店比明洞安静，衣服可以试、咖啡可以坐着喝。逛完往下走就是梨泰院。</div>
-      <div class="m"><b>付款</b>：这里以外卡为主，支付宝／微信覆盖率低于圣水。小额请备现金，很多店 10,000 韩元以下不收卡。</div>
-      <a class="mapbtn" href="https://map.naver.com/p/search/%ED%95%9C%EB%82%A8%EB%8F%99" rel="noopener">Naver 地图 · 汉南洞</a>
-    </div>
-    <div class="spot">
-      <div class="t">③ 汉江 한강 · 公园日落 &amp; 泡面</div>
-      <div class="m">盘浦（반포）看喷泉与日落，纛岛（뚝섬）租野餐垫。便利店的泡面 + 自助煮面机是标准动作。</div>
-      <div class="m"><b>付款</b>：便利店能扫支付宝／微信；<b>自助煮面机与自动售货机常常只收卡或硬币</b>——先买好 T-money 并充点现金，别在机器前翻钱包。</div>
-      <a class="mapbtn" href="https://map.naver.com/p/search/%EB%B0%98%ED%8F%AC%ED%95%9C%EA%B0%95%EA%B3%B5%EC%9B%90" rel="noopener">Naver 地图 · 盘浦汉江公园</a>
-    </div>
-  </div>
-  <div class="warn"><b>一句话规律</b>：越「好看、越新、越无人」的地方，越容易拒卡。<b>无人点餐机、自助照相馆、自助寄存柜</b>是三大雷区——进去前先确认收银台有没有人。</div>
-  <div class="ok"><b>支付宝／微信在这三个地方怎么用</b>：结账前先看收银台有没有 Alipay+／WeChat 贴纸或二维码立牌；有就扫，没有就直接出示外卡。韩国店员不会主动问你要用哪个，<b>你不说，他就按外卡刷</b>。</div>
-</section>
-
-<section id="tour">
-  <h2><span class="n">7</span>没有国际驾照 = 不能自驾（济州也一样）</h2>
-  <p class="lead">中国大陆驾照不能换国际驾照（IDP），韩国租车柜台只认 IDP 或韩国驾照。所以「到济州租车自己开一天」对中国旅客不成立——这不是钱的问题，是证件。台湾·香港驾照可以换 IDP，大陆不行。</p>
-  <p class="lead" style="margin-top:8px">所以济州·釜山最划算的方式是<b>中文导游的一日团</b>：不用开车、不用换乘、门票含在团费里。</p>
-  <div class="deals">
-    <a class="deal" href="/korea-japan/" rel="noopener">
-      <div class="t">韩国＋日本一趟走完 · 2026/27 新版</div>
-      <div class="m">想从韩国加一段日本？飞机与釜山–博多夜船（含全部税费）逐项比价、T-money 对 Welcome Suica、AREX 对 Skyliner，以及两套方向相反的退税制度。A4 一页免费，英／西／繁中三语（简体读者可用繁体页）。</div>
-      <div class="p">免费一页 · 套装 $14.99 · 2026-11-17 核对</div>
-    </a>
-    <a class="deal" href="https://www.klook.com/zh-CN/activity/108459-jeju-island-charms-join-in-day-tour/?aid=143459" rel="noopener sponsored" target="_blank">
-      <div class="t">济州岛 一日团 · 东部／南部／西南部 三选一</div>
-      <div class="m">中文／英文导游，08:00 出发，4 个上车点（机场 3 号门·乐天·新罗）。含门票与燃油费，无强制购物；城山日出峰·海女表演·茶园都在线内。</div>
-      <div class="p">页面价 US$ 51.65 起 · 4.9 分（888 条评价，2026-11-15 确认）</div>
-    </a>
-    <a class="deal" href="https://www.klook.com/zh-CN/activity/144212-busan-city-one-day-authentic-tour/?aid=143459" rel="noopener sponsored" target="_blank">
-      <div class="t">釜山城市 一日团 · 中文导游</div>
-      <div class="m">08:30 釜山站 4 号出口（另设西面·海云台上车）。海东龙宫寺 → 青沙浦天空步道 → 甘川文化村 → 南浦洞结束，全程 9 小时 30 分。</div>
-      <div class="p">页面价 US$ 27.90 起 · 5.0 分（3,000 条评价，2026-11-15 确认）</div>
-    </a>
-  </div>
-  <p class="note">天空胶囊列车／海岸列车车票<b>不含</b>在团费里，青沙浦现场另买（海岸列车往返 2 人参考 KRW 32,000 / 胶囊列车 2 人参考 KRW 50,000）。团费含中文导游、接送、门票与燃油费。</p>
-  <p class="aff">以上为联盟链接：你通过它们下单，我们可能获得少量佣金，<b>你的价格不变</b>。</p>
-</section>
-
-<section id="book">
-  <h2><span class="n">8</span>出发前先订（省掉现场排队）</h2>
-  <p class="lead">下面三个是官方票券，扫码或点进链接买，价格以页面当日为准。</p>
-  <div class="deals">
-    <a class="deal" href="https://www.klook.com/zh-CN/activity/1163-airport-to-seoul-city-center-arex-train-incheon/?aid=143459" rel="noopener sponsored" target="_blank">
-      <div class="t">AREX 机场快线 · 仁川 → 首尔站</div>
-      <div class="m">直达 43 分钟到首尔站。现场买票要排队，线上买好直接进站。</div>
-      <div class="p">页面价 US$ 8.60 起（2026-11-15 确认）</div>
-    </a>
-    <a class="deal" href="https://www.klook.com/zh-CN/activity/216-dmz-tour-gyeonggi-do/?aid=143459" rel="noopener sponsored" target="_blank">
-      <div class="t">DMZ 非军事区一日游（首尔出发）</div>
-      <div class="m">中文/英文/日语导游，可选酒店接送；明洞·市厅·弘大集合。</div>
-      <div class="p">页面价 US$ 50.00 起（2026-11-15 确认）</div>
-    </a>
-    <a class="deal" href="https://www.klook.com/zh-CN/activity/412-n-seoul-tower-seoul/?aid=143459" rel="noopener sponsored" target="_blank">
-      <div class="t">N 首尔塔（南山塔）门票 · 可选缆车</div>
-      <div class="m">缆车套票在明洞 SOLA SPA 取实体票；观景台票可买快速通道。</div>
-      <div class="p">页面价 US$ 16.59 起（2026-11-15 确认）</div>
-    </a>
-  </div>
-  <p class="aff">以上为联盟链接：你通过这些链接下单，我们可能获得少量佣金，<b>你的价格不变</b>。不通过这些链接，本页的其他内容一样可以用。</p>
-</section>
-
-<section id="cn-deep">
-  <h2><span class="n">＋</span>四个问题，各一页讲透（2026-11-21 核对）</h2>
-  <p class="lead">本页是一页通；这四个具体问题各拆成一页深页，页面里就是完整答案。</p>
-  <div class="deals">
-    <a class="deal" href="/cn/alipay-wechat-korea-2026/">
-      <div class="t">扫码付不了的那 30 秒：支付三阶救援 &amp; 即时退税</div>
-      <div class="m">支付宝／微信／银联是三条独立通道。失败后按「换通道 → 换介质 → 现金＋交通卡」三阶换；Olive Young 即时退税条件、机场退税退到 Alipay+／微信钱包、级距陷阱。</div>
-      <div class="p">免费 · 简体中文 · 零外部请求</div>
-    </a>
-    <a class="deal" href="/cn/incheon-midnight-bus-2026/">
-      <div class="t">仁川机场深夜到达：末班车 · N 深夜巴士 · 不被宰的出租车</div>
-      <div class="m">AREX 直通末班 22:48、普通车 T1 23:38／T2 23:32 之后只剩 N 巴士；四条线发车时刻、出租车官方乘车点与深夜加价、01:40 之后两小时空档怎么办。</div>
-      <div class="p">免费 · 简体中文 · 零外部请求</div>
-    </a>
-    <a class="deal" href="/cn/ktx-korail-booking-2026/">
-      <div class="t">首尔→釜山 KTX 订票：官网 · Trip.com · 支付宝怎么付</div>
-      <div class="m">2026-09-01 起一般室 ₩54,400；官网提前 2 个月开售但不收支付宝，Trip.com・Klook 各贵多少、退票按星期几算手续费。</div>
-      <div class="p">免费 · 简体中文 · 零外部请求</div>
-    </a>
-    <a class="deal" href="/cn/seoul-tax-refund-myeongdong-seongsu-2026/">
-      <div class="t">明洞・圣水退税与行李寄存：₩15,000 门槛与护照</div>
-      <div class="m">明洞市内退税窗口的地址与时间、圣水 Olive Young 收银台即时退税、退税级距陷阱、明洞站・圣水站储物柜价格。</div>
-      <div class="p">免费 · 简体中文 · 零外部请求</div>
-    </a>
-    <a class="deal" href="/cn/">
-      <div class="t">简体中文专题索引（4 页 + 3 工具 + 一页纸）</div>
-      <div class="m">上面四页的入口，适合先看目录再挑一页；也可扫码分享。</div>
-      <div class="p">免费 · 简体中文 · 零外部请求</div>
-    </a>
-  </div>
-</section>
-
-<section id="tools">
-  <h2><span class="n">＋</span>三款免费工具（不用登录）</h2>
-  <p class="lead">在手机浏览器里直接算，不用注册、不用韩国门号、数据不上传。</p>
-  <a class="tcard" href="/tools/order-card/?lang=cn"><b>1 · 韩语点餐・过敏卡</b><span>点菜、辣度、不要猪肉／海鲜、过敏，一点就出大字韩文，可复制、可朗读。</span></a>
-  <a class="tcard" href="/tools/arrival-checklist/"><b>2 · 2026 入境清单</b><span>选国籍和入境日期，看 K-ETA 临时免签（到 2026-12-31）是否覆盖你的行程、电子入境卡何时提交、交通卡怎么选（英文·西班牙文）。</span></a>
-  <a class="tcard" href="/tools/subway-cost-calc/"><b>3 · 机场与市内交通费用计算器</b><span>AREX 直通／普通、机场巴士、气候同行卡 1／2／3／5／7 日券，按你的天数和趟数算总价（英文·西班牙文）。</span></a>
-  <p class="note">三款工具都标注了核对日期（2026-11-20）；票价与规定会随官方公告变化，以运营方当天公告为准。</p>
-  <details><summary>地铁闸机为什么不认二维码？</summary><p>闸机只认交通卡和单程票。付款码能在便利店和餐厅用，过不了闸机；1～8 号线 273 个车站的 440 台机器收境外 Visa／Mastercard（平均 3.7% 手续费），可以买单程票，也能给气候同行卡充值。</p></details>
-  <details><summary>从仁川机场到市区，哪种最省？</summary><p>AREX 普通车 ₩4,750（T2 ₩5,350，59 分钟，用 T-money），直通车 ₩13,000（43 分钟），机场巴士 ₩17,000～18,000。气候同行卡不能在 T1／T2 上车，只能出站（机场铁路只覆盖金浦机场～首尔站），机场段要单独买。</p></details>
-  <details><summary>深夜到仁川机场，还有车去市区吗？</summary><p>有深夜巴士。N6701（₩18,000）从 T1 23:50 起发车，经首尔站到 DDP；N6002（₩17,000）走弘大、光化门；N6703 往 COEX・蚕室；N6000 往江南。01:40 之后 T1 的 N6701 要到 03:45、N6002 要到 04:00 才发车。</p></details>
-  <details><summary>支付宝和微信支付，先装哪一个？</summary><p>两条通道不是一回事，同一家店可能只开一条，所以两个都装、都绑卡最稳。便利店两家多数能用，Olive Young 要看终端，地铁闸机一律不收付款码。</p></details>
-  <details><summary>不会韩语，怎么点菜、怎么说过敏？</summary><p>用上面的「韩语点餐・过敏卡」（免登录）：点菜名、辣度、不要猪肉／海鲜、过敏项，屏幕出大字韩文，可复制给店员看或朗读；坚果、花生、乳制品等 8 种过敏句排在最前。</p></details>
-  <details><summary>Google 地图在韩国能用吗？</summary><p>截至 2026 年 11 月没有步行／驾车路线。用 Naver 地图，搜韩文地名；出租车司机也靠韩文地名。</p></details>
-</section>
-
-<section>
-  <h2><span class="n">＋</span>一页纸怎么用</h2>
-  <ol class="steps">
-    <li><b>离线保存</b>：浏览器菜单 →「保存页面」或直接截屏，落地后没有网络也能看。</li>
-    <li><b>转发给同伴</b>：本页可自由转发，请勿改动内容后转售。</li>
-    <li><b>先做三件事</b>：便利店买 T-money 并现金充值 → 装 Naver Map 设简体中文 → 记住「闸机不吃 QR」。</li>
-  </ol>
-</section>
-
-<footer>
-  <p><b>Korea Travel Insider</b> · 编辑：首尔长住者。姓名与所属不公开。</p>
-  <p>信息以当日官方公告为准，最后核对 <b>2026-11-21</b>（机场交通・深夜巴士・交通卡依机场铁路、仁川机场、首尔市官网当日复核；其余内容 2026-11-15）。价格、营业时间、政策随时会变，变化处会在下一页更新。</p>
-  <p>本页为轻量镜像：不含任何外部脚本、字体或地图接口，只为在中国大陆能打开。完整版（40+ 家本地门店的通道与预约、5 天动线、三阶备份）另售；本页不含任何代订服务。</p>
-  <p><a href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html?lang=zh_cn">完整版：韩国旅行圣经（60 个问答）</a> · <a href="https://koreatravelbible.com/free/">免费 30 个地点地图</a> · <a href="/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf">免费一页通 PDF（$0）</a></p>
-  <p><a href="/tools/">免费工具 3 种</a> · <a href="https://map.naver.com" rel="noopener">Naver 地图</a> · <a href="https://www.klook.com/zh-CN/?aid=143459" rel="noopener sponsored">Klook 韩国</a>（联盟链接）</p>
-  <p><b>首尔攻略 KTB</b>（小红书同名账号）· <a href="/hub/?lang=cn">韩国旅行三件免费工具：找附近・怎么去・说与出示</a></p>
-  <p>Korea Travel Bible Digital Guidebook ($9.99 USD) · Curated Korea Map Pack ($4.99 USD) · All-in-One Bundle ($12.99 USD) · Instant digital delivery · Support: <a href="mailto:support@koreatravelbible.com">support@koreatravelbible.com</a></p>
-  <p><a href="/terms.html">Terms of Service</a> · <a href="/privacy.html">Privacy Policy</a></p>
-  <!-- copyright-notice -->
-  <p>© 2026 Korea Travel Bible (Korea Travel Insider). All rights reserved. 未经授权不得转载、镜像或转售；引用请注明出处并附本页链接。</p>
-</footer>
-</div>
-
-<script>
-(function(){
-  var box=document.getElementById("kr");
-  if(!box) return;
-  var spans=box.querySelectorAll("span[data-kr]");
-  for(var i=0;i<spans.length;i++){
-    (function(sp){
-      var kr=sp.getAttribute("data-kr");
-      var btn=document.createElement("button");
-      btn.type="button";btn.textContent="复制";
-      btn.onclick=function(){
-        var done=function(){btn.textContent="已复制";setTimeout(function(){btn.textContent="复制";},1400);};
-        var fallback=function(){
-          var ta=document.createElement("textarea");
-          ta.value=kr;ta.setAttribute("readonly","");
-          ta.style.position="fixed";ta.style.top="-1000px";
-          document.body.appendChild(ta);ta.select();
-          try{document.execCommand("copy");done();}catch(e){btn.textContent="长按复制";}
-          document.body.removeChild(ta);
-        };
-        if(navigator.clipboard&&navigator.clipboard.writeText){
-          navigator.clipboard.writeText(kr).then(done,fallback);
-        }else{fallback();}
-      };
-      sp.appendChild(btn);
-    })(spans[i]);
-  }
-})();
-</script>
-<script>
-/* GA4-ready, inert until gtag exists: no request, no cookie, no data leaves the page by itself. */
-(function(){var m=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
-if(window.gtag){gtag('event','app_open',{display_mode:m?'standalone':'browser',language:document.documentElement.lang});}
-var g=document.querySelector('.install');if(g&&window.gtag){g.addEventListener('click',function(){gtag('event','install_guide_tap',{language:document.documentElement.lang});});}})();
-</script>
+<script src="hub/lang.js"></script>
+<script src="hub/hub.js"></script>
 </body>
 </html>

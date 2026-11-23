@@ -52,6 +52,7 @@ window.KTB_I18N = {
     'home.t3d': 'Korean lines in big type — turn the screen around and let them read it',
     'home.open': 'Open →',
     'home.note': 'Works in the browser. Nothing to install.',
+    'home.sheet': '<a href="cheat-sheet/">1-page cheat sheet — Seoul QR pay, subway &amp; tax refund (简体中文)</a>',
     'home.f1': '<b>Privacy:</b> no cookies, no analytics, no external scripts. Your location is only read after you press the location button, used on the device for straight-line distance, and never saved to the browser or the link. The only things kept in this browser are your saved places and your last filters — with a button that clears them.',
     'home.f2': '<b>Places:</b> 109 pins last verified 2026-11-21. Hours and prices change; check the operator or the map link before you go.',
     'home.f3': 'More from Korea Travel Insider: <a href="../free/">Free Seoul 30-pin map</a> · <a href="../tools/subway-cost-calc/">Transit cost calculator</a> · <a href="../tools/order-card/">Korean order &amp; allergy card</a> · <a href="../en/">Transit, tax &amp; payment cheat sheet</a>',
@@ -97,7 +98,7 @@ window.KTB_I18N = {
     'nb.f1': '<b>How the list is built.</b> Every place comes from the 109 daily-checked pins of the Korea 1-Tap Map Pack: name, area, category, address, map links and the date it was last checked. Hours, prices and the local notes are not published on this page.',
     'nb.f2': '<b>Privacy.</b> No cookies, no analytics. Pressing “Find near me” asks the browser once; the coordinates are used in memory for straight-line distance and then dropped. Saved places and your last city/area/category are kept in this browser only, and the button above clears them.',
     'nb.f3': '<b>Distance</b> is a straight line (“as the crow flies”), not a walking route — a river or a hill can make it longer.',
-    'nb.f4': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../free/">Free Seoul 30-pin map</a> · <a href="../../tools/subway-cost-calc/">Transit calculator</a>',
+    'nb.f4': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../free/">Free Seoul 30-pin map</a> · <a href="../../tools/subway-cost-calc/">Transit calculator</a>',
 
     'cat.all': 'All', 'cat.food': 'Eat & Drink', 'cat.cafe': 'Cafes', 'cat.market': 'Markets',
     'cat.culture': 'Culture', 'cat.indoor': 'Rain-proof', 'cat.beauty': 'Beauty', 'cat.kpop': 'K-Pop', 'cat.transit': 'Transit',
@@ -138,7 +139,7 @@ window.KTB_I18N = {
     'ar.noteNaverSearch': 'Naver Map opens with a search for this destination; tap 길찾기 (Directions) there.',
     'ar.f1': '<b>What this page does not do.</b> No route calculation, no live vehicle positions, no ticket sales. The route buttons hand your two place names to Google Maps or Naver Map, which do the routing.',
     'ar.f2': '<b>Privacy.</b> No cookies, no analytics. Location is read only when you press a location button, is used on the device, and is never saved to the browser or added to a link.',
-    'ar.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">Transit cost calculator</a> · <a href="../../tools/arrival-checklist/">Arrival checklist</a>',
+    'ar.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">Transit cost calculator</a> · <a href="../../tools/arrival-checklist/">Arrival checklist</a>',
 
     'sp.kicker': 'KTB Hub · 언어 도움',
     'sp.h1': 'Speak & Show',
@@ -154,7 +155,7 @@ window.KTB_I18N = {
     'sp.meanLabel': 'Meaning',
     'sp.f1': '<b>Not a translation service.</b> These are fixed, reviewed lines — there is no machine translation here. For anything outside them, the free order card builds more sentences.',
     'sp.f2': '<b>A card lowers the risk of a misunderstanding; it does not remove it.</b> For a serious allergy, show the line before you order, and use a translation app for anything medical.',
-    'sp.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/order-card/">Korean order &amp; allergy card</a>',
+    'sp.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/order-card/">Korean order &amp; allergy card</a>',
     'sp.g.restaurant': 'Restaurant', 'sp.g.allergy': 'Allergy & diet', 'sp.g.taxi': 'Taxi', 'sp.g.hotel': 'Hotel',
     'sp.g.pharmacy': 'Pharmacy & health', 'sp.g.pay': 'Pay & shop', 'sp.g.emergency': 'Emergency & help'
   },
@@ -210,6 +211,7 @@ window.KTB_I18N = {
     'home.t3d': '大きな文字の韓国語 — 画面を相手に向けて読んでもらう',
     'home.open': '開く →',
     'home.note': 'ブラウザだけで動きます。インストール不要。',
+    'home.sheet': '<a href="cheat-sheet/">1ページまとめ：ソウルのQR決済・地下鉄・免税（簡体字中国語）</a>',
     'home.f1': '<b>プライバシー：</b>Cookie・解析・外部スクリプトはありません。位置情報は位置ボタンを押したときだけ読み、端末内で直線距離の計算に使い、ブラウザにもリンクにも保存しません。このブラウザに残るのは保存した場所と最後の絞り込みだけで、消去ボタンがあります。',
     'home.f2': '<b>場所：</b>109ピンは2026-11-21に最終確認。営業時間や価格は変わります。出かける前に営業元か地図リンクで確認してください。',
     'home.f3': 'Korea Travel Insider のほかのツール：<a href="../free/">無料ソウル30ピンマップ</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓国語 注文・アレルギーカード</a> · <a href="../en/">交通・免税・支払いの一覧表</a>',
@@ -255,7 +257,7 @@ window.KTB_I18N = {
     'nb.f1': '<b>一覧の作り方。</b>すべての場所は Korea 1-Tap Map Pack の毎日確認している109ピンから来ています：名前・エリア・種類・住所・地図リンク・最終確認日。営業時間・価格・現地メモはこのページには載せていません。',
     'nb.f2': '<b>プライバシー。</b>Cookie・解析はありません。「現在地から探す」はブラウザに一度だけ問い合わせ、座標は端末内の直線距離計算にだけ使い、その場で捨てます。保存した場所と最後の都市・エリア・種類だけがこのブラウザに残り、上のボタンで消せます。',
     'nb.f3': '<b>距離</b>は直線距離で、徒歩ルートではありません。川や坂があると実際はもっと遠くなります。',
-    'nb.f4': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../free/">無料ソウル30ピンマップ</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a>',
+    'nb.f4': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../free/">無料ソウル30ピンマップ</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a>',
 
     'cat.all': 'すべて', 'cat.food': '食事', 'cat.cafe': 'カフェ', 'cat.market': '市場',
     'cat.culture': '文化', 'cat.indoor': '雨の日', 'cat.beauty': 'コスメ', 'cat.kpop': 'K-POP', 'cat.transit': '交通',
@@ -296,7 +298,7 @@ window.KTB_I18N = {
     'ar.noteNaverSearch': 'Naverマップはこの目的地の検索で開きます。そこで「길찾기（経路案内）」を押してください。',
     'ar.f1': '<b>このページがしないこと。</b>ルート計算・リアルタイムの運行情報・切符の販売はしません。ボタンは2つの地名をGoogleマップかNaverマップに渡し、経路はそちらが計算します。',
     'ar.f2': '<b>プライバシー。</b>Cookie・解析はありません。位置情報は位置ボタンを押したときだけ読み、端末内で使い、ブラウザにもリンクにも残しません。',
-    'ar.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a> · <a href="../../tools/arrival-checklist/">入国チェックリスト</a>',
+    'ar.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a> · <a href="../../tools/arrival-checklist/">入国チェックリスト</a>',
 
     'sp.kicker': 'KTB Hub · 언어 도움',
     'sp.h1': '見せて話す',
@@ -312,7 +314,7 @@ window.KTB_I18N = {
     'sp.meanLabel': '意味',
     'sp.f1': '<b>翻訳サービスではありません。</b>固定の確認済みフレーズのみで、機械翻訳は使いません。ここにない用件は、無料の注文カードで文を組み立てられます。',
     'sp.f2': '<b>カードは誤解のリスクを下げますが、なくしはしません。</b>重いアレルギーなら注文前に見せ、医療の話は翻訳アプリも併用してください。',
-    'sp.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/order-card/">韓国語 注文・アレルギーカード</a>',
+    'sp.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/order-card/">韓国語 注文・アレルギーカード</a>',
     'sp.g.restaurant': 'レストラン', 'sp.g.allergy': 'アレルギー・食事制限', 'sp.g.taxi': 'タクシー', 'sp.g.hotel': 'ホテル',
     'sp.g.pharmacy': '薬局・体調', 'sp.g.pay': '支払い・買い物', 'sp.g.emergency': '緊急・助け'
   },
@@ -368,6 +370,7 @@ window.KTB_I18N = {
     'home.t3d': '大字韓語 — 把螢幕轉過去讓對方讀',
     'home.open': '開啟 →',
     'home.note': '瀏覽器即可使用，免安裝。',
+    'home.sheet': '<a href="cheat-sheet/">一頁紙：首爾控碼・地鐵・退稅（簡體中文）</a>',
     'home.f1': '<b>隱私：</b>沒有 Cookie、沒有分析、沒有外部腳本。位置只在你按下位置按鈕後讀取，在裝置上計算直線距離，不會存進瀏覽器或連結。這個瀏覽器只保留你存的景點與上次的篩選，並有清除按鈕。',
     'home.f2': '<b>景點：</b>109 個定位點最後核對於 2026-11-21。營業時間與價格會變，出發前請看店家或地圖連結。',
     'home.f3': 'Korea Travel Insider 的其他工具：<a href="../free/">免費首爾 30 點地圖</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓語點餐・過敏卡</a> · <a href="../en/">交通、退稅、付款總表</a>',
@@ -413,7 +416,7 @@ window.KTB_I18N = {
     'nb.f1': '<b>清單怎麼來的。</b>每個景點都來自 Korea 1-Tap Map Pack 每日核對的 109 個定位點：名稱、區域、類型、地址、地圖連結與最後核對日。營業時間、價格與在地筆記不在本頁公開。',
     'nb.f2': '<b>隱私。</b>沒有 Cookie、沒有分析。按下「從我的位置找」只會向瀏覽器問一次；座標僅用於裝置內的直線距離計算，隨即丟棄。只有已存景點與上次的城市・區域・類型會留在這個瀏覽器，上面的按鈕可清除。',
     'nb.f3': '<b>距離</b>是直線距離，不是步行路線 — 有河或坡地時實際會更遠。',
-    'nb.f4': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../free/">免費首爾 30 點地圖</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a>',
+    'nb.f4': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../free/">免費首爾 30 點地圖</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a>',
 
     'cat.all': '全部', 'cat.food': '餐飲', 'cat.cafe': '咖啡', 'cat.market': '市場',
     'cat.culture': '文化', 'cat.indoor': '雨天', 'cat.beauty': '美妝', 'cat.kpop': 'K-POP', 'cat.transit': '交通',
@@ -454,7 +457,7 @@ window.KTB_I18N = {
     'ar.noteNaverSearch': 'Naver 地圖會以這個目的地搜尋開啟，請在該頁按下「길찾기（路線）」',
     'ar.f1': '<b>本頁不做的事。</b>不計算路線、不提供即時車況、不售票。按鈕只是把兩個地名交給 Google 地圖或 Naver 地圖，路線由它們計算。',
     'ar.f2': '<b>隱私。</b>沒有 Cookie、沒有分析。位置只在你按下位置按鈕時讀取、在裝置上使用，不會存進瀏覽器，也不會加進連結。',
-    'ar.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a> · <a href="../../tools/arrival-checklist/">入境檢查表</a>',
+    'ar.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">交通費計算機</a> · <a href="../../tools/arrival-checklist/">入境檢查表</a>',
 
     'sp.kicker': 'KTB Hub · 언어 도움',
     'sp.h1': '說與出示',
@@ -470,7 +473,7 @@ window.KTB_I18N = {
     'sp.meanLabel': '意思',
     'sp.f1': '<b>這不是翻譯服務。</b>只有固定的審過句子，沒有機器翻譯。這些以外的需求，可用免費點餐卡組句。',
     'sp.f2': '<b>卡片能降低誤解的風險，但不能消除。</b>嚴重過敏請在點餐前出示；醫療問題請搭配翻譯 App。',
-    'sp.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/order-card/">韓語點餐・過敏卡</a>',
+    'sp.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/order-card/">韓語點餐・過敏卡</a>',
     'sp.g.restaurant': '餐廳', 'sp.g.allergy': '過敏・飲食限制', 'sp.g.taxi': '計程車', 'sp.g.hotel': '飯店',
     'sp.g.pharmacy': '藥局・身體', 'sp.g.pay': '付款・購物', 'sp.g.emergency': '緊急・求助'
   },
@@ -525,7 +528,8 @@ window.KTB_I18N = {
     'home.t3': '说与出示', 'home.t3k': '언어 도움',
     'home.t3d': '大字韩语 — 把屏幕转过去让对方读',
     'home.open': '打开 →',
-    'home.note': '浏览器即可使用，免安装。',
+    'home.note': '瀏览器即可使用，免安装。',
+    'home.sheet': '<a href="cheat-sheet/">一页纸：首尔扫码・地铁・退税 一页通（简体中文）</a>',
     'home.f1': '<b>隐私：</b>没有 Cookie、没有分析、没有外部脚本。位置只在你按下位置按钮后读取，在设备上计算直线距离，不会存进浏览器或链接。这个浏览器只保留你存的景点与上次的筛选，并有清除按钮。',
     'home.f2': '<b>景点：</b>109 个地点最后核对于 2026-11-21。营业时间与价格会变，出发前请看店家或地图链接。',
     'home.f3': 'Korea Travel Insider 的其他工具：<a href="../free/">免费首尔 30 个地点地图</a> · <a href="../tools/subway-cost-calc/">交通费计算器</a> · <a href="../tools/order-card/">韩语点餐・过敏卡</a> · <a href="../en/">交通、退税、付款总表</a>',
@@ -571,7 +575,7 @@ window.KTB_I18N = {
     'nb.f1': '<b>列表怎么来的。</b>每个景点都来自 Korea 1-Tap Map Pack 每日核对的 109 个地点：名称、区域、类型、地址、地图链接与最后核对日。营业时间、价格与当地笔记不在本页公开。',
     'nb.f2': '<b>隐私。</b>没有 Cookie、没有分析。按下「从我的位置找」只会向浏览器问一次；坐标仅用于设备内的直线距离计算，随即丢弃。只有已保存地点与上次的城市・区域・类型会留在这个浏览器，上面的按钮可清除。',
     'nb.f3': '<b>距离</b>是直线距离，不是步行路线 — 有河或坡地时实际会更远。',
-    'nb.f4': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../free/">免费首尔 30 个地点地图</a> · <a href="../../tools/subway-cost-calc/">交通费计算器</a>',
+    'nb.f4': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../free/">免费首尔 30 个地点地图</a> · <a href="../../tools/subway-cost-calc/">交通费计算器</a>',
 
     'cat.all': '全部', 'cat.food': '餐饮', 'cat.cafe': '咖啡', 'cat.market': '市场',
     'cat.culture': '文化', 'cat.indoor': '雨天', 'cat.beauty': '美妆', 'cat.kpop': 'K-POP', 'cat.transit': '交通',
@@ -612,7 +616,7 @@ window.KTB_I18N = {
     'ar.noteNaverSearch': 'Naver 地图会以这个目的地搜索打开，请在该页按下「길찾기（路线）」',
     'ar.f1': '<b>本页不做的事。</b>不计算路线、不提供实时车况、不售票。按钮只是把两个地名交给 Google 地图或 Naver 地图，路线由它们计算。',
     'ar.f2': '<b>隐私。</b>没有 Cookie、没有分析。位置只在你按下位置按钮时读取、在设备上使用，不会存进浏览器，也不会加进链接。',
-    'ar.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">交通费计算器</a> · <a href="../../tools/arrival-checklist/">入境检查表</a>',
+    'ar.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/subway-cost-calc/">交通费计算器</a> · <a href="../../tools/arrival-checklist/">入境检查表</a>',
 
     'sp.kicker': 'KTB Hub · 언어 도움',
     'sp.h1': '说与出示',
@@ -628,7 +632,7 @@ window.KTB_I18N = {
     'sp.meanLabel': '意思',
     'sp.f1': '<b>这不是翻译服务。</b>只有固定、审核过的句子，没有机器翻译。这些以外的需求，可用免费点餐卡组句。',
     'sp.f2': '<b>卡片能降低误解的风险，但不能消除。</b>严重过敏请在点餐前出示；医疗问题请搭配翻译 App。',
-    'sp.f3': '© 2026 Korea Travel Insider. <a href="../">KTB Hub</a> · <a href="../../tools/order-card/">韩语点餐・过敏卡</a>',
+    'sp.f3': '© 2026 Korea Travel Insider. <a href="/">KTB Hub</a> · <a href="../../tools/order-card/">韩语点餐・过敏卡</a>',
     'sp.g.restaurant': '餐厅', 'sp.g.allergy': '过敏・饮食限制', 'sp.g.taxi': '出租车', 'sp.g.hotel': '酒店',
     'sp.g.pharmacy': '药店・身体不适', 'sp.g.pay': '付款・购物', 'sp.g.emergency': '紧急・求助'
   }
