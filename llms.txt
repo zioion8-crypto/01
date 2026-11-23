@@ -94,12 +94,12 @@ A single entry point for the three jobs a traveller in Korea actually has: what 
 - [Speak & Show](https://zioion8-crypto.github.io/01/hub/speak/): 39 fixed, reviewed Korean lines across restaurant, allergy, taxi, hotel, pharmacy, payment and emergency situations. Tapping one opens a single high-contrast sentence that fills the screen, with the meaning, the romanisation and a copy button (with a text-selection fallback). No machine translation.
 - Data: https://zioion8-crypto.github.io/01/hub/data/spots.json (109 records; public fields only).
 
-## Products and destinations (paid, Gumroad)
+## Products and destinations (paid)
 
 - [Korea Travel Bible — free web app](https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html): trip planner, eight official money-saving schemes, phrase cards, savings calculator. Free, no install.
-- [The 72-Hour Seoul Survival Guide, 55 pages](https://zioion.gumroad.com/l/seoul-survival-guide) — USD 9.99; code SEOUL20 takes USD 2 off for new customers.
-- [Korea 1-Tap Map Pack, 109 spots (Seoul 66 / Busan 20 / Jeju 23)](https://zioion.gumroad.com/l/korea-1tap-map-pack) — USD 4.99; 109 of 109 spots re-checked on 2026-11-20; free updates for buyers.
-- [Multi-City All-in-One (guide + map pack)](https://zioion.gumroad.com/l/korea-multicity-bundle) — USD 12.99; USD 10.99 with code SEOUL20 for new customers.
+- [The 72-Hour Seoul Survival Guide, 55 pages](https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc) — USD 9.99, tax included.
+- [Korea 1-Tap Map Pack, 109 spots (Seoul 66 / Busan 20 / Jeju 23)](https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) — USD 4.99, tax included; 109 of 109 spots re-checked on 2026-11-20; free updates for buyers.
+- [Multi-City All-in-One (guide + map pack)](https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout) — USD 12.99, tax included.
 - [韓国3泊4日 予約・待ち・免税 ゼロ帖, 63 pages (Japanese)](https://zioion.gumroad.com/l/seoul-zero-wait-jp) — ¥1,480 (switch the currency selector to JPY).
 - [首爾5天4夜 付款・預約 生存包, 44 pages (Traditional Chinese)](https://zioion.gumroad.com/l/seoul-survival-tw) — NT$299.
 - [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://zioion.gumroad.com/l/korea-cn-1pager) — free.

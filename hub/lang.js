@@ -9,8 +9,8 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub tools',
     'c.paidLb': 'Paid packs — optional',
     'c.paidTag': 'Paid product',
-    'c.gumroad': 'Open on Gumroad ↗',
-    'c.priceNote': 'Prices checked 22 Nov 2026 on each Gumroad page. Sold on Gumroad; the free tools stay free.',
+    'c.gumroad': 'Get it ↗',
+    'c.priceNote': 'Prices checked 23 Nov 2026; tax is included in every price. The free tools stay free.',
     'c.freeBtnNote': 'Free · no sign-up · opens in this site',
 
     'm.diff.nearby': '30 of the 109 places are free here · Unlock all 109 (Seoul · Busan · Jeju) + the offline KML — $4.99',
@@ -167,8 +167,8 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub のツール',
     'c.paidLb': '有料パック — 任意',
     'c.paidTag': '有料商品',
-    'c.gumroad': 'Gumroad で開く ↗',
-    'c.priceNote': '価格は2026年11月22日に各Gumroadページで確認。販売はGumroad、上の無料ツールは無料のままです。',
+    'c.gumroad': '入手する ↗',
+    'c.priceNote': '価格は2026年11月23日に確認。表示価格に税金が含まれています。上の無料ツールは無料のままです。',
     'c.freeBtnNote': '無料・登録不要・このサイト内で開きます',
 
     'm.diff.nearby': 'ここで無料で見られるのは109か所中30か所 · 全109か所（ソウル・プサン・チェジュ）＋オフラインKMLを解放 — $4.99',
@@ -325,8 +325,8 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub 工具',
     'c.paidLb': '付費組合 — 自由選購',
     'c.paidTag': '付費商品',
-    'c.gumroad': '在 Gumroad 開啟 ↗',
-    'c.priceNote': '價格於 2026 年 11 月 22 日在各 Gumroad 頁面確認。透過 Gumroad 販售，上方免費工具維持免費。',
+    'c.gumroad': '取得 ↗',
+    'c.priceNote': '價格於 2026 年 11 月 23 日確認。所有價格已含稅。上方免費工具維持免費。',
     'c.freeBtnNote': '免費・免註冊・在本站開啟',
 
     'm.diff.nearby': '這裡免費提供 109 處中的 30 處 · 解鎖全部 109 處（首爾・釜山・濟州）＋離線 KML — $4.99',
@@ -483,8 +483,8 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub 工具',
     'c.paidLb': '付费组合 — 自由选购',
     'c.paidTag': '付费商品',
-    'c.gumroad': '在 Gumroad 打开 ↗',
-    'c.priceNote': '价格于 2026 年 11 月 22 日在各 Gumroad 页面确认。通过 Gumroad 销售，上方免费工具维持免费。',
+    'c.gumroad': '获取 ↗',
+    'c.priceNote': '价格于 2026 年 11 月 23 日确认。所有价格已含税。上方免费工具维持免费。',
     'c.freeBtnNote': '免费、不用注册、在本站打开',
 
     'm.diff.nearby': '这里免费提供 109 处中的 30 处 · 解锁全部 109 处（首尔・釜山・济州）＋离线 KML — $4.99',

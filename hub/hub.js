@@ -6,11 +6,11 @@
   var I18N = window.KTB_I18N || { en: {} };
   var KEY_LANG = 'ktbhub.lang.v1';
 
-  /* Paid products, live on Gumroad. Prices re-checked 2026-11-22. */
+  /* Paid products: guide, map pack and bundle on Creem; the Japanese sampler on Gumroad. Prices re-checked 2026-11-23, tax included. */
   var PRODUCTS = {
-    map: { price: '$4.99', url: 'https://zioion.gumroad.com/l/korea-1tap-map-pack' },
-    kit: { price: '$12.99', url: 'https://zioion.gumroad.com/l/korea-multicity-bundle' },
-    guide: { price: '$9.99', url: 'https://zioion.gumroad.com/l/seoul-survival-guide' },
+    map: { price: '$4.99', url: 'https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t' },
+    kit: { price: '$12.99', url: 'https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout' },
+    guide: { price: '$9.99', url: 'https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc' },
     jp: { price: '¥1,480', url: 'https://zioion.gumroad.com/l/seoul-zero-wait-jp' }
   };
 
