@@ -370,7 +370,7 @@ window.KTB_I18N = {
     'home.t3d': '大字韓語 — 把螢幕轉過去讓對方讀',
     'home.open': '開啟 →',
     'home.note': '瀏覽器即可使用，免安裝。',
-    'home.sheet': '<a href="cheat-sheet/">一頁紙：首爾控碼・地鐵・退稅（簡體中文）</a>',
+    'home.sheet': '<a href="cheat-sheet/">一頁紙：首爾掃碼・地鐵・退稅（簡體中文）</a>',
     'home.f1': '<b>隱私：</b>沒有 Cookie、沒有分析、沒有外部腳本。位置只在你按下位置按鈕後讀取，在裝置上計算直線距離，不會存進瀏覽器或連結。這個瀏覽器只保留你存的景點與上次的篩選，並有清除按鈕。',
     'home.f2': '<b>景點：</b>109 個定位點最後核對於 2026-11-21。營業時間與價格會變，出發前請看店家或地圖連結。',
     'home.f3': 'Korea Travel Insider 的其他工具：<a href="../free/">免費首爾 30 點地圖</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓語點餐・過敏卡</a> · <a href="../en/">交通、退稅、付款總表</a>',
