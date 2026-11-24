@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b5d4f">
+<meta name="theme-color" content="#fcfaf7">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <title>Korean Restaurant Order &amp; Allergy Card — Free, No Login (2026)</title>
 <meta name="description" content="A free one-screen Korean order card for restaurants: tap the dishes, spice level, no-pork, no-seafood or allergy lines and show the Korean text, copy it or play it aloud. Works on a phone, no account, no app.">
@@ -69,24 +69,24 @@
 }
 </script>
 <style>
-:root{--ink:#12211e;--ink2:#4a5a56;--line:#dde6e2;--bg:#f4f7f5;--card:#fff;
---brand:#0b5d4f;--brand2:#12766a;--hot:#b8421b;--hotbg:#fdf0ea;--ok:#15663f;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+:root{--ink:#2b2620;--ink2:#5c5348;--line:#ece3d7;--bg:#fcfaf7;--card:#fff;
+--brand:#3f6b55;--brand2:#4f8167;--hot:#b8421b;--hotbg:#fdf0ea;--ok:#3f6b55;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.55;
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
 .wrap{max-width:600px;margin:0 auto;padding:0 14px}
-header{background:linear-gradient(160deg,#0b5d4f,#12766a 62%,#168a7a);color:#fff;padding:18px 0 14px}
-.kicker{font-size:11px;letter-spacing:.13em;text-transform:uppercase;opacity:.86}
+header{background:linear-gradient(168deg,#fdf9f3 0%,#faf1e5 58%,#f6e9d8 100%);color:var(--ink);border-bottom:1px solid #f0e4d3;padding:18px 0 14px}
+.kicker{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a9512c;font-weight:700}
 h1{font-size:22px;line-height:1.3;margin:5px 0 6px}
-header p{margin:0;font-size:13px;color:#d6ece6}
+header p{margin:0;font-size:13px;color:var(--ink2)}
 .langs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
-.langs button{font:600 12.5px/1 inherit;padding:7px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.45);
-background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
-.langs button[aria-pressed="true"]{background:#fff;color:#0b5d4f;border-color:#fff}
+.langs button{font:600 12.5px/1 inherit;padding:7px 11px;border-radius:999px;border:1px solid #e6d8c6;
+background:#fffdfa;color:var(--ink2);cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
 main{padding:14px 0 30px}
 .card{background:var(--card);border:2px solid var(--brand);border-radius:14px;padding:12px 12px 10px;margin:0 0 16px;
-box-shadow:0 2px 10px rgba(11,93,79,.09)}
+box-shadow:0 2px 10px rgba(63,107,85,.09)}
 .cardhead{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11.5px;
 letter-spacing:.1em;text-transform:uppercase;color:var(--brand);font-weight:700;padding-bottom:8px;border-bottom:1px dashed var(--line)}
 .cardbody{min-height:96px;padding:8px 0 4px}
@@ -96,13 +96,13 @@ letter-spacing:.1em;text-transform:uppercase;color:var(--brand);font-weight:700;
 .line .tr{font-size:12.5px;color:var(--ink2);margin-top:2px}
 .line.hot .ko{color:var(--hot)}
 .line.hot .tr{color:#8d4a2c}
-.empty{color:#8d9a96;font-size:14px;padding:18px 2px;text-align:center}
+.empty{color:#9a9184;font-size:14px;padding:18px 2px;text-align:center}
 .cardbtns{display:flex;gap:7px;flex-wrap:wrap;padding-top:10px;border-top:1px dashed var(--line)}
 .cardbtns button{flex:1 1 0;min-width:92px;font:700 13px/1 inherit;padding:11px 8px;border-radius:10px;cursor:pointer;
 border:1px solid var(--brand);background:#fff;color:var(--brand)}
 .cardbtns button.on{background:var(--brand);color:#fff}
 .cardbtns button:disabled{opacity:.4;cursor:default}
-.hint{font-size:11.5px;color:#7c8a86;margin:8px 0 0}
+.hint{font-size:11.5px;color:#7a6f60;margin:8px 0 0}
 h2{font-size:15px;margin:20px 0 8px;display:flex;align-items:center;gap:7px}
 h2 .n{display:inline-flex;align-items:center;justify-content:center;width:21px;height:21px;border-radius:50%;
 background:var(--brand);color:#fff;font-size:11.5px;flex:0 0 auto}
@@ -112,7 +112,7 @@ h2.hot .n{background:var(--hot)}
 .chip{text-align:left;font:600 13px/1.35 inherit;padding:10px 10px;border-radius:10px;border:1px solid var(--line);
 background:#fff;color:var(--ink);cursor:pointer;min-height:44px;display:flex;align-items:center;gap:7px}
 .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--line);flex:0 0 auto}
-.chip[aria-pressed="true"]{border-color:var(--brand);background:#e9f4f0;color:#0a4438}
+.chip[aria-pressed="true"]{border-color:var(--brand);background:#f6ece0;color:#33594a}
 .chip[aria-pressed="true"] .dot{background:var(--brand)}
 .chip.alert[aria-pressed="true"]{border-color:var(--hot);background:var(--hotbg);color:#7d3013}
 .chip.alert[aria-pressed="true"] .dot{background:var(--hot)}
@@ -122,18 +122,18 @@ border-radius:8px;padding:10px 11px;margin:12px 0 0}
 details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0;font-size:13.5px}
 details summary{cursor:pointer;font-weight:700;color:var(--brand)}
 details p{margin:8px 0 0;color:var(--ink2);font-size:13px}
-footer{border-top:1px solid var(--line);margin-top:10px;padding:16px 0 26px;font-size:12px;color:#6f7d79}
+footer{border-top:1px solid var(--line);margin-top:10px;padding:16px 0 26px;font-size:12px;color:#7a6f60}
 footer a{color:var(--brand);font-weight:600}
 .links{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 8px}
 @media (min-width:430px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .exitb{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px;margin:0 0 14px}
-.exitb-k{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#8d9a96;margin:0;font-weight:700}
+.exitb-k{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#9a9184;margin:0;font-weight:700}
 .exitb-t{font-size:14px;font-weight:800;margin:3px 0 3px;color:var(--ink)}
 .exitb-d{font-size:12px;color:var(--ink2);margin:0 0 9px}
 .exitb a{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin:0 0 6px}
 .exitb a:last-child{margin:0}
 .exitb b{display:block;font-size:13px;font-weight:700;color:var(--brand);line-height:1.35}
-.exitb span{display:block;font-size:11px;color:#7c8a86;margin-top:1px;line-height:1.4}
+.exitb span{display:block;font-size:11px;color:#7a6f60;margin-top:1px;line-height:1.4}
 </style>
 </head>
 <body>

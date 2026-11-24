@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b5d4f">
+<meta name="theme-color" content="#fcfaf7">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://koreatravelbible.com/cheat-sheet/">
 <link rel="alternate" hreflang="zh-Hans" href="https://koreatravelbible.com/cheat-sheet/">
@@ -30,9 +30,9 @@
 -->
 <style>
 :root{
-  --ink:#12211e; --ink2:#3f4f4b; --line:#dfe6e3; --bg:#f6f8f7; --card:#fff;
-  --brand:#0b5d4f; --brand2:#0f7768; --warn:#a4451a; --warnbg:#fdf1e9;
-  --ok:#15663f; --okbg:#eaf6ef; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --ink:#2b2620; --ink2:#5c5348; --line:#ece3d7; --bg:#fcfaf7; --card:#fff;
+  --brand:#3f6b55; --brand2:#4f8167; --warn:#a9512c; --warnbg:#fbeee6;
+  --ok:#3f6b55; --okbg:#eef4ec; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -40,68 +40,69 @@ body{margin:0;background:var(--bg);color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC","Noto Sans CJK KR",sans-serif;
   font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
 .wrap{max-width:760px;margin:0 auto;padding:0 14px 40px}
-header{background:linear-gradient(160deg,#0b5d4f,#12766a 60%,#14857a);color:#fff;padding:20px 14px 18px;margin:0 -14px 16px}
+header{background:linear-gradient(168deg,#fdf9f3 0%,#faf1e5 58%,#f6e9d8 100%);color:var(--ink);border-bottom:1px solid #f0e4d3;padding:20px 14px 18px;margin:0 -14px 16px}
 header .h{max-width:760px;margin:0 auto}
-a.hubb{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#fff;font-size:12.5px;font-weight:700;
-  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.30);border-radius:999px;padding:5px 12px;margin:0 0 10px}
-a.hubb:active{background:rgba(255,255,255,.28)}
-.kicker{font-size:12px;letter-spacing:.14em;opacity:.85;text-transform:uppercase}
+a.hubb{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--brand);font-size:12.5px;font-weight:700;
+  background:#fffdfa;border:1px solid #ecdfcd;border-radius:999px;padding:5px 12px;margin:0 0 10px;box-shadow:0 1px 2px rgba(35,30,24,.04)}
+a.hubb:active{background:#f8efe1}
+.kicker{font-size:12px;letter-spacing:.10em;color:#a9512c;font-weight:700;text-transform:uppercase}
 h1{font-size:23px;line-height:1.3;margin:6px 0 8px;letter-spacing:.01em}
-.sub{font-size:13.5px;opacity:.93;margin:0}
-.sub b{background:rgba(255,255,255,.16);padding:1px 6px;border-radius:5px;font-weight:600}
+.sub{font-size:13.5px;color:var(--ink2);margin:0}
+.sub b{background:#fff3e2;color:#43362a;padding:1px 6px;border-radius:5px;font-weight:600}
 nav.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
 nav.chips::-webkit-scrollbar{display:none}
 @media (min-width:700px){nav.chips{flex-wrap:wrap;overflow:visible}}
 nav.chips a{flex:0 0 auto;font-size:13px;text-decoration:none;color:var(--brand);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-weight:600}
-section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 13px;margin:0 0 14px;box-shadow:0 1px 0 rgba(18,33,30,.03)}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 13px;margin:0 0 14px;box-shadow:0 1px 0 rgba(43,38,32,.03)}
 h2{font-size:16.5px;margin:0 0 4px;letter-spacing:.01em;display:flex;align-items:center;gap:7px}
 h2 .n{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font-size:12.5px;flex:0 0 auto}
 .lead{font-size:13px;color:var(--ink2);margin:0 0 10px}
 table{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0 2px}
 th,td{padding:6px 5px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
-th{background:#f0f5f3;color:var(--ink2);font-weight:600;font-size:12px;white-space:nowrap}
+th{background:#f8f2e7;color:var(--ink2);font-weight:600;font-size:12px;white-space:nowrap}
 td.c,th.c{text-align:center}
 .o{color:var(--ok);font-weight:700}
-.x{color:#b3391b;font-weight:700}
-.d{color:#b07d16;font-weight:700}
+.x{color:#a9512c;font-weight:700}
+.d{color:#8f6a1f;font-weight:700}
+.q{color:#8a8276;font-weight:700}
 .small{font-size:12px;color:var(--ink2)}
 .note{font-size:12.5px;color:var(--ink2);margin:9px 0 0;padding-left:10px;border-left:3px solid var(--line)}
 .warn{background:var(--warnbg);border:1px solid #f0d3c2;border-radius:10px;padding:10px 11px;font-size:13px;color:#6d2f10;margin:10px 0 0}
-.ok{background:var(--okbg);border:1px solid #cbe7d7;border-radius:10px;padding:10px 11px;font-size:13px;color:#0f4a30;margin:10px 0 0}
+.ok{background:var(--okbg);border:1px solid #d3e4d5;border-radius:10px;padding:10px 11px;font-size:13px;color:#2f5544;margin:10px 0 0}
 ol,ul{margin:8px 0 0;padding-left:20px}
 li{margin:5px 0}
 .steps li{margin:7px 0}
 table.gate td:first-child{white-space:nowrap;font-weight:600;color:var(--brand)}
 .kr{display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 0}
-.kr span{display:inline-flex;align-items:center;gap:6px;background:#f0f5f3;border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:12.5px}
-.kr b{font-family:var(--mono);font-weight:600;color:#0d3f37}
-.kr i{font-style:normal;color:#5b6b67;font-size:11.5px}
+.kr span{display:inline-flex;align-items:center;gap:6px;background:#f8f2e7;border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:12.5px}
+.kr b{font-family:var(--mono);font-weight:600;color:#33594a}
+.kr i{font-style:normal;color:#7a6f60;font-size:11.5px}
 .kr button{border:0;background:var(--brand);color:#fff;border-radius:5px;font-size:11px;padding:2px 6px;cursor:pointer;line-height:1.5}
-.kr button:active{background:#094238}
+.kr button:active{background:#33594a}
 .deals{display:grid;gap:9px;margin:8px 0 0}
-a.deal{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:11px;padding:10px 11px;background:#fbfdfc}
+a.deal{display:block;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:11px;padding:10px 11px;background:#fffdfa}
 a.deal .t{font-weight:700;font-size:14px;color:var(--brand)}
 a.deal .m{font-size:12.5px;color:var(--ink2);margin-top:2px}
 a.deal .p{font-size:12.5px;color:#8a4a12;margin-top:3px}
-footer{font-size:11.5px;color:#6b7a76;line-height:1.7;padding:6px 2px 0}
+footer{font-size:11.5px;color:#7a6f60;line-height:1.7;padding:6px 2px 0}
 footer a{color:#4d6b64}
-.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 5px;border-radius:4px;background:#eef3f1;color:#4b5f5a}
-.aff{font-size:11.5px;color:#6b7a76;margin-top:8px}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:1px 5px;border-radius:4px;background:#f8f2e7;color:#4b5f5a}
+.aff{font-size:11.5px;color:#7a6f60;margin-top:8px}
 
 .spots{display:grid;gap:10px;margin:10px 0 0}
-.spot{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fbfdfc}
+.spot{border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fffdfa}
 .spot .t{font-weight:700;font-size:14.5px;color:var(--brand)}
 .spot .m{font-size:13px;color:var(--ink2);margin-top:5px}
 .spot .m b{color:var(--ink)}
 a.mapbtn{display:inline-block;margin-top:9px;font-size:12.5px;font-weight:700;text-decoration:none;color:#fff;background:var(--brand2);border-radius:8px;padding:6px 10px}
-a.mapbtn:active{background:#0a5a4e}
-@media (prefers-color-scheme:dark){.spot{background:#16211d}}
+a.mapbtn:active{background:#33594a}
+@media (prefers-color-scheme:dark){.spot{background:#1c1915}}
 @media (prefers-color-scheme:dark){
-  :root{--ink:#e8efec;--ink2:#adbdb8;--line:#26403a;--bg:#0d1513;--card:#131f1c;--okbg:#12291f;--warnbg:#2a1a12}
-  th{background:#17251f;color:#b7c8c2}
-  a.deal{background:#16211d}
-  header{background:linear-gradient(160deg,#0a3f36,#0d5a4e 60%,#0f6a5c)}
-  .kr span{background:#17251f}
+  :root{--ink:#efe9df;--ink2:#b9b0a2;--line:#3a332a;--bg:#141210;--card:#1c1915;--okbg:#1e2b22;--warnbg:#2a1c12}
+  th{background:#221e18;color:#c9bfae}
+  a.deal{background:#1c1915}
+  header{background:linear-gradient(168deg,#1e1a15,#26211a 58%,#2c261c)}
+  .kr span{background:#221e18}
 }
 a.tcard{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 12px;margin:8px 0}
 a.tcard b{display:block;font-size:14.5px;color:var(--brand);margin-bottom:3px}
@@ -111,11 +112,11 @@ details summary{cursor:pointer;font-weight:700;color:var(--brand)}
 details p{margin:7px 0 0;color:var(--ink2)}
 .leadcta{display:grid;gap:9px;margin:0 0 16px;padding:14px;border:1px solid var(--line);border-left:5px solid var(--ok);border-radius:12px;background:var(--card)}
 .leadcta .lb{font-size:11.5px;font-weight:800;letter-spacing:.06em;color:var(--ok)}
-.leadcta a.big{display:block;text-decoration:none;background:#15663f;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
+.leadcta a.big{display:block;text-decoration:none;background:#3f6b55;color:#fff;border-radius:10px;padding:13px 15px;font-weight:800;font-size:16px;line-height:1.35}
 .leadcta a.big span{display:block;font-weight:500;font-size:12.5px;opacity:.93;margin-top:5px}
 .leadcta p.up{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
 .leadcta p.up a{color:var(--brand2);font-weight:700}
-.grp{font-size:12px;font-weight:800;letter-spacing:.05em;color:#8a6d1e;margin:16px 0 0}
+.grp{font-size:12px;font-weight:800;letter-spacing:.05em;color:#8f6a1f;margin:16px 0 0}
 .install{margin:0 0 16px;padding:11px 13px;border:1px dashed var(--line);border-radius:11px;background:var(--card)}
 .install .t{font-size:13.5px;font-weight:800;margin:0 0 5px;color:var(--brand)}
 .install ul{margin:0;padding-left:17px;font-size:12.5px;color:var(--ink2)}
@@ -198,7 +199,7 @@ details p{margin:7px 0 0;color:var(--ink2)}
 <header>
   <div class="h">
     <a class="hubb" href="/">← KTB Hub 首页</a>
-    <div class="kicker">SEOUL 2026-11-21 机场交通复核 · 简体中文 · 1 页</div>
+    <div class="kicker">SEOUL · 内容 2026-11-15 · 机场交通复核 2026-11-21 · 价格 2026-11-23 · 简体中文 · 1 页</div>
     <h1>首尔扫码·地铁·退税 一页通</h1>
     <p class="sub">同一家店，明洞能刷、弘大不能刷——因为支付宝和微信是<b>两条通道</b>。这一页把「哪条通道、卡在哪一步、下一步是什么」放在一张纸上。</p>
   </div>
@@ -219,8 +220,8 @@ details p{margin:7px 0 0;color:var(--ink2)}
 .kts-b.sms{background:#e8f1ff;border-color:#b9d3f7;color:#1f4f8f}
 .kts-b.wx{background:#e6f8ef;border-color:#a5e3c4;color:#0b6b3a}
 .kts-b.qq{background:#e6f6fe;border-color:#aad9f2;color:#135e86}
-.kts-b.cp{background:#0b5d4f;border-color:#0b5d4f;color:#fff}
-.kts-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,10px);background:#12211e;color:#fff;
+.kts-b.cp{background:#3f6b55;border-color:#3f6b55;color:#fff}
+.kts-toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,10px);background:#2b2620;color:#fff;
   font-size:12.5px;font-weight:700;padding:9px 14px;border-radius:100px;opacity:0;pointer-events:none;
   transition:opacity .18s ease,transform .18s ease;z-index:999;max-width:88vw;text-align:center}
 .kts-toast.on{opacity:1;transform:translate(-50%,0)}
@@ -245,7 +246,7 @@ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.write
 <div class="leadcta">
   <div class="lb">从这里开始 · $0 · 不用注册</div>
   <a class="big" href="/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf">下载免费一页通（A4 PDF・$0・本站直开）→<span>机场铁路、深夜巴士、交通卡、退税的数字，和本页同一套，一页看完；页尾附完整版支付宝结账二维码。</span></a>
-  <p class="up"><b>深度版（付费，含税，支付宝/卡/Apple Pay）：</b> <a href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener">55 页指南 + 109 处一键地图 $12.99</a> · <a href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener">只要地图 $4.99</a> · <a href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" target="_blank" rel="noopener">只要指南 $9.99</a>（英文，暂无简体版 PDF）</p>
+  <p class="up"><b>深度版（付费，含税，支付宝/卡/Apple Pay）：</b> <a href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener">55 页指南 + 109 处一键地图 $12.99</a> · <a href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener">只要地图 $4.99</a> · <a href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" target="_blank" rel="noopener">只要指南 $9.99</a><b>（三份 PDF 都是英文，暂无简体中文版；下载后不可退，请先确认能读英文）</b></p>
 </div>
 
 <div class="install">
@@ -261,10 +262,15 @@ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.write
 不是网红清单：先看中文韩国旅行指南、独立博主是否指向同一处，再确认韩国本地人现在还会去。109处中有10处附完整依据：出处、核实日期，以及说法冲突时我们采信了哪一方。营业时间每日复核，出处于 2026-11-21 重新交叉比对。入选与排序不含付费位。</div>
 
 <div class="deals">
+  <a class="deal" href="/?lang=cn">
+    <div class="t">完整版：KTB Hub（找附近・怎么去・说与出示）</div>
+    <div class="m">本页只是落地用的一页。完整版是三个免登录工具：109 处地点（中文名・按区域筛）、机场与市内交通费用、39 句韩语大字给对方看；付费指南与地图包也在这里。</div>
+    <div class="p">免费 · 简体中文 · 手机浏览器直接开</div>
+  </a>
   <a class="deal" href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html?lang=zh_cn">
-    <div class="t">完整版：韩国旅行圣经（60 个问答）</div>
-    <div class="m">本页只是落地用的一页。完整版把 60 个问答、5 天动线、47 处核实景点与 109 处地图放在一起；英文与繁中版已上线（打开后可选语言）。</div>
-    <div class="p">免费阅读 · 完整版入口</div>
+    <div class="t">旧版：韩国旅行圣经（60 个问答）</div>
+    <div class="m">2026 年之前的完整问答版，仍有参考价值，但版面与价格不是最新。新内容都在上面的 KTB Hub。</div>
+    <div class="p">免费阅读 · 旧版入口</div>
   </a>
   <a class="deal" href="https://koreatravelbible.com/free/">
     <div class="t">免费 30 个地点地图</div>
@@ -284,7 +290,7 @@ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.write
 <style id="ktbMixCss">
 .kmc{margin:0 0 26px}
 .kmc .mc-lgd{font-size:13px;color:var(--ink2);margin:0 0 10px;line-height:1.55}
-.kmc .mc-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 13px 11px;box-shadow:0 1px 2px rgba(16,40,34,.06)}
+.kmc .mc-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 13px 11px;box-shadow:0 1px 2px rgba(43,38,32,.06)}
 .kmc .mc-hd{border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:2px}
 .kmc .mc-kick{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--brand2)}
 .kmc .mc-name{display:block;font-size:15.5px;font-weight:800;line-height:1.35;margin:2px 0 3px}
@@ -298,16 +304,16 @@ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.write
 .kmc .mc-p{font-size:14.5px;font-weight:800;line-height:1.35;color:var(--ink)}
 .kmc .mc-ko{font-weight:600;font-size:12.5px;color:var(--ink2);margin-left:4px;word-break:keep-all}
 .kmc .mc-bg{display:inline-block;font-size:10.5px;font-weight:800;padding:2px 7px;border-radius:999px;margin-left:5px;vertical-align:2px;line-height:1.5}
-.kmc .mc-gc{background:#eef4f2;color:#0b5d4f;border:1px solid #cfdfda}
-.kmc .mc-lp{background:#fdf1e9;color:#a4451a;border:1px solid #f0d3bf}
+.kmc .mc-gc{background:#f8f2e7;color:#3f6b55;border:1px solid #cfdfda}
+.kmc .mc-lp{background:#fbeee6;color:#a9512c;border:1px solid #f0d3bf}
 .kmc .mc-s{display:block;font-size:12.5px;color:var(--ink2);line-height:1.55;margin-top:3px}
 .kmc .mc-why{display:block;font-size:12.5px;color:#134a30;background:var(--okbg);border-radius:7px;padding:6px 9px;margin-top:5px;line-height:1.55}
 .kmc .mc-w{display:block;font-size:12.5px;color:#7a4a12;background:#fdf3e6;border:1px solid #f0dcc2;border-radius:7px;padding:6px 9px;margin-top:5px;line-height:1.55}
 .kmc .mc-l{display:block;font-size:12.5px;color:#33475b;background:#eef2f7;border:1px solid #d7e0ea;border-radius:7px;padding:6px 9px;margin-top:4px;line-height:1.55}
-.kmc .mc-why b{color:#0b5d4f}
+.kmc .mc-why b{color:#3f6b55}
 .kmc .mc-warn{background:var(--warnbg);border-left:3px solid var(--warn);color:#6d2f10;padding:9px 11px;border-radius:0 8px 8px 0;font-size:13px;line-height:1.55;margin:11px 0 0}
 .kmc .mc-ft{font-size:11.5px;color:var(--ink2);line-height:1.55;margin:9px 0 0;padding-top:8px;border-top:1px dashed var(--line)}
-nav.chips a.mc-chip{background:#fdf1e9;border-color:#f0d3bf;color:#a4451a;font-weight:700}
+nav.chips a.mc-chip{background:#fbeee6;border-color:#f0d3bf;color:#a9512c;font-weight:700}
 nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 @media (max-width:430px){.kmc .mc-t{flex:0 0 38px;font-size:12px}.kmc .mc-p{font-size:14px}}
 </style>
@@ -374,7 +380,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 
 <section id="pay">
   <h2><span class="n">1</span>支付矩阵：场景 × 通道</h2>
-  <p class="lead">O = 已确认可用 · X = 不可用 · △ = 多数门店可用（未逐店确认）</p>
+  <p class="lead">O = 已确认可用 · X = 不可用 · △ = 多数门店可用（未逐店确认）· <b>?</b> = 未确认（不猜）</p>
   <table>
     <thead><tr><th>场景</th><th class="c">支付宝</th><th class="c">微信</th><th class="c">银联</th><th class="c">外卡</th><th class="c">现金</th></tr></thead>
     <tbody>
@@ -382,14 +388,14 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
       <tr><td>美妆 Olive Young</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td></tr>
       <tr><td>免税店（乐天·新罗）</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td><td class="c o">O</td></tr>
       <tr><td>出租车（车内终端）</td><td class="c d">△</td><td class="c x">X</td><td class="c x">X</td><td class="c d">△</td><td class="c o">O</td></tr>
-      <tr><td>地铁售票机 1~8 号线</td><td class="c x">X</td><td class="c o">O</td><td class="c d">△</td><td class="c o">O</td><td class="c d">△</td></tr>
+      <tr><td>地铁售票机 1~8 号线</td><td class="c x">X</td><td class="c q">?</td><td class="c d">△</td><td class="c o">O</td><td class="c d">△</td></tr>
       <tr><td><b>地铁闸机</b></td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td><td class="c x">X</td></tr>
       <tr><td>KTX·火车票</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td><td class="c o">O</td><td class="c d">△</td></tr>
       <tr><td>外卖（配送 App）</td><td class="c o">O</td><td class="c o">O</td><td class="c x">X</td><td class="c o">O</td><td class="c x">X</td></tr>
       <tr><td>传统市场摊位</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c d">△</td><td class="c o">O</td></tr>
     </tbody>
   </table>
-  <p class="note">最省事的一组：<b>支付宝/微信 + T-money</b>。这两样齐了，上表 9 个场景里 8 个能过；闸机那一行谁都不行，所以必须有 T-money。</p>
+  <p class="note">最省事的一组：<b>支付宝/微信 + T-money</b>。这两样齐了，上表 9 个场景里 8 个能过；闸机那一行谁都不行，所以必须有 T-money。售票机的微信通道 <b>?</b> 表示我们没能在 2026-11-21 前逐台确认——别在机器前试，先在便利店买 T-money（现金或支付宝充值）。</p>
 </section>
 
 <section id="gate">
@@ -585,11 +591,11 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 
 <footer>
   <p><b>Korea Travel Insider</b> · 编辑：首尔长住者。姓名与所属不公开。</p>
-  <p>信息以当日官方公告为准，最后核对 <b>2026-11-21</b>（机场交通・深夜巴士・交通卡依机场铁路、仁川机场、首尔市官网当日复核；其余内容 2026-11-15）。价格、营业时间、政策随时会变，变化处会在下一页更新。</p>
+  <p>信息以当日官方公告为准。<b>内容 2026-11-15 · 机场交通・深夜巴士・交通卡 2026-11-21 依机场铁路、仁川机场、首尔市官网再复核 · 付费与价格 2026-11-23</b>（与同站免费一页通 PDF 同一套日期）。价格、营业时间、政策随时会变，变化处会在下一页更新。</p>
   <p>本页为轻量镜像：不含任何外部脚本、字体或地图接口，只为在中国大陆能打开。完整版（40+ 家本地门店的通道与预约、5 天动线、三阶备份）另售；本页不含任何代订服务。</p>
-  <p><a href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html?lang=zh_cn">完整版：韩国旅行圣经（60 个问答）</a> · <a href="https://koreatravelbible.com/free/">免费 30 个地点地图</a> · <a href="/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf">免费一页通 PDF（$0）</a></p>
+  <p><a href="/?lang=cn">完整版：KTB Hub（附近・交通・韩语）</a> · <a href="https://koreatravelbible.com/free/">免费 30 个地点地图</a> · <a href="/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf">免费一页通 PDF（$0）</a> · <a href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html?lang=zh_cn">旧版 60 问答</a></p>
   <p><a href="/">🧭 KTB Hub（附近・交通・韩语）</a> · <a href="/tools/">免费工具 3 种</a> · <a href="https://map.naver.com" rel="noopener">Naver 地图</a> · <a href="https://www.klook.com/zh-CN/?aid=143459" rel="noopener sponsored">Klook 韩国</a>（联盟链接）</p>
-  <p><b>首尔攻略 KTB</b>（小红书同名账号）· <a href="/?lang=cn">韩国旅行三件免费工具：找附近・怎么去・说与出示</a></p>
+  <p><b>首尔攻略 KTB</b>（小红书同名账号 <a href="https://www.xiaohongshu.com/user/profile/18488621939" target="_blank" rel="noopener">→ 打开小红书</a>）· <a href="/?lang=cn">韩国旅行三件免费工具：找附近・怎么去・说与出示</a></p>
   <p>Korea Travel Bible Digital Guidebook ($9.99 USD) · Curated Korea Map Pack ($4.99 USD) · All-in-One Bundle ($12.99 USD) · Instant digital delivery · Support: <a href="mailto:support@koreatravelbible.com">support@koreatravelbible.com</a></p>
   <p><a href="/terms.html">Terms of Service</a> · <a href="/privacy.html">Privacy Policy</a></p>
   <!-- copyright-notice -->

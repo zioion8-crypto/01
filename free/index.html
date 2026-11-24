@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b5d4f">
+<meta name="theme-color" content="#fcfaf7">
 <meta name="robots" content="index,follow">
 <title>Free Seoul 30-Pin Map — Korea Travel Insider</title>
 <meta name="description" content="30 hand-checked Seoul spots free: Korean name, opening hours, closing day, price where published, and a one-tap Naver Map link for each pin. Verified 2026-11-15. No app, no sign-in.">
@@ -20,25 +20,25 @@
   No external requests: inline CSS, system fonts, no trackers, no Google Maps embed.
 -->
 <style>
-:root{--ink:#12211e;--ink2:#41524e;--line:#dde5e1;--bg:#f5f8f7;--card:#fff;--brand:#0b5d4f;--brand2:#12766a;--gold:#a9742a;--warn:#a4451a}
+:root{--ink:#2b2620;--ink2:#5c5348;--line:#ece3d7;--bg:#fcfaf7;--card:#fff;--brand:#3f6b55;--brand2:#4f8167;--gold:#8f6a1f;--warn:#a9512c}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
 a{color:var(--brand2)}
 .wrap{max-width:880px;margin:0 auto;padding:0 16px 64px}
-header{background:linear-gradient(160deg,#0b5d4f,#123f46);color:#fff;padding:28px 0 24px;margin-bottom:18px}
+header{background:linear-gradient(168deg,#fdf9f3 0%,#faf1e5 58%,#f6e9d8 100%);color:var(--ink);border-bottom:1px solid #f0e4d3;padding:28px 0 24px;margin-bottom:18px}
 header .wrap{padding-bottom:0}
-.badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:5px 9px;border-radius:999px;margin-bottom:12px}
+.badge{display:inline-block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:#fffdfa;border:1px solid #ecdfcd;color:#7d4a2a;padding:5px 9px;border-radius:999px;margin-bottom:12px}
 h1{font-size:26px;line-height:1.25;margin:0 0 8px}
-.sub{color:#cfe3dd;font-size:14px;margin:0 0 16px}
+.sub{color:var(--ink2);font-size:14px;margin:0 0 16px}
 .cta{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 12px}
-.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;padding:11px 16px;border-radius:10px;background:#fff;color:#0b5d4f}
-.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
-.note{font-size:12px;color:#bcd4ce}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;padding:11px 16px;border-radius:10px;background:#fff;color:#3f6b55}
+.btn.ghost{background:#fffdfa;color:var(--brand);border:1px solid #e6d8c6}
+.note{font-size:12px;color:var(--ink3)}
 .legend{font-size:12px;color:var(--ink2);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin:8px 0 0;line-height:1.6}
 .legend b{color:var(--ink)}
 .hubline{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:14px 0 0;font-size:13px}
 .hubline a{font-weight:700}
-.morebox{margin:30px 0 0;padding:16px 15px 14px;border:1px solid var(--line);background:#eef3f1;border-radius:14px}
+.morebox{margin:30px 0 0;padding:16px 15px 14px;border:1px solid var(--line);background:#f8f2e7;border-radius:14px}
 .morebox h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);margin:0 0 4px}
 .morebox .lead{font-size:13px;color:var(--ink2);margin:0 0 12px}
 .multilang{display:grid;gap:8px;margin:14px 0 4px}
@@ -51,20 +51,20 @@ h1{font-size:26px;line-height:1.25;margin:0 0 8px}
 .upsell .v{font-size:19px;font-weight:800;color:var(--gold);margin-top:8px}
 .zone{margin:26px 0 0}
 .zone h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);margin:0 0 10px;display:flex;align-items:center;gap:8px}
-.zone h2 .count{font-size:11px;background:#e4efeb;color:var(--brand);border-radius:999px;padding:2px 7px;letter-spacing:0}
+.zone h2 .count{font-size:11px;background:#f3e9db;color:var(--brand);border-radius:999px;padding:2px 7px;letter-spacing:0}
 .zone ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .spot{display:grid;grid-template-columns:34px 1fr;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
-.spot .no{font:600 13px/1 ui-monospace,Menlo,Consolas,monospace;color:#8a9a95;padding-top:4px}
+.spot .no{font:600 13px/1 ui-monospace,Menlo,Consolas,monospace;color:#9a9184;padding-top:4px}
 .spot h3{margin:0 0 2px;font-size:15.5px;line-height:1.35}
 .spot .kr{font-size:13px;color:var(--brand);font-weight:600}
-.spot .kr .area{color:#8a9a95;font-weight:500}
+.spot .kr .area{color:#9a9184;font-weight:500}
 .spot .facts{display:flex;flex-wrap:wrap;gap:4px 12px;margin:7px 0 4px;font-size:12.5px;color:var(--ink2)}
 .spot .facts .f b{color:var(--ink)}
 .spot .facts .warn,.spot .facts .warn b{color:var(--warn)}
 .spot .tip{font-size:13px;color:var(--ink2);margin:4px 0 8px}
 .spot .links a{display:inline-block;font-size:12.5px;font-weight:700;text-decoration:none;padding:7px 10px;border-radius:8px;margin-right:6px}
 .spot .links .naver{background:#03c75a;color:#fff}
-.spot .links .gmap{background:#eef3f1;color:#245c50}
+.spot .links .gmap{background:#f8f2e7;color:#33594a}
 .tag{font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 6px;border-radius:6px;vertical-align:middle;margin-left:4px}
 .tag.night{background:#1e293b;color:#e2e8f0}
 .tag.rain{background:#e0f2fe;color:#075985}
@@ -96,7 +96,7 @@ html[lang="zh-Hans"] .multilang div:not(.m-cn){display:none}
   <div class="cn-hint" id="cn-hint">
     <p class="t">来韩国前先弄明白这三件（中国大陆护照）</p>
     <ul>
-      <li><b>支付</b> — 便利店（CU·GS25·7-Eleven）现金、支付宝、微信都能用；<b>地铁 1–8 号线自助售票机支付宝不可用</b>，微信可以；<b>出租车车内终端不收微信</b>。卡住时按「换通道 → 换介质 → 现金＋交通卡」三阶处理。→ <a href="/cn/alipay-wechat-korea-2026/">扫码失败三阶救援</a></li>
+      <li><b>支付</b> — 便利店（CU·GS25·7-Eleven）现金、支付宝、微信都能用；<b>地铁 1–8 号线自助售票机支付宝不可用</b>，微信尚未确认（别在机器前试，先在便利店买 T-money）；<b>出租车车内终端不收微信</b>。卡住时按「换通道 → 换介质 → 现金＋交通卡」三阶处理。→ <a href="/cn/alipay-wechat-korea-2026/">扫码失败三阶救援</a></li>
       <li><b>签证</b> — K-ETA 临时免签只适用 22 个国家和地区，<b>中国大陆护照不在名单内</b>，须单独办旅游签证；团体签证手续费豁免不等于个人免签。</li>
       <li><b>退税</b> — 单张收据满 ₩15,000 可在店里当场退（明洞 Olive Young 等参与店，出示护照原件），不能拆单。→ <a href="/cn/seoul-tax-refund-myeongdong-seongsu-2026/">退税与市内退税点</a></li>
     </ul>

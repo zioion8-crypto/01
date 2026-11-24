@@ -15,6 +15,10 @@
   function T(k, v) { return H.t(k, v); }
   function meaning(p) {
     var l = H.lang();
+    /* cn falls back to the Traditional line before English, so a Simplified reader
+       never lands on an English meaning if only one Chinese text exists. */
+    if (l === 'cn') return p.cn || p.zh || p.en;
+    if (l === 'zh') return p.zh || p.cn || p.en;
     return p[l] || p.en;
   }
 

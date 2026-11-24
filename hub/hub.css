@@ -34,7 +34,7 @@ header.top .h{max-width:720px;margin:0 auto}
 .kicker{font-size:12px;letter-spacing:.01em;text-transform:none;color:#a9512c;font-weight:700;margin:0}
 h1{font-size:25px;line-height:1.28;margin:7px 0 8px;letter-spacing:-.012em;color:var(--ink);text-wrap:balance}
 header.top .sub{font-size:13.5px;margin:0;color:var(--ink2);max-width:56ch;line-height:1.6}
-header.top .sub b{background:#fff3e2;box-shadow:0 0 0 3px #fff3e2;color:#43362a;padding:1px 0;border-radius:5px;font-weight:700}
+header.top .sub b{background:#fff3e2;box-shadow:0 0 0 3px #fff3e2;color:#43362a;padding:1px 0;border-radius:5px;font-weight:700;white-space:nowrap}
 
 /* ---------- home ---------- */
 .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px 0 18px}

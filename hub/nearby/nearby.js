@@ -9,7 +9,7 @@
   var CITYORDER = { Seoul: 1, Busan: 2, Jeju: 3 };
 
   var st = {
-    all: [], groups: {}, favs: {},
+    all: [], groups: {}, gcn: {}, gzh: {}, favs: {},
     city: '', grp: '', cat: '', q: '',
     sort: 'area', savedOnly: false, shown: 12,
     dist: null, ready: false, located: false,
@@ -28,6 +28,29 @@
   function catName(c) { return T('cat.' + c); }
   function cityName(c) { return T('city.' + c); }
 
+  /* ---------- Chinese place names (the list must read as Chinese on ?lang=cn / ?lang=zh) ---------- */
+  function chinese() {
+    var l = H.lang();
+    return l === 'cn' ? 'cn' : (l === 'zh' ? 'zh' : null);
+  }
+  function nameOf(s) {
+    var l = chinese();
+    return (l && s[l]) || s.en;
+  }
+  function addrOf(s) {
+    var l = chinese();
+    if (l === 'cn') return s.addrCn || s.addr;
+    if (l === 'zh') return s.addrZh || s.addr;
+    return s.addr;
+  }
+  function grpName(g) {
+    var l = chinese();
+    var tab = l === 'cn' ? st.gcn : (l === 'zh' ? st.gzh : null);
+    if (!tab) return g;
+    for (var c in tab) { if (tab[c] && tab[c][g]) return tab[c][g]; }
+    return g;
+  }
+
   /* ---------- boot ---------- */
   loadFavs();
   H.onLangChange = onLangChange;
@@ -37,6 +60,8 @@
     .then(function (data) {
       st.all = data.spots || [];
       st.groups = data.groups || {};
+      st.gcn = data.groupsCn || {};
+      st.gzh = data.groupsZh || {};
       st.ready = true;
       buildChips();
       buildAreas();
@@ -91,13 +116,13 @@
     if (st.city) {
       var g = st.groups[st.city] || {};
       Object.keys(g).sort().forEach(function (name) {
-        html += '<option value="' + H.esc(name) + '">' + H.esc(name) + ' (' + g[name] + ')</option>';
+        html += '<option value="' + H.esc(name) + '">' + H.esc(grpName(name)) + ' (' + g[name] + ')</option>';
       });
     } else {
       cities.forEach(function (c) {
         html += '<optgroup label="' + H.esc(cityName(c)) + '">';
         Object.keys(st.groups[c]).sort().forEach(function (name) {
-          html += '<option value="' + H.esc(name) + '">' + H.esc(name) + ' (' + st.groups[c][name] + ')</option>';
+          html += '<option value="' + H.esc(name) + '">' + H.esc(grpName(name)) + ' (' + st.groups[c][name] + ')</option>';
         });
         html += '</optgroup>';
       });
@@ -292,7 +317,9 @@
       if (st.cat && s.cat !== st.cat) return false;
       if (st.savedOnly && !st.favs[s.no]) return false;
       if (q) {
-        var hay = (s.en + ' ' + s.kr + ' ' + s.area + ' ' + s.grp + ' ' + cityName(s.city) + ' ' + s.addr + ' ' + catName(s.cat)).toLowerCase();
+        var hay = (s.en + ' ' + s.kr + ' ' + s.area + ' ' + s.grp + ' ' + grpName(s.grp) + ' ' +
+          cityName(s.city) + ' ' + s.addr + ' ' + (s.cn || '') + ' ' + (s.zh || '') + ' ' +
+          (s.addrCn || '') + ' ' + (s.addrZh || '') + ' ' + catName(s.cat)).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -301,7 +328,8 @@
     if (st.sort === 'near' && st.dist) {
       rows.sort(function (a, b) { return st.dist[a.no] - st.dist[b.no]; });
     } else if (st.sort === 'az') {
-      rows.sort(function (a, b) { return a.en.localeCompare(b.en); });
+      var loc = chinese() === 'cn' ? 'zh-Hans' : (chinese() === 'zh' ? 'zh-Hant' : 'en');
+      rows.sort(function (a, b) { return nameOf(a).localeCompare(nameOf(b), loc); });
     } else {
       rows.sort(function (a, b) {
         return (CITYORDER[a.city] - CITYORDER[b.city]) || a.grp.localeCompare(b.grp) || a.en.localeCompare(b.en);
@@ -328,12 +356,12 @@
       '<span class="cat">' + H.esc(catName(s.cat)) + '</span>' +
       (d != null ? '<span class="dist" title="' + H.esc(T('nb.straight')) + '">' + H.dist(d) + '</span>' : '') +
       '<button class="fav" type="button" data-no="' + s.no + '" aria-pressed="' + (st.favs[s.no] ? 'true' : 'false') +
-      '" aria-label="' + H.esc(T('nb.save', { name: s.en })) + '">★</button>' +
+      '" aria-label="' + H.esc(T('nb.save', { name: nameOf(s) })) + '">★</button>' +
       '</div>' +
-      '<h3>' + H.esc(s.en) + '</h3>' +
-      '<p class="kr">' + H.esc(s.kr) + '</p>' +
-      '<p class="meta">' + H.esc(s.grp) + ' · ' + H.esc(cityName(s.city)) + '</p>' +
-      '<p class="addr">' + H.esc(s.addr) + '</p>' +
+      '<h3>' + H.esc(nameOf(s)) + '</h3>' +
+      '<p class="kr" lang="ko">' + H.esc(s.kr) + '</p>' +
+      '<p class="meta">' + H.esc(grpName(s.grp)) + ' · ' + H.esc(cityName(s.city)) + '</p>' +
+      '<p class="addr">' + H.esc(addrOf(s)) + '</p>' +
       '<p class="links">' +
       '<a href="' + H.esc(s.naver) + '" target="_blank" rel="noopener">' + T('nb.naver') + '</a>' +
       '<a href="' + H.esc(s.google) + '" target="_blank" rel="noopener">' + T('nb.google') + '</a>' +

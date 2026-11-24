@@ -222,9 +222,11 @@
   };
 
   /* ---------- boot ---------- */
-  var qp = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
-  if (qp === 'zh-hans' || qp === 'zh-cn' || qp === 'zh-sg') qp = 'cn';
-  if (qp === 'zh-hant' || qp === 'zh-tw' || qp === 'zh-hk' || qp === 'tw') qp = 'zh';
+  /* ?lang= accepts BCP 47 with a dash or an underscore (zh_cn, zh_tw come from older links,
+   the cheat sheet and the Blogger hub), plus the plain codes. */
+  var qp = (new URLSearchParams(location.search).get('lang') || '').toLowerCase().replace(/_/g, '-');
+  if (qp === 'zh-hans' || qp === 'zh-cn' || qp === 'zh-sg' || qp === 'cn') qp = 'cn';
+  if (qp === 'zh-hant' || qp === 'zh-tw' || qp === 'zh-hk' || qp === 'tw' || qp === 'zh') qp = 'zh';
   HUB._lang = I18N[qp] ? qp : HUB.get(KEY_LANG, 'en');
   if (!I18N[HUB._lang]) HUB._lang = 'en';
   HUB.langBar();
