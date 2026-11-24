@@ -55,7 +55,9 @@
   loadFavs();
   H.onLangChange = onLangChange;
   paintLocate();
-  fetch('../data/spots.json', { cache: 'force-cache' })
+  /* The version keeps a stale copy of the place data out of the browser cache after a deploy
+     (force-cache used to hand back the previous spots.json for hours). */
+  fetch('../data/spots.json?v=20261124c')
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (data) {
       st.all = data.spots || [];
