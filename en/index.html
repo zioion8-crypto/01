@@ -110,6 +110,43 @@ footer a{color:var(--brand)}
 .install li{margin:3px 0}
 .install .n{font-size:11.5px;color:var(--ink2);margin:6px 0 0;line-height:1.5}
 </style>
+
+<style id="ktb-free-affiliate-css">
+.ktb-top-actions{display:grid;gap:12px;margin:0 auto 20px;max-width:1000px}
+.ktb-free-entry,.ktb-affiliate-strip{background:#fff;border:1px solid #e6ded2;border-radius:14px;padding:13px;box-shadow:0 2px 10px rgba(43,38,32,.05)}
+.ktb-free-entry{border-left:5px solid #3f6b55}
+.ktb-eyebrow{font-size:11px;font-weight:800;letter-spacing:.06em;color:#3f6b55;margin:0 0 6px;text-transform:uppercase}
+.ktb-free-button{display:block;min-height:46px;padding:12px 14px;border:0;border-radius:10px;background:#3f6b55;color:#fff;text-align:center;text-decoration:none;font:inherit;font-weight:800;line-height:1.35}
+.ktb-free-button[disabled]{opacity:.76;cursor:not-allowed}
+.ktb-top-actions [hidden]{display:none!important}
+.ktb-pending{font-size:12px;line-height:1.45;color:#7a4930;margin:7px 0 0}
+.ktb-affiliate-strip{background:#fffaf2;border-color:#ead8bb}
+.ktb-affiliate-title{margin:0 0 4px!important;border:0!important;padding:0!important;font-size:17px!important;line-height:1.35!important;color:#2b2620}
+.ktb-affiliate-intro{font-size:12.5px;color:#5c5348;margin:0 0 10px}
+.ktb-affiliate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.ktb-affiliate-card{min-width:0;border:1px solid #eadfcf;border-radius:11px;background:#fff;padding:10px}
+.ktb-affiliate-card h3{font-size:14px;line-height:1.35;margin:0 0 8px;color:#2b2620}
+.ktb-affiliate-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.ktb-affiliate-link{display:flex;align-items:center;justify-content:center;min-height:42px;padding:7px 8px;border-radius:8px;background:#3f6b55;color:#fff;text-align:center;text-decoration:none;font-size:12px;font-weight:800;line-height:1.25;overflow-wrap:anywhere}
+.ktb-affiliate-link.secondary{background:#fff;border:1px solid #4f8167;color:#315844}
+.ktb-affiliate-sep{display:none}
+.ktb-affiliate-qr{display:none;justify-content:center;gap:12px;margin:9px 0 0}
+.ktb-affiliate-qr a{display:flex;flex-direction:column;align-items:center;gap:3px;color:#5c5348;text-decoration:none;font-size:10px;line-height:1.2}
+.ktb-affiliate-qr img{width:66px;height:66px;border:1px solid #ece3d7;border-radius:5px;background:#fff}
+.ktb-affiliate-disclosure{font-size:11.5px;line-height:1.45;color:#6b6257;margin:10px 0 0}
+.ktb-body-alternatives{font-size:12.5px;line-height:1.5;color:#5c5348;margin:8px 0 10px}
+.ktb-body-alternatives a{color:#3f6b55;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.ktb-paid-packs{margin-top:24px}
+.ktb-paid-packs .ktb-paid-list{display:grid;gap:10px}
+.ktb-paid-packs .ktb-paid-card{display:block;background:#fff;border:1px solid #ece3d7;border-radius:11px;padding:12px 13px;color:inherit;text-decoration:none;box-shadow:0 1px 2px rgba(43,38,32,.05)}
+.ktb-paid-packs .ktb-paid-name{display:block;font-weight:800;color:#3f6b55;font-size:14.5px}
+.ktb-paid-packs .ktb-paid-price{display:block;margin-top:5px;font-size:13px;color:#2b2620}
+.ktb-paid-packs .ktb-paid-go{display:block;margin-top:7px;color:#3f6b55;font-size:12px;font-weight:800}
+@media(min-width:700px){.ktb-affiliate-qr{display:flex}}
+@media(max-width:620px){.ktb-affiliate-grid{grid-template-columns:1fr}.ktb-affiliate-card{padding:9px}.ktb-affiliate-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.ktb-affiliate-link{font-size:12px;min-height:44px}}
+@media(max-width:360px){.ktb-affiliate-actions{grid-template-columns:1fr}.ktb-affiliate-link{min-height:42px}}
+</style>
+
 </head>
 <body>
 <div class="wrap">
@@ -122,6 +159,53 @@ footer a{color:var(--brand)}
   </div>
 </header>
 
+<div class="ktb-top-actions" id="ktb-top-actions">
+  <section class="ktb-free-entry" aria-label="Free one-page guide">
+    <p class="ktb-eyebrow">FREE · ONE-PAGE GUIDE</p>
+    <button class="ktb-free-button" type="button" disabled aria-disabled="true">View the free one-page guide</button>
+    <p class="ktb-pending">The free one-page guide is being prepared. Check back shortly — no email or sign-up will be needed.</p>
+  </section>
+  <section class="ktb-affiliate-strip" aria-label="Klook and KKday affiliate options">
+    <h2 class="ktb-affiliate-title">Plan the essentials</h2>
+    <p class="ktb-affiliate-intro">Choose the product page directly. Desktop visitors can scan the matching QR; mobile visitors can tap the buttons.</p>
+    <div class="ktb-affiliate-grid">
+      <article class="ktb-affiliate-card" data-category="esim">
+        <h3>Korea eSIM</h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/109354/?aid=143459" target="_blank" rel="noopener sponsored">View Klook plans</a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored">View KKday plans</a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/109354/?aid=143459" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_klook-esim.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK esim page as its button"><span>Klook QR</span></a>
+          <a href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_kkday-esim.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY esim page as its button"><span>KKday QR</span></a>
+        </div>
+      </article>
+      <article class="ktb-affiliate-card" data-category="arex">
+        <h3>AREX Airport Express ticket</h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/1163/?aid=143459" target="_blank" rel="noopener sponsored">View Klook tickets</a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored">View KKday tickets</a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/1163/?aid=143459" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_klook-arex.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK arex page as its button"><span>Klook QR</span></a>
+          <a href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_kkday-arex.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY arex page as its button"><span>KKday QR</span></a>
+        </div>
+      </article>
+      <article class="ktb-affiliate-card" data-category="tower">
+        <h3>N Seoul Tower Observatory ticket</h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/412/?aid=143459" target="_blank" rel="noopener sponsored">View Klook tickets</a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/2768-n-seoul-tower-observatory-ticket-south-korea?cid=28329" target="_blank" rel="noopener sponsored">View KKday tickets</a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/412/?aid=143459" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_klook-n-seoul-tower.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK tower page as its button"><span>Klook QR</span></a>
+          <a href="https://www.kkday.com/zh-tw/product/2768-n-seoul-tower-observatory-ticket-south-korea?cid=28329" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_kkday-n-seoul-tower.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY tower page as its button"><span>KKday QR</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="ktb-affiliate-disclosure">Affiliate links: Klook and KKday. We may earn a small commission if you book, at no extra cost to you; the price you pay is the same.</p>
+  </section>
+</div>
 <!-- KTB-SHARE:START -->
 <style id="ktbShareCss">
 .kts{margin:12px 0 16px;border:1px solid #d7e0ea;background:#eef2f7;border-radius:12px;padding:10px 11px}
@@ -160,11 +244,7 @@ function legacy(text){var ta=document.createElement('textarea');ta.value=text;ta
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done,function(){legacy(msg);done();});}else{legacy(msg);done();}};})();</script>
 <!-- KTB-SHARE:END -->
 
-<div class="leadcta">
-  <div class="lb">Start here · $0 · no sign-up</div>
-  <a class="big" href="https://zioion.gumroad.com/l/korea-en-1pager" target="_blank" rel="noopener">Download the free one-page cheat sheet (A4 PDF · $0) →<span>Airport train, transit card and tax refund — the same numbers as this page, on one A4 sheet.</span></a>
-  <p class="up"><b>Deeper upgrade (paid):</b> <a href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener">55-page guide + 109-spot map pack — $12.99</a>.</p>
-</div>
+
 
 <div class="install">
   <p class="t">Put it on your home screen — 10 seconds, free</p>
@@ -430,18 +510,15 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
     </a>
   </div>
   <p class="aff"><b>Affiliate disclosure:</b> the links above are affiliate links (Klook). If you book through them we may earn a small commission, at no extra cost to you — the price you pay is the same. Every number in this page is written independently and is true whether you click or not.</p>
+  <p class="ktb-body-alternatives">KKday alternatives: <a href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored">View AREX tickets</a> · <a href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored">View eSIM plans</a></p>
 </section>
 
 <section id="guides">
-  <h2><span class="n">8</span>Free web app, and the paid books</h2>
-  <p class="lead">The free one covers what to do. The paid ones cover the places and the queue-beating detail.</p>
+  <h2><span class="n">8</span>Free web app and travel resources</h2>
+  <p class="lead">These free resources are available without a paid booking or reservation service.</p>
   <p class="grp">Free first · $0</p>
   <div class="deals">
-    <a class="deal" href="https://zioion.gumroad.com/l/korea-en-1pager" rel="noopener" target="_blank">
-      <div class="t">The one-page cheat sheet · free A4 PDF</div>
-      <div class="m">Everything this page quotes, on one sheet you can keep offline: AREX fares, the Climate Card and its gaps, the 440 machines that take a foreign card, the refund threshold. $0, no sign-up.</div>
-      <div class="p">$0 (PDF, instant) · same figures, re-checked 2026-11-21</div>
-    </a>
+    
     <a class="deal" href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html" rel="noopener" target="_blank">
       <div class="t">Korea Travel Bible — free web app</div>
       <div class="m">Trip planner, eight official money-saving schemes, phrase cards that staff can read, and a savings calculator. No app install, works offline once loaded.</div>
@@ -450,28 +527,10 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
     <a class="deal" href="/korea-japan/" rel="noopener">
       <div class="t">Korea + Japan in one trip · new for 2026/27</div>
       <div class="m">Adding Japan to a Korea trip? Flights vs the overnight Busan–Hakata ferry (all fees), T-money vs Welcome Suica, AREX vs Skyliner, and the two tax-refund systems that now run in opposite directions. Free A4 sheet in English, Spanish and Chinese.</div>
-      <div class="p">free sheet · $14.99 pack · facts checked 2026-11-17</div>
+      <div class="p">free A4 sheet · facts checked 2026-11-17</div>
     </a>
   </div>
-  <p class="grp">Deeper upgrade · paid</p>
-  <div class="deals">
-    <a class="deal" href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" rel="noopener" target="_blank">
-      <div class="t">The 72-Hour Seoul Survival Guide · 55 pages</div>
-      <div class="m">Entry paperwork, transit cards, refunds, KTX, 47 checked places and a 72-hour plan.</div>
-      <div class="p">$9.99 (PDF, instant download) · 2026-11-15 edition</div>
-    </a>
-    <a class="deal" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" rel="noopener" target="_blank">
-      <div class="t">Korea 1-Tap Map Pack · 109 spots</div>
-      <div class="m">Seoul 66 · Busan 20 · Jeju 23. Three ready-made maps, one-tap Naver links, the Korean name for every place, plus hours and signature-dish prices. <b>109 of 109 re-checked on 2026-11-21.</b></div>
-      <div class="p">$4.99 (KML + ZIP, instant) · free updates</div>
-    </a>
-    <a class="deal" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" rel="noopener" target="_blank">
-      <div class="t">Multi-City All-in-One · guide + map pack</div>
-      <div class="m">The 55-page guide and the 109-spot pack together, for Seoul–Busan–Jeju itineraries. Tax is included, so $12.99 is the total.</div>
-      <div class="p">$12.99 · price re-checked 2026-11-21</div>
-    </a>
-  </div>
-  <p class="aff">Digital products, delivered by Creem, the checkout provider for the paid guides. Prices shown are the list prices re-checked on 2026-11-21 and include tax; the amount at checkout is the amount shown.</p>
+  
 </section>
 
 <section>
@@ -483,6 +542,16 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
   </ol>
 </section>
 
+<section id="paid-packs" class="ktb-paid-packs" aria-label="Four paid packs · one-time payment">
+  <h2>Four paid packs · one-time payment</h2>
+  <div class="ktb-paid-list">
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Korea 1-Tap Map Pack 2026</span><span class="ktb-paid-detail">Seoul 66 · Busan 20 · Jeju 23. Three ready-made maps, one-tap Naver links, Korean names, hours and signature-dish prices. 109 of 109 re-checked on 2026-11-21.</span><span class="ktb-paid-price">$4.99 · tax included</span><span class="ktb-paid-go">Open the Creem product page ↗</span></a>
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Korea Zero-Friction Guide 2026</span><span class="ktb-paid-detail">Entry paperwork, transit cards, refunds, KTX, 47 checked places and a 72-hour plan. 55-page PDF.</span><span class="ktb-paid-price">$9.99 · tax included</span><span class="ktb-paid-go">Open the Creem product page ↗</span></a>
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Complete Korea Local Kit 2026</span><span class="ktb-paid-detail">The 55-page guide and the 109-spot map pack together, for Seoul–Busan–Jeju itineraries.</span><span class="ktb-paid-price">$12.99 · tax included</span><span class="ktb-paid-go">Open the Creem product page ↗</span></a>
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Korea + Japan 10–14 Day Dual-Trip Pack 2026/27</span><span class="ktb-paid-detail">35-page PDF · a 10–14 day route through both countries · ferries, flights and booking order.</span><span class="ktb-paid-price">$14.99 · tax included</span><span class="ktb-paid-go">Open the Creem product page ↗</span></a>
+  </div>
+  <p class="aff">Digital products, delivered by Creem, the checkout provider for the paid guides. Prices shown are the list prices confirmed in the 2026-11-26 inventory and include tax; the amount at checkout is the amount shown. Digital sales are final. The links lead directly to product pages; this site is not a booking service.</p>
+</section>
 <footer>
   <p><b>Korea Travel Insider</b> — written by a long-term Seoul resident. <b>Name and affiliation are not published.</b> No reviews, ratings or map imagery are reproduced here; only figures and links.</p>
   <p><b>Last verified 2026-11-15.</b> Sources: AREX fare and timetable pages, Seoul Metro / Seoul city Climate Card pages, Korea Customs and VisitKorea refund guidance, Incheon Airport bus fares, WOWPASS and T-money operator pages. Prices, hours and policies change without notice; corrections are made on this page first. This is a static snapshot — for a purchase today, check the operator page linked in each section.</p>

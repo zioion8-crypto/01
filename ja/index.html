@@ -103,6 +103,43 @@ footer a{color:var(--brand)}
 .install li{margin:3px 0}
 .install .n{font-size:11.5px;color:var(--ink2);margin:6px 0 0;line-height:1.5}
 </style>
+
+<style id="ktb-free-affiliate-css">
+.ktb-top-actions{display:grid;gap:12px;margin:0 auto 20px;max-width:1000px}
+.ktb-free-entry,.ktb-affiliate-strip{background:#fff;border:1px solid #e6ded2;border-radius:14px;padding:13px;box-shadow:0 2px 10px rgba(43,38,32,.05)}
+.ktb-free-entry{border-left:5px solid #3f6b55}
+.ktb-eyebrow{font-size:11px;font-weight:800;letter-spacing:.06em;color:#3f6b55;margin:0 0 6px;text-transform:uppercase}
+.ktb-free-button{display:block;min-height:46px;padding:12px 14px;border:0;border-radius:10px;background:#3f6b55;color:#fff;text-align:center;text-decoration:none;font:inherit;font-weight:800;line-height:1.35}
+.ktb-free-button[disabled]{opacity:.76;cursor:not-allowed}
+.ktb-top-actions [hidden]{display:none!important}
+.ktb-pending{font-size:12px;line-height:1.45;color:#7a4930;margin:7px 0 0}
+.ktb-affiliate-strip{background:#fffaf2;border-color:#ead8bb}
+.ktb-affiliate-title{margin:0 0 4px!important;border:0!important;padding:0!important;font-size:17px!important;line-height:1.35!important;color:#2b2620}
+.ktb-affiliate-intro{font-size:12.5px;color:#5c5348;margin:0 0 10px}
+.ktb-affiliate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.ktb-affiliate-card{min-width:0;border:1px solid #eadfcf;border-radius:11px;background:#fff;padding:10px}
+.ktb-affiliate-card h3{font-size:14px;line-height:1.35;margin:0 0 8px;color:#2b2620}
+.ktb-affiliate-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.ktb-affiliate-link{display:flex;align-items:center;justify-content:center;min-height:42px;padding:7px 8px;border-radius:8px;background:#3f6b55;color:#fff;text-align:center;text-decoration:none;font-size:12px;font-weight:800;line-height:1.25;overflow-wrap:anywhere}
+.ktb-affiliate-link.secondary{background:#fff;border:1px solid #4f8167;color:#315844}
+.ktb-affiliate-sep{display:none}
+.ktb-affiliate-qr{display:none;justify-content:center;gap:12px;margin:9px 0 0}
+.ktb-affiliate-qr a{display:flex;flex-direction:column;align-items:center;gap:3px;color:#5c5348;text-decoration:none;font-size:10px;line-height:1.2}
+.ktb-affiliate-qr img{width:66px;height:66px;border:1px solid #ece3d7;border-radius:5px;background:#fff}
+.ktb-affiliate-disclosure{font-size:11.5px;line-height:1.45;color:#6b6257;margin:10px 0 0}
+.ktb-body-alternatives{font-size:12.5px;line-height:1.5;color:#5c5348;margin:8px 0 10px}
+.ktb-body-alternatives a{color:#3f6b55;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.ktb-paid-packs{margin-top:24px}
+.ktb-paid-packs .ktb-paid-list{display:grid;gap:10px}
+.ktb-paid-packs .ktb-paid-card{display:block;background:#fff;border:1px solid #ece3d7;border-radius:11px;padding:12px 13px;color:inherit;text-decoration:none;box-shadow:0 1px 2px rgba(43,38,32,.05)}
+.ktb-paid-packs .ktb-paid-name{display:block;font-weight:800;color:#3f6b55;font-size:14.5px}
+.ktb-paid-packs .ktb-paid-price{display:block;margin-top:5px;font-size:13px;color:#2b2620}
+.ktb-paid-packs .ktb-paid-go{display:block;margin-top:7px;color:#3f6b55;font-size:12px;font-weight:800}
+@media(min-width:700px){.ktb-affiliate-qr{display:flex}}
+@media(max-width:620px){.ktb-affiliate-grid{grid-template-columns:1fr}.ktb-affiliate-card{padding:9px}.ktb-affiliate-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.ktb-affiliate-link{font-size:12px;min-height:44px}}
+@media(max-width:360px){.ktb-affiliate-actions{grid-template-columns:1fr}.ktb-affiliate-link{min-height:42px}}
+</style>
+
 </head>
 <body>
 <div class="wrap">
@@ -115,6 +152,53 @@ footer a{color:var(--brand)}
   </div>
 </header>
 
+<div class="ktb-top-actions" id="ktb-top-actions">
+  <section class="ktb-free-entry" aria-label="Free one-page guide">
+    <p class="ktb-eyebrow">無料 · 1枚ガイド</p>
+    <button class="ktb-free-button" type="button" disabled aria-disabled="true">韓国旅行の1枚ガイドを無料で見る</button>
+    <p class="ktb-pending">無料の1枚ガイドは準備中です。もうしばらくお待ちください。</p>
+  </section>
+  <section class="ktb-affiliate-strip" aria-label="Klook and KKday affiliate options">
+    <h2 class="ktb-affiliate-title">旅の準備に便利なチケット・通信</h2>
+    <p class="ktb-affiliate-intro">商品ページを直接開きます。PCではQR、スマートフォンではボタンをご利用ください。</p>
+    <div class="ktb-affiliate-grid">
+      <article class="ktb-affiliate-card" data-category="esim">
+        <h3>韓国で使えるeSIM</h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/109354/?aid=143459" target="_blank" rel="noopener sponsored">Klookでプランを見る</a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored">KKdayでプランを見る</a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/109354/?aid=143459" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_klook-esim.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK esim page as its button"><span>Klook QR</span></a>
+          <a href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_kkday-esim.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY esim page as its button"><span>KKday QR</span></a>
+        </div>
+      </article>
+      <article class="ktb-affiliate-card" data-category="arex">
+        <h3>AREX空港鉄道のチケット</h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/1163/?aid=143459" target="_blank" rel="noopener sponsored">Klookでチケットを見る</a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored">KKdayでチケットを見る</a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/1163/?aid=143459" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_klook-arex.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK arex page as its button"><span>Klook QR</span></a>
+          <a href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_kkday-arex.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY arex page as its button"><span>KKday QR</span></a>
+        </div>
+      </article>
+      <article class="ktb-affiliate-card" data-category="tower">
+        <h3>Nソウルタワー展望台のチケット</h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/412/?aid=143459" target="_blank" rel="noopener sponsored">Klookでチケットを見る</a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/2768-n-seoul-tower-observatory-ticket-south-korea?cid=28329" target="_blank" rel="noopener sponsored">KKdayでチケットを見る</a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/412/?aid=143459" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_klook-n-seoul-tower.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK tower page as its button"><span>Klook QR</span></a>
+          <a href="https://www.kkday.com/zh-tw/product/2768-n-seoul-tower-observatory-ticket-south-korea?cid=28329" target="_blank" rel="noopener sponsored"><img src="../assets/affiliate-qr/2026-11-26_제휴QR_kkday-n-seoul-tower.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY tower page as its button"><span>KKday QR</span></a>
+        </div>
+      </article>
+    </div>
+    <p class="ktb-affiliate-disclosure">アフィリエイトリンク：Klook・KKday。予約により少額の紹介料を得る場合がありますが、お客様の支払額は変わりません。</p>
+  </section>
+</div>
 <!-- KTB-SHARE:START -->
 <style id="ktbShareCss">
 .kts{margin:12px 0 16px;border:1px solid #d7e0ea;background:#eef2f7;border-radius:12px;padding:10px 11px}
@@ -152,11 +236,7 @@ function legacy(text){var ta=document.createElement('textarea');ta.value=text;ta
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(msg).then(done,function(){legacy(msg);done();});}else{legacy(msg);done();}};})();</script>
 <!-- KTB-SHARE:END -->
 
-<div class="leadcta">
-  <div class="lb">まずここから · ¥0 · 登録不要</div>
-  <a class="big" href="https://zioion.gumroad.com/l/seoul-3day-checklist-jp" target="_blank" rel="noopener">無料チェックリストをダウンロード（A4 PDF・¥0）→<span>予約できる店かどうか・交通カードの選び方・レジで言う還付の3文。このページと同じ数字を1枚に。</span></a>
-  <p class="up"><b>深掘り版（有料）：</b> <a href="https://zioion.gumroad.com/l/seoul-zero-wait-jp" target="_blank" rel="noopener">予約・待ち・免税 ゼロ帖（PDF 63ページ）¥1,480</a> — 3泊4日の店ごとの現実と、並ばない手順。</p>
-</div>
+
 
 <div class="install">
   <p class="t">ホーム画面に追加 — 10秒・無料</p>
@@ -440,6 +520,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
     </a>
   </div>
   <p class="aff"><b>広告表記（ステマ規制対応）：</b>上記リンクはKlookのアフィリエイトリンクです。ここから予約すると、<b>お客様の支払額は変わらずに</b>、当ページに少額の紹介料が入ることがあります。本文の数字はリンクの有無に関係なく独立に作成しており、すべて公式ページで確認したものです。</p>
+  <p class="ktb-body-alternatives">KKdayの選択肢：<a href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored">AREXのチケットを見る</a> · <a href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored">eSIMプランを見る</a></p>
 </section>
 
 <section id="ja-deep">
@@ -460,8 +541,8 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 </section>
 
 <section id="guides">
-  <h2><span class="n">9</span>無料のウェブアプリと、有料の実務帖</h2>
-  <p class="lead">無料版は「何をするか」を、有料版は「店ごとの現実」と「並ばない手順」を持ちます。</p>
+  <h2><span class="n">9</span>無料ウェブアプリと旅行資料</h2>
+  <p class="lead">以下の無料資料はそのまま閲覧できます。有料商品はこのページの最下部にまとめています。</p>
   <p class="grp">無料 · ¥0</p>
   <div class="deals">
     <a class="deal" href="https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html" rel="noopener" target="_blank">
@@ -474,21 +555,9 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
       <div class="m">LCC運賃、釜山〜博多の夜行フェリー（諸費用込み）、T-money と Welcome Suica、真逆になった2つの還付制度。PDFダウンロードつき。</div>
       <div class="p">無料 · 2026-11-17確認</div>
     </a>
-    <a class="deal" href="https://zioion.gumroad.com/l/seoul-3day-checklist-jp" rel="noopener" target="_blank">
-      <div class="t">韓国3日 1枚チェックリスト（無料）</div>
-      <div class="m">①予約できる店かどうか ②交通カードの選び方 ③レジで言う還付の3文。A4 1枚。</div>
-      <div class="p">¥0（メール登録不要）</div>
-    </a>
+    
   </div>
-  <p class="grp">深掘り版 · 有料</p>
-  <div class="deals">
-    <a class="deal" href="https://zioion.gumroad.com/l/seoul-zero-wait-jp" rel="noopener" target="_blank">
-      <div class="t">韓国3泊4日 予約・待ち・免税 ゼロ帖（PDF 63ページ・第2版）</div>
-      <div class="m">予約4分類40店（キャッチテーブルGLOBAL／テーブリング／現場QR／予約不可）と予約金・返金規則、日韓の免税対照表、交通カードの決定表（使えない区間つき）、地方空港からの入国。音声なし・文字で完結。</div>
-      <div class="p">¥1,480（右上の通貨を¥に切り替えると表示）· 2026-11-15 第2版</div>
-    </a>
-  </div>
-  <p class="aff">有料商品はGumroadのデジタル配信です。価格は2026年11月15日時点のリスティング価格で、通貨は右上のセレクタで切り替わります。記事内のリンクは商品ページへの直リンクで、予約代行は行いません。</p>
+  
 </section>
 
 <section>
@@ -500,6 +569,16 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
   </ol>
 </section>
 
+<section id="paid-packs" class="ktb-paid-packs" aria-label="4つの有料パック · 買い切り">
+  <h2>4つの有料パック · 買い切り</h2>
+  <div class="ktb-paid-list">
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Korea 1-Tap Map Pack 2026</span><span class="ktb-paid-price">$4.99 · tax included</span><span class="ktb-paid-go">Creemの商品ページを見る ↗</span></a>
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Korea Zero-Friction Guide 2026</span><span class="ktb-paid-price">$9.99 · tax included</span><span class="ktb-paid-go">Creemの商品ページを見る ↗</span></a>
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Complete Korea Local Kit 2026</span><span class="ktb-paid-price">$12.99 · tax included</span><span class="ktb-paid-go">Creemの商品ページを見る ↗</span></a>
+    <a class="ktb-paid-card" href="https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v" target="_blank" rel="noopener sponsored"><span class="ktb-paid-name">Korea + Japan 10–14 Day Dual-Trip Pack 2026/27</span><span class="ktb-paid-price">$14.99 · tax included</span><span class="ktb-paid-go">Creemの商品ページを見る ↗</span></a>
+  </div>
+  <p class="aff">デジタル商品はCreemが販売・決済します。表示価格は税込みで、決済額は商品ページの表示どおりです。デジタル商品は購入後の返品不可です。リンクは商品ページへの直リンクで、予約代行は行いません。</p>
+</section>
 <footer>
   <p><b>Korea Travel Insider</b> — ソウル在住者による編集。<b>氏名・所属は非公開</b>です。レビュー本文・評価・地図画像の転載はせず、数字とリンクのみを扱っています。</p>
   <p><b>最終確認 2026年11月15日。</b>出典：AREX運賃・時刻ページ、ソウル市／ソウル交通公社の気候同行カード案内、韓国関税庁・VisitKoreaの還付案内、仁川空港リムジン運賃、WOWPASS・T-moneyの運営者ページ。料金・時間・制度は予告なく変わります。訂正はまずこのページで行います。購入当日の条件は各節の公式リンクで確認してください。</p>

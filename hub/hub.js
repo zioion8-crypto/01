@@ -6,12 +6,12 @@
   var I18N = window.KTB_I18N || { en: {} };
   var KEY_LANG = 'ktbhub.lang.v1';
 
-  /* Paid products: guide, map pack and bundle on Creem; the Japanese sampler on Gumroad. Prices re-checked 2026-11-23, tax included. */
+  /* Four confirmed Creem products; each dynamic paid module stays after the free tool content. */
   var PRODUCTS = {
     map: { price: '$4.99', url: 'https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t' },
     kit: { price: '$12.99', url: 'https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout' },
     guide: { price: '$9.99', url: 'https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc' },
-    jp: { price: '¥1,480', url: 'https://zioion.gumroad.com/l/seoul-zero-wait-jp' }
+    dual: { price: '$14.99', url: 'https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v', i18n: 'kj' }
   };
 
   var FREE = {
@@ -110,9 +110,8 @@
       if (!host) return;
       var self = this;
       var f = FREE[kind] || {};
-      var ja = this._lang === 'ja';
       var list = order.slice();
-      if (ja && list.indexOf('jp') === -1) list.unshift('jp');
+      if (list.indexOf('dual') === -1) list.push('dual');
 
       var html = '<div class="money">' +
         '<p class="diff"><span aria-hidden="true">🔓</span> ' + self.t('m.diff.' + kind) + '</p>' +
@@ -129,10 +128,11 @@
       list.forEach(function (key) {
         var p = PRODUCTS[key];
         if (!p) return;
+        var labelKey = p.i18n || key;
         html += '<a class="pcard" href="' + p.url + '" target="_blank" rel="noopener">' +
           '<div class="r1"><div>' +
-          '<p class="nm">' + self.t('p.' + key + '.name') + '</p>' +
-          '<p class="ds">' + self.t('p.' + key + '.sub') + '</p>' +
+          '<p class="nm">' + self.t('p.' + labelKey + '.name') + '</p>' +
+          '<p class="ds">' + self.t('p.' + labelKey + '.sub') + '</p>' +
           '</div><div class="pr"><span class="amt">' + p.price + '</span>' +
           '<span class="tag">' + self.t('c.paidTag') + '</span></div></div>' +
           '<span class="go">' + self.t('c.gumroad') + '</span></a>';

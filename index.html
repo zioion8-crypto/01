@@ -63,6 +63,43 @@
   "inLanguage": ["en", "ja", "zh-Hant", "zh-Hans", "ko"]
 }
 </script>
+
+<style id="ktb-free-affiliate-css">
+.ktb-top-actions{display:grid;gap:12px;margin:0 auto 20px;max-width:1000px}
+.ktb-free-entry,.ktb-affiliate-strip{background:#fff;border:1px solid #e6ded2;border-radius:14px;padding:13px;box-shadow:0 2px 10px rgba(43,38,32,.05)}
+.ktb-free-entry{border-left:5px solid #3f6b55}
+.ktb-eyebrow{font-size:11px;font-weight:800;letter-spacing:.06em;color:#3f6b55;margin:0 0 6px;text-transform:uppercase}
+.ktb-free-button{display:block;min-height:46px;padding:12px 14px;border:0;border-radius:10px;background:#3f6b55;color:#fff;text-align:center;text-decoration:none;font:inherit;font-weight:800;line-height:1.35}
+.ktb-free-button[disabled]{opacity:.76;cursor:not-allowed}
+.ktb-top-actions [hidden]{display:none!important}
+.ktb-pending{font-size:12px;line-height:1.45;color:#7a4930;margin:7px 0 0}
+.ktb-affiliate-strip{background:#fffaf2;border-color:#ead8bb}
+.ktb-affiliate-title{margin:0 0 4px!important;border:0!important;padding:0!important;font-size:17px!important;line-height:1.35!important;color:#2b2620}
+.ktb-affiliate-intro{font-size:12.5px;color:#5c5348;margin:0 0 10px}
+.ktb-affiliate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.ktb-affiliate-card{min-width:0;border:1px solid #eadfcf;border-radius:11px;background:#fff;padding:10px}
+.ktb-affiliate-card h3{font-size:14px;line-height:1.35;margin:0 0 8px;color:#2b2620}
+.ktb-affiliate-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.ktb-affiliate-link{display:flex;align-items:center;justify-content:center;min-height:42px;padding:7px 8px;border-radius:8px;background:#3f6b55;color:#fff;text-align:center;text-decoration:none;font-size:12px;font-weight:800;line-height:1.25;overflow-wrap:anywhere}
+.ktb-affiliate-link.secondary{background:#fff;border:1px solid #4f8167;color:#315844}
+.ktb-affiliate-sep{display:none}
+.ktb-affiliate-qr{display:none;justify-content:center;gap:12px;margin:9px 0 0}
+.ktb-affiliate-qr a{display:flex;flex-direction:column;align-items:center;gap:3px;color:#5c5348;text-decoration:none;font-size:10px;line-height:1.2}
+.ktb-affiliate-qr img{width:66px;height:66px;border:1px solid #ece3d7;border-radius:5px;background:#fff}
+.ktb-affiliate-disclosure{font-size:11.5px;line-height:1.45;color:#6b6257;margin:10px 0 0}
+.ktb-body-alternatives{font-size:12.5px;line-height:1.5;color:#5c5348;margin:8px 0 10px}
+.ktb-body-alternatives a{color:#3f6b55;font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.ktb-paid-packs{margin-top:24px}
+.ktb-paid-packs .ktb-paid-list{display:grid;gap:10px}
+.ktb-paid-packs .ktb-paid-card{display:block;background:#fff;border:1px solid #ece3d7;border-radius:11px;padding:12px 13px;color:inherit;text-decoration:none;box-shadow:0 1px 2px rgba(43,38,32,.05)}
+.ktb-paid-packs .ktb-paid-name{display:block;font-weight:800;color:#3f6b55;font-size:14.5px}
+.ktb-paid-packs .ktb-paid-price{display:block;margin-top:5px;font-size:13px;color:#2b2620}
+.ktb-paid-packs .ktb-paid-go{display:block;margin-top:7px;color:#3f6b55;font-size:12px;font-weight:800}
+@media(min-width:700px){.ktb-affiliate-qr{display:flex}}
+@media(max-width:620px){.ktb-affiliate-grid{grid-template-columns:1fr}.ktb-affiliate-card{padding:9px}.ktb-affiliate-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.ktb-affiliate-link{font-size:12px;min-height:44px}}
+@media(max-width:360px){.ktb-affiliate-actions{grid-template-columns:1fr}.ktb-affiliate-link{min-height:42px}}
+</style>
+
 </head>
 <body>
 <header class="top">
@@ -77,6 +114,55 @@
 </header>
 
 <main class="wrap">
+<div class="ktb-top-actions" id="ktb-top-actions">
+  <section class="ktb-free-entry" aria-label="Free one-page guide">
+    <p class="ktb-eyebrow"><span data-lang-only="en">FREE · ONE-PAGE GUIDE</span><span data-lang-only="ja" hidden>無料 · 1枚ガイド</span><span data-lang-only="zh" hidden>免費 · 一頁式指南</span><span data-lang-only="cn" hidden>免费 · 一页指南</span></p>
+    <a class="ktb-free-button" data-lang-only="en cn" href="/cheat-sheet/"><span data-lang-only="en">Open the existing Simplified Chinese one-page guide</span><span data-lang-only="cn" hidden>打开现有简体中文免费一页指南</span></a>
+    <button class="ktb-free-button" data-lang-only="ja" hidden type="button" disabled aria-disabled="true">韓国旅行の1枚ガイドを無料で見る</button>
+    <button class="ktb-free-button" data-lang-only="zh" hidden type="button" disabled aria-disabled="true">免費查看韓國旅遊一頁式指南</button>
+    <p class="ktb-pending"><span data-lang-only="en">Opens on this site · no email, no sign-up.</span><span data-lang-only="ja" hidden>無料の1枚ガイドは準備中です。公開までもうしばらくお待ちください。</span><span data-lang-only="zh" hidden>免費一頁式指南正在準備中，敬請稍候。</span><span data-lang-only="cn" hidden>站内直接打开，无需邮箱或登录。</span></p>
+  </section>
+  <section class="ktb-affiliate-strip" aria-label="Klook and KKday affiliate options">
+    <h2 class="ktb-affiliate-title"><span data-lang-only="en">Plan the essentials</span><span data-lang-only="ja" hidden>旅の準備に便利なチケット・通信</span><span data-lang-only="zh" hidden>先準備上網、機場交通與景點票券</span><span data-lang-only="cn" hidden>先准备上网、机场交通与景点票券</span></h2>
+    <p class="ktb-affiliate-intro"><span data-lang-only="en">Choose the product page directly. Desktop visitors can scan the matching QR; mobile visitors can tap the buttons.</span><span data-lang-only="ja" hidden>商品ページを直接開きます。PCではQR、スマートフォンではボタンをご利用ください。</span><span data-lang-only="zh" hidden>按一下直接前往商品頁；電腦可掃描對應 QR，手機可直接點選按鈕。</span><span data-lang-only="cn" hidden>按钮会直接打开商品页。电脑可扫描对应二维码，手机可直接点按钮。</span></p>
+    <div class="ktb-affiliate-grid">
+      <article class="ktb-affiliate-card" data-category="esim">
+        <h3><span data-lang-only="en">Korea eSIM</span><span data-lang-only="ja" hidden>韓国で使えるeSIM</span><span data-lang-only="zh" hidden>韓國上網 eSIM</span><span data-lang-only="cn" hidden>韩国上网 eSIM</span></h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/109354/?aid=143459" target="_blank" rel="noopener sponsored"><span data-lang-only="en">View Klook plans</span><span data-lang-only="ja" hidden>Klookでプランを見る</span><span data-lang-only="zh" hidden>查看 Klook 方案</span><span data-lang-only="cn" hidden>查看 Klook 套餐</span></a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored"><span data-lang-only="en">View KKday plans</span><span data-lang-only="ja" hidden>KKdayでプランを見る</span><span data-lang-only="zh" hidden>查看 KKday 方案</span><span data-lang-only="cn" hidden>查看 KKday 套餐</span></a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/109354/?aid=143459" target="_blank" rel="noopener sponsored"><img src="assets/affiliate-qr/2026-11-26_제휴QR_klook-esim.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK esim page as its button"><span><span data-lang-only="en">Klook QR</span><span data-lang-only="ja" hidden>Klook QR</span><span data-lang-only="zh" hidden>Klook QR</span><span data-lang-only="cn" hidden>Klook 二维码</span></span></a>
+          <a href="https://www.kkday.com/zh-tw/product/931247?cid=28329" target="_blank" rel="noopener sponsored"><img src="assets/affiliate-qr/2026-11-26_제휴QR_kkday-esim.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY esim page as its button"><span><span data-lang-only="en">KKday QR</span><span data-lang-only="ja" hidden>KKday QR</span><span data-lang-only="zh" hidden>KKday QR</span><span data-lang-only="cn" hidden>KKday 二维码</span></span></a>
+        </div>
+      </article>
+      <article class="ktb-affiliate-card" data-category="arex">
+        <h3><span data-lang-only="en">AREX Airport Express ticket</span><span data-lang-only="ja" hidden>AREX空港鉄道のチケット</span><span data-lang-only="zh" hidden>AREX 機場快線車票</span><span data-lang-only="cn" hidden>AREX 机场快线车票</span></h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/1163/?aid=143459" target="_blank" rel="noopener sponsored"><span data-lang-only="en">View Klook tickets</span><span data-lang-only="ja" hidden>Klookでチケットを見る</span><span data-lang-only="zh" hidden>查看 Klook 票券</span><span data-lang-only="cn" hidden>查看 Klook 票券</span></a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored"><span data-lang-only="en">View KKday tickets</span><span data-lang-only="ja" hidden>KKdayでチケットを見る</span><span data-lang-only="zh" hidden>查看 KKday 票券</span><span data-lang-only="cn" hidden>查看 KKday 票券</span></a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/1163/?aid=143459" target="_blank" rel="noopener sponsored"><img src="assets/affiliate-qr/2026-11-26_제휴QR_klook-arex.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK arex page as its button"><span><span data-lang-only="en">Klook QR</span><span data-lang-only="ja" hidden>Klook QR</span><span data-lang-only="zh" hidden>Klook QR</span><span data-lang-only="cn" hidden>Klook 二维码</span></span></a>
+          <a href="https://www.kkday.com/zh-tw/product/2878?cid=28329" target="_blank" rel="noopener sponsored"><img src="assets/affiliate-qr/2026-11-26_제휴QR_kkday-arex.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY arex page as its button"><span><span data-lang-only="en">KKday QR</span><span data-lang-only="ja" hidden>KKday QR</span><span data-lang-only="zh" hidden>KKday QR</span><span data-lang-only="cn" hidden>KKday 二维码</span></span></a>
+        </div>
+      </article>
+      <article class="ktb-affiliate-card" data-category="tower">
+        <h3><span data-lang-only="en">N Seoul Tower Observatory ticket</span><span data-lang-only="ja" hidden>Nソウルタワー展望台のチケット</span><span data-lang-only="zh" hidden>N 首爾塔觀景台門票</span><span data-lang-only="cn" hidden>N 首尔塔观景台门票</span></h3>
+        <div class="ktb-affiliate-actions">
+          <a class="ktb-affiliate-link" href="https://www.klook.com/activity/412/?aid=143459" target="_blank" rel="noopener sponsored"><span data-lang-only="en">View Klook tickets</span><span data-lang-only="ja" hidden>Klookでチケットを見る</span><span data-lang-only="zh" hidden>查看 Klook 票券</span><span data-lang-only="cn" hidden>查看 Klook 票券</span></a>
+          <a class="ktb-affiliate-link secondary" href="https://www.kkday.com/zh-tw/product/2768-n-seoul-tower-observatory-ticket-south-korea?cid=28329" target="_blank" rel="noopener sponsored"><span data-lang-only="en">View KKday tickets</span><span data-lang-only="ja" hidden>KKdayでチケットを見る</span><span data-lang-only="zh" hidden>查看 KKday 票券</span><span data-lang-only="cn" hidden>查看 KKday 票券</span></a>
+        </div>
+        <div class="ktb-affiliate-qr" aria-label="Desktop QR codes">
+          <a href="https://www.klook.com/activity/412/?aid=143459" target="_blank" rel="noopener sponsored"><img src="assets/affiliate-qr/2026-11-26_제휴QR_klook-n-seoul-tower.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KLOOK tower page as its button"><span><span data-lang-only="en">Klook QR</span><span data-lang-only="ja" hidden>Klook QR</span><span data-lang-only="zh" hidden>Klook QR</span><span data-lang-only="cn" hidden>Klook 二维码</span></span></a>
+          <a href="https://www.kkday.com/zh-tw/product/2768-n-seoul-tower-observatory-ticket-south-korea?cid=28329" target="_blank" rel="noopener sponsored"><img src="assets/affiliate-qr/2026-11-26_제휴QR_kkday-n-seoul-tower.png" width="66" height="66" loading="lazy" decoding="async" alt="QR code opens the same KKDAY tower page as its button"><span><span data-lang-only="en">KKday QR</span><span data-lang-only="ja" hidden>KKday QR</span><span data-lang-only="zh" hidden>KKday QR</span><span data-lang-only="cn" hidden>KKday 二维码</span></span></a>
+        </div>
+      </article>
+    </div>
+    <p class="ktb-affiliate-disclosure"><span data-lang-only="en">Affiliate links: Klook and KKday. We may earn a small commission if you book, at no extra cost to you; the price you pay is the same.</span><span data-lang-only="ja" hidden>アフィリエイトリンク：Klook・KKday。予約により少額の紹介料を得る場合がありますが、お客様の支払額は変わりません。</span><span data-lang-only="zh" hidden>聯盟連結：Klook 與 KKday。若透過連結預訂，我們可能取得少額佣金，您支付的價格不變。</span><span data-lang-only="cn" hidden>联盟链接：Klook 与 KKday。若通过链接预订，我们可能获得少量佣金，您支付的价格不变。</span></p>
+  </section>
+</div>
   <aside class="cn-pains" data-lang-only="cn" hidden>
     <p class="cn-brand"><span lang="zh-Hans">首尔攻略 <b>KTB</b></span> · 韩国落地三件事，免费，不用注册</p>
     <p class="cn-t">落地前先弄明白这三件</p>
@@ -87,7 +173,7 @@
     </ul>
   </aside>
 
-  <nav class="hub-grid" data-i18n-aria="c.toolsAria" aria-label="KTB Hub tools">
+  <nav class="hub-grid" id="free-tools" data-i18n-aria="c.toolsAria" aria-label="KTB Hub tools">
     <a class="tile" href="hub/nearby/">
       <span class="ico" aria-hidden="true">📍</span>
       <span class="txt">
@@ -124,6 +210,34 @@
 
   <!-- Paid packs: real pages from the PDFs on sale (rendered from the delivered files).
        Four live Creem checkouts, prices include tax. -->
+  
+
+  <section class="cn-jp" data-lang-only="cn" hidden aria-labelledby="cnJpTitle">
+    <p class="cn-brand"><span lang="zh-Hans">韩国＋日本</span> · 10–14 天一起走</p>
+    <p class="cn-jp-t" id="cnJpTitle">下一站：这一页的免费与付费</p>
+    <ul>
+      <li><a href="/korea-japan/?lang=cn"><b>$0 免费 A4 一页通</b></a> — 韩国＋日本 10–14 天路线、跨境船与航班、订票顺序，简体中文 PDF，不用邮箱。</li>
+    </ul>
+  </section>
+
+
+  <p class="home-sheet" data-i18n="home.sheet"><a href="cheat-sheet/">1-page cheat sheet — 首尔扫码·地铁·退税 一页通 (简体中文)</a></p>
+  <p class="home-note" data-i18n="home.note">Works in the browser. Nothing to install.</p>
+
+  <noscript>
+    <section class="noscript-cn" lang="zh-Hans">
+      <h2>首尔攻略 KTB — 韩国旅行三件免费工具</h2>
+      <p>首尔攻略 KTB（KTB Hub）是韩国旅行的三个免费网页工具：找附近、怎么去、说与出示。109 处地点最后核对于 2026-11-21，免费、免注册，位置只在你按下按钮时读取。不需要安装 App，简体中文界面在 <a href="./?lang=cn">?lang=cn</a>。</p>
+      <ul>
+        <li><a href="hub/nearby/">找附近</a> — 首尔・釜山・济州 109 处，按餐饮、咖啡、市场、区域筛选</li>
+        <li><a href="hub/around/">怎么去</a> — 机场票价（AREX 直通 ₩13,000／普通 ₩4,750）与 A 点到 B 点路线</li>
+        <li><a href="hub/speak/">说与出示</a> — 39 句核对过的韩语，大字显示给对方看</li>
+        <li><a href="../free/">免费首尔 30 地地图</a> · <a href="../cn/">简体中文韩国旅行指南</a></li>
+      </ul>
+      <p>小红书同名账号：<b>首尔攻略 KTB</b> <a href="https://www.xiaohongshu.com/user/profile/18488621939" target="_blank" rel="noopener">→ 打开小红书</a>。</p>
+    </section>
+  </noscript>
+
   <section class="prev" aria-labelledby="prevTitle">
     <p class="prev-eyebrow" data-i18n="prev.eyebrow">What you get</p>
     <h2 id="prevTitle" data-i18n="prev.h2">The paid packs, opened up</h2>
@@ -188,34 +302,7 @@
     </div>
   </section>
 
-  <section class="cn-jp" data-lang-only="cn" hidden aria-labelledby="cnJpTitle">
-    <p class="cn-brand"><span lang="zh-Hans">韩国＋日本</span> · 10–14 天一起走</p>
-    <p class="cn-jp-t" id="cnJpTitle">下一站：这一页的免费与付费</p>
-    <ul>
-      <li><a href="/korea-japan/?lang=cn"><b>$0 免费 A4 一页通</b></a> — 韩国＋日本 10–14 天路线、跨境船与航班、订票顺序，简体中文 PDF，不用邮箱。</li>
-      <li><a href="https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v"><b>$14.99 韩日套票</b></a> — 35 页逐日路线、渡轮逐步流程、退税动线（数字商品不可退，结账金额以商品页为准）。</li>
-    </ul>
-  </section>
-
-
-  <p class="home-sheet" data-i18n="home.sheet"><a href="cheat-sheet/">1-page cheat sheet — 首尔扫码·地铁·退税 一页通 (简体中文)</a></p>
-  <p class="home-note" data-i18n="home.note">Works in the browser. Nothing to install.</p>
-
-  <noscript>
-    <section class="noscript-cn" lang="zh-Hans">
-      <h2>首尔攻略 KTB — 韩国旅行三件免费工具</h2>
-      <p>首尔攻略 KTB（KTB Hub）是韩国旅行的三个免费网页工具：找附近、怎么去、说与出示。109 处地点最后核对于 2026-11-21，免费、免注册，位置只在你按下按钮时读取。不需要安装 App，简体中文界面在 <a href="./?lang=cn">?lang=cn</a>。</p>
-      <ul>
-        <li><a href="hub/nearby/">找附近</a> — 首尔・釜山・济州 109 处，按餐饮、咖啡、市场、区域筛选</li>
-        <li><a href="hub/around/">怎么去</a> — 机场票价（AREX 直通 ₩13,000／普通 ₩4,750）与 A 点到 B 点路线</li>
-        <li><a href="hub/speak/">说与出示</a> — 39 句核对过的韩语，大字显示给对方看</li>
-        <li><a href="../free/">免费首尔 30 地地图</a> · <a href="../cn/">简体中文韩国旅行指南</a></li>
-      </ul>
-      <p>小红书同名账号：<b>首尔攻略 KTB</b> <a href="https://www.xiaohongshu.com/user/profile/18488621939" target="_blank" rel="noopener">→ 打开小红书</a>。</p>
-    </section>
-  </noscript>
-
-  <footer class="bot">
+<footer class="bot">
     <p data-i18n="home.f1"><b>Privacy:</b> no cookies, no analytics, no external scripts. Your location is only read after you press the location button, used on the device for straight-line distance, and never saved to the browser or the link. The only things kept in this browser are your saved places and your last filters — with a button that clears them.</p>
     <p data-i18n="home.f2"><b>Places:</b> 109 pins last verified 2026-11-21. Hours and prices change; check the operator or the map link before you go.</p>
     <p data-i18n="home.f3">More from Korea Travel Insider: <a href="../free/">Free Seoul 30-pin map</a> · <a href="../tools/subway-cost-calc/">Transit cost calculator</a> · <a href="../tools/order-card/">Korean order &amp; allergy card</a> · <a href="../en/">Transit, tax &amp; payment cheat sheet</a></p>
