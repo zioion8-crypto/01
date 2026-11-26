@@ -104,15 +104,19 @@ footer a{color:var(--brand);font-weight:600}
   <p class="note" data-i18n="note">These pages are independent: no ads, no cookies, no analytics, no third-party scripts, and no booking or agency service. Fares and rules change by announcement, so the operator's own page is always the final word.</p>
   <section class="exitb">
     <p class="exitb-k" data-i18n="exitK">Next step</p>
-    <p class="exitb-t" data-i18n="exitT">Two downloads for the same trip</p>
+    <p class="exitb-t" data-i18n="exitT">Three ways to take it with you</p>
     <p class="exitb-d" data-i18n="exitD">The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.</p>
-    <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+    <a id="exitFree" href="/free/en-1pager.pdf" rel="noopener" target="_blank">
       <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
       <span data-i18n="exitFreeS">PDF · one page · free download</span>
     </a>
-    <a id="exitPaid" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+    <a id="exitPaid" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_creem" rel="noopener" target="_blank">
       <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
       <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
+    </a>
+    <a id="exitFull" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_creem" rel="noopener" target="_blank">
+      <b>$12.99 Complete Korea Local Kit 2026</b>
+      <span>55-page guide with a 72-hour plan + the 109-pin map pack · tax included</span>
     </a>
   </section>
   <footer>
@@ -142,7 +146,7 @@ desc3:"AREX Express, AREX all-stop, the airport limousine and the Climate Card p
 go3:"Open the calculator",meta3:"EN · ES · fares checked 2026-11-20",
 note:"These pages are independent: no ads, no cookies, no analytics, no third-party scripts, and no booking or agency service. Fares and rules change by announcement, so the operator's own page is always the final word.",
 bible:"Korea Travel Bible",freeMap:"Free 30-spot map (A4)",esHub:"Guía en español",kj:"Korea + Japan dual trip",
-exitK:"Next step",exitT:"Two downloads for the same trip",
+exitK:"Next step",exitT:"Three ways to take it with you",
 exitD:"The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.",
 exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free download",
 exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
@@ -160,7 +164,7 @@ desc3:"AREX exprés, AREX con paradas, el bus limusina y los pases Climate Card,
 go3:"Abrir la calculadora",meta3:"EN · ES · tarifas revisadas el 2026-11-20",
 note:"Estas páginas son independientes: sin anuncios, sin cookies, sin analítica, sin scripts de terceros y sin servicio de reservas ni agencia. Las tarifas y las normas cambian por anuncio, así que la página del operador es siempre la última palabra.",
 bible:"Korea Travel Bible",freeMap:"Mapa gratis de 30 lugares (A4)",esHub:"Guía en español",kj:"Corea + Japón en un viaje",
-exitK:"Siguiente paso",exitT:"Dos descargas para el mismo viaje",
+exitK:"Siguiente paso",exitT:"Tres formas de llevártelo",
 exitD:"La hoja de una página es gratis; el paquete de 109 sitios abre cada lugar en Naver Map con un toque.",
 exitFreeT:"$0 Hoja de Corea gratis de 1 página",exitFreeS:"PDF · una página · descarga gratis",
 exitPaidT:"$4.99 · 109 sitios en Naver Map en 1 toque (English)",exitPaidS:"109 sitios · enlaces a Naver Map y archivos de Google Maps · texto en inglés",
@@ -215,9 +219,9 @@ function paint(){
 }
 
 function exitLinks(){
-  var g="https://zioion.gumroad.com/l/",u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_gumroad";
+  var u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_creem";
   var f=document.getElementById("exitFree"),p=document.getElementById("exitPaid");
-  if(f)f.setAttribute("href",g+(lang==="es"?"korea-es-1pager":"korea-en-1pager")+u);
+  if(f)f.setAttribute("href",lang==="es"?"/es/korea-es-army-1pager.pdf":"/free/en-1pager.pdf");
   if(p)p.setAttribute("href","https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t"+u);
 }
 
@@ -233,5 +237,6 @@ function exitLinks(){
 paint();
 })();
 </script>
+<script src="/assets/ktb-pdf-track.js" defer></script>
 </body>
 </html>

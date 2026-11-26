@@ -69,7 +69,7 @@
       buildAreas();
       restoreFilters();
       bind();
-      H.money($('#moneyHost'), 'nearby', ['map', 'kit', 'guide']);
+      H.money($('#moneyHost'), 'nearby', ['map', 'kit']);
       H.gate($('#moneyHost'), $('#ctaSentinel'), [el.locate, el.areaBtn, el.q, el.city, el.area, el.sort, el.saved, el.list]);
       render();
     })
@@ -307,7 +307,7 @@
     buildChips();
     buildAreas();
     render();
-    H.money($('#moneyHost'), 'nearby', ['map', 'kit', 'guide']);
+    H.money($('#moneyHost'), 'nearby', ['map', 'kit']);
   }
 
   /* ---------- render ---------- */

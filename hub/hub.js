@@ -6,12 +6,10 @@
   var I18N = window.KTB_I18N || { en: {} };
   var KEY_LANG = 'ktbhub.lang.v1';
 
-  /* Four confirmed Creem products; each dynamic paid module stays after the free tool content. */
+  /* The two confirmed Creem products; each dynamic paid module stays after the free tool content. */
   var PRODUCTS = {
     map: { price: '$4.99', url: 'https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t' },
     kit: { price: '$12.99', url: 'https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout' },
-    guide: { price: '$9.99', url: 'https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc' },
-    dual: { price: '$14.99', url: 'https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v', i18n: 'kj' }
   };
 
   var FREE = {
@@ -111,7 +109,6 @@
       var self = this;
       var f = FREE[kind] || {};
       var list = order.slice();
-      if (list.indexOf('dual') === -1) list.push('dual');
 
       var html = '<div class="money">' +
         '<p class="diff"><span aria-hidden="true">🔓</span> ' + self.t('m.diff.' + kind) + '</p>' +

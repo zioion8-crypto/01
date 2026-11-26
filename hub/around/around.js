@@ -18,10 +18,10 @@
     paintMyLoc();
     if (st.msgKey) showMsg(st.msgKey.kind, st.msgKey.key);
     if (st.lastRoute) paintRoute(st.lastRoute);
-    H.money($('#moneyHost'), 'around', ['guide', 'kit', 'map']);
+    H.money($('#moneyHost'), 'around', ['map', 'kit']);
   };
 
-  H.money($('#moneyHost'), 'around', ['guide', 'kit', 'map']);
+  H.money($('#moneyHost'), 'around', ['map', 'kit']);
   H.gate($('#moneyHost'), $('#ctaSentinel'), [el.chAirport, el.chRoute, el.from, el.to, el.mode, el.go, el.myLoc, el.g]);
 
   /* ---------- choice ---------- */

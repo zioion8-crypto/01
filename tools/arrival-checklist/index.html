@@ -169,7 +169,7 @@ li{margin:4px 0}
     </a>
     <a class="paid" id="bridgePaid" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout?utm_source=ktb_tools&amp;utm_medium=bridge&amp;utm_campaign=arrival_checklist" rel="noopener" target="_blank">
       <b data-i18n="bridgePaidT">Complete Korea Local Kit — $12.99</b>
-      <span data-i18n="bridgePaidS">55-page guide + the 109-spot map pack, one download</span>
+      <span data-i18n="bridgePaidS">55-page guide with a 72-hour plan + the 109-spot map pack</span>
     </a>
   </section>
 
@@ -241,11 +241,11 @@ li{margin:4px 0}
     <p class="exitb-k" data-i18n="exitK">Next step</p>
     <p class="exitb-t" data-i18n="exitT">Free first, then two paid shortcuts</p>
     <p class="exitb-d" data-i18n="exitD">The 30-pin map and the one-page sheet cost nothing. The 109-spot pack and the full kit are the same data, finished and clickable.</p>
-    <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+    <a id="exitFree" href="/free/en-1pager.pdf" rel="noopener" target="_blank">
       <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
       <span data-i18n="exitFreeS">PDF · one page · free download</span>
     </a>
-    <a id="exitPaid" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+    <a id="exitPaid" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_creem" rel="noopener" target="_blank">
       <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
       <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
     </a>
@@ -255,7 +255,7 @@ li{margin:4px 0}
     </a>
     <a id="exitFull" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=arrival_checklist" rel="noopener" target="_blank">
       <b data-i18n="exitFullT">$12.99 Complete Korea Local Kit</b>
-      <span data-i18n="exitFullS">55-page guide + 109-spot map pack (tax included)</span>
+      <span data-i18n="exitFullS">55-page guide with a 72-hour plan + 109-spot map pack (tax included)</span>
     </a>
   </section>
 
@@ -339,9 +339,9 @@ exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free 
 exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
 exitD:"The 30-pin map and the one-page sheet cost nothing. The 109-spot pack and the full kit are the same data, finished and clickable.",
 exitMapT:"$0 Free Seoul 30-Pin Map",exitMapS:"KML for Google Maps · 30 pins · no sign-up",
-exitFullT:"$12.99 Complete Korea Local Kit",exitFullS:"55-page guide + 109-spot map pack (tax included)",
+exitFullT:"$12.99 Complete Korea Local Kit",exitFullS:"55-page guide with a 72-hour plan + 109-spot map pack (tax included)",
 bridgeFreeT:"Free: 30-pin Seoul map",bridgeFreeS:"No sign-up · opens each pin in Google Maps",
-bridgePaidT:"Complete Korea Local Kit — $12.99",bridgePaidS:"55-page guide + the 109-spot map pack, one download",
+bridgePaidT:"Complete Korea Local Kit — $12.99",bridgePaidS:"55-page guide with a 72-hour plan + the 109-spot map pack",
 legal:"Korea Travel Insider · independent page, not affiliated with any government body or operator. Figures read from the official pages and dated 2026-11-20; the K-ETA exemption re-checked on 2026-11-24. Rules change by announcement: k-eta.go.kr and e-arrivalcard.go.kr are the final word. No ads, no cookies, no analytics, no third-party scripts."
 },
 es:{
@@ -432,9 +432,9 @@ function applyMeta(){
 }
 
 function exitLinks(){
-  var g="https://zioion.gumroad.com/l/",u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_gumroad";
+  var u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_creem";
   var f=document.getElementById("exitFree"),p=document.getElementById("exitPaid");
-  if(f)f.setAttribute("href",g+(lang==="es"?"korea-es-1pager":"korea-en-1pager")+u);
+  if(f)f.setAttribute("href",lang==="es"?"/es/korea-es-army-1pager.pdf":"/free/en-1pager.pdf");
   if(p)p.setAttribute("href","https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t"+u);
 }
 
@@ -589,5 +589,6 @@ evaluate();
 updateCount();
 })();
 </script>
+<script src="/assets/ktb-pdf-track.js" defer></script>
 </body>
 </html>

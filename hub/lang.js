@@ -14,8 +14,8 @@ window.KTB_I18N = {
     'c.freeBtnNote': 'Free · no sign-up · opens in this site',
 
     'm.diff.nearby': '30 of the 109 places are free here · Unlock all 109 (Seoul · Busan · Jeju) + the offline KML — $4.99',
-    'm.diff.around': 'Free: this fare table · Paid: the 55-page guide with payments, bookings and the route to your hotel — $9.99',
-    'm.diff.speak': 'Free: these 39 lines · Paid: the 55-page guide for the situations this card leaves out — $9.99',
+    'm.diff.around': 'Free: this fare table · Paid: the Complete Korea Local Kit, 55-page guide + 109-pin map pack — $12.99',
+    'm.diff.speak': 'Free: these 39 lines · Paid: the Complete Korea Local Kit, 55-page guide + 109-pin map pack — $12.99',
 
     'free.nearby.name': 'Free Seoul 30-Pin Map',
     'free.nearby.sub': '30 of the 109 places, Seoul only — the free sample (30/109).',
@@ -31,10 +31,6 @@ window.KTB_I18N = {
     'p.map.sub': 'Seoul, Busan & Jeju — 109 daily-checked places, map + KML file',
     'p.kit.name': 'Complete Korea Local Kit 2026',
     'p.kit.sub': '55-page guide + the 109-place map, together',
-    'p.guide.name': 'Korea Zero-Friction Guide 2026',
-    'p.guide.sub': 'Pay, book & navigate like a local — 55-page PDF',
-    'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
-    'p.jp.sub': 'A 4-day plan booked, queued and refunded for you — winter 2026 edition',
 
     'title.home': 'KTB Hub (首尔攻略 KTB) — Korea travel tools, free',
     'title.nearby': 'Find nearby — 109 checked places in Seoul, Busan & Jeju (free) | KTB Hub',
@@ -173,8 +169,8 @@ window.KTB_I18N = {
     'c.freeBtnNote': '無料・登録不要・このサイト内で開きます',
 
     'm.diff.nearby': 'ここで無料で見られるのは109か所中30か所 · 全109か所（ソウル・プサン・チェジュ）＋オフラインKMLを解放 — $4.99',
-    'm.diff.around': '無料：この運賃表 · 有料：支払い・予約・ホテルまでの移動まで載せた55ページガイド — $9.99',
-    'm.diff.speak': '無料：この39フレーズ · 有料：このカードにない場面まで載せた55ページガイド — $9.99',
+    'm.diff.around': '無料：この運賃表 · 有料：55ページガイド＋109か所マップのセット — $12.99',
+    'm.diff.speak': '無料：この39フレーズ · 有料：55ページガイド＋109か所マップのセット — $12.99',
 
     'free.nearby.name': '無料ソウル30ピンマップ',
     'free.nearby.sub': '109か所のうち30か所（ソウル限定）の無料サンプル。',
@@ -190,10 +186,6 @@ window.KTB_I18N = {
     'p.map.sub': 'ソウル・プサン・チェジュ109か所（毎日確認）＋地図とKMLファイル · PDFは英語',
     'p.kit.name': 'Complete Korea Local Kit 2026',
     'p.kit.sub': '55ページのガイド＋109か所の地図セット · PDFは英語',
-    'p.guide.name': 'Korea Zero-Friction Guide 2026',
-    'p.guide.sub': '支払い・予約・移動を現地のやり方で — 55ページPDF',
-    'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
-    'p.jp.sub': '3泊4日の予約・待ち時間・免税をゼロ手間に — ソウル2026冬版',
 
     'title.home': 'KTB Hub（首尔攻略 KTB）— 韓国旅行の無料ツール',
     'title.nearby': '近くを探す — ソウル・プサン・チェジュ109か所（無料）| KTB Hub',
@@ -332,8 +324,8 @@ window.KTB_I18N = {
     'c.freeBtnNote': '免費・免註冊・在本站開啟',
 
     'm.diff.nearby': '這裡免費提供 109 處中的 30 處 · 解鎖全部 109 處（首爾・釜山・濟州）＋離線 KML — $4.99',
-    'm.diff.around': '免費：這張票價表 · 付費：含付款、訂位與到飯店路線的 55 頁指南 — $9.99',
-    'm.diff.speak': '免費：這 39 句 · 付費：涵蓋這張卡沒收錄情境的 55 頁指南 — $9.99',
+    'm.diff.around': '免費：這張票價表 · 付費：55 頁指南＋109 處地圖套裝 — $12.99',
+    'm.diff.speak': '免費：這 39 句 · 付費：55 頁指南＋109 處地圖套裝 — $12.99',
 
     'free.nearby.name': '免費首爾 30 點地圖',
     'free.nearby.sub': '109 處中的 30 處（僅首爾）— 免費樣本。',
@@ -349,10 +341,6 @@ window.KTB_I18N = {
     'p.map.sub': '首爾・釜山・濟州 109 處（每日核對）＋地圖與 KML 檔 · 英文 PDF',
     'p.kit.name': '韓國在地全套組合 2026（Complete Local Kit）',
     'p.kit.sub': '55 頁指南＋109 處地圖，一次帶走 · 英文 PDF',
-    'p.guide.name': '韓國零阻力指南 2026（Zero-Friction Guide）',
-    'p.guide.sub': '付款、訂位、移動都像在地人 — 55 頁 PDF · 英文',
-    'p.jp.name': '韓国3泊4日 予約・待ち・免税 ゼロ帖 ソウル2026冬',
-    'p.jp.sub': '四天三夜預約、候位、退稅一次搞定 — 首爾 2026 冬季版',
 
     'title.home': 'KTB Hub（首尔攻略 KTB）— 韓國旅行免費工具',
     'title.nearby': '找附近 — 首爾・釜山・濟州 109 處（免費）| KTB Hub',
@@ -491,8 +479,8 @@ window.KTB_I18N = {
     'c.freeBtnNote': '免费、不用注册、在本站打开',
 
     'm.diff.nearby': '这里免费提供 109 处中的 30 处 · 解锁全部 109 处（首尔・釜山・济州）＋离线 KML — $4.99',
-    'm.diff.around': '免费：这张票价表 · 付费：含付款、预订与到酒店路线的 55 页指南 — $9.99',
-    'm.diff.speak': '免费：这 39 句 · 付费：涵盖这张卡没收录场景的 55 页指南 — $9.99',
+    'm.diff.around': '免费：这张票价表 · 付费：55 页指南＋109 处地图套装 — $12.99',
+    'm.diff.speak': '免费：这 39 句 · 付费：55 页指南＋109 处地图套装 — $12.99',
 
     'free.nearby.name': '免费首尔 30 个地点地图',
     'free.nearby.sub': '109 处中的 30 处（仅首尔）— 免费样本。',
@@ -508,10 +496,6 @@ window.KTB_I18N = {
     'p.map.sub': '首尔・釜山・济州 109 处（每日核对）＋地图与 KML 文件 · 英文 PDF',
     'p.kit.name': '韩国本地全套组合 2026（Complete Local Kit）',
     'p.kit.sub': '55 页指南＋109 处地图，一次带走 · 英文 PDF',
-    'p.guide.name': '韩国零阻力指南 2026（Zero-Friction Guide）',
-    'p.guide.sub': '付款、预订、移动都像当地人 — 55 页 PDF · 英文',
-    'p.jp.name': '韩国3泊4日 予约・待ち・免税 ゼロ帖 ソウル2026冬',
-    'p.jp.sub': '四天三夜预订、排队、退税一次搞定 — 首尔 2026 冬季版',
 
     'title.home': '首尔攻略 KTB — 韩国旅行三件免费工具',
     'title.nearby': '找附近 — 首尔・釜山・济州 109 处（免费）| 首尔攻略 KTB',
@@ -662,7 +646,7 @@ window.KTB_I18N = {
       'prev.altGuide': 'A real page from the 55-page Seoul guide, “Getting a table without a number”, with a comparison table of two booking apps.',
       'prev.capMap': '109-pin map pack · page 3, as sold — the pages inside are in English',
       'prev.altMap': 'A real page from the 109-pin map pack: three Seoul places, each with its Korean name and Naver Map and Google Maps buttons.',
-      'up.h3': 'Four packs, one-time payment',
+      'up.h3': 'Two paid options · one-time payment',
       'u.map.inc': '20-page PDF with 36 spots · KML with all 109 pins · 13 phrase cards · PDF in English',
       'u.guide.inc': '55-page A5 PDF · 2026 winter edition · landing, cards, tables, refunds, 47 places · PDF in English',
       'u.bundle.inc': 'The 55-page guide and the 109-pin map pack, together · PDF in English',
@@ -688,7 +672,7 @@ window.KTB_I18N = {
       'prev.altGuide': '55ページのソウルガイドの実際のページ「番号なしで席を取る」。予約アプリ2つの比較表つき。',
       'prev.capMap': '109ピンの地図パック · 販売中の3ページ目（中身は英語）',
       'prev.altMap': '109ピン地図パックの実際のページ。ソウルの3か所を、韓国語名とNaverマップ・Googleマップのボタン付きで掲載。',
-      'up.h3': '4つのパック · 買い切りのみ',
+      'up.h3': '2つの有料オプション · 買い切り',
       'u.map.inc': '36か所を載せた20ページPDF · 全109ピンのKML · フレーズカード13枚 · PDFは英語',
       'u.guide.inc': '55ページA5 PDF · 2026冬版 · 入国書類・カード・席・免税・47か所 · PDFは英語',
       'u.bundle.inc': '55ページガイド＋109ピン地図パックのセット · PDFは英語',
@@ -714,7 +698,7 @@ window.KTB_I18N = {
       'prev.altGuide': '55 頁首爾指南的真實頁面「沒有電話號碼也能訂位」，附兩個訂位 App 的比較表。',
       'prev.capMap': '109 個地點地圖包 · 販售版第 3 頁（英文內頁）',
       'prev.altMap': '109 個地點地圖包的真實頁面：首爾三個地點，含韓文名與 Naver 地圖、Google 地圖按鈕。',
-      'up.h3': '四種組合 · 一次付款',
+      'up.h3': '兩種付費選擇 · 一次付款',
       'u.map.inc': '20 頁 PDF（36 個地點）· 全部 109 個地點的 KML · 13 張句子卡 · PDF 為英文',
       'u.guide.inc': '55 頁 A5 PDF · 2026 冬季版 · 入境文件、交通卡、訂位、退稅、47 個地點 · PDF 為英文',
       'u.bundle.inc': '55 頁指南＋109 個地點地圖包 · PDF 為英文',
@@ -740,7 +724,7 @@ window.KTB_I18N = {
       'prev.altGuide': '55 页首尔指南的真实页面「没有电话号码也能订位」，附两个订位 App 的对比表。',
       'prev.capMap': '109 个地点地图包 · 售卖版第 3 页（英文内页）',
       'prev.altMap': '109 个地点地图包的真实页面：首尔三个地点，含韩文名与 Naver 地图、Google 地图按钮。',
-      'up.h3': '四种组合 · 一次付款',
+      'up.h3': '两种付费选择 · 一次付款',
       'u.map.inc': '20 页 PDF（36 个地点）· 全部 109 个地点的 KML · 13 张句子卡 · PDF 为英文',
       'u.guide.inc': '55 页 A5 PDF · 2026 冬季版 · 入境文件、交通卡、订位、退税、47 个地点 · PDF 为英文',
       'u.bundle.inc': '55 页指南＋109 个地点地图包 · PDF 为英文',

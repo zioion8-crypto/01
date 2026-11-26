@@ -122,11 +122,11 @@
       el.rom.textContent = st.cur.rom;
       el.copy.textContent = T('sp.copy');
     }
-    H.money($('#moneyHost'), 'speak', ['guide', 'kit', 'map']);
+    H.money($('#moneyHost'), 'speak', ['map', 'kit']);
   };
 
   buildChips();
   render();
-  H.money($('#moneyHost'), 'speak', ['guide', 'kit', 'map']);
+  H.money($('#moneyHost'), 'speak', ['map', 'kit']);
   H.gate($('#moneyHost'), $('#ctaSentinel'), [el.list, el.chips]);
 })();

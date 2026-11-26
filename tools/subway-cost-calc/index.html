@@ -219,15 +219,19 @@ footer a{color:var(--brand);font-weight:600}
 
   <section class="exitb">
     <p class="exitb-k" data-i18n="exitK">Next step</p>
-    <p class="exitb-t" data-i18n="exitT">Two downloads for the same trip</p>
+    <p class="exitb-t" data-i18n="exitT">Three ways to take it with you</p>
     <p class="exitb-d" data-i18n="exitD">The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.</p>
-    <a id="exitFree" href="https://zioion.gumroad.com/l/korea-en-1pager?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+    <a id="exitFree" href="/free/en-1pager.pdf" rel="noopener" target="_blank">
       <b data-i18n="exitFreeT">$0 Free 1-Page Korea Cheat Sheet</b>
       <span data-i18n="exitFreeS">PDF · one page · free download</span>
     </a>
-    <a id="exitPaid" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_gumroad" rel="noopener" target="_blank">
+    <a id="exitPaid" href="https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_creem" rel="noopener" target="_blank">
       <b data-i18n="exitPaidT">$4.99 1-Tap 109-Spot Naver Map Pack</b>
       <span data-i18n="exitPaidS">109 spots · one-tap Naver Map links and Google Maps files</span>
+    </a>
+    <a id="exitFull" href="https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout?utm_source=ktb_tools&amp;utm_medium=banner&amp;utm_campaign=tool_to_creem" rel="noopener" target="_blank">
+      <b>$12.99 Complete Korea Local Kit 2026</b>
+      <span>55-page guide with a 72-hour plan + the 109-pin map pack · tax included</span>
     </a>
   </section>
 
@@ -290,7 +294,7 @@ f1q:"Why is the Climate Card not always the answer?",f1a:"The pass buys unlimite
 f2q:"Do the numbers include the airport leg in the pass?",f2a:"No. The pass cannot be used to board at Incheon T1 or T2, so the airport leg is always paid separately, whatever the daily plan. The totals add it: the all-stop train by default, or the express or limousine where that plan says so.",
 f3q:"What is not in the total?",f3a:"Taxis, the KTX, GTX, the Shinbundang Line, red intercity buses and anything outside Seoul's city limits. Food and a data eSIM are separate too. Taxis and airport buses take a T-money card; GTX and the Shinbundang Line take a card but not the Seoul pass.",
 allTools:"All three free tools",t1:"Order & allergy card",t2:"Arrival checklist",freeSheet:"Free 30-spot map (A4)",esHub:"Spanish guide",
-exitK:"Next step",exitT:"Two downloads for the same trip",
+exitK:"Next step",exitT:"Three ways to take it with you",
 exitD:"The one-page cheat sheet is free; the 109-spot map pack opens each place in Naver Map with one tap.",
 exitFreeT:"$0 Free 1-Page Korea Cheat Sheet",exitFreeS:"PDF · one page · free download",
 exitPaidT:"$4.99 1-Tap 109-Spot Naver Map Pack",exitPaidS:"109 spots · one-tap Naver Map links and Google Maps files",
@@ -326,7 +330,7 @@ f1q:"¿Por qué la Climate Card no siempre es la respuesta?",f1a:"El pase compra
 f2q:"¿Los totales incluyen el trayecto al aeropuerto en el pase?",f2a:"No. El pase no sirve para entrar en Incheon T1 ni T2, así que el trayecto al aeropuerto se paga siempre aparte, sea cual sea el plan diario. Los totales lo suman: el tren con paradas por defecto, o el exprés o la limusina cuando ese plan lo indica.",
 f3q:"¿Qué no está en el total?",f3a:"Taxis, KTX, GTX, la línea Shinbundang, los autobuses rojos interurbanos y todo lo que salga de los límites de Seúl. La comida y la eSIM también van aparte. Los taxis y los buses del aeropuerto aceptan T-money; GTX y la línea Shinbundang aceptan tarjeta pero no el pase de Seúl.",
 allTools:"Las tres herramientas gratis",t1:"Pedir y alergias",t2:"Lista de llegada",freeSheet:"Mapa gratis de 30 sitios (A4)",esHub:"Guía en español",
-exitK:"Siguiente paso",exitT:"Dos descargas para el mismo viaje",
+exitK:"Siguiente paso",exitT:"Tres formas de llevártelo",
 exitD:"La hoja de una página es gratis; el paquete de 109 sitios abre cada lugar en Naver Map con un toque.",
 exitFreeT:"$0 Hoja de Corea gratis de 1 página",exitFreeS:"PDF · una página · descarga gratis",
 exitPaidT:"$4.99 · 109 sitios en Naver Map en 1 toque (English)",exitPaidS:"109 sitios · enlaces a Naver Map y archivos de Google Maps · texto en inglés",
@@ -445,9 +449,9 @@ function i18nPaint(){
 }
 
 function exitLinks(){
-  var g="https://zioion.gumroad.com/l/",u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_gumroad";
+  var u="?utm_source=ktb_tools&utm_medium=banner&utm_campaign=tool_to_creem";
   var f=document.getElementById("exitFree"),p=document.getElementById("exitPaid");
-  if(f)f.setAttribute("href",g+(lang==="es"?"korea-es-1pager":"korea-en-1pager")+u);
+  if(f)f.setAttribute("href",lang==="es"?"/es/korea-es-army-1pager.pdf":"/free/en-1pager.pdf");
   if(p)p.setAttribute("href","https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t"+u);
 }
 
@@ -482,5 +486,6 @@ document.getElementById("passcard").addEventListener("click",function(e){
 i18nPaint();
 })();
 </script>
+<script src="/assets/ktb-pdf-track.js" defer></script>
 </body>
 </html>
