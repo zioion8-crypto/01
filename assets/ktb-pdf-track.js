@@ -1,8 +1,9 @@
 /* KTB — free PDF download measure (GA4 event: free_pdf_download).
-   This file never loads a tag and never sends anything by itself: the pages
-   promise no cookies and no third-party scripts. When a GA4 gtag exists on
-   the page it receives the event; otherwise the event is queued in
-   window.dataLayer only if that array already exists. */
+   This file never loads a tag and never sends anything by itself. The site
+   tag (gtag.js, G-LZJCQWM2YS) in each page <head> has already sent the
+   page_view and owns the cookie; this script only passes the event to it.
+   If no gtag is present the event is queued in window.dataLayer only when
+   that array already exists. */
 (function () {
   if (window.__ktbPdfTrack) return;
   window.__ktbPdfTrack = true;

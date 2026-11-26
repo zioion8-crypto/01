@@ -1,5 +1,5 @@
 # Korea Travel Insider — Korea travel money & transit hub (koreatravelbible.com)
-# Publisher is anonymous by design. No personal data, no tracking, no cookies on any page.
+# Publisher is anonymous by design. No personal data and no accounts on any page; visits are counted in aggregate with Google Analytics 4 only.
 
 User-agent: *
 Allow: /

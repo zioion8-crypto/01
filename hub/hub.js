@@ -1,5 +1,6 @@
 /* KTB Hub — shared engine: language, paid/free module, storage, distance.
-   No external requests, no tracking, no cookies. */
+   No external requests of its own and no storage beyond this browser; the
+   site-wide Google Analytics 4 tag in <head> counts visits in aggregate. */
 (function () {
   'use strict';
 

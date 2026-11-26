@@ -82,7 +82,7 @@
 
 ## Free interactive tools (added 2026-11-20)
 
-Three client-side pages for travellers, no login, no cookies, no analytics, no server call, no ads. Each carries its own verification date (2026-11-20).
+Three client-side pages for travellers, no login, no account, no ads, no server call for the tool itself (only the site-wide Google Analytics 4 tag counts visits in aggregate). Each carries its own verification date (2026-11-20).
 
 - [Korean Restaurant Order & Allergy Card](https://koreatravelbible.com/tools/order-card/): tap the dish, the spice level, no pork, no seafood or an allergy, and the page prints the Korean sentence in the largest type on the screen, copies it to the clipboard and reads it aloud with the device voice (ko-KR). Twelve dishes, six spice and seasoning lines, twelve "leave this out" lines including vegetarian, eight allergy lines shown first ("I have a nut allergy. It is dangerous for me."), eight table lines including the bill and the toilet. Interface in English, Spanish, Japanese, Traditional and Simplified Chinese.
 - [Korea Arrival Checklist 2026–2027 — K-ETA and e-Arrival Card](https://koreatravelbible.com/tools/arrival-checklist/): choose a nationality and arrival date; the page states whether the K-ETA temporary exemption still covers the trip, confirms that an arrival through 31 December 2027 is exempt (Ministry of Justice notice, 2026-11-23) and flags anything after it, states the 3-day e-Arrival Card window and who is exempt, and offers the T-money / Climate Card / WOWPASS picker (₩3,000 card, ₩5,000–20,000 passes, ₩6,000 WOWPASS issue) plus twelve pre-flight checks. English and Spanish.
@@ -91,7 +91,7 @@ Three client-side pages for travellers, no login, no cookies, no analytics, no s
 
 ## KTB Hub — three tools in one place (added 2026-11-22)
 
-A single entry point for the three jobs a traveller in Korea actually has: what is nearby, how to get somewhere, and how to say it. Static pages, no accounts, no cookies, no analytics, no external API keys; interface in English, Japanese, Traditional Chinese and Simplified Chinese (the choice is kept in the browser only, and ?lang= in a link overrides it). Each tool shows its free sample first, then the paid packs.
+A single entry point for the three jobs a traveller in Korea actually has: what is nearby, how to get somewhere, and how to say it. Static pages, no accounts, no external API keys, only the site-wide Google Analytics 4 tag; interface in English, Japanese, Traditional Chinese and Simplified Chinese (the choice is kept in the browser only, and ?lang= in a link overrides it). Each tool shows its free sample first, then the paid packs.
 
 - [KTB Hub](https://koreatravelbible.com/): the three-button entry page, at the site root (the old /hub/ URL forwards here and keeps ?lang=). A one-tap line under the three tiles opens the Simplified Chinese one-page cheat sheet at https://koreatravelbible.com/cheat-sheet/.
 - [Find nearby](https://koreatravelbible.com/hub/nearby/): all 109 verified places (Seoul 66 / Busan 20 / Jeju 23) searched and filtered in the browser by category, city and neighbourhood, with a favourite list. Name, area, category, address, Naver/Google map link and the last check date (2026-11-21) are shown, and on ?lang=cn or ?lang=zh the place names, area labels and addresses come out in Simplified or Traditional Chinese (the Korean name is kept under every card); hours, prices and the local notes stay in the paid pack. Location is requested once, only when the visitor presses the button, used in memory for straight-line distance and then dropped — coordinates are never written to localStorage, the URL or a server. Refusing it leaves the same list and filters, with a manual neighbourhood picker.
@@ -156,5 +156,5 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 
 - No booking, ticketing, visa or immigration service, and no medical, legal or tax advice.
 - No reproduction of Google Maps imagery, review text, ratings or Local Guide badges.
-- No cookies, no analytics, no third-party scripts, no user data collection on any page.
+- No user data collection and no accounts. The only third-party script is the site-wide Google Analytics 4 tag, which counts visits and free-PDF downloads in aggregate; no names, no advertising.
 - No personal data of any individual, including the publisher.

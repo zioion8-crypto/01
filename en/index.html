@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) — GA4 stream "Korea Travel Bible (koreatravelbible.com)" -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LZJCQWM2YS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LZJCQWM2YS');
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#fcfaf7">
 <meta name="robots" content="index,follow,max-image-preview:large">
@@ -252,7 +260,7 @@ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.write
     <li><b>iPhone (Safari):</b> Share <b>⤴</b> → <b>Add to Home Screen</b></li>
     <li><b>Android (Chrome):</b> <b>⋮</b> → <b>Add to Home screen</b></li>
   </ul>
-  <p class="n">No app store, no account, no sign-up. One tap from the home-screen icon — this page has no external requests, so it also opens with no signal once your browser has saved it.</p>
+  <p class="n">No app store, no account, no sign-up. One tap from the home-screen icon — the page is one self-contained HTML file (the only outside request is the analytics tag), so it also opens with no signal once your browser has saved it.</p>
 </div>
 
 <div class="ok"><b>Cross-Checked: Travel Guides + Korean Locals</b><br>
@@ -536,7 +544,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 <section>
   <h2><span class="n">＋</span>How to use this page</h2>
   <ol class="steps">
-    <li><b>Save it offline</b> — browser menu → save page, or a screenshot. It is plain HTML with no external requests, so it works with no signal.</li>
+    <li><b>Save it offline</b> — browser menu → save page, or a screenshot. It is plain HTML in one file (only the analytics tag is external), so it works with no signal.</li>
     <li><b>Do three things on landing</b>: buy a T-money card and load cash → install Naver Map and set English → remember that gates never take a QR code.</li>
     <li><b>Share it</b> with your travel group. Please do not edit the numbers and pass it on — a wrong price is worse than no page.</li>
   </ol>
@@ -554,7 +562,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
   <p><b>Korea Travel Insider</b> — written by a long-term Seoul resident. <b>Name and affiliation are not published.</b> No reviews, ratings or map imagery are reproduced here; only figures and links.</p>
   <p><b>Last verified 2026-11-15.</b> Sources: AREX fare and timetable pages, Seoul Metro / Seoul city Climate Card pages, Korea Customs and VisitKorea refund guidance, Incheon Airport bus fares, WOWPASS and T-money operator pages. Prices, hours and policies change without notice; corrections are made on this page first. This is a static snapshot — for a purchase today, check the operator page linked in each section.</p>
   <p><b>Not travel advice, and not a booking service.</b> No reservations, no agency, no medical or legal advice. Affiliate links are marked; editorial content is independent of them.</p>
-  <p><b>Privacy:</b> this page sets no cookies, loads no scripts from other domains, and collects nothing. It does not name or identify any person.</p>
+  <p><b>Privacy:</b> the only script from another domain on this page is Google Analytics 4 (gtag.js from googletagmanager.com), which counts visits and free-PDF downloads in aggregate and may set its own cookies (_ga, _ga_*). No names, no accounts, no advertising. It does not name or identify any person. Details: <a href="/privacy.html">privacy policy</a>.</p>
   <p>Other languages: <a href="/es/">Español</a> · <a href="/ja/">日本語</a> · <a href="/tw/">繁體中文</a> · <a href="/cheat-sheet/">Chinese (Simplified)</a> · <a href="/llms.txt">llms.txt</a></p>
   <!-- copyright-notice -->
   <p>© 2026 Korea Travel Insider. All rights reserved. No unauthorised reproduction, mirroring or resale. Short quotes with attribution and a link to this page are welcome.</p>
@@ -591,7 +599,7 @@ nav.chips a.mc-chip .mc-chip-b{font-size:11px}
 })();
 </script>
 <script>
-/* GA4-ready, inert until gtag exists: no request, no cookie, no data leaves the page by itself. */
+/* GA4 tag is loaded site-wide from <head>; these events fire only when gtag is present. */
 (function(){var m=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
 if(window.gtag){gtag('event','app_open',{display_mode:m?'standalone':'browser',language:document.documentElement.lang});}
 var g=document.querySelector('.install');if(g&&window.gtag){g.addEventListener('click',function(){gtag('event','install_guide_tap',{language:document.documentElement.lang});});}})();
