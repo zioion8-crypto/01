@@ -1,0 +1,24 @@
+/* KTB — free-first hero badge + booking cards (2026-11-27)
+   Shared by /, /en/, /tw/, /ja/, /cn/, /es/ and the two /tw/ deep pages.
+   One palette everywhere: #3f6b55 (green), #fffaf2 (warm cream), #2b2620 (ink). */
+
+.ktb-free-badge{display:inline-flex;align-items:center;gap:6px;margin:0 0 10px;padding:6px 13px;border-radius:999px;background:#3f6b55;color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.02em;line-height:1.25}
+.ktb-free-badge::before{content:"✓";font-size:11px;opacity:.92}
+
+.ktb-book{margin:14px 0 18px;padding:14px;border:1px solid #ead8bb;border-radius:16px;background:#fffaf2;box-shadow:0 3px 14px rgba(43,38,32,.06)}
+.ktb-book-t{margin:0 0 4px;font-size:16.5px;line-height:1.35;font-weight:800;color:#2b2620}
+.ktb-book-s{margin:0 0 11px;font-size:12.5px;line-height:1.55;color:#5c5348}
+.ktb-book-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ktb-book-g a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:56px;padding:9px 8px;border-radius:12px;background:#fff;border:1px solid #d9c9ae;color:#2f5544;text-decoration:none;font-size:12.5px;font-weight:800;line-height:1.3;text-align:center}
+.ktb-book-g a .k{display:block;font-size:9.5px;font-weight:800;letter-spacing:.06em;color:#8a7a5d;margin-bottom:3px}
+.ktb-book-g a.trip{background:#3f6b55;border-color:#3f6b55;color:#fff}
+.ktb-book-g a.trip .k{color:#d6e7dc}
+.ktb-book-n{margin:9px 0 0;font-size:11px;line-height:1.5;color:#6b6257}
+.ktb-book-n a{color:#3f6b55;font-weight:700}
+
+@media(min-width:720px){.ktb-book-g{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:380px){.ktb-book{padding:12px}.ktb-book-g{gap:7px}.ktb-book-g a{font-size:12px;min-height:52px}}
+
+.ktb-free-cta{display:flex;flex-direction:column;gap:3px;margin:0 0 14px;padding:15px 16px;border-radius:15px;background:#3f6b55;color:#fff;text-decoration:none;font-size:16.5px;font-weight:800;line-height:1.35;box-shadow:0 4px 14px rgba(63,107,85,.22)}
+.ktb-free-cta span{font-size:12.5px;font-weight:600;opacity:.94;line-height:1.5}
+.ktb-free-cta em{font-style:normal;display:inline-block;margin-bottom:4px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.18);font-size:10.5px;font-weight:800;letter-spacing:.05em}

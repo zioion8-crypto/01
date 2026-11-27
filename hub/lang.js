@@ -39,7 +39,7 @@ window.KTB_I18N = {
 
     'home.kicker': 'Korea Travel Insider · KTB Hub',
     'home.h1': 'Three things you actually need in Korea',
-    'home.sub': 'What is <b>near you</b> · how to <b>get there</b> · how to <b>say it</b>. Free, no account, and your location is read only when you tap.',
+    'home.sub': '<b>100% free, no account.</b> What is <b>near you</b> · how to <b>get there</b> · how to <b>say it</b>. Your location is read only when you tap.',
     'home.t1': 'Find Nearby', 'home.t1k': '주변 찾기',
     'home.t1d': '109 checked places · filter by food, cafes, markets, area',
     'home.t2': 'Get Around', 'home.t2k': '이동하기',
@@ -194,7 +194,7 @@ window.KTB_I18N = {
 
     'home.kicker': 'Korea Travel Insider · KTB Hub',
     'home.h1': '韓国で本当に必要な3つ',
-    'home.sub': '<b>近くに何があるか</b> · <b>どう行くか</b> · <b>どう言うか</b>。無料・登録不要。位置情報はボタンを押したときだけ読みます。',
+    'home.sub': '<b>100% 無料・登録不要。</b><b>近くに何があるか</b> · <b>どう行くか</b> · <b>どう言うか</b>。位置情報はボタンを押したときだけ読みます。',
     'home.t1': '近くを探す', 'home.t1k': '주변 찾기',
     'home.t1d': '確認済み109か所・食事・カフェ・市場・エリアで絞り込み',
     'home.t2': '移動する', 'home.t2k': '이동하기',
@@ -349,7 +349,7 @@ window.KTB_I18N = {
 
     'home.kicker': 'Korea Travel Insider · KTB Hub',
     'home.h1': '在韓國真的用得到的三件事',
-    'home.sub': '<b>附近有什麼</b> · <b>怎麼去</b> · <b>怎麼說</b>。免費、免註冊，位置只在你按下按鈕時讀取。',
+    'home.sub': '<b>100% 免費、免註冊。</b><b>附近有什麼</b> · <b>怎麼去</b> · <b>怎麼說</b>，位置只在你按下按鈕時讀取。',
     'home.t1': '找附近', 'home.t1k': '주변 찾기',
     'home.t1d': '109 處已核對地點・依餐飲、咖啡、市場、區域篩選',
     'home.t2': '怎麼去', 'home.t2k': '이동하기',
@@ -504,7 +504,7 @@ window.KTB_I18N = {
 
     'home.kicker': '首尔攻略 KTB · Korea Travel Insider',
     'home.h1': '在韩国真的用得到的三件事',
-    'home.sub': '<b>附近有什么</b> · <b>怎么去</b> · <b>怎么说</b>。免费、免注册，位置只在你按下按钮时读取。',
+    'home.sub': '<b>100% 免费、免注册。</b><b>附近有什么</b> · <b>怎么去</b> · <b>怎么说</b>，位置只在你按下按钮时读取。',
     'home.t1': '找附近', 'home.t1k': '주변 찾기',
     'home.t1d': '109 处已核对地点・按餐饮、咖啡、市场、区域筛选',
     'home.t2': '怎么去', 'home.t2k': '이동하기',
