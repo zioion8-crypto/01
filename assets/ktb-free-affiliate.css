@@ -22,3 +22,6 @@
 .ktb-free-cta{display:flex;flex-direction:column;gap:3px;margin:0 0 14px;padding:15px 16px;border-radius:15px;background:#3f6b55;color:#fff;text-decoration:none;font-size:16.5px;font-weight:800;line-height:1.35;box-shadow:0 4px 14px rgba(63,107,85,.22)}
 .ktb-free-cta span{font-size:12.5px;font-weight:600;opacity:.94;line-height:1.5}
 .ktb-free-cta em{font-style:normal;display:inline-block;margin-bottom:4px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.18);font-size:10.5px;font-weight:800;letter-spacing:.05em}
+
+.ktb-free-more{margin:8px 0 0;font-size:12.5px;line-height:1.45}
+.ktb-free-more a{color:#3f6b55;font-weight:800;text-decoration:underline;text-underline-offset:2px}
