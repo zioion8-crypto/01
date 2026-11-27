@@ -634,7 +634,7 @@ window.KTB_I18N = {
     en: {
       'home.kicker': 'Korea Travel Bible · checked on the ground in Seoul',
       'home.h1': 'The three things that get you unstuck in Korea',
-      'home.sub': 'What is <b>near you</b>, how to <b>get there</b>, and how to <b>say it</b> — free, no sign-up. We read your location only when you tap, and only to show distance.',
+      'home.sub': '<b>100% free, no sign-up.</b> What is <b>near you</b>, how to <b>get there</b>, and how to <b>say it</b> — we read your location only when you tap, and only to show distance.',
 
       'safe.t': 'No location sharing needed',
       'safe.b': 'Pick your city and neighbourhood and the list opens at once — no permission pop-up. If you do tap <b>find near me</b>, the coordinates are read once on this device, used only for straight-line distance, and never saved to the browser or to a link.',
@@ -660,7 +660,7 @@ window.KTB_I18N = {
     ja: {
       'home.kicker': 'Korea Travel Bible · ソウルで現地確認',
       'home.h1': '韓国で困った瞬間に、必要なものだけすぐ',
-      'home.sub': '<b>近くに何があるか</b>、<b>どう行くか</b>、<b>どう言うか</b>。無料・登録不要。位置情報はボタンを押したときだけ、距離を出すために読みます。',
+      'home.sub': '<b>100% 無料・登録不要。</b><b>近くに何があるか</b>、<b>どう行くか</b>、<b>どう言うか</b>。位置情報はボタンを押したときだけ、距離を出すために読みます。',
 
       'safe.t': '位置情報を共有しなくても使えます',
       'safe.b': '都市とエリアを選べば、その場で一覧が開きます — 許可のポップアップは出ません。<b>近くを探す</b>を押した場合も、座標はこの端末で一度読むだけで、直線距離の計算にだけ使い、ブラウザにもリンクにも保存しません。',
@@ -686,7 +686,7 @@ window.KTB_I18N = {
     zh: {
       'home.kicker': 'Korea Travel Bible · 在首爾實地核對',
       'home.h1': '在韓國卡住的那一刻，這裡剛好有你需要的',
-      'home.sub': '<b>附近有什麼</b>、<b>怎麼過去</b>、<b>怎麼開口</b>。免費、不用註冊。位置只在你按下按鈕時讀取，也只拿來算距離。',
+      'home.sub': '<b>100% 免費、免註冊。</b><b>附近有什麼</b>、<b>怎麼過去</b>、<b>怎麼開口</b>。位置只在你按下按鈕時讀取，也只拿來算距離。',
 
       'safe.t': '不用開定位也能用',
       'safe.b': '直接選城市和區域，清單馬上打開 — 不會跳出權限視窗。就算按下<b>找附近</b>，座標也只在這台裝置上讀一次，只用來算直線距離，不會存進瀏覽器或連結。',
@@ -712,7 +712,7 @@ window.KTB_I18N = {
     cn: {
       'home.kicker': 'Korea Travel Bible · 在首尔实地核对',
       'home.h1': '在韩国卡住的那一刻，这里刚好有你需要的',
-      'home.sub': '<b>附近有什么</b>、<b>怎么过去</b>、<b>怎么开口</b>。免费、不用注册。位置只在你按下按钮时读取，也只用来算距离。',
+      'home.sub': '<b>100% 免费、免注册。</b><b>附近有什么</b>、<b>怎么过去</b>、<b>怎么开口</b>。位置只在你按下按钮时读取，也只用来算距离。',
 
       'safe.t': '不用开定位也能用',
       'safe.b': '直接选城市和区域，列表马上打开 — 不会弹出权限窗口。就算按下<b>找附近</b>，坐标也只在这台设备上读一次，只用来算直线距离，不会存进浏览器或链接。',
