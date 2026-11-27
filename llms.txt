@@ -41,8 +41,8 @@
 - **免费工具的界面语言**：点餐卡 英・西・日・繁・简；入境清单与交通费用计算器目前只有英文与西班牙文（繁体、简体内容在同一站以各自语言页提供）。
 
 - [简体中文专题索引](https://koreatravelbible.com/cn/) — 四页长尾深页的入口（深夜交通・KTX・退税・支付），另有 3 款免登录工具与免费 A4 一页纸的下载入口；外部请求 0，中国大陆可直连。
-- **免费 A4 一页通（简体中文，$0，不用邮箱）**：https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf — 从本域名直接下载（不经 Gumroad，中国大陆可开）。页尾附完整版的结账二维码。
-- **完整版（付费，价格含税，可支付宝）**：在地图包 $4.99（109 处一键地图 + KML）／55 页指南 $9.99／两者套装 $12.99，结账页为 Creem（www.creem.io），支持支付宝、Visa/Mastercard、Apple Pay、Google Pay；数字商品，下载后不可退。
+- **免费 A4 一页通（简体中文，$0，不用邮箱）**：https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf — 从本域名直接下载，不用邮箱、不用注册，中国大陆可开。页尾附完整版的结账二维码。
+- **可选付费（价格含税，可支付宝）**：先看免费的 30 处地图 https://koreatravelbible.com/free/ ；要全量时，109 处一键地图包 $4.99（KML），或 55 页指南＋地图包的完整套装 $12.99。结账页为 Creem（www.creem.io），支持支付宝、Visa/Mastercard、Apple Pay、Google Pay；数字商品，下载后不可退。
 
 ## 简体中文 · 长尾深页（核对日 2026-11-21）
 
@@ -103,15 +103,11 @@ A single entry point for the three jobs a traveller in Korea actually has: what 
 ## Products and destinations (paid)
 
 - [Korea Travel Bible — free web app](https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html): trip planner, eight official money-saving schemes, phrase cards, savings calculator. Free, no install.
-- [The 72-Hour Seoul Survival Guide, 55 pages](https://www.creem.io/product/prod_7rXnDal9fK81tIc7LWyXc) — USD 9.99, tax included.
 - [Korea 1-Tap Map Pack, 109 spots (Seoul 66 / Busan 20 / Jeju 23)](https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) — USD 4.99, tax included; 109 of 109 spots re-checked on 2026-11-20; free updates for buyers.
-- [Multi-City All-in-One (guide + map pack)](https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout) — USD 12.99, tax included.
-- These four English-language PDFs (guide, map pack, bundle, Korea+Japan pack) are written entirely in English — the Chinese and Japanese hub pages say so on every price, and sales are final.
-- [韓国3泊4日 予約・待ち・免税 ゼロ帖, 63 pages (Japanese)](https://zioion.gumroad.com/l/seoul-zero-wait-jp) — ¥1,480 (switch the currency selector to JPY).
-- [首爾5天4夜 付款・預約 生存包, 44 pages (Traditional Chinese)](https://zioion.gumroad.com/l/seoul-survival-tw) — NT$299.
-- [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://zioion.gumroad.com/l/korea-cn-1pager) — free.
+- [Complete Korea Local Kit (55-page guide + map pack)](https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout) — USD 12.99, tax included.
+- These English-language PDFs (map pack, kit) are written entirely in English — the Chinese and Japanese hub pages say so on every price, and sales are final.
+- [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf) — free, on this domain.
 - [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://koreatravelbible.com/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://koreatravelbible.com/es/ruta-army/, with the Spanish hub at https://koreatravelbible.com/es/.
-- [Seoul Purple Trail 2026, 34-page A5 PDF](https://zioion.gumroad.com/l/seoul-purple-trail-2026) — USD 7.99; 4 days (3 in Seoul, 1 in Busan by KTX), 28 verified stops, no artist photos or logos.
 
 Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot.com) · [日本語](https://seoultravelinsider-jp.blogspot.com) · [繁體中文](https://seoultravelinsider-tw.blogspot.com).
 
@@ -133,7 +129,10 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 - Free A4 one-pagers in five languages, same figures: Korea_Japan_Dual-Trip_1Pager_EN.pdf, _ES.pdf, _JA.pdf,
   _zh-Hant.pdf and _CN.pdf (Simplified Chinese, added 2026-11-22), all under /korea-japan/.
 - For travellers adding Japan to a Korea trip in 2026/27. One A4 sheet (free) plus a premium 35-page
-  pack: https://www.creem.io/product/prod_7c1BYTueW3C6459n4Tb92v (US$14.99, no refunds on the digital file).
+  paid options, both optional: the 109-spot Korea 1-Tap Map Pack at US$4.99
+  (https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) or the Complete Korea Local Kit at US$12.99
+  (https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout). The free 30-pin Seoul map is at
+  https://koreatravelbible.com/free/. No refunds on the digital files.
 - Facts checked 2026-11-17 and each carries its date: Busan–Hakata overnight ferry (New Camellia) fares and
   fees, LCC fares on Incheon–Narita, Gimpo–Haneda and Busan–Fukuoka, T-money and Climate Card short-term
   passes, Welcome Suica / ICOCA, AREX versus Skyliner and Narita Express, and the two tax-refund systems that

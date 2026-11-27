@@ -133,7 +133,7 @@
           '<p class="ds">' + self.t('p.' + labelKey + '.sub') + '</p>' +
           '</div><div class="pr"><span class="amt">' + p.price + '</span>' +
           '<span class="tag">' + self.t('c.paidTag') + '</span></div></div>' +
-          '<span class="go">' + self.t('c.gumroad') + '</span></a>';
+          '<span class="go">' + self.t('c.buy') + '</span></a>';
       });
 
       html += '<p class="price-note">' + self.t('c.priceNote') + '</p></div></div>';

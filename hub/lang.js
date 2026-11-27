@@ -9,7 +9,7 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub tools',
     'c.paidLb': 'Paid packs — optional',
     'c.paidTag': 'Paid product',
-    'c.gumroad': 'Get it ↗',
+    'c.buy': 'Get it ↗',
     'c.priceNote': 'Prices checked 23 Nov 2026; tax is included in every price. The free tools stay free.',
     'c.freeBtnNote': 'Free · no sign-up · opens in this site',
 
@@ -164,7 +164,7 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub のツール',
     'c.paidLb': '有料パック — 任意',
     'c.paidTag': '有料商品',
-    'c.gumroad': '入手する ↗',
+    'c.buy': '入手する ↗',
     'c.priceNote': '価格は2026年11月23日に確認。表示価格に税金が含まれています。上の無料ツールは無料のままです。',
     'c.freeBtnNote': '無料・登録不要・このサイト内で開きます',
 
@@ -319,7 +319,7 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub 工具',
     'c.paidLb': '付費組合 — 自由選購',
     'c.paidTag': '付費商品',
-    'c.gumroad': '取得 ↗',
+    'c.buy': '取得 ↗',
     'c.priceNote': '價格於 2026 年 11 月 23 日確認。所有價格已含稅。上方免費工具維持免費。',
     'c.freeBtnNote': '免費・免註冊・在本站開啟',
 
@@ -474,7 +474,7 @@ window.KTB_I18N = {
     'c.toolsAria': 'KTB Hub 工具',
     'c.paidLb': '付费组合 — 自由选购',
     'c.paidTag': '付费商品',
-    'c.gumroad': '获取 ↗',
+    'c.buy': '获取 ↗',
     'c.priceNote': '价格于 2026 年 11 月 23 日确认。所有价格已含税。上方免费工具维持免费。',
     'c.freeBtnNote': '免费、不用注册、在本站打开',
 
