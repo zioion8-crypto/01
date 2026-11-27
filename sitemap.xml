@@ -80,17 +80,15 @@
     <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/free/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/free/"/>
   </url>
   <url>
     <loc>https://koreatravelbible.com/korea-japan/</loc>
     <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/korea-japan/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://koreatravelbible.com/korea-japan/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://koreatravelbible.com/korea-japan/?lang=ja"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://koreatravelbible.com/korea-japan/?lang=tw"/>
-    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://koreatravelbible.com/korea-japan/?lang=cn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/korea-japan/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/korea-japan/"/>
   </url>
   <url>
@@ -180,24 +178,32 @@
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/tools/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/tools/"/>
   </url>
   <url>
     <loc>https://koreatravelbible.com/tools/order-card/</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/tools/order-card/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/tools/order-card/"/>
   </url>
   <url>
     <loc>https://koreatravelbible.com/tools/arrival-checklist/</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/tools/arrival-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/tools/arrival-checklist/"/>
   </url>
   <url>
     <loc>https://koreatravelbible.com/tools/subway-cost-calc/</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreatravelbible.com/tools/subway-cost-calc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreatravelbible.com/tools/subway-cost-calc/"/>
   </url>
   <url>
     <loc>https://koreatravelbible.com/hub/nearby/</loc>
