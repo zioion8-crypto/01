@@ -114,7 +114,8 @@ footer a{color:#4d6b64}
   table.stack td[data-label]::before{content:attr(data-label);display:block;font-size:11px;font-weight:800;color:#8d8275;letter-spacing:.04em;margin-bottom:1px}
   table.stack td.key{font-size:15.5px;font-weight:800;color:var(--brand);padding-bottom:4px}
   table.stack td.num{white-space:normal}
-  table.stack td.time .tt{font-size:13.5px}
+  table.stack td.time .tt{font-size:13.5px;margin-right:10px}
+  table.stack td.time .tt:not(:last-child)::after{content:none}
 }
 </style>
 <script type="application/ld+json">
