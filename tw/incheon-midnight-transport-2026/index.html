@@ -60,7 +60,7 @@ th{background:#f8f2e7;color:var(--ink2);font-weight:700;font-size:12px;white-spa
 td.num{font-family:var(--mono);white-space:nowrap}
 td.c,th.c{text-align:center}
 .tt{display:inline-block;font-family:var(--mono);white-space:nowrap}
-.tt + .tt::before{content:"·";margin:0 3px;color:#a99f92;font-family:inherit}
+.tt:not(:last-child)::after{content:"\00a0·";color:#a99f92}
 .o{color:var(--brand);font-weight:700}
 .x{color:var(--warn);font-weight:700}
 .d{color:#8f6a1f;font-weight:700}
