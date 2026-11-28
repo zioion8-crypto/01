@@ -23,7 +23,7 @@
 - [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://koreatravelbible.com/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
 - [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://koreatravelbible.com/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
 - [简体中文 — 首尔攻略 KTB 简体专题索引](https://koreatravelbible.com/cn/): 简体专题的四篇深页索引——仁川机场深夜大巴、首尔到釜山 KTX、明洞圣水退税、支付宝微信避坑，附三款免费工具与 A4 一页通，核对 2026-11-28。这是简体中文（zh-Hans）的版本入口；一页通速查仍在 https://koreatravelbible.com/cheat-sheet/。
-- [简体中文 — 首尔扫码·地铁·退税 一页通](https://koreatravelbible.com/cheat-sheet/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援，外加仁川机场到市区的票价与深夜 N 巴士（N6701／N6002）。为在中国大陆可直连而制作，外部请求 0 个。简体中文高意图问答见下一节。
+- [简体中文 — 首尔地铁・扫码・退税 一页通](https://koreatravelbible.com/cheat-sheet/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援，外加仁川机场到市区的票价与深夜 N 巴士（N6701／N6002）。为在中国大陆可直连而制作，外部请求 0 个。简体中文高意图问答见下一节。
 - [Español — Guía de Viaje a Corea 2026 (hub)](https://koreatravelbible.com/es/): the Spanish entry point — K-ETA exemption status to 2027-12-31, the free e-Arrival Card and its 3-day window, 2026 airport and transit fares, which maps work, links to the three free tools and to the A4 one-pager. 
 - [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://koreatravelbible.com/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /es/korea-es-army-1pager.pdf. Moved from /es/ on 2026-11-28.
 
@@ -106,7 +106,7 @@ A single entry point for the three jobs a traveller in Korea actually has: what 
 - [Korea 1-Tap Map Pack, 109 spots (Seoul 66 / Busan 20 / Jeju 23)](https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) — USD 4.99, tax included; 109 of 109 spots re-checked on 2026-11-28; free updates for buyers.
 - [Complete Korea Local Kit (55-page guide + map pack)](https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout) — USD 12.99, tax included.
 - These English-language PDFs (map pack, kit) are written entirely in English — the Chinese and Japanese hub pages say so on every price, and sales are final.
-- [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf) — free, on this domain.
+- [首尔地铁・扫码・退税 一页通 (Simplified Chinese, free 1-page PDF)](https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf) — free, on this domain.
 - [Guía Rápida Seúl 2026 · Ruta 4 Paradas (Spanish, free 1-page PDF)](https://koreatravelbible.com/es/korea-es-army-1pager.pdf) — free; the same route as a landing page at https://koreatravelbible.com/es/ruta-army/, with the Spanish hub at https://koreatravelbible.com/es/.
 
 Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot.com) · [日本語](https://seoultravelinsider-jp.blogspot.com) · [繁體中文](https://seoultravelinsider-tw.blogspot.com).
