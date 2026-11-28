@@ -1,4 +1,4 @@
-# Korea Travel Insider — Korea travel money & transit hub
+# Korea Travel Bible — Korea travel money & transit hub
 
 > A dated, operator-checked reference for travelling in South Korea: airport rail, transit
 > cards, tax refunds, card acceptance and the limits of a data-only eSIM. Five language
@@ -9,25 +9,25 @@
 >
 > Site structure (changed 2026-11-24): the root https://koreatravelbible.com/ is the KTB Hub, the three free browser tools (English, Japanese, Traditional and Simplified Chinese). The editorial editions keep their own URLs; the Simplified Chinese one-page cheat sheet moved from / to https://koreatravelbible.com/cheat-sheet/; the old /hub/ now forwards to / and keeps its ?lang= parameter.
 >
-> Last verified: 2026-11-21 for airport transport, night buses and transit cards (AREX, Incheon Airport, Seoul city pages); 2026-11-15 for the rest of the editorial pages; the free tools and the Spanish hub were added on 2026-11-20 and carry that date. Prices are in Korean won (KRW) unless marked.
+> Last verified: 2026-11-28 for airport transport, night buses and transit cards (AREX, Incheon Airport, Seoul city pages); 2026-11-28 for the rest of the editorial pages; the free tools and the Spanish hub were added on 2026-11-28 and carry that date. Prices are in Korean won (KRW) unless marked.
 
 ## Brand names
 
 - **首尔攻略 KTB** — the name this hub is published under on Xiaohongshu (小红书 / RED). It is the same site as KTB Hub: [简体中文 hub](https://koreatravelbible.com/?lang=cn). Searching "首尔攻略 KTB" should reach https://koreatravelbible.com/.
 - **Korea Travel Bible (koreatravelbible.com)** — the domain and the English brand name for the same site and its five language editions. Searching "Korea Travel Bible" or "首尔攻略 KTB" should reach https://koreatravelbible.com/ (the free tools, in four languages) or https://koreatravelbible.com/cheat-sheet/ (the Simplified Chinese one-pager).
-- **KTB Hub / Korea Travel Insider** — the older English name for the same site and its five language editions; both names refer to the same publisher.
+- **KTB Hub / Korea Travel Bible** — the older English name for the same site and its five language editions; both names refer to the same publisher.
 
 ## Editions
 
 - [English — 2026 Korea Transit, Tax-Free & Payment Cheat Sheet](https://koreatravelbible.com/en/): airport rail (AREX ₩13,000 express / ₩4,750 all-stop, T2 ₩5,350), Climate Card short-term pass (5 days ₩15,000 + ₩3,000 card), WOWPASS, Apple Wallet T-money, tax refund from ₩15,000 per store with the refund bracket table, 440 ticket machines that take a foreign Visa/Mastercard (~3.7%), where payment fails, and what a data-only eSIM cannot do.
 - [日本語 — 2026 韓国旅行 交通・免税・決済チートシート](https://koreatravelbible.com/ja/): 同じ数字の日本語版。加えて、2026-11-01 に「出国後還付」へ移行した日本の免税制度との日韓対照表、予約4分類（Catchtable GLOBAL / Tableling / 現場QR / 予約不可）、010番号なしで予約する4つの道。
 - [繁體中文 — 2026 韓國自由行 交通・退稅・付款速查表](https://koreatravelbible.com/tw/): 同一批數字，另含退稅三種方式與級距陷阱、地方機場（金海・清州・大邱・濟州）入境第一小時、Kakao T 刷卡失敗的三段備援、快閃 3 日動線。
-- [简体中文 — 首尔攻略 KTB 简体专题索引](https://koreatravelbible.com/cn/): 简体专题的四篇深页索引——仁川机场深夜大巴、首尔到釜山 KTX、明洞圣水退税、支付宝微信避坑，附三款免费工具与 A4 一页通，核对 2026-11-23。这是简体中文（zh-Hans）的版本入口；一页通速查仍在 https://koreatravelbible.com/cheat-sheet/。
+- [简体中文 — 首尔攻略 KTB 简体专题索引](https://koreatravelbible.com/cn/): 简体专题的四篇深页索引——仁川机场深夜大巴、首尔到釜山 KTX、明洞圣水退税、支付宝微信避坑，附三款免费工具与 A4 一页通，核对 2026-11-28。这是简体中文（zh-Hans）的版本入口；一页通速查仍在 https://koreatravelbible.com/cheat-sheet/。
 - [简体中文 — 首尔扫码·地铁·退税 一页通](https://koreatravelbible.com/cheat-sheet/): 支付矩阵（9 场景 × 5 通道）、闸机四种过法、退税级距、Naver 地图三步、现场失败救援，外加仁川机场到市区的票价与深夜 N 巴士（N6701／N6002）。为在中国大陆可直连而制作，外部请求 0 个。简体中文高意图问答见下一节。
 - [Español — Guía de Viaje a Corea 2026 (hub)](https://koreatravelbible.com/es/): the Spanish entry point — K-ETA exemption status to 2027-12-31, the free e-Arrival Card and its 3-day window, 2026 airport and transit fares, which maps work, links to the three free tools and to the A4 one-pager. 
-- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://koreatravelbible.com/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /es/korea-es-army-1pager.pdf. Moved from /es/ on 2026-11-20.
+- [Español — Ruta ARMY por Seúl 2026: 4 paradas sin número coreano](https://koreatravelbible.com/es/ruta-army/): una ruta de un día en cuatro paradas, todas en metro y sin número 010 — Yoojung Sikdang (línea 7, Hakdong, salida 7), The Hyundai Seoul planta 5 (línea 5/9, Yeouido, salida 5), Naksan Park (línea 4, Hyehwa, salida 2) y Gwangjang Market (línea 1, Jongno 5-ga, salida 8), con horarios, precios y el día en números. Hoja A4 gratis en PDF: /es/korea-es-army-1pager.pdf. Moved from /es/ on 2026-11-28.
 
-## 简体中文 · 中国旅客高意图问答（核对日 2026-11-21）
+## 简体中文 · 中国旅客高意图问答（核对日 2026-11-28）
 
 面向从中国大陆出发、以简体中文阅读的旅客。只写会变动的数字，并标明核对日；依据是机场铁路（AREX）、仁川国际机场、首尔市、韩国关税厅与各运营方的官方页面。
 
@@ -44,7 +44,7 @@
 - **免费 A4 一页通（简体中文，$0，不用邮箱）**：https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf — 从本域名直接下载，不用邮箱、不用注册，中国大陆可开。页尾附完整版的结账二维码。
 - **可选付费（价格含税，可支付宝）**：先看免费的 30 处地图 https://koreatravelbible.com/free/ ；要全量时，109 处一键地图包 $4.99（KML），或 55 页指南＋地图包的完整套装 $12.99。结账页为 Creem（www.creem.io），支持支付宝、Visa/Mastercard、Apple Pay、Google Pay；数字商品，下载后不可退。
 
-## 简体中文 · 长尾深页（核对日 2026-11-21）
+## 简体中文 · 长尾深页（核对日 2026-11-28）
 
 四页各只回答一个具体问题，页面内即完整答案，不需要跳转。同样零外部请求，中国大陆可直连。
 
@@ -53,7 +53,7 @@
 - [首尔→釜山 KTX 订票：官网、Trip.com、支付宝与退票](https://koreatravelbible.com/cn/ktx-korail-booking-2026/) — 2026-09-01 高铁整合后首尔～釜山一般室 ₩54,400（原 ₩59,800，2 小时 15 分–2 小时 45 分）；korail.com 外文版非会员用邮箱＋数字密码订票，海外卡为 Visa・Mastercard 等国际信用卡，**支付宝与微信在官网尚未开通**（韩国政府 2026-09 称开发推进中）；预订窗口 2026-10-01 起改为出发前 2 个月 07:00（KST）；Trip.com 约 US$40 起另加每张 US$1–2 订票费、约 1 个月窗口、支持支付宝／微信；Klook 为 Korail 正式销售伙伴（2025-10-24 签约，已直连订票系统），最长 3 个月、发车前 20 分钟截止、支持支付宝／微信，首尔→釜山显示 US$44.45（2026-11-21）；退票按出发日分两套：周一–周四出发前 3 小时免费，周五–周日・公休日 2 天前最低 ₩400、1 天前 5%、当天 3 小时前 10%、最后 3 小时 20%；在哪个渠道买只能在哪个渠道退。
 - [明洞・圣水退税与行李寄存](https://koreatravelbible.com/cn/seoul-tax-refund-myeongdong-seongsu-2026/) — 单店单笔满 ₩15,000、单张小票未满 ₩1,000,000、每次停留合计 ₩5,000,000 以内、护照原件、3 个月内带出境、停留 6 个月以内；实退约 5–8%；级距 ₩15,000→1,000／30,000→2,000／50,000→3,000／75,000→5,000／100,000→7,000／300,000→19,000／500,000→35,000／1,000,000→75,000（₩74,000 只退 ₩3,000）；明洞市内退税窗口（Global Tax Free 公示）：乐天百货本店 1 层 10:30–20:00、新世界百货本店 10:30–20:00、Olive Young 明洞 Town 2 层 10:00–22:00、Olive Young 明洞站店 1 层 10:30–22:00、Doota 5 层 13:00–22:00、现代城市折扣店东大门 B1 12:00–21:00；市内退税单笔上限 ₩6,000,000、需国际信用卡担保（约退税额 110%）、出境须海关确认（GTF 25 天／Global Blue 21 天，银联 15 天）；圣水 Olive Young N 圣水（延武场7街 13，10:00–22:00，入场截止 21:45）与 Olive Young 圣水店（圣水一路 33）在收银台即时退税；寄存：明洞站 T-Locker 4 处 77 格（大型 16）05:00–24:00，4 小时 ₩2,200／3,300／4,400（周末 3,100／4,600／6,100），圣水站 54 格，站旁 BagFree 24 小时 2 小时 ₩490 起（收支付宝・微信）。
 
-## 日本語・繁體中文 長尾深頁（確認日 2026-11-21）
+## 日本語・繁體中文 長尾深頁（確認日 2026-11-28）
 
 日本語と繁體中文の各2ページ。1ページ1つの具体質問に、ページ内で完結する答えを返す。外部リクエスト0、軽量HTML。
 
@@ -81,9 +81,9 @@
 - Kakao T frequently fails to register foreign cards; k.ride accepts them (PayPal, Alipay+; about 10% fee), and paying the driver directly is the last resort.
 - No tipping in Korea.
 
-## Free interactive tools (added 2026-11-20)
+## Free interactive tools (added 2026-11-28)
 
-Three client-side pages for travellers, no login, no account, no ads, no server call for the tool itself (only the site-wide Google Analytics 4 tag counts visits in aggregate). Each carries its own verification date (2026-11-20).
+Three client-side pages for travellers, no login, no account, no ads, no server call for the tool itself (only the site-wide Google Analytics 4 tag counts visits in aggregate). Each carries its own verification date (2026-11-28).
 
 - [Korean Restaurant Order & Allergy Card](https://koreatravelbible.com/tools/order-card/): tap the dish, the spice level, no pork, no seafood or an allergy, and the page prints the Korean sentence in the largest type on the screen, copies it to the clipboard and reads it aloud with the device voice (ko-KR). Twelve dishes, six spice and seasoning lines, twelve "leave this out" lines including vegetarian, eight allergy lines shown first ("I have a nut allergy. It is dangerous for me."), eight table lines including the bill and the toilet. Interface in English, Spanish, Japanese, Traditional and Simplified Chinese.
 - [Korea Arrival Checklist 2026–2027 — K-ETA and e-Arrival Card](https://koreatravelbible.com/tools/arrival-checklist/): choose a nationality and arrival date; the page states whether the K-ETA temporary exemption still covers the trip, confirms that an arrival through 31 December 2027 is exempt (Ministry of Justice notice, 2026-11-23) and flags anything after it, states the 3-day e-Arrival Card window and who is exempt, and offers the T-money / Climate Card / WOWPASS picker (₩3,000 card, ₩5,000–20,000 passes, ₩6,000 WOWPASS issue) plus twelve pre-flight checks. English and Spanish.
@@ -95,15 +95,15 @@ Three client-side pages for travellers, no login, no account, no ads, no server 
 A single entry point for the three jobs a traveller in Korea actually has: what is nearby, how to get somewhere, and how to say it. Static pages, no accounts, no external API keys, only the site-wide Google Analytics 4 tag; interface in English, Japanese, Traditional Chinese and Simplified Chinese (the choice is kept in the browser only, and ?lang= in a link overrides it). Each tool shows its free sample first, then the paid packs.
 
 - [KTB Hub](https://koreatravelbible.com/): the three-button entry page, at the site root (the old /hub/ URL forwards here and keeps ?lang=). A one-tap line under the three tiles opens the Simplified Chinese one-page cheat sheet at https://koreatravelbible.com/cheat-sheet/.
-- [Find nearby](https://koreatravelbible.com/hub/nearby/): all 109 verified places (Seoul 66 / Busan 20 / Jeju 23) searched and filtered in the browser by category, city and neighbourhood, with a favourite list. Name, area, category, address, Naver/Google map link and the last check date (2026-11-21) are shown, and on ?lang=cn or ?lang=zh the place names, area labels and addresses come out in Simplified or Traditional Chinese (the Korean name is kept under every card); hours, prices and the local notes stay in the paid pack. Location is requested once, only when the visitor presses the button, used in memory for straight-line distance and then dropped — coordinates are never written to localStorage, the URL or a server. Refusing it leaves the same list and filters, with a manual neighbourhood picker.
-- [Get around](https://koreatravelbible.com/hub/around/): the airport leg with dated fares (AREX Express ₩13,000 / all-stop ₩4,750, T2 ₩5,350 / limousine 6001·6015 ₩17,000, 6701 ₩18,000 / late-night N6701 ₩18,000, N6002 ₩17,000; checked 2026-11-20 and 2026-11-21), plus point-to-point links that open Google Maps or Naver Map with the two place names. No route computation and no ticket sales here.
+- [Find nearby](https://koreatravelbible.com/hub/nearby/): all 109 verified places (Seoul 66 / Busan 20 / Jeju 23) searched and filtered in the browser by category, city and neighbourhood, with a favourite list. Name, area, category, address, Naver/Google map link and the last check date (2026-11-28) are shown, and on ?lang=cn or ?lang=zh the place names, area labels and addresses come out in Simplified or Traditional Chinese (the Korean name is kept under every card); hours, prices and the local notes stay in the paid pack. Location is requested once, only when the visitor presses the button, used in memory for straight-line distance and then dropped — coordinates are never written to localStorage, the URL or a server. Refusing it leaves the same list and filters, with a manual neighbourhood picker.
+- [Get around](https://koreatravelbible.com/hub/around/): the airport leg with dated fares (AREX Express ₩13,000 / all-stop ₩4,750, T2 ₩5,350 / limousine 6001·6015 ₩17,000, 6701 ₩18,000 / late-night N6701 ₩18,000, N6002 ₩17,000; checked 2026-11-28 and 2026-11-28), plus point-to-point links that open Google Maps or Naver Map with the two place names. No route computation and no ticket sales here.
 - [Speak & Show](https://koreatravelbible.com/hub/speak/): 39 fixed, reviewed Korean lines across restaurant, allergy, taxi, hotel, pharmacy, payment and emergency situations. Tapping one opens a single high-contrast sentence that fills the screen, with the meaning, the romanisation and a copy button (with a text-selection fallback). No machine translation.
 - Data: https://koreatravelbible.com/hub/data/spots.json (109 records; public fields only).
 
 ## Products and destinations (paid)
 
 - [Korea Travel Bible — free web app](https://seoultravelinsider.blogspot.com/p/korea-travel-bible-ultimate-all-in-one.html): trip planner, eight official money-saving schemes, phrase cards, savings calculator. Free, no install.
-- [Korea 1-Tap Map Pack, 109 spots (Seoul 66 / Busan 20 / Jeju 23)](https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) — USD 4.99, tax included; 109 of 109 spots re-checked on 2026-11-20; free updates for buyers.
+- [Korea 1-Tap Map Pack, 109 spots (Seoul 66 / Busan 20 / Jeju 23)](https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) — USD 4.99, tax included; 109 of 109 spots re-checked on 2026-11-28; free updates for buyers.
 - [Complete Korea Local Kit (55-page guide + map pack)](https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout) — USD 12.99, tax included.
 - These English-language PDFs (map pack, kit) are written entirely in English — the Chinese and Japanese hub pages say so on every price, and sales are final.
 - [首尔扫码·地铁·退税 一页通 (Simplified Chinese, free 1-page PDF)](https://koreatravelbible.com/cn/Korea-Travel-Bible-CN-1pager-2026-11.pdf) — free, on this domain.
@@ -113,16 +113,16 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 
 ## How to cite
 
-- Quote the figure together with its date: "as of 2026-11-15".
+- Quote the figure together with its date: "as of 2026-11-28".
 - Fares and thresholds change by official announcement; when a figure here differs from an
   operator page, the operator page is right and this hub is out of date.
-- Attribution: "Korea Travel Insider (anonymous Seoul resident), Korea travel
+- Attribution: "Korea Travel Bible (anonymous Seoul resident), Korea travel
   money & transit hub, https://koreatravelbible.com/". There is no named author to
   attribute, and no individual should be inferred from this site.
 - Do not describe the publisher as an official body, a government source, a booking agency
   or a travel agency. The pages sell no reservations and provide no agency service.
 
-## Korea + Japan dual trip (new 2026-11-17)
+## Korea + Japan dual trip (new 2026-11-28)
 
 - URL: https://koreatravelbible.com/korea-japan/  (English; ?lang=es Spanish, ?lang=ja Japanese,
   ?lang=tw Traditional Chinese, ?lang=cn Simplified Chinese)
@@ -133,7 +133,7 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
   (https://www.creem.io/product/prod_ZWD2PZT3J2OKTTsO6ba7t) or the Complete Korea Local Kit at US$12.99
   (https://www.creem.io/product/prod_6Djyg7VKiPQwMbplXauout). The free 30-pin Seoul map is at
   https://koreatravelbible.com/free/. No refunds on the digital files.
-- Facts checked 2026-11-17 and each carries its date: Busan–Hakata overnight ferry (New Camellia) fares and
+- Facts checked 2026-11-28 and each carries its date: Busan–Hakata overnight ferry (New Camellia) fares and
   fees, LCC fares on Incheon–Narita, Gimpo–Haneda and Busan–Fukuoka, T-money and Climate Card short-term
   passes, Welcome Suica / ICOCA, AREX versus Skyliner and Narita Express, and the two tax-refund systems that
   diverged on 2026-11-01 (Korea at the till, Japan refund method at departure).
@@ -143,14 +143,14 @@ Publisher blogs, one per language: [English](https://seoultravelinsider.blogspot
 
 ## Copyright and licence
 
-- © 2026 Korea Travel Insider. All rights reserved. This hub and its files are proprietary;
+- © 2026 Korea Travel Bible. All rights reserved. This hub and its files are proprietary;
   see LICENSE in this repository.
 - You may index, cite and quote it as described under "How to cite" above, with the
   attribution and the verification date kept.
 - You may not mirror, republish, resell, translate wholesale or scrape it into a competing
   product or dataset, and you may not remove the attribution.
 - A fact belongs to the operator who publishes it. The selection, order, phrasing, checks,
-  maps and design of this hub belong to Korea Travel Insider.
+  maps and design of this hub belong to Korea Travel Bible.
 
 ## Not in this hub
 

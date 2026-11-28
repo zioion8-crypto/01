@@ -1,4 +1,4 @@
-# Korea Travel Insider — Korea travel money & transit hub (koreatravelbible.com)
+# Korea Travel Bible — Korea travel money & transit hub (koreatravelbible.com)
 # Publisher is anonymous by design. No personal data and no accounts on any page; visits are counted in aggregate with Google Analytics 4 only.
 
 User-agent: *
