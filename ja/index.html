@@ -687,5 +687,8 @@ if(window.gtag){gtag('event','app_open',{display_mode:m?'standalone':'browser',l
 var g=document.querySelector('.install');if(g&&window.gtag){g.addEventListener('click',function(){gtag('event','install_guide_tap',{language:document.documentElement.lang});});}})();
 </script>
 <script src="/assets/ktb-pdf-track.js" defer></script>
+<script>/* KTB service worker: installable app + never a stale cache (see /sw.js) */
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}
+</script>
 </body>
 </html>

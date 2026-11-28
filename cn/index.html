@@ -297,5 +297,8 @@ footer a{color:#4d6b64}
 
 </div>
 <script src="/assets/ktb-pdf-track.js" defer></script>
+<script>/* KTB service worker: installable app + never a stale cache (see /sw.js) */
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}
+</script>
 </body>
 </html>
