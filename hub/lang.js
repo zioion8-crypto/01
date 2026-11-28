@@ -206,7 +206,7 @@ window.KTB_I18N = {
     'home.sheet': '<a href="cheat-sheet/">1ページまとめ：ソウルのQR決済・地下鉄・免税（簡体字中国語）</a>',
     'home.f1': '<b>プライバシー：</b>訪問数は Google Analytics 4 で集計します（氏名・アカウントなし、広告なし。GA4 は自社 Cookie（_ga、_ga_*）を置くことがあります）。位置情報は位置ボタンを押したときだけ読み、端末内で直線距離の計算に使い、ブラウザにもリンクにも保存しません。このブラウザに残るのは保存した場所と最後の絞り込みだけで、消去ボタンがあります。<a href="/privacy.html">プライバシーポリシー</a>。',
     'home.f2': '<b>場所：</b>109ピンは2026-11-28に最終確認。営業時間や価格は変わります。出かける前に営業元か地図リンクで確認してください。',
-    'home.f3': 'Korea Travel Bible のほかのツール：<a href="../free/">無料ソウル30ピンマップ</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓国語 注文・アレルギーカード</a> · <a href="../en/">交通・免税・支払いの一覧表</a>',
+    'home.f3': 'Korea Travel Bible のほかのツール：<a href="../free/">無料ソウル30ピンマップ</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓国語 注文・アレルギーカード</a> · <a href="../ja/">交通・免税・支払いの一覧表</a>',
     'home.brand': 'KTB Hub は Xiaohongshu（小红书）でも <b lang="zh-Hans">首尔攻略 KTB</b> として、同じ内容を簡体字中国語で出しています。 <a href="https://www.xiaohongshu.com/user/profile/18488621939" target="_blank" rel="noopener">小红书のプロフィール ↗</a> · <a href="./?lang=cn">简体中文版 →</a>',
     'home.f4': '© 2026 Korea Travel Bible. ソウルに長く住む編集者による匿名編集（氏名・所属は非公開）。',
 
@@ -361,7 +361,7 @@ window.KTB_I18N = {
     'home.sheet': '<a href="cheat-sheet/">一頁紙：首爾掃碼・地鐵・退稅（簡體中文）</a>',
     'home.f1': '<b>隱私：</b>瀏覽次數以 Google Analytics 4 統計（不收集姓名與帳號、無廣告；GA4 可能設置自己的 Cookie，_ga、_ga_*）。位置只在你按下位置按鈕後讀取，在裝置上計算直線距離，不會存進瀏覽器或連結。這個瀏覽器只保留你存的景點與上次的篩選，並有清除按鈕。<a href="/privacy.html">隱私權政策</a>。',
     'home.f2': '<b>景點：</b>109 個定位點最後核對：2026-11-28。營業時間與價格會變，出發前請看店家或地圖連結。',
-    'home.f3': 'Korea Travel Bible 的其他工具：<a href="../free/">免費首爾 30 點地圖</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓語點餐・過敏卡</a> · <a href="../en/">交通、退稅、付款總表</a>',
+    'home.f3': 'Korea Travel Bible 的其他工具：<a href="../free/">免費首爾 30 點地圖</a> · <a href="../tools/subway-cost-calc/">交通費計算機</a> · <a href="../tools/order-card/">韓語點餐・過敏卡</a> · <a href="../tw/">交通、退稅、付款總表</a>',
     'home.brand': 'KTB Hub 在小紅書（小红书）也叫做「<b lang="zh-Hans">首尔攻略 KTB</b>」，簡體中文版內容相同。 <a href="https://www.xiaohongshu.com/user/profile/18488621939" target="_blank" rel="noopener">小紅書主頁 ↗</a> · <a href="./?lang=cn">简体中文版 →</a>',
     'home.f4': '© 2026 Korea Travel Bible. 由長住首爾的編輯匿名撰寫，姓名與所屬不公開。',
 
@@ -516,7 +516,7 @@ window.KTB_I18N = {
     'home.sheet': '<a href="cheat-sheet/">一页纸：首尔扫码・地铁・退税 一页通（简体中文）</a>',
     'home.f1': '<b>隐私：</b>浏览次数用 Google Analytics 4 统计（不收集姓名与账号、无广告；GA4 可能设置自己的 Cookie，_ga、_ga_*）。位置只在你按下位置按钮后读取，在设备上计算直线距离，不会存进浏览器或链接。这个浏览器只保留你存的景点与上次的筛选，并有清除按钮。<a href="/privacy.html">隐私政策</a>。',
     'home.f2': '<b>景点：</b>109 个地点最后核对：2026-11-28。营业时间与价格会变，出发前请看店家或地图链接。',
-    'home.f3': 'Korea Travel Bible 的其他工具：<a href="../free/">免费首尔 30 个地点地图</a> · <a href="../tools/subway-cost-calc/">交通费计算器</a> · <a href="../tools/order-card/">韩语点餐・过敏卡</a> · <a href="../en/">交通、退税、付款总表</a>',
+    'home.f3': 'Korea Travel Bible 的其他工具：<a href="../free/">免费首尔 30 个地点地图</a> · <a href="../tools/subway-cost-calc/">交通费计算器</a> · <a href="../tools/order-card/">韩语点餐・过敏卡</a> · <a href="../cn/">交通、退税、付款总表</a>',
     'home.brand': '小红书同名账号：<b>首尔攻略 KTB</b> <a href="https://www.xiaohongshu.com/user/profile/18488621939" target="_blank" rel="noopener">→ 打开小红书</a>（小编现场核对 109 处，简体中文）。这里的简体中文版内容相同。',
     'home.f4': '© 2026 Korea Travel Bible. 由长住首尔的编辑匿名撰写，姓名与所属不公开。',
 
